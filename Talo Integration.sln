@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.TALO.API.Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.TALO.API.ServiceImplementation", "Toyota.Tsusho.TALO.API.ServiceImplementation\Toyota.Tsusho.TALO.API.ServiceImplementation.csproj", "{C8861311-C9DB-460C-A733-C5763F833B4D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5EF150E1-37DF-4A8A-A56F-2D31EDC10B23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BizTalk", "BizTalk", "{D30EBEB1-C391-4AD6-BE68-D041926B7FAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +58,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA4BCFD9-9C41-4281-9A37-D7CA23395216} = {5EF150E1-37DF-4A8A-A56F-2D31EDC10B23}
+		{EF095B71-8731-4CC8-A64E-C6BD05ED4FF4} = {5EF150E1-37DF-4A8A-A56F-2D31EDC10B23}
+		{C721070D-9BA7-4B6C-B695-1FBF956E769B} = {5EF150E1-37DF-4A8A-A56F-2D31EDC10B23}
+		{C8861311-C9DB-460C-A733-C5763F833B4D} = {5EF150E1-37DF-4A8A-A56F-2D31EDC10B23}
+		{832E5811-B6DF-41C4-9E43-AF275F2D013B} = {D30EBEB1-C391-4AD6-BE68-D041926B7FAC}
 	EndGlobalSection
 EndGlobal
