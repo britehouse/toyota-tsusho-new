@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Toyota.Tsusho.TALO.API.ServiceImplementation.Service1" CodeBehind="Service1.svc.cs" %>
