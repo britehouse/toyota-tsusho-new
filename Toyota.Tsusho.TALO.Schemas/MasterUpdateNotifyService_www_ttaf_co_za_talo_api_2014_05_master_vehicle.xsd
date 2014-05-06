@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\MasterUpdateNotifyService_www_ttaf_co_za_talo_api_2014_05_master.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05/master" />
+  <xs:complexType name="ColorCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Color" nillable="true" type="tns:ColorDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ColorCollectionDataContract" nillable="true" type="tns:ColorCollectionDataContract" />
+  <xs:complexType name="ColorDataContract">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/master" name="Internal" nillable="true" type="q1:CodeNameDataContract" />
+      <xs:element name="External" nillable="true" type="tns:ColorDataContract" />
+      <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q2:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ColorDataContract" nillable="true" type="tns:ColorDataContract" />
+  <xs:element name="Colors" nillable="true" type="tns:ColorCollectionDataContract" />
+  <xs:complexType name="ModelCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Model" nillable="true" type="tns:ModelDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelCollectionDataContract" nillable="true" type="tns:ModelCollectionDataContract" />
+  <xs:complexType name="ModelDataContract">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Class" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+      <xs:element name="BodyType" nillable="true" type="xs:string" />
+      <xs:element name="PackageDivision" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q3:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelDataContract" nillable="true" type="tns:ModelDataContract" />
+  <xs:element name="Models" nillable="true" type="tns:ModelCollectionDataContract" />
+  <xs:complexType name="SFXCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SFX" nillable="true" type="tns:SFXDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SFXCollectionDataContract" nillable="true" type="tns:SFXCollectionDataContract" />
+  <xs:complexType name="SFXDataContract">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="SFX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q4:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SFXDataContract" nillable="true" type="tns:SFXDataContract" />
+  <xs:element name="SFXs" nillable="true" type="tns:SFXCollectionDataContract" />
+</xs:schema>
