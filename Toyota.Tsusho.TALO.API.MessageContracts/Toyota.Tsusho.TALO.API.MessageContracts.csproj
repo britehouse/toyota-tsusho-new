@@ -38,6 +38,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,10 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MasterUpdateNotifyRequestMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Toyota.Tsusho.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toyota.Tsusho.TALO.API.DataContracts\Toyota.Tsusho.TALO.API.DataContracts.csproj">
+      <Project>{da4bcfd9-9c41-4281-9a37-d7ca23395216}</Project>
+      <Name>Toyota.Tsusho.TALO.API.DataContracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

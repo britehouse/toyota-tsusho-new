@@ -68,8 +68,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="Types1.xsd">
+      <TypeName>Types1</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="ZTALOTEST.xsd">
       <TypeName>ZTALOTEST</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="VEHMAST.xsd">
+      <TypeName>VEHMAST</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -83,6 +93,7 @@
   <ItemGroup>
     <Content Include="WcfReceivePort_SAPBinding_Custom.bindinginfo.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo.xml" />
+    <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo1.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

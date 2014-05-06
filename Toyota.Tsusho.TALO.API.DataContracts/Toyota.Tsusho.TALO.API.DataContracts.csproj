@@ -38,6 +38,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Master\CodeNameDataContract.cs" />
+    <Compile Include="Master\Vehicle\ColorCollectionDataContract.cs" />
+    <Compile Include="Master\Vehicle\ColorDataContract.cs" />
+    <Compile Include="Master\Vehicle\SFXCollectionDataContract.cs" />
+    <Compile Include="Master\Vehicle\SFXDataContract.cs" />
+    <Compile Include="Master\Vehicle\ModelCollectionDataContract.cs" />
+    <Compile Include="Master\Vehicle\ModelDataContract.cs" />
+    <Compile Include="Master\ModificationEnumeration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
