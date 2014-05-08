@@ -27,7 +27,7 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Master.Vehicle
         }
 
         [DataMember(Order = 2, IsRequired = true)]
-        public ColorDataContract External
+        public CodeNameDataContract External
         {
             get;
             set;

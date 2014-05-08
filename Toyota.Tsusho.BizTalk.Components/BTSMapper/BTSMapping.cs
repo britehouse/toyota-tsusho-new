@@ -7,10 +7,8 @@ using System.Xml.Serialization;
 
 namespace Toyota.Tsusho.BizTalk.Components
 {
-    [XmlRoot(Namespace=String.Empty)]
     public class BTSMapping
     {
-        [XmlArray(
     }
  
     public class Mapping

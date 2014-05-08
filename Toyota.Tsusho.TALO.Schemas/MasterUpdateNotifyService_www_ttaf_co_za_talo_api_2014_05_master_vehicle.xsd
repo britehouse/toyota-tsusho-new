@@ -11,8 +11,8 @@
     <xs:sequence>
       <xs:element name="Code" nillable="true" type="xs:string" />
       <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/master" name="Internal" nillable="true" type="q1:CodeNameDataContract" />
-      <xs:element name="External" nillable="true" type="tns:ColorDataContract" />
-      <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q2:ModificationEnumeration" />
+      <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/master" name="External" nillable="true" type="q2:CodeNameDataContract" />
+      <xs:element xmlns:q3="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q3:ModificationEnumeration" />
       <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
@@ -31,7 +31,7 @@
       <xs:element name="Description" nillable="true" type="xs:string" />
       <xs:element name="BodyType" nillable="true" type="xs:string" />
       <xs:element name="PackageDivision" nillable="true" type="xs:string" />
-      <xs:element xmlns:q3="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q3:ModificationEnumeration" />
+      <xs:element xmlns:q4="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q4:ModificationEnumeration" />
       <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
@@ -48,7 +48,7 @@
       <xs:element name="Code" nillable="true" type="xs:string" />
       <xs:element name="SFX" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
-      <xs:element xmlns:q4="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q4:ModificationEnumeration" />
+      <xs:element xmlns:q5="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q5:ModificationEnumeration" />
       <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>

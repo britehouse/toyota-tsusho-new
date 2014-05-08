@@ -45,7 +45,6 @@ namespace Toyota.Tsusho.BizTalk.Components
 
         public bool Probe(IPipelineContext pContext, Microsoft.BizTalk.Message.Interop.IBaseMessage pInMsg)
         {
-            if(pInMsg.Context.Write(
             return false;
         }
     }

@@ -17,6 +17,7 @@ namespace Toyota.Tsusho.TALO.API.ServiceImplementation
 
     public partial class MasterUpdateNotifyService : MasterUpdateNotifyServiceBase
     {
+
     }
 }
 
