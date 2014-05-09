@@ -89,9 +89,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="Properties\PublishProfiles\dev-detsbt01.ho.fosltd.co.za.pubxml" />
-    <None Include="Properties\PublishProfiles\dev-detsbt02.ho.fosltd.co.za.pubxml" />
-    <None Include="Properties\PublishProfiles\dev-detsbt03.ho.fosltd.co.za.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
