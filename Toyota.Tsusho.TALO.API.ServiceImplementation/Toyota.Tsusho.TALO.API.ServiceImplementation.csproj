@@ -46,8 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderNotifyService.cs" />
     <Compile Include="OrderService.cs" />
-    <Compile Include="MasterUpdateNotifyService.cs" />
+    <Compile Include="MasterNotifyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

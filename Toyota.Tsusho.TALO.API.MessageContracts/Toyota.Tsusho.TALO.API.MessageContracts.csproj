@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderCreateNotifyRequestMessage.cs" />
     <Compile Include="OrderConfirmationRequestMessage.cs" />
     <Compile Include="MasterUpdateNotifyRequestMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

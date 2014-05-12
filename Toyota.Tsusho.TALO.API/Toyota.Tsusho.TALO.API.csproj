@@ -75,8 +75,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="OrderNotifyService.svc" />
     <Content Include="OrderService.svc" />
-    <Content Include="MasterUpdateNotifyService.svc" />
+    <Content Include="MasterNotifyService.svc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="web.config" />

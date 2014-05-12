@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Runtime.Serialization;
 
 
-namespace Toyota.Tsusho.TALO.API.DataContracts.Master
+namespace Toyota.Tsusho.TALO.API.DataContracts
 {
-    [DataContract(Namespace = "http://www.ttaf.co.za/talo/api/2014/05/master")]
+    [DataContract(Namespace = "http://www.ttaf.co.za/talo/api/2014/05")]
     public enum ModificationEnumeration
     {
         [EnumMember]

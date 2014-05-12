@@ -47,8 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IOrderNotifyService.cs" />
     <Compile Include="IOrderService.cs" />
-    <Compile Include="IMasterUpdateNotifyService.cs" />
+    <Compile Include="IMasterNotifyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

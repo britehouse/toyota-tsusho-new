@@ -54,9 +54,10 @@
     <Compile Include="Master\Vehicle\SuffixDataContract.cs" />
     <Compile Include="Master\Vehicle\ModelCollectionDataContract.cs" />
     <Compile Include="Master\Vehicle\ModelDataContract.cs" />
-    <Compile Include="Master\ModificationEnumeration.cs" />
+    <Compile Include="ModificationEnumeration.cs" />
     <Compile Include="Order\ColorDataContract.cs" />
     <Compile Include="Order\ConfirmationDataContract.cs" />
+    <Compile Include="Order\CreateNotifyDataContract.cs" />
     <Compile Include="Order\PurchaserDataContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
