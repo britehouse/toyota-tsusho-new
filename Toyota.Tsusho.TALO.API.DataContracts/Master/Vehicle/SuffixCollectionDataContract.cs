@@ -8,8 +8,8 @@ using System.Collections.ObjectModel;
 
 namespace Toyota.Tsusho.TALO.API.DataContracts.Master.Vehicle
 {
-    [CollectionDataContract(Namespace = "http://www.ttaf.co.za/talo/api/2014/05/master/vehicle", ItemName = "SFX")]
-    public class SFXCollectionDataContract : Collection<SFXDataContract>
+    [CollectionDataContract(Namespace = "http://www.ttaf.co.za/talo/api/2014/05/master/vehicle", ItemName = "Suffix")]
+    public class SuffixCollectionDataContract : Collection<SuffixDataContract>
     {
     }
 }

@@ -10,7 +10,7 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Master.Vehicle
     /// Describes a vehicle model.
     /// </summary>
     [DataContract(Namespace = "http://www.ttaf.co.za/talo/api/2014/05/master/vehicle")]
-    public class SFXDataContract
+    public class SuffixDataContract
     {
         [DataMember(Order = 0, IsRequired = true)]
         public string Code

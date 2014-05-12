@@ -84,7 +84,13 @@ namespace Toyota.Tsusho.ServiceModel
 
                 case HostReplace.FQDN:
                     {
-                        builder.Host = string.Format("{0}.{1}", Environment.MachineName, IPGlobalProperties.GetIPGlobalProperties().DomainName);
+                        string domain = IPGlobalProperties.GetIPGlobalProperties().DomainName;
+
+                        if(!string.IsNullOrWhiteSpace(domain))
+                            builder.Host = string.Format("{0}.{1}", Environment.MachineName, IPGlobalProperties.GetIPGlobalProperties().DomainName);
+                        else
+                            builder.Host = Environment.MachineName;
+
                         break;
                     }
 

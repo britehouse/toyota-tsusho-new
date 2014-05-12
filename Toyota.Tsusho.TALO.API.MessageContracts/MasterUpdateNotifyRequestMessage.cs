@@ -21,7 +21,7 @@ namespace Toyota.Tsusho.TALO.API.MessageContracts
         }
 
         [MessageBodyMember(Namespace = "http://www.ttaf.co.za/talo/api/2014/05/master/vehicle", Order = 1)]
-        public Toyota.Tsusho.TALO.API.DataContracts.Master.Vehicle.SFXCollectionDataContract SFXs
+        public Toyota.Tsusho.TALO.API.DataContracts.Master.Vehicle.SuffixCollectionDataContract Suffixes
         {
             get;
             set;

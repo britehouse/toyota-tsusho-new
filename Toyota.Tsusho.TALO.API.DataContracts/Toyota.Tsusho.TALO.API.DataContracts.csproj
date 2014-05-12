@@ -50,16 +50,20 @@
     <Compile Include="Master\CodeNameDataContract.cs" />
     <Compile Include="Master\Vehicle\ColorCollectionDataContract.cs" />
     <Compile Include="Master\Vehicle\ColorDataContract.cs" />
-    <Compile Include="Master\Vehicle\SFXCollectionDataContract.cs" />
-    <Compile Include="Master\Vehicle\SFXDataContract.cs" />
+    <Compile Include="Master\Vehicle\SuffixCollectionDataContract.cs" />
+    <Compile Include="Master\Vehicle\SuffixDataContract.cs" />
     <Compile Include="Master\Vehicle\ModelCollectionDataContract.cs" />
     <Compile Include="Master\Vehicle\ModelDataContract.cs" />
     <Compile Include="Master\ModificationEnumeration.cs" />
+    <Compile Include="Order\ColorDataContract.cs" />
+    <Compile Include="Order\ConfirmationDataContract.cs" />
+    <Compile Include="Order\PurchaserDataContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Toyota.Tsusho.snk" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

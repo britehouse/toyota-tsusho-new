@@ -65,12 +65,17 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toyota.Tsusho.ServiceModel\Toyota.Tsusho.ServiceModel.csproj">
+      <Project>{890c98ab-9e05-4216-95c4-7c604561e511}</Project>
+      <Name>Toyota.Tsusho.ServiceModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toyota.Tsusho.TALO.API.ServiceImplementation\Toyota.Tsusho.TALO.API.ServiceImplementation.csproj">
       <Project>{d2618728-dcce-41b0-9bf5-7fc269841de1}</Project>
       <Name>Toyota.Tsusho.TALO.API.ServiceImplementation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="OrderService.svc" />
     <Content Include="MasterUpdateNotifyService.svc" />
   </ItemGroup>
   <ItemGroup>
