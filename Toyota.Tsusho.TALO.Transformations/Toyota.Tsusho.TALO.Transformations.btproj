@@ -78,7 +78,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Map Include="ZDBM_TALO_O_VEHMASTToMasterUpdateNotifyService.btm">
+    <Map Include="ZDBM_TALO_O_VEHMASTToMasterNotifyService.btm">
       <TypeName>ZDBM_TALO_O_VEHMASTToMasterUpdateNotifyService</TypeName>
       <Namespace>Toyota.Tsusho.TALO.Transformations</Namespace>
       <SubType>Task</SubType>

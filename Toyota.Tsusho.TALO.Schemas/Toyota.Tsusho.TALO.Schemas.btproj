@@ -83,31 +83,31 @@
       <TypeName>OrderService_www_ttaf_co_za_talo_api_2014_05_order</TypeName>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="MasterUpdateNotifyService_schemas_microsoft_com_2003_10_Serialization.xsd">
+    <Schema Include="MasterNotifyService_schemas_microsoft_com_2003_10_Serialization.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>MasterUpdateNotifyService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <TypeName>MasterNotifyService_schemas_microsoft_com_2003_10_Serialization</TypeName>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="MasterUpdateNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd">
+    <Schema Include="MasterNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>MasterUpdateNotifyService_www_ttaf_co_za_talo_api_2014_05</TypeName>
+      <TypeName>MasterNotifyService_www_ttaf_co_za_talo_api_2014_05</TypeName>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="MasterUpdateNotifyService_www_ttaf_co_za_talo_api_2014_05_master.xsd">
+    <Schema Include="MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>MasterUpdateNotifyService_www_ttaf_co_za_talo_api_2014_05_master</TypeName>
+      <TypeName>MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master</TypeName>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="MasterUpdateNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle.xsd">
+    <Schema Include="MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>MasterUpdateNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle</TypeName>
+      <TypeName>MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <None Include="Toyota.Tsusho.snk" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MasterUpdateNotifyService.BindingInfo.xml" />
-    <Content Include="MasterUpdateNotifyService_Custom.BindingInfo.xml" />
+    <Content Include="MasterNotifyService.BindingInfo.xml" />
+    <Content Include="MasterNotifyService_Custom.BindingInfo.xml" />
     <Content Include="OrderService.BindingInfo.xml" />
     <Content Include="OrderService_Custom.BindingInfo.xml" />
   </ItemGroup>

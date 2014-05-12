@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xs:schema elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation=".\MasterUpdateNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" />
+  <xs:import schemaLocation=".\MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" />
   <xs:element name="MasterUpdateNotifyRequestMessage">
     <xs:complexType>
       <xs:sequence>
@@ -10,4 +10,11 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:simpleType name="ModificationEnumeration">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Create" />
+      <xs:enumeration value="Update" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ModificationEnumeration" nillable="true" xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" type="q1:ModificationEnumeration" />
 </xs:schema>
