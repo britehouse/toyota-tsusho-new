@@ -37,21 +37,21 @@
   </xs:complexType>
   <xs:element name="ModelDataContract" nillable="true" type="tns:ModelDataContract" />
   <xs:element name="Models" nillable="true" type="tns:ModelCollectionDataContract" />
-  <xs:complexType name="SFXCollectionDataContract">
+  <xs:complexType name="SuffixCollectionDataContract">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="SFX" nillable="true" type="tns:SFXDataContract" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Suffix" nillable="true" type="tns:SuffixDataContract" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="SFXCollectionDataContract" nillable="true" type="tns:SFXCollectionDataContract" />
-  <xs:complexType name="SFXDataContract">
+  <xs:element name="SuffixCollectionDataContract" nillable="true" type="tns:SuffixCollectionDataContract" />
+  <xs:complexType name="SuffixDataContract">
     <xs:sequence>
       <xs:element name="Code" nillable="true" type="xs:string" />
-      <xs:element name="SFX" nillable="true" type="xs:string" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
       <xs:element xmlns:q5="http://www.ttaf.co.za/talo/api/2014/05/master" name="Modification" type="q5:ModificationEnumeration" />
       <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="SFXDataContract" nillable="true" type="tns:SFXDataContract" />
-  <xs:element name="SFXs" nillable="true" type="tns:SFXCollectionDataContract" />
+  <xs:element name="SuffixDataContract" nillable="true" type="tns:SuffixDataContract" />
+  <xs:element name="Suffixes" nillable="true" type="tns:SuffixCollectionDataContract" />
 </xs:schema>

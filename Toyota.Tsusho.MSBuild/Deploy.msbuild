@@ -1,0 +1,125 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Deploy" InitialTargets="Deploy">
+
+  <PropertyGroup>
+    <ExtensionPath>C:\Program Files (x86)\MSBuild\ExtensionPack\4.0\</ExtensionPath>
+    <ExtensionPack>$(ExtensionPath)MSBuild.ExtensionPack.tasks</ExtensionPack>
+    <DETSMSBuildTasks>Toyota.Tsusho.MSBuild.targets</DETSMSBuildTasks>
+  </PropertyGroup>
+
+  <Import Project="$(ExtensionPack)" />
+  <Import Project="$(DETSMSBuildTasks)" />
+
+  <UsingTask TaskFactory="PowershellTaskFactory" TaskName="InstallPackage" AssemblyFile="$(ExtensionPath)MSBuild.ExtensionPack.TaskFactory.PowerShell.dll">
+    <ParameterGroup>
+      <Package Required="true" ParameterType="System.String" />
+    </ParameterGroup>
+    <Task>
+      <![CDATA[Start-Process -FilePath msiexec -ArgumentList /i, $package, /qn -Wait]]>
+    </Task>
+  </UsingTask>
+
+  <Target Name="Deploy">
+     
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="CheckExists" 
+      Application="$(Application)"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)">
+       <Output
+          TaskParameter="Exists"
+          PropertyName="ApplicationExists"/>
+    </MSBuild.ExtensionPack.BizTalk.BizTalkApplication>
+
+    <Toyota.Tsusho.MSBuild.BizTalk.BizTalkApplication
+      TaskAction="GetReferencings" 
+      Condition="$(ApplicationExists)" Application="$(Application)"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)">
+      <Output
+          TaskParameter="Output"
+          ItemName="ReferencingApplication"/>
+      <Output
+          TaskParameter="OutputCount"
+          PropertyName="ReferencingCount"/>
+    </Toyota.Tsusho.MSBuild.BizTalk.BizTalkApplication>
+        
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="ExportToMsi" 
+      Condition="$(ApplicationExists) and $(ReferencingCount) > 0" 
+      Application="%(ReferencingApplication.Identity)" 
+      MsiPath="$(OutputPath)\Backup\%(ReferencingApplication.Identity).msi"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication
+      TaskAction="ExportToMsi"
+      Condition="$(ApplicationExists)"
+      Application="$(Application)"
+      MsiPath="$(OutputPath)\Backup\$(Application).msi"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+
+    
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="StopAll" 
+      Condition="$(ApplicationExists) and $(ReferencingCount) > 0" 
+      Applications="%(ReferencingApplication.Identity)"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+    
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="StopAll" 
+      Condition="$(ApplicationExists)" Applications="$(Application)"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+
+    
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="Delete" 
+      Condition="$(ApplicationExists) and $(ReferencingCount) > 0" 
+      Applications="%(ReferencingApplication.Identity)"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+    
+    
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="ImportFromMsi" 
+      Application="$(Application)"
+      MsiPath="$(InputPath)\$(Application).msi" 
+      Overwrite="true"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+    
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="ImportFromMsi" 
+      Condition="$(ApplicationExists) and $(ReferencingCount) > 0" 
+      Application="%(ReferencingApplication.Identity)" 
+      MsiPath="$(OutputPath)\Backup\%(ReferencingApplication.Identity).msi" 
+      Overwrite="true"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+
+    <InstallPackage
+      Package='"$(InputPath)\$(Application).msi"'/>
+
+    <InstallPackage
+      Condition="$(ApplicationExists) and $(ReferencingCount) > 0"
+      Package='"$(OutputPath)\Backup\%(ReferencingApplication.Identity).msi"'/>
+  
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="StartAll" 
+      Condition="$(ApplicationExists)" 
+      Applications="$(Application)"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+    
+      <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="StartAll" 
+      Condition="$(ApplicationExists) and $(ReferencingCount) > 0" 
+      Applications="%(ReferencingApplication.Identity)"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+
+  </Target>
+
+</Project>

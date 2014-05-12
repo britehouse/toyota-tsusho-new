@@ -20,7 +20,7 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Master.Vehicle
         }
 
         [DataMember(Order = 1, IsRequired = true)]
-        public string SFX
+        public string Name
         {
             get;
             set;

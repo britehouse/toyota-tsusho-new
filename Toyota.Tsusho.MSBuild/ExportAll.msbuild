@@ -1,0 +1,35 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="ExportAll" InitialTargets="ExportAll">
+        
+  <PropertyGroup>
+    <ExtensionPack>C:\Program Files (x86)\MSBuild\ExtensionPack\4.0\MSBuild.ExtensionPack.tasks</ExtensionPack>
+    <DETSMSBuildTasks>Toyota.Tsusho.MSBuild.targets</DETSMSBuildTasks>
+  </PropertyGroup>
+
+  <Import Project="$(ExtensionPack)" />
+  <Import Project="$(DETSMSBuildTasks)" />
+
+  <Target Name="ExportAll">
+
+    <Toyota.Tsusho.MSBuild.BizTalk.BizTalkApplication
+      TaskAction="GetList"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)">
+      <Output
+         TaskParameter="Output"
+         ItemName="Application"/>
+      <Output
+         TaskParameter="OutputCount"
+         PropertyName="ApplicationCount"/>
+    </Toyota.Tsusho.MSBuild.BizTalk.BizTalkApplication>
+                 
+    <MSBuild.ExtensionPack.BizTalk.BizTalkApplication 
+      TaskAction="ExportToMsi" 
+      Condition="$(ApplicationCount) > 0 and %(Application.Identity) != 'BizTalk.System'" 
+      Application="%(Application.Identity)" 
+      MsiPath="$(OutputPath)\%(Application.Identity).msi"
+      DatabaseServer ="$(DatabaseServer)"
+      Database="$(Database)"/>
+            
+  </Target>
+
+</Project>
