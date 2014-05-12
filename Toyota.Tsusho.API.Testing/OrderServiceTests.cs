@@ -29,7 +29,7 @@ namespace Toyota.Tsusho.API.Testing
                 },
                 Vendor = "TTAFVEHUSD",
                 Delivery = new DateTime(2014, 04, 30),
-                Order = "3KN20120801"
+                Order = "3KN2012080"
             };
 
             OrderServiceReference.OrderServiceClient client = new OrderServiceReference.OrderServiceClient();

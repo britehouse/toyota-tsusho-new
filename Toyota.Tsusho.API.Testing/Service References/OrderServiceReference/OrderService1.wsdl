@@ -11,9 +11,11 @@
   <wsdl:message name="OrderConfirmationRequestMessage">
     <wsdl:part name="parameters" element="tns:OrderConfirmationRequestMessage" />
   </wsdl:message>
+  <wsdl:message name="IOrderService_Confirm_OutputMessage" />
   <wsdl:portType name="IOrderService">
     <wsdl:operation name="Confirm">
       <wsdl:input wsaw:Action="http://www.ttaf.co.za/talo/api/2014/05/IOrderService/Confirm" name="OrderConfirmationRequestMessage" message="tns:OrderConfirmationRequestMessage" />
+      <wsdl:output wsaw:Action="http://www.ttaf.co.za/talo/api/2014/05/IOrderService/ConfirmResponse" message="tns:IOrderService_Confirm_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:service name="OrderService">

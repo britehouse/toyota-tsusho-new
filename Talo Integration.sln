@@ -37,6 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.TALO.Transfor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{0B4B9578-F2B7-4958-9C10-A7B32EDCFE75}"
 	ProjectSection(SolutionItems) = preProject
+		OrderConfirmationRequestMessage.xml = OrderConfirmationRequestMessage.xml
 		ZDBM_TALO_O_VEHMAST.xml = ZDBM_TALO_O_VEHMAST.xml
 	EndProjectSection
 EndProject

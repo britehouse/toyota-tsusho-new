@@ -71,6 +71,9 @@
     <None Include="Service References\OrderServiceReference\OrderService1.wsdl" />
     <None Include="Service References\OrderServiceReference\OrderService1.xsd" />
     <None Include="Service References\OrderServiceReference\OrderService2.xsd" />
+    <None Include="Service References\OrderServiceReference\Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\OrderServiceReference\" />

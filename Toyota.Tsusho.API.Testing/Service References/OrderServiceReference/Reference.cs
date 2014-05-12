@@ -329,12 +329,12 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.ttaf.co.za/talo/api/2014/05", ConfigurationName="OrderServiceReference.IOrderService")]
     public interface IOrderService {
         
-        // CODEGEN: Generating message contract since the wrapper name (OrderConfirmationRequestMessage) of message OrderConfirmationRequestMessage does not match the default value (Confirm)
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://www.ttaf.co.za/talo/api/2014/05/IOrderService/Confirm")]
-        void Confirm(Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage request);
+        // CODEGEN: Generating message contract since the operation Confirm is neither RPC nor document wrapped.
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.ttaf.co.za/talo/api/2014/05/IOrderService/Confirm", ReplyAction="http://www.ttaf.co.za/talo/api/2014/05/IOrderService/ConfirmResponse")]
+        Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse Confirm(Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage request);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://www.ttaf.co.za/talo/api/2014/05/IOrderService/Confirm")]
-        System.Threading.Tasks.Task ConfirmAsync(Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://www.ttaf.co.za/talo/api/2014/05/IOrderService/Confirm", ReplyAction="http://www.ttaf.co.za/talo/api/2014/05/IOrderService/ConfirmResponse")]
+        System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse> ConfirmAsync(Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -351,6 +351,16 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
         
         public OrderConfirmationRequestMessage(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationDataContract Confirmation) {
             this.Confirmation = Confirmation;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConfirmResponse {
+        
+        public ConfirmResponse() {
         }
     }
     
@@ -382,22 +392,22 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        void Toyota.Tsusho.API.Testing.OrderServiceReference.IOrderService.Confirm(Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage request) {
-            base.Channel.Confirm(request);
+        Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse Toyota.Tsusho.API.Testing.OrderServiceReference.IOrderService.Confirm(Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage request) {
+            return base.Channel.Confirm(request);
         }
         
         public void Confirm(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationDataContract Confirmation) {
             Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage inValue = new Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage();
             inValue.Confirmation = Confirmation;
-            ((Toyota.Tsusho.API.Testing.OrderServiceReference.IOrderService)(this)).Confirm(inValue);
+            Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse retVal = ((Toyota.Tsusho.API.Testing.OrderServiceReference.IOrderService)(this)).Confirm(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task Toyota.Tsusho.API.Testing.OrderServiceReference.IOrderService.ConfirmAsync(Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage request) {
+        System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse> Toyota.Tsusho.API.Testing.OrderServiceReference.IOrderService.ConfirmAsync(Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage request) {
             return base.Channel.ConfirmAsync(request);
         }
         
-        public System.Threading.Tasks.Task ConfirmAsync(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationDataContract Confirmation) {
+        public System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse> ConfirmAsync(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationDataContract Confirmation) {
             Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage inValue = new Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage();
             inValue.Confirmation = Confirmation;
             return ((Toyota.Tsusho.API.Testing.OrderServiceReference.IOrderService)(this)).ConfirmAsync(inValue);
