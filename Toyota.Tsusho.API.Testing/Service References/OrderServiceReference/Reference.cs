@@ -277,7 +277,7 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
         
         private string GroupField;
         
-        private string OrganizationField;
+        private int OrganizationField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -303,12 +303,12 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public string Organization {
+        public int Organization {
             get {
                 return this.OrganizationField;
             }
             set {
-                if ((object.ReferenceEquals(this.OrganizationField, value) != true)) {
+                if ((this.OrganizationField.Equals(value) != true)) {
                     this.OrganizationField = value;
                     this.RaisePropertyChanged("Organization");
                 }

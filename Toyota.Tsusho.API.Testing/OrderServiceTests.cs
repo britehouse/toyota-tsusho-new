@@ -25,7 +25,7 @@ namespace Toyota.Tsusho.API.Testing
                 Purchaser = new OrderServiceReference.PurchaserDataContract()
                 {
                     Group = "TU",
-                    Organization = "1100"
+                    Organization = 1100
                 },
                 Vendor = "TTAFVEHUSD",
                 Delivery = new DateTime(2014, 04, 30),

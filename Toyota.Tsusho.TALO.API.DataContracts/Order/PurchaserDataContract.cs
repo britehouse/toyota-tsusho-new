@@ -20,7 +20,7 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Order
         }
 
         [DataMember(Order = 1, IsRequired = true)]
-        public string Organization
+        public int Organization
         {
             get;
             set;
