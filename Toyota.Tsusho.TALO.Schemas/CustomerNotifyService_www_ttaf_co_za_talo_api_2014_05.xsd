@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\CustomerNotifyService_www_ttaf_co_za_talo_api_2014_05_customer.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05/customer" />
+  <xs:element name="CustomerCreateNotifyRequestMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/customer" minOccurs="0" ref="q1:Customer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="ModificationEnumeration">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Create" />
+      <xs:enumeration value="Update" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ModificationEnumeration" nillable="true" xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" type="q1:ModificationEnumeration" />
+</xs:schema>

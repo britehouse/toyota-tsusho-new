@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="VehicleNotifyService.cs" />
+    <Compile Include="CustomerNotifyService.cs" />
     <Compile Include="OrderNotifyService.cs" />
     <Compile Include="OrderService.cs" />
     <Compile Include="MasterNotifyService.cs" />

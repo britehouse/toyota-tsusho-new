@@ -75,6 +75,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="VehicleNotifyService.svc" />
+    <Content Include="CustomerNotifyService.svc" />
     <Content Include="OrderNotifyService.svc" />
     <Content Include="OrderService.svc" />
     <Content Include="MasterNotifyService.svc" />
