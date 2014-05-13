@@ -9,9 +9,9 @@ namespace Toyota.Tsusho.TALO.API.ServiceImplementation
         ConcurrencyMode = ConcurrencyMode.Single)]
     public abstract class VehicleNotifyServiceBase : Toyota.Tsusho.TALO.API.ServiceContracts.IVehicleNotifyService
     {
-        public void AllocateNotify(MessageContracts.VehicleAllocateNotifyRequestMessage request)
+        public void StockAgeNotify(MessageContracts.VehicleStockAgeNotifyRequestMessage request)
         {
-            //TODO: Implement logic here to update TALO vehicle allocation information.
+            //TODO: Implement Logic to update TALO stock age.
         }
     }
 

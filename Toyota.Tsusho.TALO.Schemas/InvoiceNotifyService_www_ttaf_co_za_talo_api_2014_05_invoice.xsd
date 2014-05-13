@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/invoice" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/invoice" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\InvoiceNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
+  <xs:complexType name="InvoiceDataContract">
+    <xs:sequence>
+      <xs:element name="Number" nillable="true" type="xs:string" />
+      <xs:element name="VehicleNumber" nillable="true" type="xs:string" />
+      <xs:element name="Date" type="xs:dateTime" />
+      <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q1:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceDataContract" nillable="true" type="tns:InvoiceDataContract" />
+  <xs:element name="Invoice" nillable="true" type="tns:InvoiceDataContract" />
+</xs:schema>

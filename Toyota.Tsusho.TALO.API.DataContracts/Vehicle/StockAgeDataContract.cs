@@ -7,10 +7,10 @@ using System.Text;
 namespace Toyota.Tsusho.TALO.API.DataContracts.Vehicle
 {
     /// <summary>
-    /// Describes a Vehicle Allocation.
+    /// Describes an Invoice.
     /// </summary>
     [DataContract(Namespace = "http://www.ttaf.co.za/talo/api/2014/05/vehicle")]
-    public class AllocationDataContract
+    public class StockAgeDataContract
     {
         [DataMember(Order = 0, IsRequired = true)]
         public string VehicleNumber
@@ -20,41 +20,20 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Vehicle
         }
 
         [DataMember(Order = 1, IsRequired = true)]
-        public string Customer
-        {
-            get;
-            set;
-        }
-
-        [DataMember(Order = 3, IsRequired = true)]
         public DateTime Date
         {
             get;
             set;
         }
 
-        [DataMember(Order = 4, IsRequired = true)]
-        public string SalesOrganisation
-        {
-            get;
-            set;
-        }
-
-        [DataMember(Order = 5, IsRequired = true)]
-        public string DistributionChannel
-        {
-            get;
-            set;
-        }
-
-        [DataMember(Order = 6, IsRequired = true)]
+        [DataMember(Order = 2, IsRequired = true)]
         public ModificationEnumeration Modification
         {
             get;
             set;
         }
 
-        [DataMember(Order = 7, IsRequired = true)]
+        [DataMember(Order = 3, IsRequired = true)]
         public DateTime Modified
         {
             get;

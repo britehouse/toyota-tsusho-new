@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <xs:schema elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation=".\VehicleNotifyService_www_ttaf_co_za_talo_api_2014_05_vehicle.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05/vehicle" />
-  <xs:element name="VehicleAllocateNotifyRequestMessage">
+  <xs:element name="VehicleStockAgeNotifyRequestMessage">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/vehicle" minOccurs="0" ref="q1:Allocation" />
+        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/vehicle" minOccurs="0" ref="q1:StockAge" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

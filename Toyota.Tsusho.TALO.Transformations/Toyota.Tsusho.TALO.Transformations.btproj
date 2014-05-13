@@ -101,6 +101,20 @@
       <SubType>Task</SubType>
     </Map>
   </ItemGroup>
+  <ItemGroup>
+    <Map Include="ZDBM_TALO_O_INVOICEToInvoiceCreateNotifyRequestMessage.btm">
+      <TypeName>ZDBM_TALO_O_INVOICEToInvoiceCreateNotifyRequestMessage</TypeName>
+      <Namespace>Toyota.Tsusho.TALO.Transformations</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="ZDBM_TALO_O_STOCKAGEToVehicleStockAgeNotifyRequestMessage.btm">
+      <TypeName>ZDBM_TALO_O_STOCKAGEToVehicleStockAgeNotifyRequestMessage</TypeName>
+      <Namespace>Toyota.Tsusho.TALO.Transformations</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
 </Project>

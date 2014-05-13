@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="VehicleNotifyService.cs" />
+    <Compile Include="InvoiceNotifyService.cs" />
+    <Compile Include="VehicleService.cs" />
     <Compile Include="CustomerNotifyService.cs" />
     <Compile Include="OrderNotifyService.cs" />
     <Compile Include="OrderService.cs" />

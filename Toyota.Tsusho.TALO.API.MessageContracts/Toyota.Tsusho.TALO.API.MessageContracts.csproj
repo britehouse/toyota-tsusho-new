@@ -47,7 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="VehicleAllocateNotifyRequestMessage.cs" />
+    <Compile Include="VehicleStockAgeNotifyRequestMessage.cs" />
+    <Compile Include="InvoiceCreateNotifyRequestMessage.cs" />
+    <Compile Include="VehicleAllocateRequestMessage.cs" />
     <Compile Include="CustomerCreateNotifyRequestMessage.cs" />
     <Compile Include="OrderCreateNotifyRequestMessage.cs" />
     <Compile Include="OrderConfirmationRequestMessage.cs" />
