@@ -12,7 +12,15 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="Create" />
       <xs:enumeration value="Update" />
+      <xs:enumeration value="Delete" />
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="ModificationEnumeration" nillable="true" xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" type="q1:ModificationEnumeration" />
+  <xs:element name="VehicleRegisterRequestMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/vehicle" minOccurs="0" ref="q2:Registration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

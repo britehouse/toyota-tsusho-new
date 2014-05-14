@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ns3="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" elementFormDefault="qualified" targetNamespace="http://Microsoft.LobServices.Sap/2007/03/Rfc/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\Types9.xsd" namespace="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />
+  <xs:annotation>
+    <xs:appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">Rfc</fileNameHint>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ZDBM_TALO_I_SHIPPING">
+    <xs:annotation>
+      <xs:documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_SHIPPING</doc:action>
+        <doc:description xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">The Metadata for this RFC was generated using the RFC SDK.</doc:description>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="IT_SHPINF" nillable="true" type="ns3:ArrayOfZDBM_TALO_SHPINF">
+          <xs:annotation>
+            <xs:documentation>TALO table for Shipping Information (GORE &amp; INIV)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="IT_SHPQUA" nillable="true" type="ns3:ArrayOfZDBM_TALO_SHPQUA">
+          <xs:annotation>
+            <xs:documentation>TALO table for Shipping Information for Qualifiers</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZDBM_TALO_I_SHIPPINGResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_SHIPPING/response</doc:action>
+        <doc:description xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">The Metadata for this RFC was generated using the RFC SDK.</doc:description>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="IT_SHPINF" nillable="true" type="ns3:ArrayOfZDBM_TALO_SHPINF">
+          <xs:annotation>
+            <xs:documentation>TALO table for Shipping Information (GORE &amp; INIV)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="IT_SHPQUA" nillable="true" type="ns3:ArrayOfZDBM_TALO_SHPQUA">
+          <xs:annotation>
+            <xs:documentation>TALO table for Shipping Information for Qualifiers</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
