@@ -14,6 +14,8 @@ namespace Toyota.Tsusho.TALO.API.DataContracts
         [EnumMember]
         Create,
         [EnumMember]
-        Update
+        Update,
+        [EnumMember]
+        Delete
     }
 }

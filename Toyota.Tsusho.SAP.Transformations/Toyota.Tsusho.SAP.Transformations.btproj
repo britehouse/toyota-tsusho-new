@@ -87,6 +87,13 @@
   <ItemGroup>
     <None Include="Toyota.Tsusho.snk" />
   </ItemGroup>
+  <ItemGroup>
+    <Map Include="VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC.btm">
+      <TypeName>VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Transformations</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
 </Project>
