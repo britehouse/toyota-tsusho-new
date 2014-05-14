@@ -66,6 +66,10 @@
     <Compile Include="Order\PurchaserDataContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vehicle\AllocationDataContract.cs" />
+    <Compile Include="ShippingInformation\VehicleReferenceCollectionDataContract.cs" />
+    <Compile Include="ShippingInformation\VehicleReferenceDataContract.cs" />
+    <Compile Include="ShippingInformation\InvoiceReferenceDataContract.cs" />
+    <Compile Include="ShippingInformation\ShippingInformationDataContract.cs" />
     <Compile Include="Vehicle\RegistrationDataContract.cs" />
     <Compile Include="Vehicle\StockAgeDataContract.cs" />
   </ItemGroup>
