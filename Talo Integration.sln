@@ -39,6 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{0B4B
 	ProjectSection(SolutionItems) = preProject
 		OrderConfirmationRequestMessage.xml = OrderConfirmationRequestMessage.xml
 		VehicleAllocationRequestMessage.xml = VehicleAllocationRequestMessage.xml
+		VehicleRegisterRequestMessage.xml = VehicleRegisterRequestMessage.xml
 		ZDBM_TALO_O_VEHMAST.xml = ZDBM_TALO_O_VEHMAST.xml
 	EndProjectSection
 EndProject

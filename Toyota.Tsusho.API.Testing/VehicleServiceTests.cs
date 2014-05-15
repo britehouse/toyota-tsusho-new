@@ -29,5 +29,22 @@ namespace Toyota.Tsusho.API.Testing
 
             client.Allocate(request);
         }
+
+        [TestMethod]
+        public void VehicleServiceRegister()
+        {
+            VehicleServiceReference.RegistrationDataContract request = new VehicleServiceReference.RegistrationDataContract()
+            {
+                Date = new DateTime(2014, 3, 28),
+                Number = "ATG098",
+                Type = "01",
+                VehicleNumber = "0000030625"
+            };
+
+            VehicleServiceReference.VehicleServiceClient client = new VehicleServiceReference.VehicleServiceClient();
+
+            client.Register(request);
+        }
+
     }
 }

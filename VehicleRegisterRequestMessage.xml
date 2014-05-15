@@ -1,0 +1,8 @@
+﻿<VehicleRegisterRequestMessage xmlns="http://www.ttaf.co.za/talo/api/2014/05">
+  <Registration xmlns="http://www.ttaf.co.za/talo/api/2014/05/vehicle" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <VehicleNumber>0000030625</VehicleNumber>
+    <Type>01</Type>
+    <Date>2014-03-28T00:00:00</Date>
+    <Number>ATG098</Number>
+  </Registration>
+</VehicleRegisterRequestMessage>
