@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://toyotabtsdev/Toyota.Tsusho.TALO.API/ShippingInformationService.svc?xsd=xsd0" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
+  <xs:complexType name="ShippingInformationDataContract">
+    <xs:sequence>
+      <xs:element name="VehicleNumber" nillable="true" type="xs:string" />
+      <xs:element name="Store" nillable="true" type="xs:string" />
+      <xs:element name="Documented" type="xs:dateTime" />
+      <xs:element name="Posted" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DeliveryNote" nillable="true" type="xs:string" />
+      <xs:element name="BillofLading" nillable="true" type="xs:string" />
+      <xs:element name="Invoice" nillable="true" type="tns:InvoiceReferenceDataContract" />
+      <xs:element name="Vehicles" nillable="true" type="tns:VehicleReferenceCollectionDataContract" />
+      <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q1:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShippingInformationDataContract" nillable="true" type="tns:ShippingInformationDataContract" />
+  <xs:complexType name="InvoiceReferenceDataContract">
+    <xs:sequence>
+      <xs:element name="Number" nillable="true" type="xs:string" />
+      <xs:element name="Date" type="xs:dateTime" />
+      <xs:element name="Amount" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceReferenceDataContract" nillable="true" type="tns:InvoiceReferenceDataContract" />
+  <xs:complexType name="VehicleReferenceCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Vehicle" nillable="true" type="tns:VehicleReferenceDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleReferenceCollectionDataContract" nillable="true" type="tns:VehicleReferenceCollectionDataContract" />
+  <xs:complexType name="VehicleReferenceDataContract">
+    <xs:sequence>
+      <xs:element name="Number" nillable="true" type="xs:string" />
+      <xs:element name="VIN" nillable="true" type="xs:string" />
+      <xs:element name="Engine" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleReferenceDataContract" nillable="true" type="tns:VehicleReferenceDataContract" />
+  <xs:element name="ShippingInformation" nillable="true" type="tns:ShippingInformationDataContract" />
+</xs:schema>

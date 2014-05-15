@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b2f76472-5ed3-4094-8b50-0808d35404ca" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Toyota.Tsusho.TALO.API/ShippingInformationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ShippingInformationService.wsdl" MetadataType="Wsdl" ID="70b71aee-e1ef-426d-adf3-b265c747336a" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/ShippingInformationService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ShippingInformationService.xsd" MetadataType="Schema" ID="e8ee677a-3ab6-4bb1-a30b-a8f8db301157" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/ShippingInformationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ShippingInformationService1.xsd" MetadataType="Schema" ID="7acfec70-4391-41ea-86a7-52c8f6dcc7f2" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/ShippingInformationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ShippingInformationService1.wsdl" MetadataType="Wsdl" ID="a95d39d0-ea5a-4440-81eb-71d731b1f17b" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/ShippingInformationService.svc?wsdl" />
+    <MetadataFile FileName="ShippingInformationService.disco" MetadataType="Disco" ID="86b876fe-aa8a-4997-a263-2a506e883d2f" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/ShippingInformationService.svc?disco" />
+    <MetadataFile FileName="ShippingInformationService2.xsd" MetadataType="Schema" ID="6c7fcded-5399-4d56-80df-6016e51a3432" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/ShippingInformationService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

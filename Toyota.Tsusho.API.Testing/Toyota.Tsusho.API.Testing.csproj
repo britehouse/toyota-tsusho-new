@@ -53,6 +53,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Service References\ShippingInformationServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingInformationServiceTests.cs" />
     <Compile Include="OrderServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\OrderServiceReference\Reference.cs">
@@ -80,6 +86,14 @@
     <None Include="Service References\OrderServiceReference\Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ShippingInformationServiceReference\ShippingInformationService.wsdl" />
+    <None Include="Service References\ShippingInformationServiceReference\ShippingInformationService.xsd" />
+    <None Include="Service References\ShippingInformationServiceReference\ShippingInformationService1.wsdl" />
+    <None Include="Service References\ShippingInformationServiceReference\ShippingInformationService1.xsd" />
+    <None Include="Service References\ShippingInformationServiceReference\ShippingInformationService2.xsd" />
+    <None Include="Service References\ShippingInformationServiceReference\Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.UpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\VehicleServiceReference\Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocateResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -94,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\OrderServiceReference\" />
+    <WCFMetadataStorage Include="Service References\ShippingInformationServiceReference\" />
     <WCFMetadataStorage Include="Service References\VehicleServiceReference\" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +137,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\VehicleServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingInformationServiceReference\ShippingInformationService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingInformationServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingInformationServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingInformationServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
