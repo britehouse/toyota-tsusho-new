@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5047cf97-fd5e-4171-b034-ebe7008da42e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Toyota.Tsusho.TALO.API/VehicleService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VehicleService.wsdl" MetadataType="Wsdl" ID="1e4dba85-4ad5-4e2d-b164-e4ff0bed655f" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/VehicleService.svc?wsdl" />
+    <MetadataFile FileName="VehicleService.xsd" MetadataType="Schema" ID="621128e4-ad22-43ee-8421-c870510304f0" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/VehicleService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VehicleService1.xsd" MetadataType="Schema" ID="e75b75c4-c0bb-4a18-9a47-dd773726736d" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/VehicleService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VehicleService2.xsd" MetadataType="Schema" ID="30158a03-f03e-4bd3-a23e-7b081a0441a5" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/VehicleService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VehicleService.disco" MetadataType="Disco" ID="db38cd47-d5e7-4bf0-b968-2d3a262df0fc" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/VehicleService.svc?disco" />
+    <MetadataFile FileName="VehicleService1.wsdl" MetadataType="Wsdl" ID="fa7e65b5-82f9-4378-9a9c-31c45f46c8ae" SourceId="1" SourceUrl="http://toyotabtsdev/Toyota.Tsusho.TALO.API/VehicleService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

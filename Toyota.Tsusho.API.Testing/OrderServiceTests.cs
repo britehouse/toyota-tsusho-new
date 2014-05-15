@@ -7,7 +7,7 @@ namespace Toyota.Tsusho.API.Testing
     public class OrderServiceTests
     {
         [TestMethod]
-        public void OrderServiceConfirmOrder()
+        public void OrderServiceConfirm()
         {
             OrderServiceReference.ConfirmationDataContract request = new OrderServiceReference.ConfirmationDataContract()
             {

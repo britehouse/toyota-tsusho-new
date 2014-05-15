@@ -60,6 +60,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\VehicleServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -74,9 +80,21 @@
     <None Include="Service References\OrderServiceReference\Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\VehicleServiceReference\Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VehicleServiceReference\Toyota.Tsusho.API.Testing.VehicleServiceReference.RegisterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VehicleServiceReference\VehicleService.wsdl" />
+    <None Include="Service References\VehicleServiceReference\VehicleService.xsd" />
+    <None Include="Service References\VehicleServiceReference\VehicleService1.wsdl" />
+    <None Include="Service References\VehicleServiceReference\VehicleService1.xsd" />
+    <None Include="Service References\VehicleServiceReference\VehicleService2.xsd" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\OrderServiceReference\" />
+    <WCFMetadataStorage Include="Service References\VehicleServiceReference\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\OrderServiceReference\OrderService.disco" />
@@ -89,6 +107,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\OrderServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\VehicleServiceReference\VehicleService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\VehicleServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\VehicleServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\VehicleServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

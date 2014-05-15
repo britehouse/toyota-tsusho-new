@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/vehicle" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/vehicle" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://toyotabtsdev/Toyota.Tsusho.TALO.API/VehicleService.svc?xsd=xsd0" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
+  <xs:complexType name="AllocationDataContract">
+    <xs:sequence>
+      <xs:element name="VehicleNumber" nillable="true" type="xs:string" />
+      <xs:element name="Customer" nillable="true" type="xs:string" />
+      <xs:element name="Date" type="xs:dateTime" />
+      <xs:element name="SalesOrganisation" nillable="true" type="xs:string" />
+      <xs:element name="DistributionChannel" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q1:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AllocationDataContract" nillable="true" type="tns:AllocationDataContract" />
+  <xs:element name="Allocation" nillable="true" type="tns:AllocationDataContract" />
+  <xs:complexType name="RegistrationDataContract">
+    <xs:sequence>
+      <xs:element name="VehicleNumber" nillable="true" type="xs:string" />
+      <xs:element name="Type" nillable="true" type="xs:string" />
+      <xs:element name="Date" type="xs:dateTime" />
+      <xs:element name="Number" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegistrationDataContract" nillable="true" type="tns:RegistrationDataContract" />
+  <xs:element name="Registration" nillable="true" type="tns:RegistrationDataContract" />
+</xs:schema>
