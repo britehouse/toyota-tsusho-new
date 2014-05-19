@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Adapter.Wcf.Consuming, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0">
-  <Timestamp>2014-05-14T15:15:21.9371815+02:00</Timestamp>
+  <Timestamp>2014-05-16T07:49:29.3007973+02:00</Timestamp>
   <SendPortCollection>
     <SendPort Name="WcfSendPort_ShippingInformationService_ShippingInformationService.wsHttp" IsStatic="true" IsTwoWay="true" BindingOption="0">
       <Description>service "ShippingInformationService" port "ShippingInformationService.wsHttp"</Description>

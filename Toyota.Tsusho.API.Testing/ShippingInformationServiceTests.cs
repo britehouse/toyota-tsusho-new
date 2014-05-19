@@ -36,13 +36,18 @@ namespace Toyota.Tsusho.API.Testing
                     {
                         Number = "0000030625",
                         VIN = "AHT35G9087J654321",
-                        Engine = "2AR E706730"
+                        Engine = "2AR E706730",
+                        Modification = ShippingInformationServiceReference.ModificationEnumeration.Create,
+                        Modified = DateTime.Now
+
                     },
                     new ShippingInformationServiceReference.VehicleReferenceDataContract()
                     {
                         Number = "0000030626",
                         VIN = "AHT35G9087J654321",
-                        Engine = "2AR E706731"
+                        Engine = "2AR E706731",
+                        Modification = ShippingInformationServiceReference.ModificationEnumeration.Create,
+                        Modified = DateTime.Now
                     }
                 },
                 Modification = ShippingInformationServiceReference.ModificationEnumeration.Create,

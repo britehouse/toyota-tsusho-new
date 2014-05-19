@@ -303,6 +303,10 @@ namespace Toyota.Tsusho.API.Testing.ShippingInformationServiceReference {
         
         private string EngineField;
         
+        private Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ModificationEnumeration ModificationField;
+        
+        private System.DateTime ModifiedField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -348,6 +352,32 @@ namespace Toyota.Tsusho.API.Testing.ShippingInformationServiceReference {
                 if ((object.ReferenceEquals(this.EngineField, value) != true)) {
                     this.EngineField = value;
                     this.RaisePropertyChanged("Engine");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ModificationEnumeration Modification {
+            get {
+                return this.ModificationField;
+            }
+            set {
+                if ((this.ModificationField.Equals(value) != true)) {
+                    this.ModificationField = value;
+                    this.RaisePropertyChanged("Modification");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public System.DateTime Modified {
+            get {
+                return this.ModifiedField;
+            }
+            set {
+                if ((this.ModifiedField.Equals(value) != true)) {
+                    this.ModifiedField = value;
+                    this.RaisePropertyChanged("Modified");
                 }
             }
         }

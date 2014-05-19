@@ -68,6 +68,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="Types11.xsd">
+      <TypeName>Types11</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="Types10.xsd">
       <TypeName>Types10</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
@@ -158,13 +163,13 @@
       <SubType>Task</SubType>
       <TypeName>STOCKAGE</TypeName>
     </Schema>
-    <Schema Include="SHIPPING.xsd">
-      <TypeName>SHIPPING</TypeName>
+    <Schema Include="VEHICLESTATUS.xsd">
+      <TypeName>VEHICLESTATUS</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="VEHICLESTATUS.xsd">
-      <TypeName>VEHICLESTATUS</TypeName>
+    <Schema Include="SHIPPING.xsd">
+      <TypeName>SHIPPING</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -190,6 +195,7 @@
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo6.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo7.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo8.xml" />
+    <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo9.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
