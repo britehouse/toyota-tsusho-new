@@ -1,0 +1,33 @@
+﻿<ShippingInformationUpdateRequestMessage xmlns="http://www.ttaf.co.za/talo/api/2014/05">
+  <ShippingInformation xmlns="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <VehicleNumber>0000030625</VehicleNumber>
+    <Store>0099</Store>
+    <Documented>2014-03-28T00:00:00</Documented>
+    <Posted>2014-04-16T00:00:00</Posted>
+    <DeliveryNote />
+    <BillofLading>DR306012</BillofLading>
+    <Invoice>
+      <Number>90679695</Number>
+      <Date>2014-03-30T00:00:00</Date>
+      <Amount>560074</Amount>
+    </Invoice>
+    <Vehicles>
+      <Vehicle>
+        <Number>0000030625</Number>
+        <VIN>AHT35G9087J654321</VIN>
+        <Engine>2AR E706730</Engine>
+        <Modification>Create</Modification>
+        <Modified>2014-05-19T08:42:50.2167903+02:00</Modified>
+      </Vehicle>
+      <Vehicle>
+        <Number>0000030626</Number>
+        <VIN>AHT35G9087J654321</VIN>
+        <Engine>2AR E706731</Engine>
+        <Modification>Create</Modification>
+        <Modified>2014-05-19T08:42:50.2167903+02:00</Modified>
+      </Vehicle>
+    </Vehicles>
+    <Modification>Create</Modification>
+    <Modified>2014-05-19T08:42:50.2167903+02:00</Modified>
+  </ShippingInformation>
+</ShippingInformationUpdateRequestMessage>
