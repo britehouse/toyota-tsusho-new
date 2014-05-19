@@ -178,6 +178,10 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
         
         private string NumberField;
         
+        private Toyota.Tsusho.API.Testing.VehicleServiceReference.ModificationEnumeration ModificationField;
+        
+        private System.DateTime ModifiedField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -236,6 +240,32 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
                 if ((object.ReferenceEquals(this.NumberField, value) != true)) {
                     this.NumberField = value;
                     this.RaisePropertyChanged("Number");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public Toyota.Tsusho.API.Testing.VehicleServiceReference.ModificationEnumeration Modification {
+            get {
+                return this.ModificationField;
+            }
+            set {
+                if ((this.ModificationField.Equals(value) != true)) {
+                    this.ModificationField = value;
+                    this.RaisePropertyChanged("Modification");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
+        public System.DateTime Modified {
+            get {
+                return this.ModifiedField;
+            }
+            set {
+                if ((this.ModifiedField.Equals(value) != true)) {
+                    this.ModifiedField = value;
+                    this.RaisePropertyChanged("Modified");
                 }
             }
         }

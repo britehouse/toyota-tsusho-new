@@ -39,5 +39,19 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Vehicle
             get;
             set;
         }
+
+        [DataMember(Order = 5, IsRequired = true)]
+        public ModificationEnumeration Modification
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Order = 6, IsRequired = true)]
+        public DateTime Modified
+        {
+            get;
+            set;
+        }
     }
 }

@@ -38,7 +38,9 @@ namespace Toyota.Tsusho.API.Testing
                 Date = new DateTime(2014, 3, 28),
                 Number = "ATG098",
                 Type = "01",
-                VehicleNumber = "0000030625"
+                VehicleNumber = "0000030625",
+                Modification = VehicleServiceReference.ModificationEnumeration.Create,
+                Modified = DateTime.Now
             };
 
             VehicleServiceReference.VehicleServiceClient client = new VehicleServiceReference.VehicleServiceClient();

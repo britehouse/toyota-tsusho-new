@@ -68,6 +68,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="Types12.xsd">
+      <TypeName>Types12</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="Types11.xsd">
       <TypeName>Types11</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
@@ -163,13 +168,13 @@
       <SubType>Task</SubType>
       <TypeName>STOCKAGE</TypeName>
     </Schema>
-    <Schema Include="VEHICLESTATUS.xsd">
-      <TypeName>VEHICLESTATUS</TypeName>
+    <Schema Include="SHIPPING.xsd">
+      <TypeName>SHIPPING</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="SHIPPING.xsd">
-      <TypeName>SHIPPING</TypeName>
+    <Schema Include="VEHICLESTATUS.xsd">
+      <TypeName>VEHICLESTATUS</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -188,6 +193,7 @@
     <Content Include="WcfReceivePort_SAPBinding_Custom.bindinginfo4.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo1.xml" />
+    <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo10.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo2.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo3.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo4.xml" />

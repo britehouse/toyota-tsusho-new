@@ -20,6 +20,8 @@
       <xs:element name="Type" nillable="true" type="xs:string" />
       <xs:element name="Date" type="xs:dateTime" />
       <xs:element name="Number" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q2:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="RegistrationDataContract" nillable="true" type="tns:RegistrationDataContract" />
