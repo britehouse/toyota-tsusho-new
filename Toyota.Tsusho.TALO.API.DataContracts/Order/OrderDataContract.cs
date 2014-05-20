@@ -10,7 +10,7 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Order
     /// Describes an Order Creation.
     /// </summary>
     [DataContract(Namespace = "http://www.ttaf.co.za/talo/api/2014/05/order")]
-    public class CreateNotifyDataContract
+    public class OrderDataContract
     {
         [DataMember(Order = 0, IsRequired = true)]
         public string Number

@@ -68,21 +68,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Schema Include="VehicleService_schemas_microsoft_com_2003_10_Serialization.xsd">
-      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>VehicleService_schemas_microsoft_com_2003_10_Serialization</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="VehicleService_www_ttaf_co_za_talo_api_2014_05.xsd">
-      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>VehicleService_www_ttaf_co_za_talo_api_2014_05</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="VehicleService_www_ttaf_co_za_talo_api_2014_05_vehicle.xsd">
-      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>VehicleService_www_ttaf_co_za_talo_api_2014_05_vehicle</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="VehicleNotifyService_schemas_microsoft_com_2003_10_Serialization.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
       <TypeName>VehicleNotifyService_schemas_microsoft_com_2003_10_Serialization</TypeName>
@@ -98,19 +83,19 @@
       <TypeName>VehicleNotifyService_www_ttaf_co_za_talo_api_2014_05_vehicle</TypeName>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="OrderService_schemas_microsoft_com_2003_10_Serialization.xsd">
+    <Schema Include="VehicleService_schemas_microsoft_com_2003_10_Serialization.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>OrderService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <TypeName>VehicleService_schemas_microsoft_com_2003_10_Serialization</TypeName>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="OrderService_www_ttaf_co_za_talo_api_2014_05.xsd">
+    <Schema Include="VehicleService_www_ttaf_co_za_talo_api_2014_05.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>OrderService_www_ttaf_co_za_talo_api_2014_05</TypeName>
+      <TypeName>VehicleService_www_ttaf_co_za_talo_api_2014_05</TypeName>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="OrderService_www_ttaf_co_za_talo_api_2014_05_order.xsd">
+    <Schema Include="VehicleService_www_ttaf_co_za_talo_api_2014_05_vehicle.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>OrderService_www_ttaf_co_za_talo_api_2014_05_order</TypeName>
+      <TypeName>VehicleService_www_ttaf_co_za_talo_api_2014_05_vehicle</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="MasterNotifyService_schemas_microsoft_com_2003_10_Serialization.xsd">
@@ -131,21 +116,6 @@
     <Schema Include="MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
       <TypeName>MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="OrderNotifyService_schemas_microsoft_com_2003_10_Serialization.xsd">
-      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>OrderNotifyService_schemas_microsoft_com_2003_10_Serialization</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="OrderNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd">
-      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>OrderNotifyService_www_ttaf_co_za_talo_api_2014_05</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="OrderNotifyService_www_ttaf_co_za_talo_api_2014_05_order.xsd">
-      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
-      <TypeName>OrderNotifyService_www_ttaf_co_za_talo_api_2014_05_order</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="CustomerNotifyService_schemas_microsoft_com_2003_10_Serialization.xsd">
@@ -178,6 +148,36 @@
       <TypeName>InvoiceNotifyService_www_ttaf_co_za_talo_api_2014_05_invoice</TypeName>
       <SubType>Task</SubType>
     </Schema>
+    <Schema Include="OrderNotifyService_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
+      <TypeName>OrderNotifyService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd">
+      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
+      <TypeName>OrderNotifyService_www_ttaf_co_za_talo_api_2014_05</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderNotifyService_www_ttaf_co_za_talo_api_2014_05_order.xsd">
+      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
+      <TypeName>OrderNotifyService_www_ttaf_co_za_talo_api_2014_05_order</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
+      <TypeName>OrderService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_www_ttaf_co_za_talo_api_2014_05.xsd">
+      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
+      <TypeName>OrderService_www_ttaf_co_za_talo_api_2014_05</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_www_ttaf_co_za_talo_api_2014_05_order.xsd">
+      <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
+      <TypeName>OrderService_www_ttaf_co_za_talo_api_2014_05_order</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="ShippingInformationService_schemas_microsoft_com_2003_10_Serialization.xsd">
       <Namespace>Toyota.Tsusho.TALO.Schemas</Namespace>
       <TypeName>ShippingInformationService_schemas_microsoft_com_2003_10_Serialization</TypeName>
@@ -194,24 +194,6 @@
       <SubType>Task</SubType>
     </Schema>
     <None Include="Toyota.Tsusho.snk" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="CustomerNotifyService.BindingInfo.xml" />
-    <Content Include="CustomerNotifyService_Custom.BindingInfo.xml" />
-    <Content Include="InvoiceNotifyService.BindingInfo.xml" />
-    <Content Include="InvoiceNotifyService_Custom.BindingInfo.xml" />
-    <Content Include="MasterNotifyService.BindingInfo.xml" />
-    <Content Include="MasterNotifyService_Custom.BindingInfo.xml" />
-    <Content Include="OrderNotifyService.BindingInfo.xml" />
-    <Content Include="OrderNotifyService_Custom.BindingInfo.xml" />
-    <Content Include="OrderService.BindingInfo.xml" />
-    <Content Include="OrderService_Custom.BindingInfo.xml" />
-    <Content Include="ShippingInformationService.BindingInfo.xml" />
-    <Content Include="ShippingInformationService_Custom.BindingInfo.xml" />
-    <Content Include="VehicleNotifyService.BindingInfo.xml" />
-    <Content Include="VehicleNotifyService_Custom.BindingInfo.xml" />
-    <Content Include="VehicleService.BindingInfo.xml" />
-    <Content Include="VehicleService_Custom.BindingInfo.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

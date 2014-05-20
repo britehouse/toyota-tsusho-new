@@ -49,8 +49,10 @@
   <ItemGroup>
     <Compile Include="Customer\AddressDataContract.cs" />
     <Compile Include="Customer\EmailsDataContract.cs" />
+    <Compile Include="Customer\CustomerCollectionDataContract.cs" />
     <Compile Include="Customer\PhoneNumbersDataContract.cs" />
     <Compile Include="Customer\CustomerDataContract.cs" />
+    <Compile Include="Invoice\InvoiceCollectionDataContract.cs" />
     <Compile Include="Invoice\InvoiceDataContract.cs" />
     <Compile Include="Master\CodeNameDataContract.cs" />
     <Compile Include="Master\Vehicle\ColorCollectionDataContract.cs" />
@@ -62,15 +64,21 @@
     <Compile Include="ModificationEnumeration.cs" />
     <Compile Include="Order\ColorDataContract.cs" />
     <Compile Include="Order\ConfirmationDataContract.cs" />
-    <Compile Include="Order\CreateNotifyDataContract.cs" />
+    <Compile Include="Order\OrderDataContract.cs" />
+    <Compile Include="Order\ConfirmationCollectionDataContract.cs" />
+    <Compile Include="Order\OrderCollectionDataContract.cs" />
     <Compile Include="Order\PurchaserDataContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShippingInformation\ShippingInformationCollectionDataContract.cs" />
     <Compile Include="Vehicle\AllocationDataContract.cs" />
     <Compile Include="ShippingInformation\VehicleReferenceCollectionDataContract.cs" />
     <Compile Include="ShippingInformation\VehicleReferenceDataContract.cs" />
     <Compile Include="ShippingInformation\InvoiceReferenceDataContract.cs" />
     <Compile Include="ShippingInformation\ShippingInformationDataContract.cs" />
+    <Compile Include="Vehicle\StockAgeCollectionDataContract.cs" />
+    <Compile Include="Vehicle\RegistrationCollectionDataContract.cs" />
     <Compile Include="Vehicle\RegistrationDataContract.cs" />
+    <Compile Include="Vehicle\AllocationCollectionDataContract.cs" />
     <Compile Include="Vehicle\StockAgeDataContract.cs" />
   </ItemGroup>
   <ItemGroup>

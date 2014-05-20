@@ -7,7 +7,7 @@ namespace Toyota.Tsusho.TALO.API.MessageContracts
     public partial class VehicleAllocateRequestMessage
     {
         [MessageBodyMember(Namespace = "http://www.ttaf.co.za/talo/api/2014/05/vehicle", Order=0)]
-        public Toyota.Tsusho.TALO.API.DataContracts.Vehicle.AllocationDataContract Allocation
+        public Toyota.Tsusho.TALO.API.DataContracts.Vehicle.AllocationCollectionDataContract Allocations
         {
             get;
             set;

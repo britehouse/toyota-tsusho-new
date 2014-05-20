@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ns3="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" elementFormDefault="qualified" targetNamespace="http://Microsoft.LobServices.Sap/2007/03/Rfc/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation=".\Types5.xsd" namespace="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />
+  <xs:import schemaLocation=".\Types13.xsd" namespace="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">Rfc</fileNameHint>

@@ -4,7 +4,7 @@
   <xs:element name="ShippingInformationUpdateRequestMessage">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation" minOccurs="0" ref="q1:ShippingInformation" />
+        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation" minOccurs="0" ref="q1:Shippings" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

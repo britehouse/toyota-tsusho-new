@@ -1,7 +1,13 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/order" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/order" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation=".\OrderNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
-  <xs:complexType name="CreateNotifyDataContract">
+  <xs:complexType name="OrderCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="tns:OrderDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderCollectionDataContract" nillable="true" type="tns:OrderCollectionDataContract" />
+  <xs:complexType name="OrderDataContract">
     <xs:sequence>
       <xs:element name="Number" nillable="true" type="xs:string" />
       <xs:element name="Code" nillable="true" type="xs:string" />
@@ -13,7 +19,7 @@
       <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="CreateNotifyDataContract" nillable="true" type="tns:CreateNotifyDataContract" />
+  <xs:element name="OrderDataContract" nillable="true" type="tns:OrderDataContract" />
   <xs:complexType name="ColorDataContract">
     <xs:sequence>
       <xs:element name="Internal" nillable="true" type="xs:string" />
@@ -21,5 +27,5 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ColorDataContract" nillable="true" type="tns:ColorDataContract" />
-  <xs:element name="CreateNotify" nillable="true" type="tns:CreateNotifyDataContract" />
+  <xs:element name="Orders" nillable="true" type="tns:OrderCollectionDataContract" />
 </xs:schema>

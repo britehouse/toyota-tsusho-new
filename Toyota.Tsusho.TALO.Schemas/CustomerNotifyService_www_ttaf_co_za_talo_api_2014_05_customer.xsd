@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/customer" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/customer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation=".\CustomerNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
+  <xs:complexType name="CustomerCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Customer" nillable="true" type="tns:CustomerDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerCollectionDataContract" nillable="true" type="tns:CustomerCollectionDataContract" />
   <xs:complexType name="CustomerDataContract">
     <xs:sequence>
       <xs:element name="ID" nillable="true" type="xs:string" />
@@ -45,5 +51,5 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="EmailsDataContract" nillable="true" type="tns:EmailsDataContract" />
-  <xs:element name="Customer" nillable="true" type="tns:CustomerDataContract" />
+  <xs:element name="Customers" nillable="true" type="tns:CustomerCollectionDataContract" />
 </xs:schema>

@@ -4,7 +4,7 @@
   <xs:element name="CustomerCreateNotifyRequestMessage">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/customer" minOccurs="0" ref="q1:Customer" />
+        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/customer" minOccurs="0" ref="q1:Customers" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -12,6 +12,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="Create" />
       <xs:enumeration value="Update" />
+      <xs:enumeration value="Delete" />
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="ModificationEnumeration" nillable="true" xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" type="q1:ModificationEnumeration" />

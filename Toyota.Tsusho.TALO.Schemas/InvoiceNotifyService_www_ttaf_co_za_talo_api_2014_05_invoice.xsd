@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/invoice" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/invoice" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation=".\InvoiceNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
+  <xs:complexType name="InvoiceCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Invoice" nillable="true" type="tns:InvoiceDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceCollectionDataContract" nillable="true" type="tns:InvoiceCollectionDataContract" />
   <xs:complexType name="InvoiceDataContract">
     <xs:sequence>
       <xs:element name="Number" nillable="true" type="xs:string" />
@@ -11,5 +17,5 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="InvoiceDataContract" nillable="true" type="tns:InvoiceDataContract" />
-  <xs:element name="Invoice" nillable="true" type="tns:InvoiceDataContract" />
+  <xs:element name="Invoices" nillable="true" type="tns:InvoiceCollectionDataContract" />
 </xs:schema>
