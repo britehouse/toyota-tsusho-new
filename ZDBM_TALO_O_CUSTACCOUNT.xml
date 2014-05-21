@@ -1,0 +1,70 @@
+﻿<ZDBM_TALO_O_CUSTACCOUNT xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">
+  <IT_CUSACC>
+    <ZDBM_TALO_CUSACC xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <KUNNR>KENYACR1</KUNNR>
+      <KDGRP>16</KDGRP>
+      <ANRED>Company</ANRED>
+      <NAME1>Credit limit customer - TKEN</NAME1>
+      <NAME2></NAME2>
+      <NAME3></NAME3>
+      <PSTLZ></PSTLZ>
+      <ADDR1>  ship</ADDR1>
+      <ADDR2>0000 ship 0000</ADDR2>
+      <TELF1>0117796579</TELF1>
+      <TELF2>0000000000</TELF2>
+      <TELFX>0117796598</TELFX>
+      <SMTP_ADDR></SMTP_ADDR>
+      <SMTP_ADDR1></SMTP_ADDR1>
+      <COMPNAME></COMPNAME>
+      <OFFNUM></OFFNUM>
+      <STCEG></STCEG>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140521064926</LINK_DTE_TIME>
+    </ZDBM_TALO_CUSACC>
+    <ZDBM_TALO_CUSACC xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <KUNNR>ZCREDIT2</KUNNR>
+      <KDGRP>01</KDGRP>
+      <ANRED>Mr.</ANRED>
+      <NAME1>TEST CREDIT LIMIT CUSTOMER2</NAME1>
+      <NAME2>Talo test name 2</NAME2>
+      <NAME3></NAME3>
+      <PSTLZ>1111</PSTLZ>
+      <ADDR1>21 TALO test street Sandton 1111</ADDR1>
+      <ADDR2>1234 Sandton 4321</ADDR2>
+      <TELF1>0117796579</TELF1>
+      <TELF2>0839525430</TELF2>
+      <TELFX>0117796598</TELFX>
+      <SMTP_ADDR>talotest@gmail.com</SMTP_ADDR>
+      <SMTP_ADDR1></SMTP_ADDR1>
+      <COMPNAME></COMPNAME>
+      <OFFNUM></OFFNUM>
+      <STCEG>77777721</STCEG>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140521064926</LINK_DTE_TIME>
+    </ZDBM_TALO_CUSACC>
+    <ZDBM_TALO_CUSACC xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <KUNNR>ZCREDIT3</KUNNR>
+      <KDGRP>01</KDGRP>
+      <ANRED>Mr.</ANRED>
+      <NAME1>TEST CREDIT LIMIT CUSTOMER3</NAME1>
+      <NAME2></NAME2>
+      <NAME3></NAME3>
+      <PSTLZ>7777</PSTLZ>
+      <ADDR1> street Sandton 7777</ADDR1>
+      <ADDR2>0000 Sandton 0000</ADDR2>
+      <TELF1>0117796579</TELF1>
+      <TELF2>0000000000</TELF2>
+      <TELFX>0117796598</TELFX>
+      <SMTP_ADDR></SMTP_ADDR>
+      <SMTP_ADDR1></SMTP_ADDR1>
+      <COMPNAME></COMPNAME>
+      <OFFNUM></OFFNUM>
+      <STCEG></STCEG>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140521064926</LINK_DTE_TIME>
+    </ZDBM_TALO_CUSACC>
+  </IT_CUSACC>
+</ZDBM_TALO_O_CUSTACCOUNT>
