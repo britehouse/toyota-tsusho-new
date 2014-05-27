@@ -14,14 +14,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="MATNR" nillable="true">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:maxLength value="18" />
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="CHARG" nillable="true">
+      <xs:element minOccurs="0" maxOccurs="1" name="VHCLE" nillable="true">
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:maxLength value="10" />
@@ -84,13 +77,6 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="1" name="VBELN_BILL" nillable="true">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:maxLength value="10" />
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
       <xs:element minOccurs="0" maxOccurs="1" name="NETWR" nillable="true">
         <xs:simpleType>
           <xs:restriction base="xs:decimal">
@@ -142,7 +128,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="INT_VEH_NUM" nillable="true">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:maxLength value="20" />
+            <xs:maxLength value="10" />
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
