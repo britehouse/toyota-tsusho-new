@@ -1,21 +1,25 @@
 ﻿<OrderConfirmationRequestMessage xmlns="http://www.ttaf.co.za/talo/api/2014/05">
-  <Confirmation xmlns="http://www.ttaf.co.za/talo/api/2014/05/order" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    <Code>KUN15R-TRMDYN</Code>
-    <Plant>1110</Plant>
-    <Units>1</Units>
-    <Produced>2014-01-04T00:00:00</Produced>
-    <Suffix>DE</Suffix>
-    <Color>
-      <Internal>10I</Internal>
-      <External>040</External>
-    </Color>
-    <Category>TOYOTA</Category>
-    <Purchaser>
-      <Group>TU</Group>
-      <Organization>1100</Organization>
-    </Purchaser>
-    <Vendor>TTAFVEHUSD</Vendor>
-    <Delivery>2014-04-30T00:00:00</Delivery>
-    <Order>3KN2012080</Order>
-  </Confirmation>
+  <Confirmations xmlns="http://www.ttaf.co.za/talo/api/2014/05/order" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <Confirmation>
+      <Code>NCP90R-AHMRK</Code>
+      <Plant>1110</Plant>
+      <Units>1</Units>
+      <Produced>2014-01-05T00:00:00</Produced>
+      <Suffix>U1</Suffix>
+      <Color>
+        <Internal>12</Internal>
+        <External>040</External>
+      </Color>
+      <Category>TOYOTA</Category>
+      <Purchaser>
+        <Group>TU</Group>
+        <Organization>1100</Organization>
+      </Purchaser>
+      <Vendor>TTAFVEHJPY</Vendor>
+      <Delivery>2014-05-31T00:00:00</Delivery>
+      <Order>3KN201405</Order>
+      <Modification>Create</Modification>
+      <Modified>0001-01-01T00:00:00</Modified>
+    </Confirmation>
+  </Confirmations>
 </OrderConfirmationRequestMessage>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/order" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/order" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://toyotabtsdev/Toyota.Tsusho.TALO.API/OrderService.svc?xsd=xsd0" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
+  <xs:complexType name="ConfirmationCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Confirmation" nillable="true" type="tns:ConfirmationDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfirmationCollectionDataContract" nillable="true" type="tns:ConfirmationCollectionDataContract" />
   <xs:complexType name="ConfirmationDataContract">
     <xs:sequence>
       <xs:element name="Code" nillable="true" type="xs:string" />
@@ -13,6 +20,8 @@
       <xs:element name="Vendor" nillable="true" type="xs:string" />
       <xs:element name="Delivery" type="xs:dateTime" />
       <xs:element name="Order" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q1:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ConfirmationDataContract" nillable="true" type="tns:ConfirmationDataContract" />
@@ -30,5 +39,5 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="PurchaserDataContract" nillable="true" type="tns:PurchaserDataContract" />
-  <xs:element name="Confirmation" nillable="true" type="tns:ConfirmationDataContract" />
+  <xs:element name="Confirmations" nillable="true" type="tns:ConfirmationCollectionDataContract" />
 </xs:schema>

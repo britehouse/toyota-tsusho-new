@@ -4,7 +4,7 @@
   <xs:element name="VehicleAllocateRequestMessage">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/vehicle" minOccurs="0" ref="q1:Allocation" />
+        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/vehicle" minOccurs="0" ref="q1:Allocations" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -19,7 +19,7 @@
   <xs:element name="VehicleRegisterRequestMessage">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/vehicle" minOccurs="0" ref="q2:Registration" />
+        <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/vehicle" minOccurs="0" ref="q2:Registrations" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -15,6 +15,13 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="AllocationCollectionDataContract", Namespace="http://www.ttaf.co.za/talo/api/2014/05/vehicle", ItemName="Allocation")]
+    [System.SerializableAttribute()]
+    public class AllocationCollectionDataContract : System.Collections.Generic.List<Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocationDataContract> {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="AllocationDataContract", Namespace="http://www.ttaf.co.za/talo/api/2014/05/vehicle")]
     [System.SerializableAttribute()]
     public partial class AllocationDataContract : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -163,6 +170,13 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="RegistrationCollectionDataContract", Namespace="http://www.ttaf.co.za/talo/api/2014/05/vehicle", ItemName="Registration")]
+    [System.SerializableAttribute()]
+    public class RegistrationCollectionDataContract : System.Collections.Generic.List<Toyota.Tsusho.API.Testing.VehicleServiceReference.RegistrationDataContract> {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RegistrationDataContract", Namespace="http://www.ttaf.co.za/talo/api/2014/05/vehicle")]
     [System.SerializableAttribute()]
     public partial class RegistrationDataContract : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -306,13 +320,13 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
     public partial class VehicleAllocateRequestMessage {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.ttaf.co.za/talo/api/2014/05/vehicle", Order=0)]
-        public Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocationDataContract Allocation;
+        public Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocationCollectionDataContract Allocations;
         
         public VehicleAllocateRequestMessage() {
         }
         
-        public VehicleAllocateRequestMessage(Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocationDataContract Allocation) {
-            this.Allocation = Allocation;
+        public VehicleAllocateRequestMessage(Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocationCollectionDataContract Allocations) {
+            this.Allocations = Allocations;
         }
     }
     
@@ -333,13 +347,13 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
     public partial class VehicleRegisterRequestMessage {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.ttaf.co.za/talo/api/2014/05/vehicle", Order=0)]
-        public Toyota.Tsusho.API.Testing.VehicleServiceReference.RegistrationDataContract Registration;
+        public Toyota.Tsusho.API.Testing.VehicleServiceReference.RegistrationCollectionDataContract Registrations;
         
         public VehicleRegisterRequestMessage() {
         }
         
-        public VehicleRegisterRequestMessage(Toyota.Tsusho.API.Testing.VehicleServiceReference.RegistrationDataContract Registration) {
-            this.Registration = Registration;
+        public VehicleRegisterRequestMessage(Toyota.Tsusho.API.Testing.VehicleServiceReference.RegistrationCollectionDataContract Registrations) {
+            this.Registrations = Registrations;
         }
     }
     
@@ -385,9 +399,9 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
             return base.Channel.Allocate(request);
         }
         
-        public void Allocate(Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocationDataContract Allocation) {
+        public void Allocate(Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocationCollectionDataContract Allocations) {
             Toyota.Tsusho.API.Testing.VehicleServiceReference.VehicleAllocateRequestMessage inValue = new Toyota.Tsusho.API.Testing.VehicleServiceReference.VehicleAllocateRequestMessage();
-            inValue.Allocation = Allocation;
+            inValue.Allocations = Allocations;
             Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocateResponse retVal = ((Toyota.Tsusho.API.Testing.VehicleServiceReference.IVehicleService)(this)).Allocate(inValue);
         }
         
@@ -396,9 +410,9 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
             return base.Channel.AllocateAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocateResponse> AllocateAsync(Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocationDataContract Allocation) {
+        public System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocateResponse> AllocateAsync(Toyota.Tsusho.API.Testing.VehicleServiceReference.AllocationCollectionDataContract Allocations) {
             Toyota.Tsusho.API.Testing.VehicleServiceReference.VehicleAllocateRequestMessage inValue = new Toyota.Tsusho.API.Testing.VehicleServiceReference.VehicleAllocateRequestMessage();
-            inValue.Allocation = Allocation;
+            inValue.Allocations = Allocations;
             return ((Toyota.Tsusho.API.Testing.VehicleServiceReference.IVehicleService)(this)).AllocateAsync(inValue);
         }
         
@@ -407,9 +421,9 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
             return base.Channel.Register(request);
         }
         
-        public void Register(Toyota.Tsusho.API.Testing.VehicleServiceReference.RegistrationDataContract Registration) {
+        public void Register(Toyota.Tsusho.API.Testing.VehicleServiceReference.RegistrationCollectionDataContract Registrations) {
             Toyota.Tsusho.API.Testing.VehicleServiceReference.VehicleRegisterRequestMessage inValue = new Toyota.Tsusho.API.Testing.VehicleServiceReference.VehicleRegisterRequestMessage();
-            inValue.Registration = Registration;
+            inValue.Registrations = Registrations;
             Toyota.Tsusho.API.Testing.VehicleServiceReference.RegisterResponse retVal = ((Toyota.Tsusho.API.Testing.VehicleServiceReference.IVehicleService)(this)).Register(inValue);
         }
         
@@ -418,9 +432,9 @@ namespace Toyota.Tsusho.API.Testing.VehicleServiceReference {
             return base.Channel.RegisterAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.VehicleServiceReference.RegisterResponse> RegisterAsync(Toyota.Tsusho.API.Testing.VehicleServiceReference.RegistrationDataContract Registration) {
+        public System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.VehicleServiceReference.RegisterResponse> RegisterAsync(Toyota.Tsusho.API.Testing.VehicleServiceReference.RegistrationCollectionDataContract Registrations) {
             Toyota.Tsusho.API.Testing.VehicleServiceReference.VehicleRegisterRequestMessage inValue = new Toyota.Tsusho.API.Testing.VehicleServiceReference.VehicleRegisterRequestMessage();
-            inValue.Registration = Registration;
+            inValue.Registrations = Registrations;
             return ((Toyota.Tsusho.API.Testing.VehicleServiceReference.IVehicleService)(this)).RegisterAsync(inValue);
         }
     }

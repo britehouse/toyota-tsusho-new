@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://toyotabtsdev/Toyota.Tsusho.TALO.API/ShippingInformationService.svc?xsd=xsd0" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
+  <xs:complexType name="ShippingInformationCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShippingInformation" nillable="true" type="tns:ShippingInformationDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShippingInformationCollectionDataContract" nillable="true" type="tns:ShippingInformationCollectionDataContract" />
   <xs:complexType name="ShippingInformationDataContract">
     <xs:sequence>
       <xs:element name="VehicleNumber" nillable="true" type="xs:string" />
@@ -40,5 +46,5 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="VehicleReferenceDataContract" nillable="true" type="tns:VehicleReferenceDataContract" />
-  <xs:element name="ShippingInformation" nillable="true" type="tns:ShippingInformationDataContract" />
+  <xs:element name="Shippings" nillable="true" type="tns:ShippingInformationCollectionDataContract" />
 </xs:schema>

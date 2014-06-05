@@ -16,16 +16,39 @@ namespace Toyota.Tsusho.API.Testing
         [TestMethod]
         public void VehicleServiceAllocate()
         {
-            VehicleServiceReference.AllocationDataContract request = new VehicleServiceReference.AllocationDataContract()
+            VehicleServiceReference.AllocationCollectionDataContract request = new VehicleServiceReference.AllocationCollectionDataContract()
             {
-                Customer = "201TADDA",
-                Date = DateTime.Now,
-                DistributionChannel = "07",
-                SalesOrganisation = "1101",
-                VehicleNumber = "0000030625"
+                new VehicleServiceReference.AllocationDataContract()
+                {
+                    Customer = "201TADDA",
+                    Date = DateTime.Now,
+                    DistributionChannel = "07",
+                    SalesOrganisation = "1101",
+                    VehicleNumber = "0000030625"
+                }
             };
 
-            VehicleServiceReference.VehicleServiceClient client = new VehicleServiceReference.VehicleServiceClient();
+            VehicleServiceReference.VehicleServiceClient client = new VehicleServiceReference.VehicleServiceClient("VehicleService.wsHttp");
+
+            client.Allocate(request);
+        }
+
+        [TestMethod]
+        public void VehicleServiceRelayAllocate()
+        {
+            VehicleServiceReference.AllocationCollectionDataContract request = new VehicleServiceReference.AllocationCollectionDataContract()
+            {
+                new VehicleServiceReference.AllocationDataContract()
+                {
+                    Customer = "201TADDA",
+                    Date = DateTime.Now,
+                    DistributionChannel = "07",
+                    SalesOrganisation = "1101",
+                    VehicleNumber = "0000030625"
+                }
+            };
+
+            VehicleServiceReference.VehicleServiceClient client = new VehicleServiceReference.VehicleServiceClient("VehicleService.basicHttpRelay");
 
             client.Allocate(request);
         }
@@ -33,17 +56,41 @@ namespace Toyota.Tsusho.API.Testing
         [TestMethod]
         public void VehicleServiceRegister()
         {
-            VehicleServiceReference.RegistrationDataContract request = new VehicleServiceReference.RegistrationDataContract()
+            VehicleServiceReference.RegistrationCollectionDataContract request = new VehicleServiceReference.RegistrationCollectionDataContract()
             {
-                Date = new DateTime(2014, 3, 28),
-                Number = "ATG098",
-                Type = "01",
-                VehicleNumber = "0000030625",
-                Modification = VehicleServiceReference.ModificationEnumeration.Create,
-                Modified = DateTime.Now
+                new VehicleServiceReference.RegistrationDataContract()
+                {
+                    Date = new DateTime(2014, 3, 28),
+                    Number = "ATG098",
+                    Type = "01",
+                    VehicleNumber = "0000030625",
+                    Modification = VehicleServiceReference.ModificationEnumeration.Create,
+                    Modified = DateTime.Now
+                }
             };
 
-            VehicleServiceReference.VehicleServiceClient client = new VehicleServiceReference.VehicleServiceClient();
+            VehicleServiceReference.VehicleServiceClient client = new VehicleServiceReference.VehicleServiceClient("VehicleService.wsHttp");
+
+            client.Register(request);
+        }
+
+        [TestMethod]
+        public void VehicleServiceRelayRegister()
+        {
+            VehicleServiceReference.RegistrationCollectionDataContract request = new VehicleServiceReference.RegistrationCollectionDataContract()
+            {
+                new VehicleServiceReference.RegistrationDataContract()
+                {
+                    Date = new DateTime(2014, 3, 28),
+                    Number = "ATG098",
+                    Type = "01",
+                    VehicleNumber = "0000030625",
+                    Modification = VehicleServiceReference.ModificationEnumeration.Create,
+                    Modified = DateTime.Now
+                }
+            };
+
+            VehicleServiceReference.VehicleServiceClient client = new VehicleServiceReference.VehicleServiceClient("VehicleService.basicHttpRelay");
 
             client.Register(request);
         }

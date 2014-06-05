@@ -15,6 +15,13 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="ConfirmationCollectionDataContract", Namespace="http://www.ttaf.co.za/talo/api/2014/05/order", ItemName="Confirmation")]
+    [System.SerializableAttribute()]
+    public class ConfirmationCollectionDataContract : System.Collections.Generic.List<Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationDataContract> {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ConfirmationDataContract", Namespace="http://www.ttaf.co.za/talo/api/2014/05/order")]
     [System.SerializableAttribute()]
     public partial class ConfirmationDataContract : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -43,6 +50,10 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
         private System.DateTime DeliveryField;
         
         private string OrderField;
+        
+        private Toyota.Tsusho.API.Testing.OrderServiceReference.ModificationEnumeration ModificationField;
+        
+        private System.DateTime ModifiedField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -197,6 +208,32 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
+        public Toyota.Tsusho.API.Testing.OrderServiceReference.ModificationEnumeration Modification {
+            get {
+                return this.ModificationField;
+            }
+            set {
+                if ((this.ModificationField.Equals(value) != true)) {
+                    this.ModificationField = value;
+                    this.RaisePropertyChanged("Modification");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
+        public System.DateTime Modified {
+            get {
+                return this.ModifiedField;
+            }
+            set {
+                if ((this.ModifiedField.Equals(value) != true)) {
+                    this.ModifiedField = value;
+                    this.RaisePropertyChanged("Modified");
+                }
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -325,6 +362,20 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
         }
     }
     
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ModificationEnumeration", Namespace="http://www.ttaf.co.za/talo/api/2014/05")]
+    public enum ModificationEnumeration : int {
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Create = 0,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Update = 1,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Delete = 2,
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.ttaf.co.za/talo/api/2014/05", ConfigurationName="OrderServiceReference.IOrderService")]
     public interface IOrderService {
@@ -344,13 +395,13 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
     public partial class OrderConfirmationRequestMessage {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.ttaf.co.za/talo/api/2014/05/order", Order=0)]
-        public Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationDataContract Confirmation;
+        public Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationCollectionDataContract Confirmations;
         
         public OrderConfirmationRequestMessage() {
         }
         
-        public OrderConfirmationRequestMessage(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationDataContract Confirmation) {
-            this.Confirmation = Confirmation;
+        public OrderConfirmationRequestMessage(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationCollectionDataContract Confirmations) {
+            this.Confirmations = Confirmations;
         }
     }
     
@@ -396,9 +447,9 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
             return base.Channel.Confirm(request);
         }
         
-        public void Confirm(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationDataContract Confirmation) {
+        public void Confirm(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationCollectionDataContract Confirmations) {
             Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage inValue = new Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage();
-            inValue.Confirmation = Confirmation;
+            inValue.Confirmations = Confirmations;
             Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse retVal = ((Toyota.Tsusho.API.Testing.OrderServiceReference.IOrderService)(this)).Confirm(inValue);
         }
         
@@ -407,9 +458,9 @@ namespace Toyota.Tsusho.API.Testing.OrderServiceReference {
             return base.Channel.ConfirmAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse> ConfirmAsync(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationDataContract Confirmation) {
+        public System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmResponse> ConfirmAsync(Toyota.Tsusho.API.Testing.OrderServiceReference.ConfirmationCollectionDataContract Confirmations) {
             Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage inValue = new Toyota.Tsusho.API.Testing.OrderServiceReference.OrderConfirmationRequestMessage();
-            inValue.Confirmation = Confirmation;
+            inValue.Confirmations = Confirmations;
             return ((Toyota.Tsusho.API.Testing.OrderServiceReference.IOrderService)(this)).ConfirmAsync(inValue);
         }
     }

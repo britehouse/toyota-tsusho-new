@@ -15,6 +15,13 @@ namespace Toyota.Tsusho.API.Testing.ShippingInformationServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="ShippingInformationCollectionDataContract", Namespace="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation", ItemName="ShippingInformation")]
+    [System.SerializableAttribute()]
+    public class ShippingInformationCollectionDataContract : System.Collections.Generic.List<Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationDataContract> {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ShippingInformationDataContract", Namespace="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation")]
     [System.SerializableAttribute()]
     public partial class ShippingInformationDataContract : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -413,13 +420,13 @@ namespace Toyota.Tsusho.API.Testing.ShippingInformationServiceReference {
     public partial class ShippingInformationUpdateRequestMessage {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation", Order=0)]
-        public Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationDataContract ShippingInformation;
+        public Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationCollectionDataContract Shippings;
         
         public ShippingInformationUpdateRequestMessage() {
         }
         
-        public ShippingInformationUpdateRequestMessage(Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationDataContract ShippingInformation) {
-            this.ShippingInformation = ShippingInformation;
+        public ShippingInformationUpdateRequestMessage(Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationCollectionDataContract Shippings) {
+            this.Shippings = Shippings;
         }
     }
     
@@ -465,9 +472,9 @@ namespace Toyota.Tsusho.API.Testing.ShippingInformationServiceReference {
             return base.Channel.Update(request);
         }
         
-        public void Update(Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationDataContract ShippingInformation) {
+        public void Update(Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationCollectionDataContract Shippings) {
             Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationUpdateRequestMessage inValue = new Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationUpdateRequestMessage();
-            inValue.ShippingInformation = ShippingInformation;
+            inValue.Shippings = Shippings;
             Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.UpdateResponse retVal = ((Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.IShippingInformationService)(this)).Update(inValue);
         }
         
@@ -476,9 +483,9 @@ namespace Toyota.Tsusho.API.Testing.ShippingInformationServiceReference {
             return base.Channel.UpdateAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.UpdateResponse> UpdateAsync(Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationDataContract ShippingInformation) {
+        public System.Threading.Tasks.Task<Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.UpdateResponse> UpdateAsync(Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationCollectionDataContract Shippings) {
             Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationUpdateRequestMessage inValue = new Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.ShippingInformationUpdateRequestMessage();
-            inValue.ShippingInformation = ShippingInformation;
+            inValue.Shippings = Shippings;
             return ((Toyota.Tsusho.API.Testing.ShippingInformationServiceReference.IShippingInformationService)(this)).UpdateAsync(inValue);
         }
     }

@@ -9,30 +9,67 @@ namespace Toyota.Tsusho.API.Testing
         [TestMethod]
         public void OrderServiceConfirm()
         {
-            OrderServiceReference.ConfirmationDataContract request = new OrderServiceReference.ConfirmationDataContract()
+            OrderServiceReference.ConfirmationCollectionDataContract request = new OrderServiceReference.ConfirmationCollectionDataContract()
             {
-                Code = "KUN15R-TRMDYN",
-                Plant = 1110,
-                Units = 1,
-                Produced = new DateTime(2014, 01, 04),
-                Suffix = "DE",
-                Color = new OrderServiceReference.ColorDataContract()
+                new OrderServiceReference.ConfirmationDataContract()
                 {
-                    External = "040",
-                    Internal = "10I"
-                },
-                Category = "TOYOTA",
-                Purchaser = new OrderServiceReference.PurchaserDataContract()
-                {
-                    Group = "TU",
-                    Organization = 1100
-                },
-                Vendor = "TTAFVEHUSD",
-                Delivery = new DateTime(2014, 04, 30),
-                Order = "3KN2012080"
+                    Code = "NCP90R-AHMRK",
+                    Plant = 1110,
+                    Units = 1,
+                    Produced = new DateTime(2014, 01, 05),
+                    Suffix = "U1",
+                    Color = new OrderServiceReference.ColorDataContract()
+                    {
+                        External = "040",
+                        Internal = "12"
+                    },
+                    Category = "TOYOTA",
+                    Purchaser = new OrderServiceReference.PurchaserDataContract()
+                    {
+                        Group = "TU",
+                        Organization = 1100
+                    },
+                    Vendor = "TTAFVEHJPY",
+                    Delivery = new DateTime(2014, 05, 31),
+                    Order = "3KN201405"
+                }
             };
 
-            OrderServiceReference.OrderServiceClient client = new OrderServiceReference.OrderServiceClient();
+            OrderServiceReference.OrderServiceClient client = new OrderServiceReference.OrderServiceClient("OrderService.wsHttp");
+
+            client.Confirm(request);
+        }
+
+        [TestMethod]
+        public void OrderServiceRelayConfirm()
+        {
+            OrderServiceReference.ConfirmationCollectionDataContract request = new OrderServiceReference.ConfirmationCollectionDataContract()
+            {
+                new OrderServiceReference.ConfirmationDataContract()
+                {
+                    Code = "NCP90R-AHMRK",
+                    Plant = 1110,
+                    Units = 1,
+                    Produced = new DateTime(2014, 01, 05),
+                    Suffix = "U1",
+                    Color = new OrderServiceReference.ColorDataContract()
+                    {
+                        External = "040",
+                        Internal = "12"
+                    },
+                    Category = "TOYOTA",
+                    Purchaser = new OrderServiceReference.PurchaserDataContract()
+                    {
+                        Group = "TU",
+                        Organization = 1100
+                    },
+                    Vendor = "TTAFVEHJPY",
+                    Delivery = new DateTime(2014, 05, 31),
+                    Order = "3KN201405"
+                }
+            };
+
+            OrderServiceReference.OrderServiceClient client = new OrderServiceReference.OrderServiceClient("OrderService.basicHttpRelay");
 
             client.Confirm(request);
         }
