@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ns3="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" elementFormDefault="qualified" targetNamespace="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">Types</fileNameHint>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:complexType name="BDCMSGCOLL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="TCODE" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="20" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="DYNAME" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="DYNUMB" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="4" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MSGTYP" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MSGSPRA" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MSGID" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="20" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MSGNR" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MSGV1" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="100" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MSGV2" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="100" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MSGV3" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="100" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MSGV4" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="100" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ENV" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="4" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="FLDNAME" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="132" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BDCMSGCOLL" nillable="true" type="ns3:BDCMSGCOLL" />
+  <xs:complexType name="ArrayOfBDCMSGCOLL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BDCMSGCOLL" type="ns3:BDCMSGCOLL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBDCMSGCOLL" nillable="true" type="ns3:ArrayOfBDCMSGCOLL" />
+</xs:schema>

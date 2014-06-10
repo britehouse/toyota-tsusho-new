@@ -68,6 +68,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="Types17.xsd">
+      <TypeName>Types17</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="Types16.xsd">
       <TypeName>Types16</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
@@ -188,6 +193,11 @@
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
+    <Schema Include="MESSAGES.xsd">
+      <TypeName>MESSAGES</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="Toyota.Tsusho.snk" />
     <Schema Include="Types.xsd">
       <TypeName>Types</TypeName>
@@ -196,6 +206,7 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="WcfReceivePort_SAPBinding_Custom.bindinginfo.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo2.xml" />
     <Content Include="WcfSendPort_SAPBinding_Custom.bindinginfo3.xml" />
   </ItemGroup>
