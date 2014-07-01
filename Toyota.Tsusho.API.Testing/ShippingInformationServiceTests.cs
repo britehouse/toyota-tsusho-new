@@ -24,7 +24,7 @@ namespace Toyota.Tsusho.API.Testing
                     Store = "0099",
                     Documented = new DateTime(2014, 3, 28),
                     Posted = new DateTime(2014, 4, 16),
-                    DeliveryNote = String.Empty,
+                    DeliveryNote = "N0034567",
                     BillofLading = "DR306012",
                     Invoice = new ShippingInformationServiceReference.InvoiceReferenceDataContract()
                     {

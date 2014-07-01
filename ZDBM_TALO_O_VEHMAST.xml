@@ -2,173 +2,83 @@
   <IT_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <OUTCOL>BLU</OUTCOL>
-      <OUTCOLNAME>Blue Yamaha</OUTCOLNAME>
-      <INTCOL></INTCOL>
-      <INTCOLNAME></INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHCOL>
-    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <OUTCOL>RED</OUTCOL>
-      <OUTCOLNAME>Red Yamaha</OUTCOLNAME>
-      <INTCOL></INTCOL>
-      <INTCOLNAME></INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHCOL>
-    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <OUTCOL>3E5</OUTCOL>
-      <OUTCOLNAME>Super Red (3E5)</OUTCOLNAME>
-      <INTCOL></INTCOL>
-      <INTCOLNAME></INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHCOL>
-    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <OUTCOL>070</OUTCOL>
-      <OUTCOLNAME>Whtie Pearl (070)</OUTCOLNAME>
-      <INTCOL></INTCOL>
-      <INTCOLNAME></INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHCOL>
-    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <OUTCOL>4T8</OUTCOL>
-      <OUTCOLNAME>Beige Met (4T8)</OUTCOLNAME>
-      <INTCOL></INTCOL>
-      <INTCOLNAME></INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHCOL>
-    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <OUTCOL>1H2</OUTCOL>
-      <OUTCOLNAME>DK Steel MC (1H2)</OUTCOLNAME>
-      <INTCOL></INTCOL>
-      <INTCOLNAME></INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHCOL>
-    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <OUTCOL>BLE</OUTCOL>
-      <OUTCOLNAME>BLUE YAMAHA</OUTCOLNAME>
-      <INTCOL></INTCOL>
-      <INTCOLNAME></INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHCOL>
-    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <OUTCOL>040</OUTCOL>
-      <OUTCOLNAME>Super White (040)</OUTCOLNAME>
-      <INTCOL></INTCOL>
-      <INTCOLNAME></INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHCOL>
-    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <OUTCOL></OUTCOL>
-      <OUTCOLNAME></OUTCOLNAME>
-      <INTCOL>12</INTCOL>
-      <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHCOL>
-    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <OUTCOL>BLU</OUTCOL>
       <OUTCOLNAME>Blue Yamaha</OUTCOLNAME>
-      <INTCOL>12</INTCOL>
-      <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <INTCOL></INTCOL>
+      <INTCOLNAME></INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <OUTCOL>RED</OUTCOL>
       <OUTCOLNAME>Red Yamaha</OUTCOLNAME>
-      <INTCOL>12</INTCOL>
-      <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <INTCOL></INTCOL>
+      <INTCOLNAME></INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <OUTCOL>3E5</OUTCOL>
       <OUTCOLNAME>Super Red (3E5)</OUTCOLNAME>
-      <INTCOL>12</INTCOL>
-      <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <INTCOL></INTCOL>
+      <INTCOLNAME></INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <OUTCOL>070</OUTCOL>
-      <OUTCOLNAME>Whtie Pearl (070)</OUTCOLNAME>
-      <INTCOL>12</INTCOL>
-      <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <OUTCOLNAME>White Pearl (070)</OUTCOLNAME>
+      <INTCOL></INTCOL>
+      <INTCOLNAME></INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <OUTCOL>4T8</OUTCOL>
       <OUTCOLNAME>Beige Met (4T8)</OUTCOLNAME>
-      <INTCOL>12</INTCOL>
-      <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <INTCOL></INTCOL>
+      <INTCOLNAME></INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <OUTCOL>1H2</OUTCOL>
       <OUTCOLNAME>DK Steel MC (1H2)</OUTCOLNAME>
-      <INTCOL>12</INTCOL>
-      <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <INTCOL></INTCOL>
+      <INTCOLNAME></INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <OUTCOL>BLE</OUTCOL>
       <OUTCOLNAME>BLUE YAMAHA</OUTCOLNAME>
-      <INTCOL>12</INTCOL>
-      <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <INTCOL></INTCOL>
+      <INTCOLNAME></INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <OUTCOL>040</OUTCOL>
       <OUTCOLNAME>Super White (040)</OUTCOLNAME>
-      <INTCOL>12</INTCOL>
-      <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <INTCOL></INTCOL>
+      <INTCOLNAME></INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
@@ -177,111 +87,281 @@
       <OUTCOLNAME></OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <OUTCOL>BLU</OUTCOL>
       <OUTCOLNAME>Blue Yamaha</OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <OUTCOL>RED</OUTCOL>
       <OUTCOLNAME>Red Yamaha</OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <OUTCOL>3E5</OUTCOL>
       <OUTCOLNAME>Super Red (3E5)</OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <OUTCOL>070</OUTCOL>
-      <OUTCOLNAME>Whtie Pearl (070)</OUTCOLNAME>
+      <OUTCOLNAME>White Pearl (070)</OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <OUTCOL>4T8</OUTCOL>
       <OUTCOLNAME>Beige Met (4T8)</OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <OUTCOL>1H2</OUTCOL>
       <OUTCOLNAME>DK Steel MC (1H2)</OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <OUTCOL>BLE</OUTCOL>
       <OUTCOLNAME>BLUE YAMAHA</OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <OUTCOL>040</OUTCOL>
       <OUTCOLNAME>Super White (040)</OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
     <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <OUTCOL></OUTCOL>
       <OUTCOLNAME></OUTCOLNAME>
       <INTCOL>12</INTCOL>
       <INTCOLNAME>Dark Grey</INTCOLNAME>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <OUTCOL>BLU</OUTCOL>
+      <OUTCOLNAME>Blue Yamaha</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <OUTCOL>RED</OUTCOL>
+      <OUTCOLNAME>Red Yamaha</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <OUTCOL>3E5</OUTCOL>
+      <OUTCOLNAME>Super Red (3E5)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <OUTCOL>070</OUTCOL>
+      <OUTCOLNAME>White Pearl (070)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <OUTCOL>4T8</OUTCOL>
+      <OUTCOLNAME>Beige Met (4T8)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <OUTCOL>1H2</OUTCOL>
+      <OUTCOLNAME>DK Steel MC (1H2)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <OUTCOL>BLE</OUTCOL>
+      <OUTCOLNAME>BLUE YAMAHA</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <OUTCOL>040</OUTCOL>
+      <OUTCOLNAME>Super White (040)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <OUTCOL></OUTCOL>
+      <OUTCOLNAME></OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <OUTCOL>BLU</OUTCOL>
+      <OUTCOLNAME>Blue Yamaha</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <OUTCOL>RED</OUTCOL>
+      <OUTCOLNAME>Red Yamaha</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <OUTCOL>3E5</OUTCOL>
+      <OUTCOLNAME>Super Red (3E5)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <OUTCOL>070</OUTCOL>
+      <OUTCOLNAME>White Pearl (070)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <OUTCOL>4T8</OUTCOL>
+      <OUTCOLNAME>Beige Met (4T8)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <OUTCOL>1H2</OUTCOL>
+      <OUTCOLNAME>DK Steel MC (1H2)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <OUTCOL>BLE</OUTCOL>
+      <OUTCOLNAME>BLUE YAMAHA</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <OUTCOL>040</OUTCOL>
+      <OUTCOLNAME>Super White (040)</OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHCOL>
+    <ZDBM_TALO_VEHCOL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <OUTCOL></OUTCOL>
+      <OUTCOLNAME></OUTCOLNAME>
+      <INTCOL>12</INTCOL>
+      <INTCOLNAME>Dark Grey</INTCOLNAME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHCOL>
   </IT_VEHCOL>
   <IT_VEHMAS>
-    <ZDBM_TALO_VEHMAS xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <CLASS></CLASS>
-      <MAKTX>Yamaha Bike</MAKTX>
-      <BODTYPE></BODTYPE>
-      <PACKDIV></PACKDIV>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHMAS>
     <ZDBM_TALO_VEHMAS xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
@@ -289,188 +369,264 @@
       <MAKTX>Yaris Model</MAKTX>
       <BODTYPE>HTB</BODTYPE>
       <PACKDIV></PACKDIV>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHMAS>
     <ZDBM_TALO_VEHMAS xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <CLASS>C</CLASS>
-      <MAKTX>4X4 H/DUTY LCRUISER P/UP(CKD)</MAKTX>
-      <BODTYPE>PCK</BODTYPE>
+      <MAKTX>LAN15R-TRMDEN 4X2 Single Cab</MAKTX>
+      <BODTYPE>SUV</BODTYPE>
       <PACKDIV></PACKDIV>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHMAS>
+    <ZDBM_TALO_VEHMAS xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <CLASS>C</CLASS>
+      <MAKTX>4X4 SINGLE CAB</MAKTX>
+      <BODTYPE>SUV</BODTYPE>
+      <PACKDIV></PACKDIV>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHMAS>
+    <ZDBM_TALO_VEHMAS xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <CLASS>C</CLASS>
+      <MAKTX>4X4 DOUBLE CAB</MAKTX>
+      <BODTYPE>MPV</BODTYPE>
+      <PACKDIV></PACKDIV>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHMAS>
   </IT_VEHMAS>
   <IT_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <SFXCODE>U1</SFXCODE>
-      <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHSFX>
-    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <SFXCODE>00</SFXCODE>
-      <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHSFX>
-    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <SFXCODE>DE</SFXCODE>
-      <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHSFX>
-    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <SFXCODE>NE</SFXCODE>
-      <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHSFX>
-    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <SFXCODE>BE</SFXCODE>
-      <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHSFX>
-    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <SFXCODE>CE</SFXCODE>
-      <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHSFX>
-    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
-      <MATNR>AG100</MATNR>
-      <SFXCODE>ME</SFXCODE>
-      <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
-    </ZDBM_TALO_VEHSFX>
-    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
-      <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <SFXCODE>U1</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <SFXCODE>00</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <SFXCODE>DE</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <SFXCODE>NE</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <SFXCODE>BE</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <SFXCODE>CE</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
       <MATNR>NCP90R-AHMRK</MATNR>
       <SFXCODE>ME</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <SFXCODE>U1</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <SFXCODE>00</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <SFXCODE>DE</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <SFXCODE>NE</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <SFXCODE>BE</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <SFXCODE>CE</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
     <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
       <MANDT></MANDT>
-      <MATNR>HZJ79R-TJMRS</MATNR>
+      <MATNR>LAN15R-TRMDEN</MATNR>
       <SFXCODE>ME</SFXCODE>
       <MODLINE></MODLINE>
-      <FLAG></FLAG>
-      <LINK_DTE_TIME></LINK_DTE_TIME>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <SFXCODE>U1</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <SFXCODE>00</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <SFXCODE>DE</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <SFXCODE>NE</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <SFXCODE>BE</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <SFXCODE>CE</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>LAN25R-TRMDEN</MATNR>
+      <SFXCODE>ME</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <SFXCODE>U1</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <SFXCODE>00</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <SFXCODE>DE</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <SFXCODE>NE</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <SFXCODE>BE</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <SFXCODE>CE</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
+    </ZDBM_TALO_VEHSFX>
+    <ZDBM_TALO_VEHSFX xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <MATNR>KUN25R-PRMDHN</MATNR>
+      <SFXCODE>ME</SFXCODE>
+      <MODLINE></MODLINE>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140701132904</LINK_DTE_TIME>
     </ZDBM_TALO_VEHSFX>
   </IT_VEHSFX>
 </ZDBM_TALO_O_VEHMAST>

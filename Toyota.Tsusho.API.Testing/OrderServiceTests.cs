@@ -15,7 +15,7 @@ namespace Toyota.Tsusho.API.Testing
                 {
                     Code = "NCP90R-AHMRK",
                     Plant = 1110,
-                    Units = 1,
+                    Units = 3,
                     Produced = new DateTime(2014, 01, 05),
                     Suffix = "U1",
                     Color = new OrderServiceReference.ColorDataContract()
@@ -49,7 +49,7 @@ namespace Toyota.Tsusho.API.Testing
                 {
                     Code = "NCP90R-AHMRK",
                     Plant = 1110,
-                    Units = 1,
+                    Units = 3,
                     Produced = new DateTime(2014, 01, 05),
                     Suffix = "U1",
                     Color = new OrderServiceReference.ColorDataContract()
