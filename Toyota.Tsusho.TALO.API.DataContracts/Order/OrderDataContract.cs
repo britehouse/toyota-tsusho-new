@@ -27,7 +27,7 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Order
         }
 
         [DataMember(Order = 2, IsRequired = true)]
-        public int Suffix
+        public string Suffix
         {
             get;
             set;

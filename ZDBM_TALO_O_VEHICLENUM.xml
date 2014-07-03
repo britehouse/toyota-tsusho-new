@@ -1,0 +1,40 @@
+﻿<ZDBM_TALO_O_VEHICLENUM xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">
+  <IT_VEHNUM>
+    <ZDBM_TALO_VEHNUM xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <ORDNUM>3KN201405</ORDNUM>
+      <MATNR>NCP90R-AHMRK</MATNR>
+      <SFXCODE>U1</SFXCODE>
+      <OUTCOL>040</OUTCOL>
+      <INTCOL>12</INTCOL>
+      <CHARG>0000000758</CHARG>
+      <EBELN>4700000189</EBELN>
+      <FLAG></FLAG>
+      <LINK_DTE_TIME></LINK_DTE_TIME>
+    </ZDBM_TALO_VEHNUM>
+    <ZDBM_TALO_VEHNUM xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <ORDNUM>3KN201405</ORDNUM>
+      <MATNR>NCP90R-AHMRK</MATNR>
+      <SFXCODE>U1</SFXCODE>
+      <OUTCOL>040</OUTCOL>
+      <INTCOL>12</INTCOL>
+      <CHARG>0000000759</CHARG>
+      <EBELN>4700000189</EBELN>
+      <FLAG></FLAG>
+      <LINK_DTE_TIME></LINK_DTE_TIME>
+    </ZDBM_TALO_VEHNUM>
+    <ZDBM_TALO_VEHNUM xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <ORDNUM>3KN201405</ORDNUM>
+      <MATNR>NCP90R-AHMRK</MATNR>
+      <SFXCODE>U1</SFXCODE>
+      <OUTCOL>040</OUTCOL>
+      <INTCOL>12</INTCOL>
+      <CHARG>0000000760</CHARG>
+      <EBELN>4700000189</EBELN>
+      <FLAG></FLAG>
+      <LINK_DTE_TIME></LINK_DTE_TIME>
+    </ZDBM_TALO_VEHNUM>
+  </IT_VEHNUM>
+</ZDBM_TALO_O_VEHICLENUM>
