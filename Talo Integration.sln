@@ -37,13 +37,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.TALO.Transfor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{0B4B9578-F2B7-4958-9C10-A7B32EDCFE75}"
 	ProjectSection(SolutionItems) = preProject
-		OrderConfirmationRequestMessage.xml = OrderConfirmationRequestMessage.xml
-		ShippingInformationUpdateRequestMessage.xml = ShippingInformationUpdateRequestMessage.xml
-		VehicleAllocationRequestMessage.xml = VehicleAllocationRequestMessage.xml
-		VehicleRegisterRequestMessage.xml = VehicleRegisterRequestMessage.xml
-		ZDBM_TALO_O_CUSTACCOUNT.xml = ZDBM_TALO_O_CUSTACCOUNT.xml
-		ZDBM_TALO_O_VEHICLENUM.xml = ZDBM_TALO_O_VEHICLENUM.xml
-		ZDBM_TALO_O_VEHMAST.xml = ZDBM_TALO_O_VEHMAST.xml
+		1 ZDBM_TALO_O_VEHMAST.xml = 1 ZDBM_TALO_O_VEHMAST.xml
+		3 OrderConfirmationRequestMessage.xml = 3 OrderConfirmationRequestMessage.xml
+		3 ZDBM_TALO_O_VEHICLENUM.xml = 3 ZDBM_TALO_O_VEHICLENUM.xml
+		4 ShippingInformationUpdateRequestMessage.xml = 4 ShippingInformationUpdateRequestMessage.xml
+		4 ZDBM_TALO_I_SHIPPING.xml = 4 ZDBM_TALO_I_SHIPPING.xml
+		5 VehicleRegisterRequestMessage.xml = 5 VehicleRegisterRequestMessage.xml
+		6 ZDBM_TALO_O_CUSTACCOUNT.xml = 6 ZDBM_TALO_O_CUSTACCOUNT.xml
+		7 VehicleAllocationRequestMessage.xml = 7 VehicleAllocationRequestMessage.xml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.TALO.Services.Generic.WCF", "Toyota.Tsusho.TALO.Services.Generic.WCF\Toyota.Tsusho.TALO.Services.Generic.WCF.csproj", "{87B00AAA-3B2D-4F66-9C54-4B198DCFE1CE}"

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ns0:ZDBM_TALO_I_SHIPPING xmlns:ns0="http://Microsoft.LobServices.Sap/2007/03/Rfc/" xmlns:ns3="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ns0:IT_SHPINF>
+    <ns3:ZDBM_TALO_SHPINF>
+      <ns3:VHCLE xsi:nil="true" />
+      <ns3:LGORT>0099</ns3:LGORT>
+      <ns3:BLDAT_BOL>04072014</ns3:BLDAT_BOL>
+      <ns3:BUDAT_BOL>04072014</ns3:BUDAT_BOL>
+      <ns3:VBELN_DEL xsi:nil="true" />
+      <ns3:FRBNR>DR306012</ns3:FRBNR>
+      <ns3:BLDAT>04072014</ns3:BLDAT>
+      <ns3:BUDAT>04072014</ns3:BUDAT>
+      <ns3:BELNR>01</ns3:BELNR>
+      <ns3:NETWR>1650500</ns3:NETWR>
+      <ns3:STCEG>V0</ns3:STCEG>
+      <ns3:FLAG>1</ns3:FLAG>
+      <ns3:LINK_DTE_TIME>20140704153041</ns3:LINK_DTE_TIME>
+    </ns3:ZDBM_TALO_SHPINF>
+  </ns0:IT_SHPINF>
+  <ns0:IT_SHPQUA>
+    <ns3:ZDBM_TALO_SHPQUA>
+      <ns3:INT_VEH_NUM>0000000708</ns3:INT_VEH_NUM>
+      <ns3:VHVIN>12345678901234568</ns3:VHVIN>
+      <ns3:VEH_ENG_NUM>5V-EU</ns3:VEH_ENG_NUM>
+      <ns3:FLAG>1</ns3:FLAG>
+      <ns3:LINK_DTE_TIME>20140704153041</ns3:LINK_DTE_TIME>
+    </ns3:ZDBM_TALO_SHPQUA>
+    <ns3:ZDBM_TALO_SHPQUA>
+      <ns3:INT_VEH_NUM>0000000709</ns3:INT_VEH_NUM>
+      <ns3:VHVIN>1234567890568</ns3:VHVIN>
+      <ns3:VEH_ENG_NUM>7M-GTEU</ns3:VEH_ENG_NUM>
+      <ns3:FLAG>1</ns3:FLAG>
+      <ns3:LINK_DTE_TIME>20140704153041</ns3:LINK_DTE_TIME>
+    </ns3:ZDBM_TALO_SHPQUA>
+    <ns3:ZDBM_TALO_SHPQUA>
+      <ns3:INT_VEH_NUM>0000000710</ns3:INT_VEH_NUM>
+      <ns3:VHVIN>1234567898</ns3:VHVIN>
+      <ns3:VEH_ENG_NUM>7M-GTEU</ns3:VEH_ENG_NUM>
+      <ns3:FLAG>1</ns3:FLAG>
+      <ns3:LINK_DTE_TIME>20140704153041</ns3:LINK_DTE_TIME>
+    </ns3:ZDBM_TALO_SHPQUA>
+  </ns0:IT_SHPQUA>
+</ns0:ZDBM_TALO_I_SHIPPING>
