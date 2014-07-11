@@ -1,0 +1,11 @@
+﻿<ZDBM_TALO_O_STOCKAGE xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">
+  <IT_STKAGE>
+    <ZDBM_TALO_STKAGE xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000000629</CHARG>
+      <BLDAT>20140710</BLDAT>
+      <FLAG>1</FLAG>
+      <LINK_DTE_TIME>20140710102713</LINK_DTE_TIME>
+    </ZDBM_TALO_STKAGE>
+  </IT_STKAGE>
+</ZDBM_TALO_O_STOCKAGE>
