@@ -3,23 +3,44 @@
     <Confirmation>
       <Code>NCP90R-AHMRK</Code>
       <Plant>1110</Plant>
-      <Units>1</Units>
-      <Produced>2014-01-05T00:00:00</Produced>
-      <Suffix>U1</Suffix>
+      <Units>2</Units>
+      <Produced>2014-08-01T00:00:00</Produced>
+      <Suffix>U1 </Suffix>
       <Color>
         <Internal>12</Internal>
         <External>040</External>
       </Color>
       <Category>TOYOTA</Category>
       <Purchaser>
-        <Group>TU</Group>
-        <Organization>1100</Organization>
+        <Group>TO</Group>
+        <Organization>1110</Organization>
       </Purchaser>
-      <Vendor>TTAFVEHJPY</Vendor>
-      <Delivery>2014-05-31T00:00:00</Delivery>
-      <Order>3KN201405</Order>
+      <Vendor>TTAFVEHUSD</Vendor>
+      <Delivery>0001-01-01T00:00:00</Delivery>
+      <Order>SP-20140803</Order>
       <Modification>Create</Modification>
-      <Modified>0001-01-01T00:00:00</Modified>
+      <Modified>2014-07-14T17:33:20.753</Modified>
+    </Confirmation>
+    <Confirmation>
+      <Code>NCP90R-AHMRK</Code>
+      <Plant>1110</Plant>
+      <Units>2</Units>
+      <Produced>2014-08-01T00:00:00</Produced>
+      <Suffix>U1 </Suffix>
+      <Color>
+        <Internal>12</Internal>
+        <External>070</External>
+      </Color>
+      <Category>TOYOTA</Category>
+      <Purchaser>
+        <Group>TO</Group>
+        <Organization>1110</Organization>
+      </Purchaser>
+      <Vendor>TTAFVEHUSD</Vendor>
+      <Delivery>0001-01-01T00:00:00</Delivery>
+      <Order>SP-20140804</Order>
+      <Modification>Create</Modification>
+      <Modified>2014-07-14T17:33:20.753</Modified>
     </Confirmation>
   </Confirmations>
 </OrderConfirmationRequestMessage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ns0:ZDBM_TALO_I_ORDCONFIRM xmlns:ns0="http://Microsoft.LobServices.Sap/2007/03/Rfc/" xmlns:ns3="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ns0:INT_MESSAGES>
+    <ns3:BDCMSGCOLL>
+      <ns3:TCODE />
+    </ns3:BDCMSGCOLL>
+  </ns0:INT_MESSAGES>
+  <ns0:IT_ORDCON>
+    <ns3:ZDBM_TALO_ORDCON>
+      <ns3:MATNR>NCP90R-AHMRK</ns3:MATNR>
+      <ns3:WERKS>1110</ns3:WERKS>
+      <ns3:UNITS>3</ns3:UNITS>
+      <ns3:PRODDATE>01072014</ns3:PRODDATE>
+      <ns3:SFXCODE>U1 </ns3:SFXCODE>
+      <ns3:INTCOL></ns3:INTCOL>
+      <ns3:OUTCOL>040</ns3:OUTCOL>
+      <ns3:VEH_BUS_TRNS>NEC</ns3:VEH_BUS_TRNS>
+      <ns3:CAT_ID>TOYOTA</ns3:CAT_ID>
+      <ns3:MODEL_SALESCODE>NCP90R-AHMRK_U1 </ns3:MODEL_SALESCODE>
+      <ns3:BSART>ZVEH</ns3:BSART>
+      <ns3:EKORG>1110</ns3:EKORG>
+      <ns3:EKGRP>TO</ns3:EKGRP>
+      <ns3:LIFNR>TTAFVEHUSD</ns3:LIFNR>
+      <ns3:LFDAT>01010001</ns3:LFDAT>
+      <ns3:VBELN>3KN20140701</ns3:VBELN>
+      <ns3:FLAG>1</ns3:FLAG>
+      <ns3:LINK_DTE_TIME>20140714033632</ns3:LINK_DTE_TIME>
+    </ns3:ZDBM_TALO_ORDCON>
+    <ns3:ZDBM_TALO_ORDCON>
+      <ns3:MATNR>NCP90R-AHMRK</ns3:MATNR>
+      <ns3:WERKS>1110</ns3:WERKS>
+      <ns3:UNITS>2</ns3:UNITS>
+      <ns3:PRODDATE>01072014</ns3:PRODDATE>
+      <ns3:SFXCODE>00 </ns3:SFXCODE>
+      <ns3:INTCOL></ns3:INTCOL>
+      <ns3:OUTCOL>070</ns3:OUTCOL>
+      <ns3:VEH_BUS_TRNS>NEC</ns3:VEH_BUS_TRNS>
+      <ns3:CAT_ID>TOYOTA</ns3:CAT_ID>
+      <ns3:MODEL_SALESCODE>NCP90R-AHMRK_00 </ns3:MODEL_SALESCODE>
+      <ns3:BSART>ZVEH</ns3:BSART>
+      <ns3:EKORG>1110</ns3:EKORG>
+      <ns3:EKGRP>TO</ns3:EKGRP>
+      <ns3:LIFNR>TTAFVEHUSD</ns3:LIFNR>
+      <ns3:LFDAT>01010001</ns3:LFDAT>
+      <ns3:VBELN>3KN20140702</ns3:VBELN>
+      <ns3:FLAG>1</ns3:FLAG>
+      <ns3:LINK_DTE_TIME>20140714033632</ns3:LINK_DTE_TIME>
+    </ns3:ZDBM_TALO_ORDCON>
+  </ns0:IT_ORDCON>
+</ns0:ZDBM_TALO_I_ORDCONFIRM>

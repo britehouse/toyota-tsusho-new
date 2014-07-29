@@ -17,6 +17,7 @@
       <xs:element name="BillofLading" nillable="true" type="xs:string" />
       <xs:element name="Invoice" nillable="true" type="tns:InvoiceReferenceDataContract" />
       <xs:element name="Vehicles" nillable="true" type="tns:VehicleReferenceCollectionDataContract" />
+      <xs:element name="PurchaseOrder" nillable="true" type="xs:string" />
       <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q1:ModificationEnumeration" />
       <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
@@ -26,7 +27,6 @@
     <xs:sequence>
       <xs:element name="Number" nillable="true" type="xs:string" />
       <xs:element name="Date" type="xs:dateTime" />
-      <xs:element name="Amount" type="xs:decimal" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="InvoiceReferenceDataContract" nillable="true" type="tns:InvoiceReferenceDataContract" />

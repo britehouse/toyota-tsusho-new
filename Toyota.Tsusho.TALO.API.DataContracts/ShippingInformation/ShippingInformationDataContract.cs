@@ -70,13 +70,20 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.ShippingInformation
         }
 
         [DataMember(Order = 11, IsRequired = true)]
+        public string PurchaseOrder
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Order = 12, IsRequired = true)]
         public ModificationEnumeration Modification
         {
             get;
             set;
         }
 
-        [DataMember(Order =12, IsRequired = true)]
+        [DataMember(Order =13, IsRequired = true)]
         public DateTime Modified
         {
             get;

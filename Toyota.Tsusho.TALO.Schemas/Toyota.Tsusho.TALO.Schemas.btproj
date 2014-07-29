@@ -195,6 +195,9 @@
     </Schema>
     <None Include="Toyota.Tsusho.snk" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="ShippingInformationService_Custom.BindingInfo.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
 </Project>

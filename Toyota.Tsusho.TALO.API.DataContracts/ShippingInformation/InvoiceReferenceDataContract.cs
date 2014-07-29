@@ -25,12 +25,5 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.ShippingInformation
             get;
             set;
         }
-
-        [DataMember(Order = 2, IsRequired = true)]
-        public Decimal Amount
-        {
-            get;
-            set;
-        }
     }
 }
