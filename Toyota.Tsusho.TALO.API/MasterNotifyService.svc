@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Debug="true" Service="Toyota.Tsusho.TALO.API.ServiceImplementation.MasterNotifyService, Toyota.Tsusho.TALO.API.ServiceImplementation" %>
