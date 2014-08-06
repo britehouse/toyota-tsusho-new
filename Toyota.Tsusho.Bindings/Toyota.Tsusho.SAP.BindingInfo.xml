@@ -62,7 +62,7 @@
       <Description xsi:nil="true" />
       <TransmitPipeline Name="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline" FullyQualifiedName="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline, Toyota.Tsusho.BizTalk.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
       <PrimaryTransport>
-        <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=172.29.2.13&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
+        <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
         <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
         <TransportTypeData>&lt;CustomProps&gt;&lt;BindingType vt="8"&gt;sapBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="SAPBinding" enableBizTalkCompatibilityMode="false" enableSafeTyping="true" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
   &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_ORDCONFIRM" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_ORDCONFIRM" /&amp;gt;
@@ -127,7 +127,7 @@
       <Description xsi:nil="true" />
       <TransmitPipeline Name="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline" FullyQualifiedName="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline, Toyota.Tsusho.BizTalk.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
       <PrimaryTransport>
-        <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=172.29.2.13&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
+        <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
         <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
         <TransportTypeData>&lt;CustomProps&gt;&lt;BindingType vt="8"&gt;sapBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="SAPBinding" enableBizTalkCompatibilityMode="false" enableSafeTyping="true" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
           &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_ORDCONFIRM" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_ORDCONFIRM" /&amp;gt;
@@ -185,7 +185,7 @@
       <ReceiveLocations>
         <ReceiveLocation Name="Toyota.Tsusho.SAP.Services.Generic.OnRamp.WCF-SAP">
           <Description xsi:nil="true" />
-          <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=172.29.2.13&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
+          <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
           <PublicAddress />
           <Primary>true</Primary>
           <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
