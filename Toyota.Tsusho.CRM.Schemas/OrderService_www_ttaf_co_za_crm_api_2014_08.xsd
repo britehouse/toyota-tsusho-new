@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/crm/api/2014/08" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes.xsd" namespace="http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes" />
+  <xs:element name="Publish">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes" minOccurs="0" name="order" nillable="true" type="q1:SalesOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublishResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

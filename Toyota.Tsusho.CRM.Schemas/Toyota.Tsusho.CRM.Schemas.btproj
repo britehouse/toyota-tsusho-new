@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA688322-59C1-45AF-A428-99F8101B6C7A}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>Toyota.Tsusho.CRM.Schemas</RootNamespace>
+    <AssemblyName>Toyota.Tsusho.CRM.Schemas</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OrderService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk.xsd.cs" />
+    <Compile Include="OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes.xsd.cs" />
+    <Compile Include="OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic.xsd.cs" />
+    <Compile Include="OrderService_schemas_microsoft_com_2003_10_Serialization.xsd.cs" />
+    <Compile Include="OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays.xsd.cs" />
+    <Compile Include="OrderService_schemas_microsoft_com_xrm_2011_Contracts.xsd.cs" />
+    <Compile Include="OrderService_schemas_microsoft_com_xrm_2011_Metadata.xsd.cs" />
+    <Compile Include="OrderService_schemas_microsoft_com_xrm_2011_Metadata_Query.xsd.cs" />
+    <Compile Include="OrderService_schemas_microsoft_com_xrm_2012_Contracts.xsd.cs" />
+    <Compile Include="OrderService_schemas_microsoft_com_xrm_2013_Metadata.xsd.cs" />
+    <Compile Include="OrderService_www_ttaf_co_za_crm_api_2014_08.xsd.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="OrderService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk.xsd">
+      <TypeName>OrderService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes.xsd">
+      <TypeName>OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic.xsd">
+      <TypeName>OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <TypeName>OrderService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays.xsd">
+      <TypeName>OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_microsoft_com_xrm_2011_Contracts.xsd">
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2011_Contracts</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_microsoft_com_xrm_2011_Metadata.xsd">
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2011_Metadata</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_microsoft_com_xrm_2011_Metadata_Query.xsd">
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2011_Metadata_Query</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_microsoft_com_xrm_2012_Contracts.xsd">
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2012_Contracts</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_microsoft_com_xrm_2013_Metadata.xsd">
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2013_Metadata</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_www_ttaf_co_za_crm_api_2014_08.xsd">
+      <TypeName>OrderService_www_ttaf_co_za_crm_api_2014_08</TypeName>
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>
