@@ -1,4 +1,4 @@
-namespace MSCRM.BizTalk.Schemas {
+namespace Toyota.Tsusho.CRM.Schemas {
     using Microsoft.XLANGs.BaseTypes;
     
     
@@ -8,7 +8,7 @@ namespace MSCRM.BizTalk.Schemas {
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"ArrayOfboolean", @"ArrayOfint", @"ArrayOfstring", @"ArrayOfArrayOfstring", @"ArrayOfdouble", @"ArrayOfdecimal", @"ArrayOfguid", @"ArrayOfdateTime", @"ArrayOfKeyValueOfstringstring", @"ArrayOfanyType"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization", typeof(global::MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization))]
     public sealed class OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -17,7 +17,7 @@ namespace MSCRM.BizTalk.Schemas {
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ser=""http://schemas.microsoft.com/2003/10/Serialization/"" xmlns:tns=""http://schemas.microsoft.com/2003/10/Serialization/Arrays"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/2003/10/Serialization/Arrays"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization"" namespace=""http://schemas.microsoft.com/2003/10/Serialization/"" />
+  <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization"" namespace=""http://schemas.microsoft.com/2003/10/Serialization/"" />
   <xs:annotation>
     <xs:appinfo>
       <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">

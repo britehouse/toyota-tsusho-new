@@ -1,4 +1,4 @@
-namespace MSCRM.BizTalk.Schemas {
+namespace Toyota.Tsusho.CRM.Schemas {
     using Microsoft.XLANGs.BaseTypes;
     
     
@@ -10,10 +10,10 @@ namespace MSCRM.BizTalk.Schemas {
     [SchemaRoots(new string[] {@"Entity", @"AttributeCollection", @"Money", @"ArrayOfMoney", @"EntityReference", @"ArrayOfEntityReference", @"OptionSetValue", @"ArrayOfOptionSetValue", @"EntityCollection", @"ArrayOfEntity", @"Label", @"LocalizedLabelCollection", @"LocalizedLabel", @"BooleanManagedProperty", @"ManagedPropertyboolean", @"ManagedPropertyAttributeRequiredLevel", @"AliasedValue", @"ColumnSet", @"EntityReferenceCollection", @"QueryBase", @"QueryExpression", @"FilterExpression", @"ArrayOfConditionExpression", 
 @"ConditionExpression", @"ConditionOperator", @"LogicalOperator", @"ArrayOfFilterExpression", @"ArrayOfLinkEntity", @"LinkEntity", @"JoinOperator", @"ArrayOfOrderExpression", @"OrderExpression", @"OrderType", @"PagingInfo", @"QueryByAttribute", @"FetchExpression", @"ArrayOfQueryExpression", @"ArrayOfLocalizedLabel", @"Relationship", @"EntityRole", @"AttributePrivilegeCollection", @"AttributePrivilege", @"RelationshipQueryCollection", @"EntityMetadataCollection", @"OrganizationRequest", 
 @"ParameterCollection", @"OrganizationServiceFault", @"BaseServiceFault", @"ErrorDetailCollection", @"DiscoveryServiceFault", @"OrganizationResponse", @"QuickFindResultCollection", @"QuickFindResult", @"EntityState", @"FormattedValueCollection", @"RelatedEntityCollection"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization", typeof(global::MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization))]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"MSCRM.BizTalk.Schemas.OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic", typeof(global::MSCRM.BizTalk.Schemas.OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic))]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata", typeof(global::MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata))]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays", typeof(global::MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays))]
     public sealed class OrderService_schemas_microsoft_com_xrm_2011_Contracts : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -22,10 +22,10 @@ namespace MSCRM.BizTalk.Schemas {
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ser=""http://schemas.microsoft.com/2003/10/Serialization/"" xmlns:tns=""http://schemas.microsoft.com/xrm/2011/Contracts"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/xrm/2011/Contracts"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization"" namespace=""http://schemas.microsoft.com/2003/10/Serialization/"" />
-  <xs:import schemaLocation=""MSCRM.BizTalk.Schemas.OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic"" namespace=""http://schemas.datacontract.org/2004/07/System.Collections.Generic"" />
-  <xs:import schemaLocation=""MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata"" namespace=""http://schemas.microsoft.com/xrm/2011/Metadata"" />
-  <xs:import schemaLocation=""MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays"" namespace=""http://schemas.microsoft.com/2003/10/Serialization/Arrays"" />
+  <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization"" namespace=""http://schemas.microsoft.com/2003/10/Serialization/"" />
+  <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic"" namespace=""http://schemas.datacontract.org/2004/07/System.Collections.Generic"" />
+  <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata"" namespace=""http://schemas.microsoft.com/xrm/2011/Metadata"" />
+  <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays"" namespace=""http://schemas.microsoft.com/2003/10/Serialization/Arrays"" />
   <xs:annotation>
     <xs:appinfo>
       <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">

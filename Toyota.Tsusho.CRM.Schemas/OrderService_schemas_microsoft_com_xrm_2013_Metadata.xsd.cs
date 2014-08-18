@@ -1,4 +1,4 @@
-namespace MSCRM.BizTalk.Schemas {
+namespace Toyota.Tsusho.CRM.Schemas {
     using Microsoft.XLANGs.BaseTypes;
     
     
@@ -8,7 +8,7 @@ namespace MSCRM.BizTalk.Schemas {
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"AttributeTypeDisplayName", @"ConstantsBase", @"StringFormatName", @"ImageAttributeMetadata"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata", typeof(global::MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata))]
     public sealed class OrderService_schemas_microsoft_com_xrm_2013_Metadata : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -17,7 +17,7 @@ namespace MSCRM.BizTalk.Schemas {
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:tns=""http://schemas.microsoft.com/xrm/2013/Metadata"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/xrm/2013/Metadata"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata"" namespace=""http://schemas.microsoft.com/xrm/2011/Metadata"" />
+  <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Metadata"" namespace=""http://schemas.microsoft.com/xrm/2011/Metadata"" />
   <xs:annotation>
     <xs:appinfo>
       <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">

@@ -1,4 +1,4 @@
-namespace MSCRM.BizTalk.Schemas {
+namespace Toyota.Tsusho.CRM.Schemas {
     using Microsoft.XLANGs.BaseTypes;
     
     
@@ -27,8 +27,8 @@ namespace MSCRM.BizTalk.Schemas {
 @"ArrayOfSemiAnnualFiscalCalendar", @"SemiAnnualFiscalCalendar", @"ArrayOfUserSettings", @"UserSettings", @"ArrayOfnew_aftersales", @"ArrayOfTraceLog", @"TraceLog", @"ArrayOfOrganizationUI", @"OrganizationUI", @"ArrayOfPostComment", @"PostComment", @"Post", @"ArrayOfPostLike", @"PostLike", @"ArrayOfBusinessUnitNewsArticle", @"ArrayOfConstraintBasedGroup", @"ArrayOfContractTemplate", @"ArrayOfDisplayString", @"ArrayOfEntityMap", @"ArrayOfImportJob", @"ArrayOfIsvConfig", @"ArrayOfKbArticleTemplate", 
 @"ArrayOfLicense", @"ArrayOfMetric", @"ArrayOfmsdyn_PostConfig", @"ArrayOfnew_bodytype", @"ArrayOfnew_class", @"ArrayOfnew_dutystatus", @"ArrayOfnew_vehicletype", @"ArrayOfPluginAssembly", @"ArrayOfPost", @"ArrayOfPublisher", @"ArrayOfRelationshipRole", @"ArrayOfRibbonCustomization", @"ArrayOfSavedQuery", @"ArrayOfSdkMessage", @"ArrayOfSdkMessageProcessingStepSecureConfig", @"ArrayOfServiceEndpoint", @"ArrayOfSiteMap", @"ArrayOfSite", @"ArrayOfTransactionCurrency", @"ArrayOfUoMSchedule", 
 @"ArrayOfxbitz_Counter", @"ArrayOfWebResource", @"ArrayOfRecurrenceRule", @"ArrayOfAudit", @"ArrayOfBulkDeleteOperation", @"ArrayOfListMember", @"ArrayOfTeamTemplate", @"ArrayOfTimeZoneDefinition", @"ArrayOfCampaignActivityItem"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Contracts", typeof(global::MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Contracts))]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization", typeof(global::MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Contracts", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Contracts))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization))]
     public sealed class OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -37,8 +37,8 @@ namespace MSCRM.BizTalk.Schemas {
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ser=""http://schemas.microsoft.com/2003/10/Serialization/"" xmlns:tns=""http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Contracts"" namespace=""http://schemas.microsoft.com/xrm/2011/Contracts"" />
-  <xs:import schemaLocation=""MSCRM.BizTalk.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization"" namespace=""http://schemas.microsoft.com/2003/10/Serialization/"" />
+  <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Contracts"" namespace=""http://schemas.microsoft.com/xrm/2011/Contracts"" />
+  <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization"" namespace=""http://schemas.microsoft.com/2003/10/Serialization/"" />
   <xs:annotation>
     <xs:appinfo>
       <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">

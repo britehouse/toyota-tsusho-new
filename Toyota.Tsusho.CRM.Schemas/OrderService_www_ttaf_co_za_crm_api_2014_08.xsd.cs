@@ -1,4 +1,4 @@
-namespace MSCRM.BizTalk.Schemas {
+namespace Toyota.Tsusho.CRM.Schemas {
     using Microsoft.XLANGs.BaseTypes;
     
     
@@ -8,7 +8,7 @@ namespace MSCRM.BizTalk.Schemas {
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"Publish", @"PublishResponse"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"MSCRM.BizTalk.Schemas.OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes", typeof(global::MSCRM.BizTalk.Schemas.OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes))]
     public sealed class OrderService_www_ttaf_co_za_crm_api_2014_08 : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -17,7 +17,7 @@ namespace MSCRM.BizTalk.Schemas {
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://www.ttaf.co.za/crm/api/2014/08"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""MSCRM.BizTalk.Schemas.OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes"" namespace=""http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes"" />
+  <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes"" namespace=""http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes"" />
   <xs:annotation>
     <xs:appinfo>
       <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">
