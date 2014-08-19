@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation=".\OrderService_schemas_microsoft_com_xrm_2011_Contracts.xsd" namespace="http://schemas.microsoft.com/xrm/2011/Contracts" />
   <xs:import schemaLocation=".\OrderService_schemas_microsoft_com_2003_10_Serialization.xsd" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:complexType name="SalesOrder">

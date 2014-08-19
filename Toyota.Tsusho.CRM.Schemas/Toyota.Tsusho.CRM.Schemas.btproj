@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,7 +26,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -65,77 +65,69 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OrderService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk.xsd.cs" />
-    <Compile Include="OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes.xsd.cs" />
-    <Compile Include="OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic.xsd.cs" />
-    <Compile Include="OrderService_schemas_microsoft_com_2003_10_Serialization.xsd.cs" />
-    <Compile Include="OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays.xsd.cs" />
-    <Compile Include="OrderService_schemas_microsoft_com_xrm_2011_Contracts.xsd.cs" />
-    <Compile Include="OrderService_schemas_microsoft_com_xrm_2011_Metadata.xsd.cs" />
-    <Compile Include="OrderService_schemas_microsoft_com_xrm_2011_Metadata_Query.xsd.cs" />
-    <Compile Include="OrderService_schemas_microsoft_com_xrm_2012_Contracts.xsd.cs" />
-    <Compile Include="OrderService_schemas_microsoft_com_xrm_2013_Metadata.xsd.cs" />
-    <Compile Include="OrderService_www_ttaf_co_za_crm_api_2014_08.xsd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Schema Include="OrderService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
       <TypeName>OrderService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk</TypeName>
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes.xsd">
-      <TypeName>OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes</TypeName>
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic.xsd">
-      <TypeName>OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic</TypeName>
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_schemas_datacontract_org_2004_07_System_Collections_Generic</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="OrderService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="OrderService_schemas_microsoft_com_2003_10_Serialization.xsd">
-      <TypeName>OrderService_schemas_microsoft_com_2003_10_Serialization</TypeName>
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_schemas_microsoft_com_2003_10_Serialization</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays.xsd">
-      <TypeName>OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays</TypeName>
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_schemas_microsoft_com_2003_10_Serialization_Arrays</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="OrderService_schemas_microsoft_com_xrm_2011_Contracts.xsd">
-      <TypeName>OrderService_schemas_microsoft_com_xrm_2011_Contracts</TypeName>
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2011_Contracts</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="OrderService_schemas_microsoft_com_xrm_2011_Metadata.xsd">
-      <TypeName>OrderService_schemas_microsoft_com_xrm_2011_Metadata</TypeName>
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2011_Metadata</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="OrderService_schemas_microsoft_com_xrm_2011_Metadata_Query.xsd">
-      <TypeName>OrderService_schemas_microsoft_com_xrm_2011_Metadata_Query</TypeName>
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2011_Metadata_Query</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="OrderService_schemas_microsoft_com_xrm_2012_Contracts.xsd">
-      <TypeName>OrderService_schemas_microsoft_com_xrm_2012_Contracts</TypeName>
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2012_Contracts</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="OrderService_schemas_microsoft_com_xrm_2013_Metadata.xsd">
-      <TypeName>OrderService_schemas_microsoft_com_xrm_2013_Metadata</TypeName>
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_schemas_microsoft_com_xrm_2013_Metadata</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <Schema Include="OrderService_www_ttaf_co_za_crm_api_2014_08.xsd">
-      <TypeName>OrderService_www_ttaf_co_za_crm_api_2014_08</TypeName>
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_www_ttaf_co_za_crm_api_2014_08</TypeName>
       <SubType>Task</SubType>
     </Schema>
-  </ItemGroup>
-  <ItemGroup>
+    <Schema Include="OrderService_www_ttaf_co_za_crm_api_2014_08_order.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>OrderService_www_ttaf_co_za_crm_api_2014_08_order</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="Toyota.Tsusho.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,16 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6C2EC003-42CC-4D7C-8077-3CD43EC82095}</ProjectGuid>
-    <ProjectTypeGuids>{32f31d43-81cc-4c15-9de6-3fc5453562b6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{44860F11-849B-4067-B505-12FC48F4213D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Toyota.Tsusho.CRM.API.Workflows</RootNamespace>
-    <AssemblyName>Toyota.Tsusho.CRM.API.Workflows</AssemblyName>
+    <RootNamespace>Toyota.Tsusho.CRM.API.MessageContracts</RootNamespace>
+    <AssemblyName>Toyota.Tsusho.CRM.API.MessageContracts</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -38,42 +36,28 @@
     <AssemblyOriginatorKeyFile>Toyota.Tsusho.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Xrm.Sdk">
       <HintPath>..\..\..\CRM SDK\SDK\Bin\Microsoft.Xrm.Sdk.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Xrm.Sdk.Workflow">
-      <HintPath>..\..\..\CRM SDK\SDK\Bin\Microsoft.Xrm.Sdk.Workflow.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Activities" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Activities" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderPublishRequestMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Toyota.Tsusho.CRM.API.MessageContracts\Toyota.Tsusho.CRM.API.MessageContracts.csproj">
-      <Project>{44860f11-849b-4067-b505-12fc48f4213d}</Project>
-      <Name>Toyota.Tsusho.CRM.API.MessageContracts</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Toyota.Tsusho.CRM.API\Toyota.Tsusho.CRM.API.csproj">
       <Project>{788fc72c-4915-4969-a59f-4af40f20e293}</Project>
       <Name>Toyota.Tsusho.CRM.API</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <XamlAppDef Include="SalesOrderWorkflow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </XamlAppDef>
   </ItemGroup>
   <ItemGroup>
     <None Include="Toyota.Tsusho.snk" />

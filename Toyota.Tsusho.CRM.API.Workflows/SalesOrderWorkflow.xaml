@@ -1,6 +1,5 @@
 ﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Toyota.Tsusho.CRM.API.Workflows.SalesOrderWorkflow"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
- xmlns:api="clr-namespace:Toyota.Tsusho.CRM.API;assembly=Toyota.Tsusho.CRM.API"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
  xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk"
@@ -11,6 +10,8 @@
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:ttca="clr-namespace:Toyota.Tsusho.CRM.API;assembly=Toyota.Tsusho.CRM.API"
+ xmlns:ttcam="clr-namespace:Toyota.Tsusho.CRM.API.MessageContracts;assembly=Toyota.Tsusho.CRM.API.MessageContracts"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
@@ -28,6 +29,7 @@
       <x:String>Toyota.Tsusho.CRM.API.Workflows</x:String>
       <x:String>Toyota.Tsusho.CRM.API</x:String>
       <x:String>Microsoft.Xrm.Sdk</x:String>
+      <x:String>Toyota.Tsusho.CRM.API.MessageContracts</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -42,44 +44,67 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
-      <AssemblyReference>System.ServiceModel.Channels</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>mscorlib</AssemblyReference>
       <AssemblyReference>Toyota.Tsusho.CRM.API</AssemblyReference>
+      <AssemblyReference>Toyota.Tsusho.CRM.API.MessageContracts</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Toyota.Tsusho.CRM.API.Workflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="api:SalesOrder" Name="order" />
+      <Variable x:TypeArguments="ttca:SalesOrder" Name="order" />
+      <Variable x:TypeArguments="ttcam:OrderPublishRequestMessage" Name="orderRequest" />
     </Sequence.Variables>
     <Assign sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
-        <OutArgument x:TypeArguments="api:SalesOrder">
-          <mca:CSharpReference x:TypeArguments="api:SalesOrder">order</mca:CSharpReference>
+        <OutArgument x:TypeArguments="ttca:SalesOrder">
+          <mca:CSharpReference x:TypeArguments="ttca:SalesOrder">order</mca:CSharpReference>
         </OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="api:SalesOrder">
-          <mca:CSharpValue x:TypeArguments="api:SalesOrder">InputEntities["primary"].ToEntity&lt;SalesOrder&gt;()</mca:CSharpValue>
+        <InArgument x:TypeArguments="ttca:SalesOrder">
+          <mca:CSharpValue x:TypeArguments="ttca:SalesOrder">InputEntities["primary"].ToEntity&lt;SalesOrder&gt;()</mca:CSharpValue>
         </InArgument>
       </Assign.Value>
     </Assign>
+    <Assign>
+      <Assign.To>
+        <OutArgument x:TypeArguments="ttcam:OrderPublishRequestMessage">
+          <mca:CSharpReference x:TypeArguments="ttcam:OrderPublishRequestMessage">orderRequest</mca:CSharpReference>
+        </OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ttcam:OrderPublishRequestMessage">
+          <mca:CSharpValue x:TypeArguments="ttcam:OrderPublishRequestMessage">new OrderPublishRequestMessage() { Order= order}</mca:CSharpValue>
+        </InArgument>
+      </Assign.Value>
+      <sap2010:WorkflowViewState.IdRef>Assign_2</sap2010:WorkflowViewState.IdRef>
+    </Assign>
     <Sequence sap2010:WorkflowViewState.IdRef="Sequence_2">
-      <p1:Send Action="http://www.ttaf.co.za/crm/api/2014/08/IOrderService/Publish" EndpointConfigurationName="BasicHttpBinding_IContactService" sap2010:WorkflowViewState.IdRef="Send_2" OperationName="Publish" ServiceContractName="p:IOrderService">
-        <p1:SendMessageContent DeclaredMessageType="api:SalesOrder">
-          <InArgument x:TypeArguments="api:SalesOrder">
-            <mca:CSharpValue x:TypeArguments="api:SalesOrder">order</mca:CSharpValue>
+      <p1:Send Action="http://www.ttaf.co.za/crm/api/2014/08/IOrderService/Publish" EndpointConfigurationName="" sap2010:WorkflowViewState.IdRef="Send_2" OperationName="Publish" ServiceContractName="p:IOrderService">
+        <p1:Send.Endpoint>
+          <p1:Endpoint AddressUri="http://localhost/Toyota.Tsusho.CRM.Services.Generic.WCF/OnRamp.svc">
+            <p1:Endpoint.Binding>
+              <p1:WSHttpBinding Name="wsHttpBinding" />
+            </p1:Endpoint.Binding>
+          </p1:Endpoint>
+        </p1:Send.Endpoint>
+        <p1:SendMessageContent DeclaredMessageType="ttcam:OrderPublishRequestMessage">
+          <InArgument x:TypeArguments="ttcam:OrderPublishRequestMessage">
+            <mca:CSharpValue x:TypeArguments="ttcam:OrderPublishRequestMessage">orderRequest</mca:CSharpValue>
           </InArgument>
         </p1:SendMessageContent>
       </p1:Send>
     </Sequence>
-    <sads:DebugSymbol.Symbol>dz1DOlxQcm9qZWN0c1xNU0NSTS5Xb3JrZmxvd1xNU0NSTS5Xb3JrZmxvd1xTYW1wbGVXb3JrZmxvdy54YW1sBzUDTw4CAQE5BUQOAgEIRQVNEAIBAkELQYYBAgENPAs8XgIBCUYHTBECAQNJDUlYAgEE</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d1FDOlxQcm9qZWN0c1xUb3lvdGEuVHN1c2hvXFRveW90YS5Uc3VzaG8uQ1JNLkFQSS5Xb3JrZmxvd3NcU2FsZXNPcmRlcldvcmtmbG93LnhhbWwKOANnDgIBAT0FSA4CARRJBVUOAgEJVgVlEAIBAkULRYUBAgEaQAtAXQIBFVELUZEBAgEPTAtMdQIBClcHZBECAQNhDWFvAgEE</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
       <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="277,62" />
+      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="277,62" />
       <sap2010:ViewStateData Id="Send_2" sap:VirtualizedContainerService.HintSize="255,86" />
       <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="277,210">
         <sap:WorkflowViewStateService.ViewState>
@@ -88,14 +113,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="299,436">
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="299,538">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="MSCRM.Workflow.SampleWorkflow_1" sap:VirtualizedContainerService.HintSize="339,516" />
+      <sap2010:ViewStateData Id="MSCRM.Workflow.SampleWorkflow_1" sap:VirtualizedContainerService.HintSize="339,618" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

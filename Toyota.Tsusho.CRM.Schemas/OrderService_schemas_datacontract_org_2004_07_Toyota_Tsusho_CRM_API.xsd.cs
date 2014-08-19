@@ -29,14 +29,14 @@ namespace Toyota.Tsusho.CRM.Schemas {
 @"ArrayOfxbitz_Counter", @"ArrayOfWebResource", @"ArrayOfRecurrenceRule", @"ArrayOfAudit", @"ArrayOfBulkDeleteOperation", @"ArrayOfListMember", @"ArrayOfTeamTemplate", @"ArrayOfTimeZoneDefinition", @"ArrayOfCampaignActivityItem"})]
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Contracts", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Contracts))]
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization", typeof(global::Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization))]
-    public sealed class OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class OrderService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ser=""http://schemas.microsoft.com/2003/10/Serialization/"" xmlns:tns=""http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ser=""http://schemas.microsoft.com/2003/10/Serialization/"" xmlns:tns=""http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_xrm_2011_Contracts"" namespace=""http://schemas.microsoft.com/xrm/2011/Contracts"" />
   <xs:import schemaLocation=""Toyota.Tsusho.CRM.Schemas.OrderService_schemas_microsoft_com_2003_10_Serialization"" namespace=""http://schemas.microsoft.com/2003/10/Serialization/"" />
   <xs:annotation>
@@ -15319,7 +15319,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
   <xs:element name=""ArrayOfCampaignActivityItem"" nillable=""true"" type=""tns:ArrayOfCampaignActivityItem"" />
 </xs:schema>";
         
-        public OrderService_schemas_datacontract_org_2004_07_MSCRM_Workflow_CRMTypes() {
+        public OrderService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API() {
         }
         
         public override string XmlContent {
@@ -15773,7 +15773,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SalesOrder")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SalesOrder")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SalesOrder"})]
         public sealed class SalesOrder : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -15808,7 +15808,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfActivityPointer")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfActivityPointer")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfActivityPointer"})]
         public sealed class ArrayOfActivityPointer : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -15843,7 +15843,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ActivityPointer")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ActivityPointer")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ActivityPointer"})]
         public sealed class ActivityPointer : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -15878,7 +15878,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Account")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Account")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Account"})]
         public sealed class Account : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -15913,7 +15913,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfAnnotation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfAnnotation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfAnnotation"})]
         public sealed class ArrayOfAnnotation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -15948,7 +15948,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Annotation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Annotation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Annotation"})]
         public sealed class Annotation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -15983,7 +15983,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfAsyncOperation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfAsyncOperation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfAsyncOperation"})]
         public sealed class ArrayOfAsyncOperation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16018,7 +16018,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"AsyncOperation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"AsyncOperation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"AsyncOperation"})]
         public sealed class AsyncOperation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16053,7 +16053,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ActivityMimeAttachment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ActivityMimeAttachment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ActivityMimeAttachment"})]
         public sealed class ActivityMimeAttachment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16088,7 +16088,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfBulkDeleteFailure")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfBulkDeleteFailure")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfBulkDeleteFailure"})]
         public sealed class ArrayOfBulkDeleteFailure : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16123,7 +16123,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"BulkDeleteFailure")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"BulkDeleteFailure")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"BulkDeleteFailure"})]
         public sealed class BulkDeleteFailure : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16158,7 +16158,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"AnnualFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"AnnualFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"AnnualFiscalCalendar"})]
         public sealed class AnnualFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16193,7 +16193,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SystemUser")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SystemUser")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SystemUser"})]
         public sealed class SystemUser : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16228,7 +16228,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfImportFile")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfImportFile")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfImportFile"})]
         public sealed class ArrayOfImportFile : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16263,7 +16263,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ImportFile")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ImportFile")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ImportFile"})]
         public sealed class ImportFile : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16298,7 +16298,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"BusinessUnit")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"BusinessUnit")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"BusinessUnit"})]
         public sealed class BusinessUnit : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16333,7 +16333,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Calendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Calendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Calendar"})]
         public sealed class Calendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16368,7 +16368,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfBusinessUnit")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfBusinessUnit")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfBusinessUnit"})]
         public sealed class ArrayOfBusinessUnit : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16403,7 +16403,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfCalendar"})]
         public sealed class ArrayOfCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16438,7 +16438,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfEquipment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfEquipment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfEquipment"})]
         public sealed class ArrayOfEquipment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16473,7 +16473,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Equipment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Equipment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Equipment"})]
         public sealed class Equipment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16508,7 +16508,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfDuplicateRecord")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfDuplicateRecord")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfDuplicateRecord"})]
         public sealed class ArrayOfDuplicateRecord : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16543,7 +16543,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"DuplicateRecord")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"DuplicateRecord")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"DuplicateRecord"})]
         public sealed class DuplicateRecord : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16578,7 +16578,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Appointment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Appointment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Appointment"})]
         public sealed class Appointment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16613,7 +16613,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfProcessSession")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfProcessSession")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfProcessSession"})]
         public sealed class ArrayOfProcessSession : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16648,7 +16648,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ProcessSession")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ProcessSession")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ProcessSession"})]
         public sealed class ProcessSession : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16683,7 +16683,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"BusinessUnitNewsArticle")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"BusinessUnitNewsArticle")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"BusinessUnitNewsArticle"})]
         public sealed class BusinessUnitNewsArticle : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16718,7 +16718,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Organization")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Organization")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Organization"})]
         public sealed class Organization : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16753,7 +16753,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"EmailServerProfile")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"EmailServerProfile")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"EmailServerProfile"})]
         public sealed class EmailServerProfile : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16788,7 +16788,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfOrganization")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfOrganization")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfOrganization"})]
         public sealed class ArrayOfOrganization : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16823,7 +16823,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfMailbox")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfMailbox")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfMailbox"})]
         public sealed class ArrayOfMailbox : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16858,7 +16858,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Mailbox")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Mailbox")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Mailbox"})]
         public sealed class Mailbox : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16893,7 +16893,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfEmail")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfEmail")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfEmail"})]
         public sealed class ArrayOfEmail : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16928,7 +16928,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Email")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Email")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Email"})]
         public sealed class Email : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16963,7 +16963,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"BulkOperation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"BulkOperation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"BulkOperation"})]
         public sealed class BulkOperation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -16998,7 +16998,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfAppointment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfAppointment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfAppointment"})]
         public sealed class ArrayOfAppointment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17033,7 +17033,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfCampaignResponse")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfCampaignResponse")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfCampaignResponse"})]
         public sealed class ArrayOfCampaignResponse : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17068,7 +17068,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"CampaignResponse")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"CampaignResponse")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"CampaignResponse"})]
         public sealed class CampaignResponse : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17103,7 +17103,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfLead")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfLead")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfLead"})]
         public sealed class ArrayOfLead : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17138,7 +17138,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Lead")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Lead")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Lead"})]
         public sealed class Lead : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17173,7 +17173,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfBulkOperationLog")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfBulkOperationLog")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfBulkOperationLog"})]
         public sealed class ArrayOfBulkOperationLog : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17208,7 +17208,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"BulkOperationLog")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"BulkOperationLog")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"BulkOperationLog"})]
         public sealed class BulkOperationLog : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17243,7 +17243,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Contact")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Contact")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Contact"})]
         public sealed class Contact : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17278,7 +17278,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfCustomerAddress")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfCustomerAddress")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfCustomerAddress"})]
         public sealed class ArrayOfCustomerAddress : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17313,7 +17313,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"CustomerAddress")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"CustomerAddress")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"CustomerAddress"})]
         public sealed class CustomerAddress : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17348,7 +17348,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"TransactionCurrency")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"TransactionCurrency")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TransactionCurrency"})]
         public sealed class TransactionCurrency : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17383,7 +17383,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfConnection")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfConnection")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfConnection"})]
         public sealed class ArrayOfConnection : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17418,7 +17418,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Connection")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Connection")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Connection"})]
         public sealed class Connection : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17453,7 +17453,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Campaign")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Campaign")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Campaign"})]
         public sealed class Campaign : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17488,7 +17488,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfCampaignActivity")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfCampaignActivity")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfCampaignActivity"})]
         public sealed class ArrayOfCampaignActivity : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17523,7 +17523,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"CampaignActivity")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"CampaignActivity")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"CampaignActivity"})]
         public sealed class CampaignActivity : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17558,7 +17558,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfBulkOperation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfBulkOperation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfBulkOperation"})]
         public sealed class ArrayOfBulkOperation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17593,7 +17593,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfFax")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfFax")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfFax"})]
         public sealed class ArrayOfFax : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17628,7 +17628,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Fax")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Fax")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Fax"})]
         public sealed class Fax : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17663,7 +17663,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Contract")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Contract")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Contract"})]
         public sealed class Contract : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17698,7 +17698,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfLetter")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfLetter")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfLetter"})]
         public sealed class ArrayOfLetter : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17733,7 +17733,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Letter")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Letter")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Letter"})]
         public sealed class Letter : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17768,7 +17768,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Incident")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Incident")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Incident"})]
         public sealed class Incident : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17803,7 +17803,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfIncidentResolution")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfIncidentResolution")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfIncidentResolution"})]
         public sealed class ArrayOfIncidentResolution : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17838,7 +17838,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"IncidentResolution")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"IncidentResolution")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"IncidentResolution"})]
         public sealed class IncidentResolution : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17873,7 +17873,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfActivityParty")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfActivityParty")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfActivityParty"})]
         public sealed class ArrayOfActivityParty : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17908,7 +17908,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ActivityParty")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ActivityParty")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ActivityParty"})]
         public sealed class ActivityParty : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17943,7 +17943,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ResourceSpec")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ResourceSpec")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ResourceSpec"})]
         public sealed class ResourceSpec : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -17978,7 +17978,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ConstraintBasedGroup")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ConstraintBasedGroup")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ConstraintBasedGroup"})]
         public sealed class ConstraintBasedGroup : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18013,7 +18013,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfResourceSpec")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfResourceSpec")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfResourceSpec"})]
         public sealed class ArrayOfResourceSpec : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18048,7 +18048,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfResourceGroup")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfResourceGroup")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfResourceGroup"})]
         public sealed class ArrayOfResourceGroup : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18083,7 +18083,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ResourceGroup")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ResourceGroup")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ResourceGroup"})]
         public sealed class ResourceGroup : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18118,7 +18118,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Team")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Team")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Team"})]
         public sealed class Team : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18153,7 +18153,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPostFollow")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPostFollow")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPostFollow"})]
         public sealed class ArrayOfPostFollow : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18188,7 +18188,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PostFollow")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PostFollow")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PostFollow"})]
         public sealed class PostFollow : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18223,7 +18223,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Competitor")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Competitor")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Competitor"})]
         public sealed class Competitor : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18258,7 +18258,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfOpportunityClose")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfOpportunityClose")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfOpportunityClose"})]
         public sealed class ArrayOfOpportunityClose : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18293,7 +18293,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"OpportunityClose")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"OpportunityClose")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"OpportunityClose"})]
         public sealed class OpportunityClose : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18328,7 +18328,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Opportunity")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Opportunity")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Opportunity"})]
         public sealed class Opportunity : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18363,7 +18363,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPhoneCall")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPhoneCall")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPhoneCall"})]
         public sealed class ArrayOfPhoneCall : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18398,7 +18398,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PhoneCall")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PhoneCall")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PhoneCall"})]
         public sealed class PhoneCall : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18433,7 +18433,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Invoice")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Invoice")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Invoice"})]
         public sealed class Invoice : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18468,7 +18468,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfRecurringAppointmentMaster")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfRecurringAppointmentMaster")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfRecurringAppointmentMaster"})]
         public sealed class ArrayOfRecurringAppointmentMaster : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18503,7 +18503,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"RecurringAppointmentMaster")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"RecurringAppointmentMaster")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"RecurringAppointmentMaster"})]
         public sealed class RecurringAppointmentMaster : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18538,7 +18538,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Quote")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Quote")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Quote"})]
         public sealed class Quote : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18573,7 +18573,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfQuoteClose")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfQuoteClose")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfQuoteClose"})]
         public sealed class ArrayOfQuoteClose : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18608,7 +18608,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"QuoteClose")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"QuoteClose")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"QuoteClose"})]
         public sealed class QuoteClose : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18643,7 +18643,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Service")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Service")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Service"})]
         public sealed class Service : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18678,7 +18678,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_testdrive")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_testdrive")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_testdrive"})]
         public sealed class ArrayOfnew_testdrive : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18713,7 +18713,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_testdrive")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_testdrive")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_testdrive"})]
         public sealed class new_testdrive : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18748,7 +18748,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Entitlement")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Entitlement")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Entitlement"})]
         public sealed class Entitlement : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18783,7 +18783,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPrincipalObjectAttributeAccess")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPrincipalObjectAttributeAccess")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPrincipalObjectAttributeAccess"})]
         public sealed class ArrayOfPrincipalObjectAttributeAccess : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18818,7 +18818,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PrincipalObjectAttributeAccess")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PrincipalObjectAttributeAccess")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PrincipalObjectAttributeAccess"})]
         public sealed class PrincipalObjectAttributeAccess : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18853,7 +18853,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ContractDetail")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ContractDetail")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ContractDetail"})]
         public sealed class ContractDetail : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18888,7 +18888,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfIncident")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfIncident")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfIncident"})]
         public sealed class ArrayOfIncident : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18923,7 +18923,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"UoMSchedule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"UoMSchedule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"UoMSchedule"})]
         public sealed class UoMSchedule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18958,7 +18958,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfContractDetail")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfContractDetail")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfContractDetail"})]
         public sealed class ArrayOfContractDetail : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -18993,7 +18993,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfUoM")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfUoM")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfUoM"})]
         public sealed class ArrayOfUoM : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19028,7 +19028,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"UoM")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"UoM")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"UoM"})]
         public sealed class UoM : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19063,7 +19063,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfInvoiceDetail")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfInvoiceDetail")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfInvoiceDetail"})]
         public sealed class ArrayOfInvoiceDetail : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19098,7 +19098,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"InvoiceDetail")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"InvoiceDetail")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"InvoiceDetail"})]
         public sealed class InvoiceDetail : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19133,7 +19133,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Product")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Product")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Product"})]
         public sealed class Product : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19168,7 +19168,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSharePointDocument")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSharePointDocument")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSharePointDocument"})]
         public sealed class ArrayOfSharePointDocument : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19203,7 +19203,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SharePointDocument")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SharePointDocument")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SharePointDocument"})]
         public sealed class SharePointDocument : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19238,7 +19238,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"KbArticle")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"KbArticle")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"KbArticle"})]
         public sealed class KbArticle : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19273,7 +19273,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSharePointDocumentLocation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSharePointDocumentLocation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSharePointDocumentLocation"})]
         public sealed class ArrayOfSharePointDocumentLocation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19308,7 +19308,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SharePointDocumentLocation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SharePointDocumentLocation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SharePointDocumentLocation"})]
         public sealed class SharePointDocumentLocation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19343,7 +19343,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SalesLiterature")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SalesLiterature")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SalesLiterature"})]
         public sealed class SalesLiterature : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19378,7 +19378,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfCampaign")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfCampaign")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfCampaign"})]
         public sealed class ArrayOfCampaign : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19413,7 +19413,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfCompetitor")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfCompetitor")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfCompetitor"})]
         public sealed class ArrayOfCompetitor : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19448,7 +19448,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ProcessStage")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ProcessStage")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ProcessStage"})]
         public sealed class ProcessStage : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19483,7 +19483,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Workflow")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Workflow")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Workflow"})]
         public sealed class Workflow : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19518,7 +19518,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfWorkflow")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfWorkflow")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfWorkflow"})]
         public sealed class ArrayOfWorkflow : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19553,7 +19553,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfRoutingRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfRoutingRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfRoutingRule"})]
         public sealed class ArrayOfRoutingRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19588,7 +19588,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"RoutingRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"RoutingRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"RoutingRule"})]
         public sealed class RoutingRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19623,7 +19623,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfRoutingRuleItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfRoutingRuleItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfRoutingRuleItem"})]
         public sealed class ArrayOfRoutingRuleItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19658,7 +19658,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"RoutingRuleItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"RoutingRuleItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"RoutingRuleItem"})]
         public sealed class RoutingRuleItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19693,7 +19693,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Queue")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Queue")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Queue"})]
         public sealed class Queue : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19728,7 +19728,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfConvertRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfConvertRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfConvertRule"})]
         public sealed class ArrayOfConvertRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19763,7 +19763,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ConvertRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ConvertRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ConvertRule"})]
         public sealed class ConvertRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19798,7 +19798,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfUserEntityInstanceData")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfUserEntityInstanceData")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfUserEntityInstanceData"})]
         public sealed class ArrayOfUserEntityInstanceData : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19833,7 +19833,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"UserEntityInstanceData")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"UserEntityInstanceData")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"UserEntityInstanceData"})]
         public sealed class UserEntityInstanceData : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19868,7 +19868,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"EntitlementChannel")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"EntitlementChannel")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"EntitlementChannel"})]
         public sealed class EntitlementChannel : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19903,7 +19903,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"EntitlementTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"EntitlementTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"EntitlementTemplate"})]
         public sealed class EntitlementTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19938,7 +19938,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfServiceAppointment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfServiceAppointment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfServiceAppointment"})]
         public sealed class ArrayOfServiceAppointment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -19973,7 +19973,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ServiceAppointment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ServiceAppointment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ServiceAppointment"})]
         public sealed class ServiceAppointment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20008,7 +20008,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfQueueItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfQueueItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfQueueItem"})]
         public sealed class ArrayOfQueueItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20043,7 +20043,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"QueueItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"QueueItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"QueueItem"})]
         public sealed class QueueItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20078,7 +20078,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SocialActivity")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SocialActivity")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SocialActivity"})]
         public sealed class SocialActivity : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20113,7 +20113,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SocialProfile")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SocialProfile")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SocialProfile"})]
         public sealed class SocialProfile : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20148,7 +20148,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSocialActivity")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSocialActivity")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSocialActivity"})]
         public sealed class ArrayOfSocialActivity : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20183,7 +20183,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"msdyn_PostAlbum")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"msdyn_PostAlbum")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"msdyn_PostAlbum"})]
         public sealed class msdyn_PostAlbum : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20218,7 +20218,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTask")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTask")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTask"})]
         public sealed class ArrayOfTask : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20253,7 +20253,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Task")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Task")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Task"})]
         public sealed class Task : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20288,7 +20288,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_aftersales")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_aftersales")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_aftersales"})]
         public sealed class new_aftersales : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20323,7 +20323,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_walkin")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_walkin")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_walkin"})]
         public sealed class ArrayOfnew_walkin : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20358,7 +20358,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_walkin")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_walkin")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_walkin"})]
         public sealed class new_walkin : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20393,7 +20393,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_dutystatus")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_dutystatus")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_dutystatus"})]
         public sealed class new_dutystatus : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20428,7 +20428,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfContact")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfContact")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfContact"})]
         public sealed class ArrayOfContact : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20463,7 +20463,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_model")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_model")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_model"})]
         public sealed class new_model : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20498,7 +20498,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_bodytype")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_bodytype")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_bodytype"})]
         public sealed class new_bodytype : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20533,7 +20533,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_model")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_model")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_model"})]
         public sealed class ArrayOfnew_model : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20568,7 +20568,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_class")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_class")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_class"})]
         public sealed class new_class : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20603,7 +20603,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfContract")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfContract")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfContract"})]
         public sealed class ArrayOfContract : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20638,7 +20638,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_modelsalescode")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_modelsalescode")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_modelsalescode"})]
         public sealed class ArrayOfnew_modelsalescode : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20673,7 +20673,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_modelsalescode")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_modelsalescode")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_modelsalescode"})]
         public sealed class new_modelsalescode : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20708,7 +20708,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfProduct")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfProduct")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfProduct"})]
         public sealed class ArrayOfProduct : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20743,7 +20743,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfQuote")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfQuote")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfQuote"})]
         public sealed class ArrayOfQuote : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20778,7 +20778,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSalesOrder")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSalesOrder")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSalesOrder"})]
         public sealed class ArrayOfSalesOrder : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20813,7 +20813,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPriceLevel")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPriceLevel")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPriceLevel"})]
         public sealed class ArrayOfPriceLevel : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20848,7 +20848,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PriceLevel")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PriceLevel")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PriceLevel"})]
         public sealed class PriceLevel : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20883,7 +20883,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfAccount")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfAccount")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfAccount"})]
         public sealed class ArrayOfAccount : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20918,7 +20918,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfInvoice")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfInvoice")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfInvoice"})]
         public sealed class ArrayOfInvoice : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20953,7 +20953,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfOpportunity")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfOpportunity")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfOpportunity"})]
         public sealed class ArrayOfOpportunity : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -20988,7 +20988,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfProductPriceLevel")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfProductPriceLevel")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfProductPriceLevel"})]
         public sealed class ArrayOfProductPriceLevel : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21023,7 +21023,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ProductPriceLevel")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ProductPriceLevel")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ProductPriceLevel"})]
         public sealed class ProductPriceLevel : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21058,7 +21058,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"DiscountType")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"DiscountType")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"DiscountType"})]
         public sealed class DiscountType : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21093,7 +21093,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfDiscount")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfDiscount")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfDiscount"})]
         public sealed class ArrayOfDiscount : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21128,7 +21128,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Discount")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Discount")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Discount"})]
         public sealed class Discount : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21163,7 +21163,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_vehicletype")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_vehicletype")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_vehicletype"})]
         public sealed class new_vehicletype : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21198,7 +21198,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"xbitz_Counter")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"xbitz_Counter")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"xbitz_Counter"})]
         public sealed class xbitz_Counter : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21233,7 +21233,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Site")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Site")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Site"})]
         public sealed class Site : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21268,7 +21268,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfResource")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfResource")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfResource"})]
         public sealed class ArrayOfResource : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21303,7 +21303,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Resource")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Resource")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Resource"})]
         public sealed class Resource : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21338,7 +21338,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSystemUser")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSystemUser")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSystemUser"})]
         public sealed class ArrayOfSystemUser : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21373,7 +21373,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfEntitlementTemplateChannel")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfEntitlementTemplateChannel")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfEntitlementTemplateChannel"})]
         public sealed class ArrayOfEntitlementTemplateChannel : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21408,7 +21408,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"EntitlementTemplateChannel")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"EntitlementTemplateChannel")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"EntitlementTemplateChannel"})]
         public sealed class EntitlementTemplateChannel : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21443,7 +21443,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfEntitlement")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfEntitlement")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfEntitlement"})]
         public sealed class ArrayOfEntitlement : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21478,7 +21478,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SLA")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SLA")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SLA"})]
         public sealed class SLA : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21513,7 +21513,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfEntitlementTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfEntitlementTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfEntitlementTemplate"})]
         public sealed class ArrayOfEntitlementTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21548,7 +21548,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSLAItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSLAItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSLAItem"})]
         public sealed class ArrayOfSLAItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21583,7 +21583,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SLAItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SLAItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SLAItem"})]
         public sealed class SLAItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21618,7 +21618,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"msdyn_PostConfig")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"msdyn_PostConfig")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"msdyn_PostConfig"})]
         public sealed class msdyn_PostConfig : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21653,7 +21653,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfmsdyn_PostRuleConfig")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfmsdyn_PostRuleConfig")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfmsdyn_PostRuleConfig"})]
         public sealed class ArrayOfmsdyn_PostRuleConfig : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21688,7 +21688,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"msdyn_PostRuleConfig")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"msdyn_PostRuleConfig")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"msdyn_PostRuleConfig"})]
         public sealed class msdyn_PostRuleConfig : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21723,7 +21723,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfmsdyn_wallsavedquery")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfmsdyn_wallsavedquery")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfmsdyn_wallsavedquery"})]
         public sealed class ArrayOfmsdyn_wallsavedquery : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21758,7 +21758,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"msdyn_wallsavedquery")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"msdyn_wallsavedquery")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"msdyn_wallsavedquery"})]
         public sealed class msdyn_wallsavedquery : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21793,7 +21793,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfmsdyn_wallsavedqueryusersettings")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfmsdyn_wallsavedqueryusersettings")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfmsdyn_wallsavedqueryusersettings"})]
         public sealed class ArrayOfmsdyn_wallsavedqueryusersettings : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21828,7 +21828,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"msdyn_wallsavedqueryusersettings")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"msdyn_wallsavedqueryusersettings")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"msdyn_wallsavedqueryusersettings"})]
         public sealed class msdyn_wallsavedqueryusersettings : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21863,7 +21863,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_casecategory")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_casecategory")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_casecategory"})]
         public sealed class new_casecategory : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21898,7 +21898,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_casesubcategory")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_casesubcategory")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_casesubcategory"})]
         public sealed class ArrayOfnew_casesubcategory : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21933,7 +21933,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"new_casesubcategory")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"new_casesubcategory")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"new_casesubcategory"})]
         public sealed class new_casesubcategory : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -21968,7 +21968,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"AttributeMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"AttributeMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"AttributeMap"})]
         public sealed class AttributeMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22003,7 +22003,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfAttributeMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfAttributeMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfAttributeMap"})]
         public sealed class ArrayOfAttributeMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22038,7 +22038,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"EntityMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"EntityMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"EntityMap"})]
         public sealed class EntityMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22073,7 +22073,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Audit")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Audit")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Audit"})]
         public sealed class Audit : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22108,7 +22108,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"BulkDeleteOperation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"BulkDeleteOperation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"BulkDeleteOperation"})]
         public sealed class BulkDeleteOperation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22143,7 +22143,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"CampaignActivityItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"CampaignActivityItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"CampaignActivityItem"})]
         public sealed class CampaignActivityItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22178,7 +22178,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"CampaignItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"CampaignItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"CampaignItem"})]
         public sealed class CampaignItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22213,7 +22213,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ColumnMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ColumnMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ColumnMapping"})]
         public sealed class ColumnMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22248,7 +22248,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ImportMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ImportMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ImportMap"})]
         public sealed class ImportMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22283,7 +22283,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfColumnMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfColumnMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfColumnMapping"})]
         public sealed class ArrayOfColumnMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22318,7 +22318,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfImportEntityMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfImportEntityMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfImportEntityMapping"})]
         public sealed class ArrayOfImportEntityMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22353,7 +22353,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ImportEntityMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ImportEntityMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ImportEntityMapping"})]
         public sealed class ImportEntityMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22388,7 +22388,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfOwnerMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfOwnerMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfOwnerMapping"})]
         public sealed class ArrayOfOwnerMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22423,7 +22423,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"OwnerMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"OwnerMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"OwnerMapping"})]
         public sealed class OwnerMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22458,7 +22458,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTransformationMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTransformationMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTransformationMapping"})]
         public sealed class ArrayOfTransformationMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22493,7 +22493,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"TransformationMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"TransformationMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TransformationMapping"})]
         public sealed class TransformationMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22528,7 +22528,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTransformationParameterMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTransformationParameterMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTransformationParameterMapping"})]
         public sealed class ArrayOfTransformationParameterMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22563,7 +22563,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"TransformationParameterMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"TransformationParameterMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TransformationParameterMapping"})]
         public sealed class TransformationParameterMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22598,7 +22598,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfLookUpMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfLookUpMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfLookUpMapping"})]
         public sealed class ArrayOfLookUpMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22633,7 +22633,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"LookUpMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"LookUpMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"LookUpMapping"})]
         public sealed class LookUpMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22668,7 +22668,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPickListMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPickListMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPickListMapping"})]
         public sealed class ArrayOfPickListMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22703,7 +22703,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PickListMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PickListMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PickListMapping"})]
         public sealed class PickListMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22738,7 +22738,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"CompetitorProduct")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"CompetitorProduct")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"CompetitorProduct"})]
         public sealed class CompetitorProduct : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22773,7 +22773,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"CompetitorSalesLiterature")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"CompetitorSalesLiterature")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"CompetitorSalesLiterature"})]
         public sealed class CompetitorSalesLiterature : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22808,7 +22808,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSalesLiterature")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSalesLiterature")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSalesLiterature"})]
         public sealed class ArrayOfSalesLiterature : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22843,7 +22843,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ConnectionRole")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ConnectionRole")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ConnectionRole"})]
         public sealed class ConnectionRole : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22878,7 +22878,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfConnectionRole")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfConnectionRole")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfConnectionRole"})]
         public sealed class ArrayOfConnectionRole : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22913,7 +22913,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfConnectionRoleObjectTypeCode")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfConnectionRoleObjectTypeCode")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfConnectionRoleObjectTypeCode"})]
         public sealed class ArrayOfConnectionRoleObjectTypeCode : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22948,7 +22948,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ConnectionRoleObjectTypeCode")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ConnectionRoleObjectTypeCode")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ConnectionRoleObjectTypeCode"})]
         public sealed class ConnectionRoleObjectTypeCode : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -22983,7 +22983,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ConnectionRoleAssociation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ConnectionRoleAssociation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ConnectionRoleAssociation"})]
         public sealed class ConnectionRoleAssociation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23018,7 +23018,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ContractTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ContractTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ContractTemplate"})]
         public sealed class ContractTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23053,7 +23053,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"CustomerOpportunityRole")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"CustomerOpportunityRole")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"CustomerOpportunityRole"})]
         public sealed class CustomerOpportunityRole : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23088,7 +23088,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"RelationshipRole")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"RelationshipRole")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"RelationshipRole"})]
         public sealed class RelationshipRole : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23123,7 +23123,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfCustomerOpportunityRole")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfCustomerOpportunityRole")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfCustomerOpportunityRole"})]
         public sealed class ArrayOfCustomerOpportunityRole : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23158,7 +23158,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfCustomerRelationship")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfCustomerRelationship")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfCustomerRelationship"})]
         public sealed class ArrayOfCustomerRelationship : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23193,7 +23193,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"CustomerRelationship")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"CustomerRelationship")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"CustomerRelationship"})]
         public sealed class CustomerRelationship : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23228,7 +23228,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfRelationshipRoleMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfRelationshipRoleMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfRelationshipRoleMap"})]
         public sealed class ArrayOfRelationshipRoleMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23263,7 +23263,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"RelationshipRoleMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"RelationshipRoleMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"RelationshipRoleMap"})]
         public sealed class RelationshipRoleMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23298,7 +23298,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Dependency")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Dependency")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Dependency"})]
         public sealed class Dependency : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23333,7 +23333,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"DisplayString")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"DisplayString")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"DisplayString"})]
         public sealed class DisplayString : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23368,7 +23368,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"DuplicateRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"DuplicateRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"DuplicateRule"})]
         public sealed class DuplicateRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23403,7 +23403,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfDuplicateRuleCondition")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfDuplicateRuleCondition")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfDuplicateRuleCondition"})]
         public sealed class ArrayOfDuplicateRuleCondition : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23438,7 +23438,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"DuplicateRuleCondition")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"DuplicateRuleCondition")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"DuplicateRuleCondition"})]
         public sealed class DuplicateRuleCondition : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23473,7 +23473,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"FieldPermission")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"FieldPermission")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"FieldPermission"})]
         public sealed class FieldPermission : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23508,7 +23508,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"FieldSecurityProfile")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"FieldSecurityProfile")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"FieldSecurityProfile"})]
         public sealed class FieldSecurityProfile : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23543,7 +23543,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfFieldPermission")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfFieldPermission")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfFieldPermission"})]
         public sealed class ArrayOfFieldPermission : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23578,7 +23578,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTeam")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTeam")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTeam"})]
         public sealed class ArrayOfTeam : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23613,7 +23613,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Goal")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Goal")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Goal"})]
         public sealed class Goal : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23648,7 +23648,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfGoal")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfGoal")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfGoal"})]
         public sealed class ArrayOfGoal : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23683,7 +23683,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"GoalRollupQuery")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"GoalRollupQuery")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"GoalRollupQuery"})]
         public sealed class GoalRollupQuery : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23718,7 +23718,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Metric")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Metric")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Metric"})]
         public sealed class Metric : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23753,7 +23753,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfRollupField")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfRollupField")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfRollupField"})]
         public sealed class ArrayOfRollupField : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23788,7 +23788,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"RollupField")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"RollupField")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"RollupField"})]
         public sealed class RollupField : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23823,7 +23823,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Import")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Import")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Import"})]
         public sealed class Import : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23858,7 +23858,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ImportJob")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ImportJob")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ImportJob"})]
         public sealed class ImportJob : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23893,7 +23893,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ImportLog")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ImportLog")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ImportLog"})]
         public sealed class ImportLog : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23928,7 +23928,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"InvalidDependency")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"InvalidDependency")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"InvalidDependency"})]
         public sealed class InvalidDependency : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23963,7 +23963,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"IsvConfig")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"IsvConfig")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"IsvConfig"})]
         public sealed class IsvConfig : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -23998,7 +23998,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"KbArticleComment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"KbArticleComment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"KbArticleComment"})]
         public sealed class KbArticleComment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24033,7 +24033,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"KbArticleTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"KbArticleTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"KbArticleTemplate"})]
         public sealed class KbArticleTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24068,7 +24068,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfKbArticle")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfKbArticle")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfKbArticle"})]
         public sealed class ArrayOfKbArticle : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24103,7 +24103,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"LeadAddress")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"LeadAddress")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"LeadAddress"})]
         public sealed class LeadAddress : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24138,7 +24138,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"LeadProduct")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"LeadProduct")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"LeadProduct"})]
         public sealed class LeadProduct : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24173,7 +24173,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"License")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"License")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"License"})]
         public sealed class License : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24208,7 +24208,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"List")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"List")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"List"})]
         public sealed class List : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24243,7 +24243,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ListMember")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ListMember")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ListMember"})]
         public sealed class ListMember : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24278,7 +24278,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfList")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfList")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfList"})]
         public sealed class ArrayOfList : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24313,7 +24313,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"MailMergeTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"MailMergeTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"MailMergeTemplate"})]
         public sealed class MailMergeTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24348,7 +24348,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"OpportunityProduct")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"OpportunityProduct")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"OpportunityProduct"})]
         public sealed class OpportunityProduct : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24383,7 +24383,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"OrderClose")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"OrderClose")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"OrderClose"})]
         public sealed class OrderClose : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24418,7 +24418,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PluginAssembly")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PluginAssembly")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PluginAssembly"})]
         public sealed class PluginAssembly : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24453,7 +24453,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPluginType")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPluginType")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPluginType"})]
         public sealed class ArrayOfPluginType : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24488,7 +24488,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PluginType")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PluginType")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PluginType"})]
         public sealed class PluginType : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24523,7 +24523,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfService")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfService")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfService"})]
         public sealed class ArrayOfService : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24558,7 +24558,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPluginTypeStatistic")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPluginTypeStatistic")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPluginTypeStatistic"})]
         public sealed class ArrayOfPluginTypeStatistic : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24593,7 +24593,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PluginTypeStatistic")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PluginTypeStatistic")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PluginTypeStatistic"})]
         public sealed class PluginTypeStatistic : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24628,7 +24628,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessageProcessingStep")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessageProcessingStep")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessageProcessingStep"})]
         public sealed class ArrayOfSdkMessageProcessingStep : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24663,7 +24663,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessageProcessingStep")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessageProcessingStep")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessageProcessingStep"})]
         public sealed class SdkMessageProcessingStep : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24698,7 +24698,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessageFilter")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessageFilter")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessageFilter"})]
         public sealed class SdkMessageFilter : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24733,7 +24733,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessage")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessage")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessage"})]
         public sealed class SdkMessage : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24768,7 +24768,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessagePair")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessagePair")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessagePair"})]
         public sealed class ArrayOfSdkMessagePair : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24803,7 +24803,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessagePair")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessagePair")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessagePair"})]
         public sealed class SdkMessagePair : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24838,7 +24838,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessageRequest")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessageRequest")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessageRequest"})]
         public sealed class ArrayOfSdkMessageRequest : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24873,7 +24873,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessageRequest")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessageRequest")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessageRequest"})]
         public sealed class SdkMessageRequest : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24908,7 +24908,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessageRequestField")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessageRequestField")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessageRequestField"})]
         public sealed class ArrayOfSdkMessageRequestField : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24943,7 +24943,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessageRequestField")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessageRequestField")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessageRequestField"})]
         public sealed class SdkMessageRequestField : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -24978,7 +24978,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessageResponse")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessageResponse")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessageResponse"})]
         public sealed class ArrayOfSdkMessageResponse : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25013,7 +25013,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessageResponse")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessageResponse")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessageResponse"})]
         public sealed class SdkMessageResponse : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25048,7 +25048,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessageResponseField")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessageResponseField")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessageResponseField"})]
         public sealed class ArrayOfSdkMessageResponseField : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25083,7 +25083,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessageResponseField")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessageResponseField")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessageResponseField"})]
         public sealed class SdkMessageResponseField : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25118,7 +25118,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessageFilter")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessageFilter")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessageFilter"})]
         public sealed class ArrayOfSdkMessageFilter : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25153,7 +25153,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfWorkflowDependency")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfWorkflowDependency")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfWorkflowDependency"})]
         public sealed class ArrayOfWorkflowDependency : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25188,7 +25188,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"WorkflowDependency")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"WorkflowDependency")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"WorkflowDependency"})]
         public sealed class WorkflowDependency : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25223,7 +25223,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessageProcessingStepImage")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessageProcessingStepImage")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessageProcessingStepImage"})]
         public sealed class ArrayOfSdkMessageProcessingStepImage : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25258,7 +25258,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessageProcessingStepImage")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessageProcessingStepImage")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessageProcessingStepImage"})]
         public sealed class SdkMessageProcessingStepImage : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25293,7 +25293,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SdkMessageProcessingStepSecureConfig")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SdkMessageProcessingStepSecureConfig")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SdkMessageProcessingStepSecureConfig"})]
         public sealed class SdkMessageProcessingStepSecureConfig : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25328,7 +25328,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ServiceEndpoint")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ServiceEndpoint")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ServiceEndpoint"})]
         public sealed class ServiceEndpoint : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25363,7 +25363,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PrincipalEntityMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PrincipalEntityMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PrincipalEntityMap"})]
         public sealed class PrincipalEntityMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25398,7 +25398,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Privilege")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Privilege")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Privilege"})]
         public sealed class Privilege : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25433,7 +25433,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfRole")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfRole")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfRole"})]
         public sealed class ArrayOfRole : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25468,7 +25468,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Role")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Role")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Role"})]
         public sealed class Role : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25503,7 +25503,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPrivilege")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPrivilege")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPrivilege"})]
         public sealed class ArrayOfPrivilege : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25538,7 +25538,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ProductAssociation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ProductAssociation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ProductAssociation"})]
         public sealed class ProductAssociation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25573,7 +25573,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ProductSalesLiterature")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ProductSalesLiterature")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ProductSalesLiterature"})]
         public sealed class ProductSalesLiterature : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25608,7 +25608,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ProductSubstitute")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ProductSubstitute")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ProductSubstitute"})]
         public sealed class ProductSubstitute : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25643,7 +25643,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Publisher")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Publisher")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Publisher"})]
         public sealed class Publisher : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25678,7 +25678,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPublisherAddress")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPublisherAddress")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPublisherAddress"})]
         public sealed class ArrayOfPublisherAddress : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25713,7 +25713,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PublisherAddress")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PublisherAddress")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PublisherAddress"})]
         public sealed class PublisherAddress : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25748,7 +25748,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSolution")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSolution")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSolution"})]
         public sealed class ArrayOfSolution : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25783,7 +25783,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Solution")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Solution")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Solution"})]
         public sealed class Solution : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25818,7 +25818,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"WebResource")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"WebResource")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"WebResource"})]
         public sealed class WebResource : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25853,7 +25853,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSavedQueryVisualization")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSavedQueryVisualization")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSavedQueryVisualization"})]
         public sealed class ArrayOfSavedQueryVisualization : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25888,7 +25888,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SavedQueryVisualization")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SavedQueryVisualization")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SavedQueryVisualization"})]
         public sealed class SavedQueryVisualization : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25923,7 +25923,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfUserQueryVisualization")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfUserQueryVisualization")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfUserQueryVisualization"})]
         public sealed class ArrayOfUserQueryVisualization : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25958,7 +25958,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"UserQueryVisualization")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"UserQueryVisualization")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"UserQueryVisualization"})]
         public sealed class UserQueryVisualization : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -25993,7 +25993,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSolutionComponent")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSolutionComponent")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSolutionComponent"})]
         public sealed class ArrayOfSolutionComponent : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26028,7 +26028,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SolutionComponent")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SolutionComponent")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SolutionComponent"})]
         public sealed class SolutionComponent : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26063,7 +26063,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"QuoteDetail")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"QuoteDetail")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"QuoteDetail"})]
         public sealed class QuoteDetail : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26098,7 +26098,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Report")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Report")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Report"})]
         public sealed class Report : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26133,7 +26133,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfReport")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfReport")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfReport"})]
         public sealed class ArrayOfReport : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26168,7 +26168,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfReportCategory")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfReportCategory")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfReportCategory"})]
         public sealed class ArrayOfReportCategory : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26203,7 +26203,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ReportCategory")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ReportCategory")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ReportCategory"})]
         public sealed class ReportCategory : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26238,7 +26238,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfReportEntity")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfReportEntity")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfReportEntity"})]
         public sealed class ArrayOfReportEntity : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26273,7 +26273,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ReportEntity")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ReportEntity")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ReportEntity"})]
         public sealed class ReportEntity : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26308,7 +26308,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfReportLink")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfReportLink")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfReportLink"})]
         public sealed class ArrayOfReportLink : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26343,7 +26343,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ReportLink")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ReportLink")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ReportLink"})]
         public sealed class ReportLink : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26378,7 +26378,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfReportVisibility")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfReportVisibility")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfReportVisibility"})]
         public sealed class ArrayOfReportVisibility : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26413,7 +26413,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ReportVisibility")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ReportVisibility")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ReportVisibility"})]
         public sealed class ReportVisibility : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26448,7 +26448,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"RibbonCustomization")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"RibbonCustomization")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"RibbonCustomization"})]
         public sealed class RibbonCustomization : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26483,7 +26483,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SalesLiteratureItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SalesLiteratureItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SalesLiteratureItem"})]
         public sealed class SalesLiteratureItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26518,7 +26518,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SalesOrderDetail")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SalesOrderDetail")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SalesOrderDetail"})]
         public sealed class SalesOrderDetail : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26553,7 +26553,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SavedQuery")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SavedQuery")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SavedQuery"})]
         public sealed class SavedQuery : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26588,7 +26588,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SharePointSite")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SharePointSite")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SharePointSite"})]
         public sealed class SharePointSite : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26623,7 +26623,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSharePointSite")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSharePointSite")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSharePointSite"})]
         public sealed class ArrayOfSharePointSite : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26658,7 +26658,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SiteMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SiteMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SiteMap"})]
         public sealed class SiteMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26693,7 +26693,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Subject")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Subject")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Subject"})]
         public sealed class Subject : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26728,7 +26728,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSubject")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSubject")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSubject"})]
         public sealed class ArrayOfSubject : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26763,7 +26763,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SubscriptionManuallyTrackedObject")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SubscriptionManuallyTrackedObject")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SubscriptionManuallyTrackedObject"})]
         public sealed class SubscriptionManuallyTrackedObject : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26798,7 +26798,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"TeamMembership")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"TeamMembership")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TeamMembership"})]
         public sealed class TeamMembership : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26833,7 +26833,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Template")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Template")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Template"})]
         public sealed class Template : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26868,7 +26868,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfActivityMimeAttachment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfActivityMimeAttachment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfActivityMimeAttachment"})]
         public sealed class ArrayOfActivityMimeAttachment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26903,7 +26903,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Territory")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Territory")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Territory"})]
         public sealed class Territory : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26938,7 +26938,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"TimeZoneDefinition")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"TimeZoneDefinition")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TimeZoneDefinition"})]
         public sealed class TimeZoneDefinition : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -26973,7 +26973,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTimeZoneLocalizedName")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTimeZoneLocalizedName")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTimeZoneLocalizedName"})]
         public sealed class ArrayOfTimeZoneLocalizedName : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27008,7 +27008,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"TimeZoneLocalizedName")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"TimeZoneLocalizedName")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TimeZoneLocalizedName"})]
         public sealed class TimeZoneLocalizedName : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27043,7 +27043,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTimeZoneRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTimeZoneRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTimeZoneRule"})]
         public sealed class ArrayOfTimeZoneRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27078,7 +27078,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"TimeZoneRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"TimeZoneRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TimeZoneRule"})]
         public sealed class TimeZoneRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27113,7 +27113,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"UserEntityUISettings")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"UserEntityUISettings")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"UserEntityUISettings"})]
         public sealed class UserEntityUISettings : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27148,7 +27148,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"UserForm")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"UserForm")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"UserForm"})]
         public sealed class UserForm : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27183,7 +27183,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSocialInsightsConfiguration")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSocialInsightsConfiguration")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSocialInsightsConfiguration"})]
         public sealed class ArrayOfSocialInsightsConfiguration : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27218,7 +27218,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SocialInsightsConfiguration")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SocialInsightsConfiguration")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SocialInsightsConfiguration"})]
         public sealed class SocialInsightsConfiguration : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27253,7 +27253,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SystemForm")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SystemForm")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SystemForm"})]
         public sealed class SystemForm : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27288,7 +27288,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSystemForm")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSystemForm")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSystemForm"})]
         public sealed class ArrayOfSystemForm : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27323,7 +27323,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfProcessTrigger")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfProcessTrigger")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfProcessTrigger"})]
         public sealed class ArrayOfProcessTrigger : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27358,7 +27358,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ProcessTrigger")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ProcessTrigger")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ProcessTrigger"})]
         public sealed class ProcessTrigger : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27393,7 +27393,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"UserQuery")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"UserQuery")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"UserQuery"})]
         public sealed class UserQuery : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27428,7 +27428,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"WorkflowLog")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"WorkflowLog")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"WorkflowLog"})]
         public sealed class WorkflowLog : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27463,7 +27463,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfConvertRuleItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfConvertRuleItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfConvertRuleItem"})]
         public sealed class ArrayOfConvertRuleItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27498,7 +27498,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ConvertRuleItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ConvertRuleItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ConvertRuleItem"})]
         public sealed class ConvertRuleItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27533,7 +27533,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfProcessStage")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfProcessStage")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfProcessStage"})]
         public sealed class ArrayOfProcessStage : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27568,7 +27568,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSLA")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSLA")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSLA"})]
         public sealed class ArrayOfSLA : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27603,7 +27603,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSalesLiteratureItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSalesLiteratureItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSalesLiteratureItem"})]
         public sealed class ArrayOfSalesLiteratureItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27638,7 +27638,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSharePointData")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSharePointData")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSharePointData"})]
         public sealed class ArrayOfSharePointData : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27673,7 +27673,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SharePointData")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SharePointData")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SharePointData"})]
         public sealed class SharePointData : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27708,7 +27708,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfKbArticleComment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfKbArticleComment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfKbArticleComment"})]
         public sealed class ArrayOfKbArticleComment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27743,7 +27743,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfOpportunityProduct")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfOpportunityProduct")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfOpportunityProduct"})]
         public sealed class ArrayOfOpportunityProduct : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27778,7 +27778,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSalesOrderDetail")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSalesOrderDetail")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSalesOrderDetail"})]
         public sealed class ArrayOfSalesOrderDetail : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27813,7 +27813,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfQuoteDetail")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfQuoteDetail")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfQuoteDetail"})]
         public sealed class ArrayOfQuoteDetail : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27848,7 +27848,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfEntitlementChannel")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfEntitlementChannel")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfEntitlementChannel"})]
         public sealed class ArrayOfEntitlementChannel : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27883,7 +27883,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfOrderClose")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfOrderClose")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfOrderClose"})]
         public sealed class ArrayOfOrderClose : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27918,7 +27918,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"RecurrenceRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"RecurrenceRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"RecurrenceRule"})]
         public sealed class RecurrenceRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27953,7 +27953,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfDuplicateRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfDuplicateRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfDuplicateRule"})]
         public sealed class ArrayOfDuplicateRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -27988,7 +27988,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfImportLog")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfImportLog")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfImportLog"})]
         public sealed class ArrayOfImportLog : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28023,7 +28023,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfImportMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfImportMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfImportMap"})]
         public sealed class ArrayOfImportMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28058,7 +28058,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfImport")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfImport")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfImport"})]
         public sealed class ArrayOfImport : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28093,7 +28093,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTemplate"})]
         public sealed class ArrayOfTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28128,7 +28128,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfEmailServerProfile")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfEmailServerProfile")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfEmailServerProfile"})]
         public sealed class ArrayOfEmailServerProfile : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28163,7 +28163,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfExchangeSyncIdMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfExchangeSyncIdMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfExchangeSyncIdMapping"})]
         public sealed class ArrayOfExchangeSyncIdMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28198,7 +28198,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ExchangeSyncIdMapping")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ExchangeSyncIdMapping")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ExchangeSyncIdMapping"})]
         public sealed class ExchangeSyncIdMapping : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28233,7 +28233,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfGoalRollupQuery")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfGoalRollupQuery")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfGoalRollupQuery"})]
         public sealed class ArrayOfGoalRollupQuery : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28268,7 +28268,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfmsdyn_PostAlbum")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfmsdyn_PostAlbum")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfmsdyn_PostAlbum"})]
         public sealed class ArrayOfmsdyn_PostAlbum : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28303,7 +28303,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_casecategory")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_casecategory")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_casecategory"})]
         public sealed class ArrayOfnew_casecategory : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28338,7 +28338,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfUserEntityUISettings")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfUserEntityUISettings")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfUserEntityUISettings"})]
         public sealed class ArrayOfUserEntityUISettings : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28373,7 +28373,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfUserForm")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfUserForm")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfUserForm"})]
         public sealed class ArrayOfUserForm : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28408,7 +28408,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfUserQuery")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfUserQuery")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfUserQuery"})]
         public sealed class ArrayOfUserQuery : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28443,7 +28443,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfWorkflowLog")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfWorkflowLog")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfWorkflowLog"})]
         public sealed class ArrayOfWorkflowLog : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28478,7 +28478,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfFieldSecurityProfile")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfFieldSecurityProfile")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfFieldSecurityProfile"})]
         public sealed class ArrayOfFieldSecurityProfile : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28513,7 +28513,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"TeamTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"TeamTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TeamTemplate"})]
         public sealed class TeamTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28548,7 +28548,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfLeadAddress")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfLeadAddress")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfLeadAddress"})]
         public sealed class ArrayOfLeadAddress : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28583,7 +28583,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfMailMergeTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfMailMergeTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfMailMergeTemplate"})]
         public sealed class ArrayOfMailMergeTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28618,7 +28618,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfQueue")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfQueue")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfQueue"})]
         public sealed class ArrayOfQueue : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28653,7 +28653,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTerritory")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTerritory")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTerritory"})]
         public sealed class ArrayOfTerritory : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28688,7 +28688,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSocialProfile")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSocialProfile")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSocialProfile"})]
         public sealed class ArrayOfSocialProfile : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28723,7 +28723,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfAnnualFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfAnnualFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfAnnualFiscalCalendar"})]
         public sealed class ArrayOfAnnualFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28758,7 +28758,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfDiscountType")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfDiscountType")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfDiscountType"})]
         public sealed class ArrayOfDiscountType : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28793,7 +28793,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfFixedMonthlyFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfFixedMonthlyFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfFixedMonthlyFiscalCalendar"})]
         public sealed class ArrayOfFixedMonthlyFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28828,7 +28828,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"FixedMonthlyFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"FixedMonthlyFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"FixedMonthlyFiscalCalendar"})]
         public sealed class FixedMonthlyFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28863,7 +28863,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfMonthlyFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfMonthlyFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfMonthlyFiscalCalendar"})]
         public sealed class ArrayOfMonthlyFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28898,7 +28898,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"MonthlyFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"MonthlyFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"MonthlyFiscalCalendar"})]
         public sealed class MonthlyFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28933,7 +28933,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfQuarterlyFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfQuarterlyFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfQuarterlyFiscalCalendar"})]
         public sealed class ArrayOfQuarterlyFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -28968,7 +28968,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"QuarterlyFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"QuarterlyFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"QuarterlyFiscalCalendar"})]
         public sealed class QuarterlyFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29003,7 +29003,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSemiAnnualFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSemiAnnualFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSemiAnnualFiscalCalendar"})]
         public sealed class ArrayOfSemiAnnualFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29038,7 +29038,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"SemiAnnualFiscalCalendar")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"SemiAnnualFiscalCalendar")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"SemiAnnualFiscalCalendar"})]
         public sealed class SemiAnnualFiscalCalendar : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29073,7 +29073,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfUserSettings")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfUserSettings")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfUserSettings"})]
         public sealed class ArrayOfUserSettings : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29108,7 +29108,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"UserSettings")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"UserSettings")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"UserSettings"})]
         public sealed class UserSettings : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29143,7 +29143,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_aftersales")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_aftersales")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_aftersales"})]
         public sealed class ArrayOfnew_aftersales : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29178,7 +29178,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTraceLog")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTraceLog")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTraceLog"})]
         public sealed class ArrayOfTraceLog : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29213,7 +29213,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"TraceLog")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"TraceLog")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TraceLog"})]
         public sealed class TraceLog : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29248,7 +29248,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfOrganizationUI")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfOrganizationUI")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfOrganizationUI"})]
         public sealed class ArrayOfOrganizationUI : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29283,7 +29283,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"OrganizationUI")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"OrganizationUI")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"OrganizationUI"})]
         public sealed class OrganizationUI : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29318,7 +29318,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPostComment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPostComment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPostComment"})]
         public sealed class ArrayOfPostComment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29353,7 +29353,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PostComment")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PostComment")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PostComment"})]
         public sealed class PostComment : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29388,7 +29388,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"Post")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"Post")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"Post"})]
         public sealed class Post : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29423,7 +29423,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPostLike")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPostLike")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPostLike"})]
         public sealed class ArrayOfPostLike : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29458,7 +29458,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"PostLike")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"PostLike")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"PostLike"})]
         public sealed class PostLike : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29493,7 +29493,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfBusinessUnitNewsArticle")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfBusinessUnitNewsArticle")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfBusinessUnitNewsArticle"})]
         public sealed class ArrayOfBusinessUnitNewsArticle : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29528,7 +29528,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfConstraintBasedGroup")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfConstraintBasedGroup")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfConstraintBasedGroup"})]
         public sealed class ArrayOfConstraintBasedGroup : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29563,7 +29563,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfContractTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfContractTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfContractTemplate"})]
         public sealed class ArrayOfContractTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29598,7 +29598,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfDisplayString")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfDisplayString")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfDisplayString"})]
         public sealed class ArrayOfDisplayString : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29633,7 +29633,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfEntityMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfEntityMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfEntityMap"})]
         public sealed class ArrayOfEntityMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29668,7 +29668,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfImportJob")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfImportJob")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfImportJob"})]
         public sealed class ArrayOfImportJob : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29703,7 +29703,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfIsvConfig")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfIsvConfig")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfIsvConfig"})]
         public sealed class ArrayOfIsvConfig : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29738,7 +29738,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfKbArticleTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfKbArticleTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfKbArticleTemplate"})]
         public sealed class ArrayOfKbArticleTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29773,7 +29773,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfLicense")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfLicense")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfLicense"})]
         public sealed class ArrayOfLicense : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29808,7 +29808,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfMetric")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfMetric")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfMetric"})]
         public sealed class ArrayOfMetric : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29843,7 +29843,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfmsdyn_PostConfig")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfmsdyn_PostConfig")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfmsdyn_PostConfig"})]
         public sealed class ArrayOfmsdyn_PostConfig : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29878,7 +29878,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_bodytype")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_bodytype")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_bodytype"})]
         public sealed class ArrayOfnew_bodytype : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29913,7 +29913,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_class")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_class")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_class"})]
         public sealed class ArrayOfnew_class : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29948,7 +29948,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_dutystatus")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_dutystatus")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_dutystatus"})]
         public sealed class ArrayOfnew_dutystatus : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -29983,7 +29983,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfnew_vehicletype")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfnew_vehicletype")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfnew_vehicletype"})]
         public sealed class ArrayOfnew_vehicletype : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30018,7 +30018,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPluginAssembly")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPluginAssembly")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPluginAssembly"})]
         public sealed class ArrayOfPluginAssembly : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30053,7 +30053,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPost")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPost")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPost"})]
         public sealed class ArrayOfPost : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30088,7 +30088,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfPublisher")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfPublisher")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfPublisher"})]
         public sealed class ArrayOfPublisher : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30123,7 +30123,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfRelationshipRole")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfRelationshipRole")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfRelationshipRole"})]
         public sealed class ArrayOfRelationshipRole : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30158,7 +30158,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfRibbonCustomization")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfRibbonCustomization")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfRibbonCustomization"})]
         public sealed class ArrayOfRibbonCustomization : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30193,7 +30193,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSavedQuery")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSavedQuery")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSavedQuery"})]
         public sealed class ArrayOfSavedQuery : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30228,7 +30228,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessage")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessage")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessage"})]
         public sealed class ArrayOfSdkMessage : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30263,7 +30263,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSdkMessageProcessingStepSecureConfig")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSdkMessageProcessingStepSecureConfig")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSdkMessageProcessingStepSecureConfig"})]
         public sealed class ArrayOfSdkMessageProcessingStepSecureConfig : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30298,7 +30298,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfServiceEndpoint")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfServiceEndpoint")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfServiceEndpoint"})]
         public sealed class ArrayOfServiceEndpoint : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30333,7 +30333,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSiteMap")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSiteMap")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSiteMap"})]
         public sealed class ArrayOfSiteMap : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30368,7 +30368,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfSite")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfSite")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfSite"})]
         public sealed class ArrayOfSite : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30403,7 +30403,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTransactionCurrency")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTransactionCurrency")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTransactionCurrency"})]
         public sealed class ArrayOfTransactionCurrency : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30438,7 +30438,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfUoMSchedule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfUoMSchedule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfUoMSchedule"})]
         public sealed class ArrayOfUoMSchedule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30473,7 +30473,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfxbitz_Counter")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfxbitz_Counter")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfxbitz_Counter"})]
         public sealed class ArrayOfxbitz_Counter : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30508,7 +30508,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfWebResource")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfWebResource")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfWebResource"})]
         public sealed class ArrayOfWebResource : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30543,7 +30543,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfRecurrenceRule")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfRecurrenceRule")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfRecurrenceRule"})]
         public sealed class ArrayOfRecurrenceRule : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30578,7 +30578,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfAudit")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfAudit")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfAudit"})]
         public sealed class ArrayOfAudit : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30613,7 +30613,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfBulkDeleteOperation")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfBulkDeleteOperation")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfBulkDeleteOperation"})]
         public sealed class ArrayOfBulkDeleteOperation : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30648,7 +30648,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfListMember")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfListMember")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfListMember"})]
         public sealed class ArrayOfListMember : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30683,7 +30683,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTeamTemplate")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTeamTemplate")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTeamTemplate"})]
         public sealed class ArrayOfTeamTemplate : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30718,7 +30718,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfTimeZoneDefinition")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfTimeZoneDefinition")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTimeZoneDefinition"})]
         public sealed class ArrayOfTimeZoneDefinition : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -30753,7 +30753,7 @@ namespace Toyota.Tsusho.CRM.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.datacontract.org/2004/07/MSCRM.Workflow.CRMTypes",@"ArrayOfCampaignActivityItem")]
+        [Schema(@"http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API",@"ArrayOfCampaignActivityItem")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfCampaignActivityItem"})]
         public sealed class ArrayOfCampaignActivityItem : Microsoft.XLANGs.BaseTypes.SchemaBase {
