@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="Microsoft.XRM.SDK.dll" Id="649f201a-3928-e411-93f3-001c4291da00" IsolationMode="None" SourceType="Database" />
+    <Solution Assembly="Toyota.Tsusho.CRM.API.dll" Id="679f201a-3928-e411-93f3-001c4291da00" IsolationMode="None" SourceType="Database" />
+    <Solution Assembly="Toyota.Tsusho.CRM.API.MessageContracts.dll" Id="6a9f201a-3928-e411-93f3-001c4291da00" IsolationMode="None" SourceType="Database" />
+    <Solution Assembly="Toyota.Tsusho.CRM.API.Workflows.dll" Id="6d9f201a-3928-e411-93f3-001c4291da00" IsolationMode="None" SourceType="Database" />
+  </Solutions>
+  <XamlWorkflows>
+    <XamlWorkflowSolution Assembly="Toyota.Tsusho.CRM.API.Workflows.dll">
+      <XamlWorkflowType Path="../Toyota.Tsusho.CRM.API.Workflows/ContactWorkflow.xaml" Id="709f201a-3928-e411-93f3-001c4291da00" PrimaryEntity="contact" ProcessName="Contact Publish" />
+    </XamlWorkflowSolution>
+  </XamlWorkflows>
+</Register>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.API", "Toyota.Tsusho.CRM.API\Toyota.Tsusho.CRM.API.csproj", "{788FC72C-4915-4969-A59F-4AF40F20E293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.API.Workflows", "Toyota.Tsusho.CRM.API.Workflows\Toyota.Tsusho.CRM.API.Workflows.csproj", "{26F2DC7C-85B2-466C-BD88-C7CF10743BF5}"
+EndProject
+Project("{88A30576-7583-4F75-8136-5EFD2C14ADFF}") = "Toyota.Tsusho.CRM.API.Package", "Toyota.Tsusho.CRM.API.Package\Toyota.Tsusho.CRM.API.Package.csproj", "{D6AD1BB9-AB8C-4CBF-8416-62628C37AA72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.API.MessageContracts", "Toyota.Tsusho.CRM.API.MessageContracts\Toyota.Tsusho.CRM.API.MessageContracts.csproj", "{44860F11-849B-4067-B505-12FC48F4213D}"
+EndProject
+Global
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{788FC72C-4915-4969-A59F-4AF40F20E293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788FC72C-4915-4969-A59F-4AF40F20E293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788FC72C-4915-4969-A59F-4AF40F20E293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788FC72C-4915-4969-A59F-4AF40F20E293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F2DC7C-85B2-466C-BD88-C7CF10743BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F2DC7C-85B2-466C-BD88-C7CF10743BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F2DC7C-85B2-466C-BD88-C7CF10743BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F2DC7C-85B2-466C-BD88-C7CF10743BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6AD1BB9-AB8C-4CBF-8416-62628C37AA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6AD1BB9-AB8C-4CBF-8416-62628C37AA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6AD1BB9-AB8C-4CBF-8416-62628C37AA72}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D6AD1BB9-AB8C-4CBF-8416-62628C37AA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6AD1BB9-AB8C-4CBF-8416-62628C37AA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6AD1BB9-AB8C-4CBF-8416-62628C37AA72}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{44860F11-849B-4067-B505-12FC48F4213D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44860F11-849B-4067-B505-12FC48F4213D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44860F11-849B-4067-B505-12FC48F4213D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44860F11-849B-4067-B505-12FC48F4213D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
