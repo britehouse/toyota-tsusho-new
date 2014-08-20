@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/crm/api/2014/08/contact" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/crm/api/2014/08/contact" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\ContactService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API.xsd" namespace="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" />
+  <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" name="Contact" nillable="true" type="q1:Contact" />
+</xs:schema>
