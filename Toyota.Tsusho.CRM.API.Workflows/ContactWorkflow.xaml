@@ -5,6 +5,7 @@
  xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk"
  xmlns:p="http://www.ttaf.co.za/crm/api/2014/08"
  xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
+ xmlns:p2="clr-namespace:System.ServiceModel.Activities;assembly=System.ServiceModel.Activities"
  xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
  xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
@@ -40,6 +41,9 @@
       <x:String>Toyota.Tsusho.CRM.API.MessageContracts</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>Microsoft.Xrm.Sdk</x:String>
+      <x:String>System.ServiceModel</x:String>
+      <x:String>System.ServiceModel.Activities</x:String>
+      <x:String>Microsoft.Xrm.Sdk.Workflow</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -59,6 +63,9 @@
       <AssemblyReference>Toyota.Tsusho.CRM.API.MessageContracts</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>Microsoft.Xrm.Sdk</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Web</AssemblyReference>
+      <AssemblyReference>Microsoft.Xrm.Sdk.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:WorkflowViewState.IdRef="Sequence_2">
@@ -83,20 +90,13 @@
       </Assign.Value>
     </Assign>
     <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
-      <p1:Send Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/Publish" EndpointConfigurationName="" sap2010:WorkflowViewState.IdRef="Send_1" OperationName="Publish" ServiceContractName="p:IContactService">
-        <p1:Send.Endpoint>
-          <p1:Endpoint AddressUri="http://localhost/Toyota.Tsusho.CRM.Services.Generic.WCF/OnRamp.svc">
-            <p1:Endpoint.Binding>
-              <p1:WSHttpBinding Name="wsHttpBinding" />
-            </p1:Endpoint.Binding>
-          </p1:Endpoint>
-        </p1:Send.Endpoint>
-        <p1:SendMessageContent DeclaredMessageType="ttcam:ContactPublishRequestMessage">
+      <p2:Send Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/Publish" EndpointConfigurationName="Toyota.Tsusho.CRM.Services.Generic.OnRamp" sap2010:WorkflowViewState.IdRef="Send_1" OperationName="Publish" ServiceContractName="p:IContactService">
+        <p2:SendMessageContent DeclaredMessageType="ttcam:ContactPublishRequestMessage">
           <InArgument x:TypeArguments="ttcam:ContactPublishRequestMessage">[contactRequest]</InArgument>
-        </p1:SendMessageContent>
-      </p1:Send>
+        </p2:SendMessageContent>
+      </p2:Send>
     </Sequence>
-    <sads:DebugSymbol.Symbol>d05DOlxQcm9qZWN0c1xUb3lvdGEuVHN1c2hvXFRveW90YS5Uc3VzaG8uQ1JNLkFQSS5Xb3JrZmxvd3NcQ29udGFjdFdvcmtmbG93LnhhbWwKQANkDgIBAUUFTA4CAQpNBVQOAgEGVQViEAIBAko0SnACAQ1HNUc+AgELUkpSiAECAQlPS09bAgEHVgdhEQIBA19MX1wCAQQ=</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d05DOlxQcm9qZWN0c1xUb3lvdGEuVHN1c2hvXFRveW90YS5Uc3VzaG8uQ1JNLkFQSS5Xb3JrZmxvd3NcQ29udGFjdFdvcmtmbG93LnhhbWwKRgNjDgIBAUsFUg4CAQpTBVoOAgEGWwVhEAIBAlA0UHACAQ1NNU0+AgELWEpYiAECAQlVS1VbAgEHXAdgEQIBA15MXlwCAQQ=</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
