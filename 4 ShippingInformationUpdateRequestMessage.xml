@@ -1,109 +1,28 @@
 ﻿<ShippingInformationUpdateRequestMessage xmlns="http://www.ttaf.co.za/talo/api/2014/05">
   <Shippings xmlns="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <ShippingInformation>
-      <VehicleNumber i:nil="true" />
-      <Store i:nil="true" />
-      <Documented>0001-01-01T00:00:00</Documented>
-      <Posted>0001-01-01T00:00:00</Posted>
+      <VehicleNumber>0000030703</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-28T00:00:00</Documented>
+      <Posted>2014-08-21T18:34:44.4106708+03:00</Posted>
       <DeliveryNote i:nil="true" />
       <BillofLading i:nil="true" />
-      <Invoice i:nil="true" />
+      <Invoice>
+        <Number>000012476</Number>
+        <Date>2014-08-26T00:00:00</Date>
+      </Invoice>
       <Vehicles>
         <Vehicle>
-          <Number>0000000810</Number>
-          <VIN>NBNJ76HG12</VIN>
-          <Engine>NJHJY767</Engine>
+          <Number>0000030703</Number>
+          <VIN>G6766G8BFGF5FGTTG</VIN>
+          <Engine>B7GHGHH</Engine>
           <Modification>Create</Modification>
-          <Modified>2014-07-28T15:35:34.613</Modified>
+          <Modified>2014-08-21T18:33:18.133</Modified>
         </Vehicle>
       </Vehicles>
-      <PurchaseOrder i:nil="true" />
+      <PurchaseOrder />
       <Modification>Create</Modification>
-      <Modified>0001-01-01T00:00:00</Modified>
-    </ShippingInformation>
-    <ShippingInformation>
-      <VehicleNumber i:nil="true" />
-      <Store i:nil="true" />
-      <Documented>0001-01-01T00:00:00</Documented>
-      <Posted>0001-01-01T00:00:00</Posted>
-      <DeliveryNote i:nil="true" />
-      <BillofLading i:nil="true" />
-      <Invoice i:nil="true" />
-      <Vehicles>
-        <Vehicle>
-          <Number>0000000811</Number>
-          <VIN>HNLKUU</VIN>
-          <Engine>0HJGVGHGFHGRT</Engine>
-          <Modification>Create</Modification>
-          <Modified>2014-07-28T15:31:12.197</Modified>
-        </Vehicle>
-      </Vehicles>
-      <PurchaseOrder i:nil="true" />
-      <Modification>Create</Modification>
-      <Modified>0001-01-01T00:00:00</Modified>
-    </ShippingInformation>
-    <ShippingInformation>
-      <VehicleNumber i:nil="true" />
-      <Store i:nil="true" />
-      <Documented>0001-01-01T00:00:00</Documented>
-      <Posted>0001-01-01T00:00:00</Posted>
-      <DeliveryNote i:nil="true" />
-      <BillofLading i:nil="true" />
-      <Invoice i:nil="true" />
-      <Vehicles>
-        <Vehicle>
-          <Number>0000000812</Number>
-          <VIN>HNJJH77</VIN>
-          <Engine>NJH77</Engine>
-          <Modification>Create</Modification>
-          <Modified>2014-07-28T15:21:58.71</Modified>
-        </Vehicle>
-      </Vehicles>
-      <PurchaseOrder i:nil="true" />
-      <Modification>Create</Modification>
-      <Modified>0001-01-01T00:00:00</Modified>
-    </ShippingInformation>
-    <ShippingInformation>
-      <VehicleNumber i:nil="true" />
-      <Store i:nil="true" />
-      <Documented>0001-01-01T00:00:00</Documented>
-      <Posted>0001-01-01T00:00:00</Posted>
-      <DeliveryNote i:nil="true" />
-      <BillofLading i:nil="true" />
-      <Invoice i:nil="true" />
-      <Vehicles>
-        <Vehicle>
-          <Number>0000000813</Number>
-          <VIN>KHBJJ7</VIN>
-          <Engine>JHB7556</Engine>
-          <Modification>Create</Modification>
-          <Modified>2014-07-28T15:23:30.12</Modified>
-        </Vehicle>
-      </Vehicles>
-      <PurchaseOrder i:nil="true" />
-      <Modification>Create</Modification>
-      <Modified>0001-01-01T00:00:00</Modified>
-    </ShippingInformation>
-    <ShippingInformation>
-      <VehicleNumber i:nil="true" />
-      <Store i:nil="true" />
-      <Documented>0001-01-01T00:00:00</Documented>
-      <Posted>0001-01-01T00:00:00</Posted>
-      <DeliveryNote i:nil="true" />
-      <BillofLading i:nil="true" />
-      <Invoice i:nil="true" />
-      <Vehicles>
-        <Vehicle>
-          <Number>0000000814</Number>
-          <VIN>JHBY67</VIN>
-          <Engine>SHGFDS</Engine>
-          <Modification>Create</Modification>
-          <Modified>2014-07-28T15:29:25.753</Modified>
-        </Vehicle>
-      </Vehicles>
-      <PurchaseOrder i:nil="true" />
-      <Modification>Create</Modification>
-      <Modified>0001-01-01T00:00:00</Modified>
+      <Modified>2014-08-21T18:33:18.133</Modified>
     </ShippingInformation>
   </Shippings>
 </ShippingInformationUpdateRequestMessage>
