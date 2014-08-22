@@ -43,13 +43,14 @@ namespace CrmSvcUtilExtensions
                                 //We only do Public Properties
                                 if (property.Attributes.HasFlag(MemberAttributes.Public))
                                 {
-                                    Trace.TraceInformation("Adding Attribute {0}", datamember.Name);
-
-                                    //We can currently only replace single line getters, so we do not do this where the getter is 
-                                    //more than 1 line
-
-                                    if (property.HasGet)
+                                    //We can only add the Attribute if the property has a getter and a setter
+                                    if (property.HasGet && property.HasSet)
                                     {
+                                        Trace.TraceInformation("Adding Attribute {0}", datamember.Name);
+
+                                        //We can currently only replace single line getters, so we do not do this where the getter is 
+                                        //more than 1 line
+
                                         if (property.GetStatements.Count == 1)
                                         {
                                             //Add the DataMember Attribute
