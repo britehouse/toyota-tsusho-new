@@ -9,6 +9,10 @@ Project("{88A30576-7583-4F75-8136-5EFD2C14ADFF}") = "Toyota.Tsusho.CRM.API.Packa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.API.MessageContracts", "Toyota.Tsusho.CRM.API.MessageContracts\Toyota.Tsusho.CRM.API.MessageContracts.csproj", "{44860F11-849B-4067-B505-12FC48F4213D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmSvcUtilExtensions", "CrmSvcUtilsExtensions\CrmSvcUtilExtensions.csproj", "{6B498A14-F54E-4E96-87B3-5D44822E898D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMUnitTests", "CRMUnitTests\CRMUnitTests.csproj", "{90A71F7C-910A-4EC3-A464-58A498580AA8}"
+EndProject
 Global
 	GlobalSection(CRMSolutionProperties) = preSolution
 		SolutionIsBoundToCRM = True
@@ -36,6 +40,14 @@ Global
 		{44860F11-849B-4067-B505-12FC48F4213D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44860F11-849B-4067-B505-12FC48F4213D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44860F11-849B-4067-B505-12FC48F4213D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B498A14-F54E-4E96-87B3-5D44822E898D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B498A14-F54E-4E96-87B3-5D44822E898D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B498A14-F54E-4E96-87B3-5D44822E898D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B498A14-F54E-4E96-87B3-5D44822E898D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A71F7C-910A-4EC3-A464-58A498580AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A71F7C-910A-4EC3-A464-58A498580AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A71F7C-910A-4EC3-A464-58A498580AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A71F7C-910A-4EC3-A464-58A498580AA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

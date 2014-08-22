@@ -2,4 +2,4 @@ CrmSvcUtil.exe ^
 /codecustomization:"CrmSvcUtilExtensions.WCFCustomizationService, CrmSvcUtilExtensions" ^
 /url:http://crm2013:5555/CRM/XRMServices/2011/Organization.svc ^
 /out:CRMTypes.cs ^
-/namespace:MSCRM.Workflow.CRMTypes
+/namespace:Toyota.Tsusho.CRM.API

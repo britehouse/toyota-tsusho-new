@@ -72,9 +72,17 @@ namespace CrmSvcUtilExtensions
 
                                                 if (original != null && property.Type != null)
                                                 {
-                                                    CodeObjectCreateExpression creator = new CodeObjectCreateExpression(property.Type, new CodeExpression[] { original.Expression });
+                                                    CodeVariableDeclarationStatement items = new CodeVariableDeclarationStatement("var", "items", original.Expression);
 
-                                                    property.GetStatements.Add(new CodeMethodReturnStatement(creator));
+                                                    property.GetStatements.Add(items);
+
+                                                    CodeConditionStatement nullCheck = new CodeConditionStatement(new CodeBinaryOperatorExpression(new CodeVariableReferenceExpression("items"), CodeBinaryOperatorType.IdentityInequality, new CodePrimitiveExpression(null)));
+
+                                                    nullCheck.TrueStatements.Add(new CodeMethodReturnStatement(new CodeObjectCreateExpression(property.Type, new CodeExpression[] { new CodeVariableReferenceExpression("items") })));
+
+                                                    property.GetStatements.Add(nullCheck);
+
+                                                    property.GetStatements.Add(new CodeMethodReturnStatement(new CodePrimitiveExpression(null)));
 
                                                     property.GetStatements.RemoveAt(0);
                                                 }
