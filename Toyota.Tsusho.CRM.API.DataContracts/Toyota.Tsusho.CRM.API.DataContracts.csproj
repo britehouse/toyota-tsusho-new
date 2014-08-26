@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44860F11-849B-4067-B505-12FC48F4213D}</ProjectGuid>
+    <ProjectGuid>{5919D6FF-591A-400C-A58D-11451922C6C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Toyota.Tsusho.CRM.API.MessageContracts</RootNamespace>
-    <AssemblyName>Toyota.Tsusho.CRM.API.MessageContracts</AssemblyName>
+    <RootNamespace>Toyota.Tsusho.CRM.API.DataContracts</RootNamespace>
+    <AssemblyName>Toyota.Tsusho.CRM.API.DataContracts</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,20 +37,10 @@
     <AssemblyOriginatorKeyFile>Toyota.Tsusho.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Xrm.Sdk, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.6.1.0\lib\net40\Microsoft.Xrm.Sdk.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.DirectoryServices" />
-    <Reference Include="System.DirectoryServices.AccountManagement" />
-    <Reference Include="System.IdentityModel" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Web" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,27 +48,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContactPublishRequestMessage.cs" />
-    <Compile Include="OrderPublishRequestMessage.cs" />
+    <Compile Include="ModificationEnumeration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Toyota.Tsusho.CRM.API.DataContracts\Toyota.Tsusho.CRM.API.DataContracts.csproj">
-      <Project>{5919d6ff-591a-400c-a58d-11451922c6c2}</Project>
-      <Name>Toyota.Tsusho.CRM.API.DataContracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Toyota.Tsusho.CRM.API\Toyota.Tsusho.CRM.API.csproj">
-      <Project>{788fc72c-4915-4969-a59f-4af40f20e293}</Project>
-      <Name>Toyota.Tsusho.CRM.API</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
     <None Include="Toyota.Tsusho.snk" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

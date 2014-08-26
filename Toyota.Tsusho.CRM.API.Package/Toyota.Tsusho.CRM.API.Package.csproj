@@ -42,6 +42,12 @@
     <Folder Include="WebResources" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toyota.Tsusho.CRM.API.DataContracts\Toyota.Tsusho.CRM.API.DataContracts.csproj">
+      <Name>Toyota.Tsusho.CRM.API.DataContracts</Name>
+      <Project>{5919d6ff-591a-400c-a58d-11451922c6c2}</Project>
+      <Private>True</Private>
+      <SilverlightApplication>False</SilverlightApplication>
+    </ProjectReference>
     <ProjectReference Include="..\Toyota.Tsusho.CRM.API.MessageContracts\Toyota.Tsusho.CRM.API.MessageContracts.csproj">
       <Name>Toyota.Tsusho.CRM.API.MessageContracts</Name>
       <Project>{44860f11-849b-4067-b505-12fc48f4213d}</Project>
