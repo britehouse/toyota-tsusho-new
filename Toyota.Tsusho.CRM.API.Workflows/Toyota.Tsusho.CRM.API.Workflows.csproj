@@ -75,6 +75,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toyota.Tsusho.CRM.API.DataContracts\Toyota.Tsusho.CRM.API.DataContracts.csproj">
+      <Project>{5919d6ff-591a-400c-a58d-11451922c6c2}</Project>
+      <Name>Toyota.Tsusho.CRM.API.DataContracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toyota.Tsusho.CRM.API.MessageContracts\Toyota.Tsusho.CRM.API.MessageContracts.csproj">
       <Project>{44860f11-849b-4067-b505-12fc48f4213d}</Project>
       <Name>Toyota.Tsusho.CRM.API.MessageContracts</Name>

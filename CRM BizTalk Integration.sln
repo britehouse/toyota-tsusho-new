@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmSvcUtilExtensions", "Crm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMUnitTests", "CRMUnitTests\CRMUnitTests.csproj", "{90A71F7C-910A-4EC3-A464-58A498580AA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.API.DataContracts", "Toyota.Tsusho.CRM.API.DataContracts\Toyota.Tsusho.CRM.API.DataContracts.csproj", "{5919D6FF-591A-400C-A58D-11451922C6C2}"
+EndProject
 Global
 	GlobalSection(CRMSolutionProperties) = preSolution
 		SolutionIsBoundToCRM = True
@@ -48,6 +50,10 @@ Global
 		{90A71F7C-910A-4EC3-A464-58A498580AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90A71F7C-910A-4EC3-A464-58A498580AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90A71F7C-910A-4EC3-A464-58A498580AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5919D6FF-591A-400C-A58D-11451922C6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5919D6FF-591A-400C-A58D-11451922C6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5919D6FF-591A-400C-A58D-11451922C6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5919D6FF-591A-400C-A58D-11451922C6C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,13 +5,13 @@
  xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk"
  xmlns:p="http://www.ttaf.co.za/crm/api/2014/08"
  xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
- xmlns:p2="clr-namespace:System.ServiceModel.Activities;assembly=System.ServiceModel.Activities"
  xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
  xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
  xmlns:ttca="clr-namespace:Toyota.Tsusho.CRM.API;assembly=Toyota.Tsusho.CRM.API"
+ xmlns:ttcad="clr-namespace:Toyota.Tsusho.CRM.API.DataContracts;assembly=Toyota.Tsusho.CRM.API.DataContracts"
  xmlns:ttcam="clr-namespace:Toyota.Tsusho.CRM.API.MessageContracts;assembly=Toyota.Tsusho.CRM.API.MessageContracts"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
@@ -44,6 +44,7 @@
       <x:String>System.ServiceModel</x:String>
       <x:String>System.ServiceModel.Activities</x:String>
       <x:String>Microsoft.Xrm.Sdk.Workflow</x:String>
+      <x:String>Toyota.Tsusho.CRM.API.DataContracts</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -66,58 +67,112 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Web</AssemblyReference>
       <AssemblyReference>Microsoft.Xrm.Sdk.Workflow</AssemblyReference>
+      <AssemblyReference>Toyota.Tsusho.CRM.API.DataContracts</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="ttca:Contact" Name="contact" />
       <Variable x:TypeArguments="ttcam:ContactPublishRequestMessage" Name="contactRequest" />
+      <Variable x:TypeArguments="ttcad:ModificationEnumeration" Default="[Toyota.Tsusho.CRM.API.DataContracts.ModificationEnumeration.Create]" Name="modification" />
     </Sequence.Variables>
-    <Assign sap2010:WorkflowViewState.IdRef="Assign_1">
-      <Assign.To>
-        <OutArgument x:TypeArguments="ttca:Contact">[contact]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="ttca:Contact">[InputEntities.Item("primaryEntity").ToEntity(Of Contact)()]</InArgument>
-      </Assign.Value>
-    </Assign>
+    <If Condition="[InputEntities.ContainsKey(&quot;primaryEntity&quot;)]" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Assign sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="ttca:Contact">[contact]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="ttca:Contact">[InputEntities.Item("primaryEntity").ToEntity(Of Contact)()]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign.To>
+              <OutArgument x:TypeArguments="ttcad:ModificationEnumeration">[modification]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="ttcad:ModificationEnumeration">[Toyota.Tsusho.CRM.API.DataContracts.ModificationEnumeration.Create]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Assign sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="ttca:Contact">[contact]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="ttca:Contact">[InputEntities.Item("updateEntity").ToEntity(Of Contact)()]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign.To>
+              <OutArgument x:TypeArguments="ttcad:ModificationEnumeration">[modification]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="ttcad:ModificationEnumeration">[Toyota.Tsusho.CRM.API.DataContracts.ModificationEnumeration.Update]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Else>
+    </If>
     <Assign sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="ttcam:ContactPublishRequestMessage">[contactRequest]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="ttcam:ContactPublishRequestMessage">[New ContactPublishRequestMessage() With {.Contact = contact}]</InArgument>
+        <InArgument x:TypeArguments="ttcam:ContactPublishRequestMessage">[New ContactPublishRequestMessage() With {.Modification = modification, .Contact = contact}]</InArgument>
       </Assign.Value>
     </Assign>
     <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
-      <p2:Send Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/Publish" EndpointConfigurationName="Toyota.Tsusho.CRM.Services.Generic.OnRamp" sap2010:WorkflowViewState.IdRef="Send_1" OperationName="Publish" ServiceContractName="p:IContactService">
-        <p2:SendMessageContent DeclaredMessageType="ttcam:ContactPublishRequestMessage">
+      <p1:Send Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/Publish" EndpointConfigurationName="Toyota.Tsusho.CRM.Services.Generic.OnRamp" sap2010:WorkflowViewState.IdRef="Send_1" OperationName="Publish" ServiceContractName="p:IContactService">
+        <p1:SendMessageContent DeclaredMessageType="ttcam:ContactPublishRequestMessage">
           <InArgument x:TypeArguments="ttcam:ContactPublishRequestMessage">[contactRequest]</InArgument>
-        </p2:SendMessageContent>
-      </p2:Send>
+        </p1:SendMessageContent>
+      </p1:Send>
     </Sequence>
-    <sads:DebugSymbol.Symbol>d05DOlxQcm9qZWN0c1xUb3lvdGEuVHN1c2hvXFRveW90YS5Uc3VzaG8uQ1JNLkFQSS5Xb3JrZmxvd3NcQ29udGFjdFdvcmtmbG93LnhhbWwKRgNjDgIBAUsFUg4CAQpTBVoOAgEGWwVhEAIBAlA0UHACAQ1NNU0+AgELWEpYiAECAQlVS1VbAgEHXAdgEQIBA15MXlwCAQQ=</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d05DOlxQcm9qZWN0c1xUb3lvdGEuVHN1c2hvXFRveW90YS5Uc3VzaG8uQ1JNLkFQSS5Xb3JrZmxvd3NcQ29udGFjdFdvcmtmbG93LnhhbWwYSQOJAQ4CAQFNSU2PAQIBAk8FeAoCAQt5BYABDgIBB4EBBYcBEAIBA08TT0sCAQxRCWIUAgEWZQl2FAIBDX5KfqYBAgEKe0t7WwIBCIIBB4YBEQIBBFILWRQCARtaC2EUAgEXZgttFAIBEm4LdRQCAQ6EAUyEAVwCAQVXOld2AgEeVDtURAIBHF9LX48BAgEaXExcWgIBGGs6a3UCARVoO2hEAgETc0tzjwECARFwTHBaAgEP</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="277,60" />
-      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="277,60" />
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="Assign_3" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="264,284">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Assign_4" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="Assign_5" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="Sequence_4" sap:VirtualizedContainerService.HintSize="264,284">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="553,432" />
+      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="553,60" />
       <sap2010:ViewStateData Id="Send_1" sap:VirtualizedContainerService.HintSize="255,86" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="277,210">
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="553,210">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="299,534">
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="575,906">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Toyota.Tsusho.CRM.API.Workflows.ContactWorkflow_1" sap:VirtualizedContainerService.HintSize="339,614" />
+      <sap2010:ViewStateData Id="Toyota.Tsusho.CRM.API.Workflows.ContactWorkflow_1" sap:VirtualizedContainerService.HintSize="615,986" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
