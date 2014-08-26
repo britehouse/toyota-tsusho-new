@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
-<xs:schema elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation=".\MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" />
+  <xs:import schemaLocation=".\MasterNotifyService_www_ttaf_co_za_talo_api_2014_08_master_vehicle.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/08/master/vehicle" />
   <xs:element name="MasterUpdateNotifyRequestMessage">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" minOccurs="0" ref="q1:Colors" />
-        <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" minOccurs="0" ref="q2:Models" />
-        <xs:element xmlns:q3="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" minOccurs="0" ref="q3:Suffixes" />
+        <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" minOccurs="0" ref="q1:Models" />
+        <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" minOccurs="0" ref="q2:Suffixes" />
+        <xs:element xmlns:q3="http://www.ttaf.co.za/talo/api/2014/08/master/vehicle" minOccurs="0" ref="q3:ExternalColors" />
+        <xs:element xmlns:q4="http://www.ttaf.co.za/talo/api/2014/08/master/vehicle" minOccurs="0" ref="q4:InternalColors" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -14,7 +16,8 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="Create" />
       <xs:enumeration value="Update" />
+      <xs:enumeration value="Delete" />
     </xs:restriction>
   </xs:simpleType>
-  <xs:element name="ModificationEnumeration" nillable="true" xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" type="q1:ModificationEnumeration" />
+  <xs:element name="ModificationEnumeration" nillable="true" type="tns:ModificationEnumeration" />
 </xs:schema>

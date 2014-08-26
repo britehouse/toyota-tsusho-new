@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ns3="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" elementFormDefault="qualified" targetNamespace="http://Microsoft.LobServices.Sap/2007/03/Rfc/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation=".\Types1.xsd" namespace="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />
+  <xs:import schemaLocation=".\Types19.xsd" namespace="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">Rfc</fileNameHint>
@@ -15,6 +15,16 @@
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="IT_COLEXT" nillable="true" type="ns3:ArrayOfZDBM_TALO_COLEXT">
+          <xs:annotation>
+            <xs:documentation>TALO table for Vehicle ext master Colours</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="IT_COLINT" nillable="true" type="ns3:ArrayOfZDBM_TALO_COLINT">
+          <xs:annotation>
+            <xs:documentation>TALO table for Vehicle int master Colours</xs:documentation>
+          </xs:annotation>
+        </xs:element>
         <xs:element minOccurs="0" maxOccurs="1" name="IT_VEHCOL" nillable="true" type="ns3:ArrayOfZDBM_TALO_VEHCOL">
           <xs:annotation>
             <xs:documentation>TALO table for Vehicle master Colour</xs:documentation>
@@ -42,6 +52,16 @@
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="IT_COLEXT" nillable="true" type="ns3:ArrayOfZDBM_TALO_COLEXT">
+          <xs:annotation>
+            <xs:documentation>TALO table for Vehicle ext master Colours</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="IT_COLINT" nillable="true" type="ns3:ArrayOfZDBM_TALO_COLINT">
+          <xs:annotation>
+            <xs:documentation>TALO table for Vehicle int master Colours</xs:documentation>
+          </xs:annotation>
+        </xs:element>
         <xs:element minOccurs="0" maxOccurs="1" name="IT_VEHCOL" nillable="true" type="ns3:ArrayOfZDBM_TALO_VEHCOL">
           <xs:annotation>
             <xs:documentation>TALO table for Vehicle master Colour</xs:documentation>

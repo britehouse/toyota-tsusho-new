@@ -86,6 +86,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="Types19.xsd">
+      <TypeName>Types19</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="Types18.xsd">
       <TypeName>Types18</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
@@ -171,11 +176,6 @@
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="VEHMAST.xsd">
-      <TypeName>VEHMAST</TypeName>
-      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="VEHICLEALLOC.xsd">
       <TypeName>VEHICLEALLOC</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
@@ -218,6 +218,11 @@
     </Schema>
     <Schema Include="SHIPPING.xsd">
       <TypeName>SHIPPING</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="VEHMAST.xsd">
+      <TypeName>VEHMAST</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>

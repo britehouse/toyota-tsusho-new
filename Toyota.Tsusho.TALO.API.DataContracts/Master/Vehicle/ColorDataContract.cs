@@ -9,38 +9,45 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Master.Vehicle
     /// <summary>
     /// Describes a vehicle model.
     /// </summary>
-    [DataContract(Namespace = "http://www.ttaf.co.za/talo/api/2014/05/master/vehicle")]
+    [DataContract(Namespace = "http://www.ttaf.co.za/talo/api/2014/08/master/vehicle")]
     public class ColorDataContract
     {
         [DataMember(Order = 0, IsRequired = true)]
-        public string Code
+        public string Model
         {
             get;
             set;
         }
 
         [DataMember(Order = 1, IsRequired = true)]
-        public CodeNameDataContract Internal
+        public string Class
         {
             get;
             set;
         }
 
         [DataMember(Order = 2, IsRequired = true)]
-        public CodeNameDataContract External
+        public string Code
         {
             get;
             set;
         }
 
         [DataMember(Order = 3, IsRequired = true)]
-        public ModificationEnumeration Modification
+        public string Name
         {
             get;
             set;
         }
 
         [DataMember(Order = 4, IsRequired = true)]
+        public ModificationEnumeration Modification
+        {
+            get;
+            set;
+        }
+
+        [DataMember(Order = 5, IsRequired = true)]
         public DateTime Modified
         {
             get;

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/08/master/vehicle" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/08/master/vehicle" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\MasterNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
+  <xs:import schemaLocation=".\MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master_vehicle.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" />
+  <xs:complexType name="ColorDataContract">
+    <xs:sequence>
+      <xs:element name="Model" nillable="true" type="xs:string" />
+      <xs:element name="Class" nillable="true" type="xs:string" />
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q1:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ColorDataContract" nillable="true" type="tns:ColorDataContract" />
+  <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" name="ExternalColors" nillable="true" type="q2:ColorCollectionDataContract" />
+  <xs:element xmlns:q3="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" name="InternalColors" nillable="true" type="q3:ColorCollectionDataContract" />
+</xs:schema>

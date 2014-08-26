@@ -1,28 +1,350 @@
 ﻿<ShippingInformationUpdateRequestMessage xmlns="http://www.ttaf.co.za/talo/api/2014/05">
   <Shippings xmlns="http://www.ttaf.co.za/talo/api/2014/05/shippinginformation" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <ShippingInformation>
-      <VehicleNumber>0000030703</VehicleNumber>
+      <VehicleNumber>0000030752</VehicleNumber>
       <Store>0099</Store>
-      <Documented>2014-08-28T00:00:00</Documented>
-      <Posted>2014-08-21T18:34:44.4106708+03:00</Posted>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8041764+03:00</Posted>
       <DeliveryNote i:nil="true" />
       <BillofLading i:nil="true" />
       <Invoice>
-        <Number>000012476</Number>
-        <Date>2014-08-26T00:00:00</Date>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
       </Invoice>
       <Vehicles>
         <Vehicle>
-          <Number>0000030703</Number>
-          <VIN>G6766G8BFGF5FGTTG</VIN>
-          <Engine>B7GHGHH</Engine>
+          <Number>0000030752</Number>
+          <VIN>AHTFR22G906089962</VIN>
+          <Engine>A530923</Engine>
           <Modification>Create</Modification>
-          <Modified>2014-08-21T18:33:18.133</Modified>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030753</Number>
+          <VIN>AHTFR22G806089967</VIN>
+          <Engine>A530938</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030754</Number>
+          <VIN>AHTFR22G106089969</VIN>
+          <Engine>A530599</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030755</Number>
+          <VIN>AHTFR22G306089973</VIN>
+          <Engine>A530605</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030756</Number>
+          <VIN>AHTFR22G606090017</VIN>
+          <Engine>A531600</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030761</Number>
+          <VIN>AHTFR22G106090037</VIN>
+          <Engine>A531832</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030757</Number>
+          <VIN>AHTFR22G706090043</VIN>
+          <Engine>A532189</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030758</Number>
+          <VIN>AHTFR22G006090045</VIN>
+          <Engine>A532426</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030759</Number>
+          <VIN>AHTFR22G006090062</VIN>
+          <Engine>A532585</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030760</Number>
+          <VIN>AHTFR22GX06090084</VIN>
+          <Engine>A532757</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030765</Number>
+          <VIN>AHTFR22G506090090</VIN>
+          <Engine>A533011</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030766</Number>
+          <VIN>AHTFR22G606090096</VIN>
+          <Engine>A533019</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030762</Number>
+          <VIN>AHTFR22G406090159</VIN>
+          <Engine>A533405</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030763</Number>
+          <VIN>AHTFR22G606090163</VIN>
+          <Engine>A533431</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
+        </Vehicle>
+        <Vehicle>
+          <Number>0000030764</Number>
+          <VIN>AHTFR22G906090173</VIN>
+          <Engine>A534041</Engine>
+          <Modification>Create</Modification>
+          <Modified>2014-08-22T13:32:20.817</Modified>
         </Vehicle>
       </Vehicles>
-      <PurchaseOrder />
+      <PurchaseOrder>4700000384</PurchaseOrder>
       <Modification>Create</Modification>
-      <Modified>2014-08-21T18:33:18.133</Modified>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030753</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000384</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030754</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000384</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030755</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000384</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030756</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000384</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030761</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000385</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030757</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000385</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030758</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000385</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030759</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000385</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030760</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000385</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030765</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000384</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030766</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000384</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030762</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000384</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030763</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000384</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
+    </ShippingInformation>
+    <ShippingInformation>
+      <VehicleNumber>0000030764</VehicleNumber>
+      <Store>0099</Store>
+      <Documented>2014-08-20T00:00:00</Documented>
+      <Posted>2014-08-22T13:33:43.8510517+03:00</Posted>
+      <DeliveryNote i:nil="true" />
+      <BillofLading i:nil="true" />
+      <Invoice>
+        <Number>TTAF-0001</Number>
+        <Date>2014-08-22T00:00:00</Date>
+      </Invoice>
+      <Vehicles i:nil="true" />
+      <PurchaseOrder>4700000384</PurchaseOrder>
+      <Modification>Create</Modification>
+      <Modified>2014-08-22T13:32:20.817</Modified>
     </ShippingInformation>
   </Shippings>
 </ShippingInformationUpdateRequestMessage>

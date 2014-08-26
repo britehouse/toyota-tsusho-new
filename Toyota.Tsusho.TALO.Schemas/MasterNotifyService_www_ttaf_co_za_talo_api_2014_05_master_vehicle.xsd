@@ -1,24 +1,7 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:tns="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/talo/api/2014/05/master/vehicle" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation=".\MasterNotifyService_www_ttaf_co_za_talo_api_2014_05_master.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05/master" />
   <xs:import schemaLocation=".\MasterNotifyService_www_ttaf_co_za_talo_api_2014_05.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/05" />
-  <xs:complexType name="ColorCollectionDataContract">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Color" nillable="true" type="tns:ColorDataContract" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ColorCollectionDataContract" nillable="true" type="tns:ColorCollectionDataContract" />
-  <xs:complexType name="ColorDataContract">
-    <xs:sequence>
-      <xs:element name="Code" nillable="true" type="xs:string" />
-      <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05/master" name="Internal" nillable="true" type="q1:CodeNameDataContract" />
-      <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05/master" name="External" nillable="true" type="q2:CodeNameDataContract" />
-      <xs:element xmlns:q3="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q3:ModificationEnumeration" />
-      <xs:element name="Modified" type="xs:dateTime" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ColorDataContract" nillable="true" type="tns:ColorDataContract" />
-  <xs:element name="Colors" nillable="true" type="tns:ColorCollectionDataContract" />
+  <xs:import schemaLocation=".\MasterNotifyService_www_ttaf_co_za_talo_api_2014_08_master_vehicle.xsd" namespace="http://www.ttaf.co.za/talo/api/2014/08/master/vehicle" />
   <xs:complexType name="ModelCollectionDataContract">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Model" nillable="true" type="tns:ModelDataContract" />
@@ -32,7 +15,7 @@
       <xs:element name="Description" nillable="true" type="xs:string" />
       <xs:element name="BodyType" nillable="true" type="xs:string" />
       <xs:element name="PackageDivision" nillable="true" type="xs:string" />
-      <xs:element xmlns:q4="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q4:ModificationEnumeration" />
+      <xs:element xmlns:q1="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q1:ModificationEnumeration" />
       <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
@@ -49,10 +32,16 @@
       <xs:element name="Code" nillable="true" type="xs:string" />
       <xs:element name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Grade" nillable="true" type="xs:string" />
-      <xs:element xmlns:q5="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q5:ModificationEnumeration" />
+      <xs:element xmlns:q2="http://www.ttaf.co.za/talo/api/2014/05" name="Modification" type="q2:ModificationEnumeration" />
       <xs:element name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SuffixDataContract" nillable="true" type="tns:SuffixDataContract" />
   <xs:element name="Suffixes" nillable="true" type="tns:SuffixCollectionDataContract" />
+  <xs:complexType name="ColorCollectionDataContract">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://www.ttaf.co.za/talo/api/2014/08/master/vehicle" minOccurs="0" maxOccurs="unbounded" name="Color" nillable="true" type="q3:ColorDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ColorCollectionDataContract" nillable="true" type="tns:ColorCollectionDataContract" />
 </xs:schema>
