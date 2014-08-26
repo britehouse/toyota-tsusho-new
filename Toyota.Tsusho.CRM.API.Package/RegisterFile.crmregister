@@ -5,7 +5,6 @@
     <Solution Assembly="Microsoft.Xrm.Sdk.dll" Id="d55d0145-1a7f-4843-8a98-fab4b945cf56" IsolationMode="None" SourceType="Database" />
     <Solution Assembly="Microsoft.Xrm.Sdk.Workflow.dll" Id="7b6a0fac-df0d-458d-8f26-72b0bbb0a344" IsolationMode="None" SourceType="Database" />
     <Solution Assembly="Toyota.Tsusho.CRM.API.dll" Id="56daee74-5c25-4ceb-8b6c-a3806e24a020" IsolationMode="None" SourceType="Database" />
-    <Solution Assembly="Toyota.Tsusho.CRM.API.DataContracts.dll" Id="fd80c89-7224-4fb0-80b0-252775d3ac91" IsolationMode="None" SourceType="Database" />
     <Solution Assembly="Toyota.Tsusho.CRM.API.MessageContracts.dll" Id="551ff740-8824-4f66-a91f-0c81852afea5" IsolationMode="None" SourceType="Database" />
     <Solution Assembly="Toyota.Tsusho.CRM.API.Workflows.dll" Id="8d9a0097-cdad-4e47-ae24-6d24d0565ec7" IsolationMode="None" SourceType="Database" />
   </Solutions>
