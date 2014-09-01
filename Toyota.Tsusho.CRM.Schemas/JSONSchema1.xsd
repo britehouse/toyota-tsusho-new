@@ -1,0 +1,1717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://Toyota.Tsusho.CRM.Schemas.JSONSchema1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="d">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="results">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="__metadata">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="uri" type="xs:string" />
+                          <xs:element minOccurs="0" name="type" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="SpousesName" />
+                    <xs:element minOccurs="0" name="EMailAddress3" />
+                    <xs:element minOccurs="0" name="EntityImage_Timestamp" />
+                    <xs:element minOccurs="0" name="Address2_ShippingMethodCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="PreferredServiceId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="VersionNumber" />
+                    <xs:element minOccurs="0" name="AnnualIncome">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address2_Line2" />
+                    <xs:element minOccurs="0" name="StageId" />
+                    <xs:element minOccurs="0" name="Telephone3" />
+                    <xs:element minOccurs="0" name="PreferredAppointmentDayCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address2_StateOrProvince" />
+                    <xs:element minOccurs="0" name="CreatedBy">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" type="xs:string" />
+                          <xs:element minOccurs="0" name="LogicalName" type="xs:string" />
+                          <xs:element minOccurs="0" name="Name" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address2_Line1" />
+                    <xs:element minOccurs="0" name="LastUsedInCampaign" />
+                    <xs:element minOccurs="0" name="YomiLastName" />
+                    <xs:element minOccurs="0" name="Pager" />
+                    <xs:element minOccurs="0" name="EmployeeId" />
+                    <xs:element minOccurs="0" name="TerritoryCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ParentCustomerId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" type="xs:string" />
+                          <xs:element minOccurs="0" name="LogicalName" type="xs:string" />
+                          <xs:element minOccurs="0" name="Name" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ManagerName" />
+                    <xs:element minOccurs="0" name="BirthDate" />
+                    <xs:element minOccurs="0" name="NumberOfChildren" />
+                    <xs:element minOccurs="0" name="Address1_AddressTypeCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="OwningTeam">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address2_PostalCode" />
+                    <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" />
+                    <xs:element minOccurs="0" name="OwningUser">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" type="xs:string" />
+                          <xs:element minOccurs="0" name="LogicalName" type="xs:string" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="AssistantPhone" />
+                    <xs:element minOccurs="0" name="MasterId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="CreatedOnBehalfBy">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="SubscriptionId" />
+                    <xs:element minOccurs="0" name="Address1_Latitude" />
+                    <xs:element minOccurs="0" name="MobilePhone" type="xs:string" />
+                    <xs:element minOccurs="0" name="CustomerTypeCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ManagerPhone" />
+                    <xs:element minOccurs="0" name="Address1_FreightTermsCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address1_Longitude" />
+                    <xs:element minOccurs="0" name="Address2_Telephone2" />
+                    <xs:element minOccurs="0" name="StatusCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="YomiFullName" type="xs:string" />
+                    <xs:element minOccurs="0" name="Aging90_Base">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="AccountId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="FamilyStatusCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="FirstName" type="xs:string" />
+                    <xs:element minOccurs="0" name="Address2_Latitude" />
+                    <xs:element minOccurs="0" name="Department" />
+                    <xs:element minOccurs="0" name="OriginatingLeadId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Aging60">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="StateCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address2_FreightTermsCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address1_Name" />
+                    <xs:element minOccurs="0" name="YomiMiddleName" />
+                    <xs:element minOccurs="0" name="ModifiedOnBehalfBy">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Description" type="xs:string" />
+                    <xs:element minOccurs="0" name="EducationCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address1_Telephone3" />
+                    <xs:element minOccurs="0" name="Address2_Telephone1" />
+                    <xs:element minOccurs="0" name="ImportSequenceNumber" />
+                    <xs:element minOccurs="0" name="GenderCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="OwnerId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" type="xs:string" />
+                          <xs:element minOccurs="0" name="LogicalName" type="xs:string" />
+                          <xs:element minOccurs="0" name="Name" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address2_AddressTypeCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address1_Composite" />
+                    <xs:element minOccurs="0" name="Address1_UTCOffset" />
+                    <xs:element minOccurs="0" name="Aging60_Base">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address1_County" />
+                    <xs:element minOccurs="0" name="OwningBusinessUnit">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" type="xs:string" />
+                          <xs:element minOccurs="0" name="LogicalName" type="xs:string" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="JobTitle" type="xs:string" />
+                    <xs:element minOccurs="0" name="ProcessId" />
+                    <xs:element minOccurs="0" name="Address1_Telephone2" />
+                    <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" />
+                    <xs:element minOccurs="0" name="Address1_Fax" />
+                    <xs:element minOccurs="0" name="Address2_PostOfficeBox" />
+                    <xs:element minOccurs="0" name="CreditLimit_Base">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address1_Line2" />
+                    <xs:element minOccurs="0" name="WebSiteUrl" />
+                    <xs:element minOccurs="0" name="DoNotPostalMail" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="Address2_UTCOffset" />
+                    <xs:element minOccurs="0" name="ExchangeRate" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="CreatedOn" type="xs:dateTime" />
+                    <xs:element minOccurs="0" name="EMailAddress2" />
+                    <xs:element minOccurs="0" name="Address2_Line3" />
+                    <xs:element minOccurs="0" name="Address2_AddressId" type="xs:string" />
+                    <xs:element minOccurs="0" name="OverriddenCreatedOn" />
+                    <xs:element minOccurs="0" name="AnnualIncome_Base">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address1_Telephone1" />
+                    <xs:element minOccurs="0" name="ChildrensNames" />
+                    <xs:element minOccurs="0" name="PreferredContactMethodCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Aging90">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="DoNotBulkPostalMail" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="EMailAddress1" type="xs:string" />
+                    <xs:element minOccurs="0" name="DoNotBulkEMail" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="CustomerSizeCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address1_StateOrProvince" />
+                    <xs:element minOccurs="0" name="FullName" type="xs:string" />
+                    <xs:element minOccurs="0" name="PreferredAppointmentTimeCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="TransactionCurrencyId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" type="xs:string" />
+                          <xs:element minOccurs="0" name="LogicalName" type="xs:string" />
+                          <xs:element minOccurs="0" name="Name" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="EntityImage" />
+                    <xs:element minOccurs="0" name="PaymentTermsCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Aging30">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="LeadSourceCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Merged" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="Address2_County" />
+                    <xs:element minOccurs="0" name="Address1_ShippingMethodCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="FtpSiteUrl" />
+                    <xs:element minOccurs="0" name="PreferredSystemUserId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="EntityImageId" />
+                    <xs:element minOccurs="0" name="Address1_AddressId" type="xs:string" />
+                    <xs:element minOccurs="0" name="NickName" />
+                    <xs:element minOccurs="0" name="Address1_PostOfficeBox" />
+                    <xs:element minOccurs="0" name="PreferredEquipmentId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="AssistantName" />
+                    <xs:element minOccurs="0" name="Address2_Country" />
+                    <xs:element minOccurs="0" name="ModifiedOn" type="xs:dateTime" />
+                    <xs:element minOccurs="0" name="ExternalUserIdentifier" />
+                    <xs:element minOccurs="0" name="Address2_Name" />
+                    <xs:element minOccurs="0" name="CreditOnHold" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="ParticipatesInWorkflow" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="AccountRoleCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address2_Telephone3" />
+                    <xs:element minOccurs="0" name="DoNotPhone" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="ContactId" type="xs:string" />
+                    <xs:element minOccurs="0" name="DoNotFax" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="Aging30_Base">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address1_UPSZone" />
+                    <xs:element minOccurs="0" name="Suffix" />
+                    <xs:element minOccurs="0" name="Address1_PrimaryContactName" />
+                    <xs:element minOccurs="0" name="Salutation" />
+                    <xs:element minOccurs="0" name="ModifiedBy">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" type="xs:string" />
+                          <xs:element minOccurs="0" name="LogicalName" type="xs:string" />
+                          <xs:element minOccurs="0" name="Name" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="GovernmentId" />
+                    <xs:element minOccurs="0" name="Address2_PrimaryContactName" />
+                    <xs:element minOccurs="0" name="DoNotSendMM" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="Address2_Longitude" />
+                    <xs:element minOccurs="0" name="Address1_Country" />
+                    <xs:element minOccurs="0" name="LastName" type="xs:string" />
+                    <xs:element minOccurs="0" name="Address2_City" />
+                    <xs:element minOccurs="0" name="DoNotEMail" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="Address1_City" />
+                    <xs:element minOccurs="0" name="YomiFirstName" />
+                    <xs:element minOccurs="0" name="Telephone1" />
+                    <xs:element minOccurs="0" name="Address1_Line1" />
+                    <xs:element minOccurs="0" name="Address2_Composite" />
+                    <xs:element minOccurs="0" name="ShippingMethodCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="CreditLimit">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Anniversary" />
+                    <xs:element minOccurs="0" name="Telephone2" />
+                    <xs:element minOccurs="0" name="ParentContactId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="HasChildrenCode">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Value" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Address2_Fax" />
+                    <xs:element minOccurs="0" name="IsBackofficeCustomer" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="Fax" />
+                    <xs:element minOccurs="0" name="EntityImage_URL" />
+                    <xs:element minOccurs="0" name="Address1_Line3" />
+                    <xs:element minOccurs="0" name="Address2_UPSZone" />
+                    <xs:element minOccurs="0" name="DefaultPriceLevelId">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__metadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="type" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Id" />
+                          <xs:element minOccurs="0" name="LogicalName" />
+                          <xs:element minOccurs="0" name="Name" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="MiddleName" />
+                    <xs:element minOccurs="0" name="Address1_PostalCode" />
+                    <xs:element minOccurs="0" name="contactquotes_association">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="listcontact_association">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contactinvoices_association">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contactorders_association">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="servicecontractcontacts_association">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contactleads_association">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_principalobjectattributeaccess">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_connections1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="opportunity_parent_contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_ProcessSessions">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="processstage_contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_ActivityPointers">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_PostFollows">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="invoice_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="quote_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_customer_relationship_partner">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="CreatedContact_BulkOperationLogs">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_Phonecalls">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_Tasks">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="lk_contact_createdonbehalfby">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="lead_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_Annotation">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Referencingcontact_master_contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Referencedcontact_master_contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_originating_lead">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_ServiceAppointments">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="lk_contact_modifiedonbehalfby">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="userentityinstancedata_contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="account_primary_contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="lk_contactbase_createdby">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contract_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_customer_relationship_customer">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contract_billingcustomer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_CustomerAddress">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="business_unit_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="incident_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="team_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_customer_accounts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_DuplicateMatchingRecord">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="order_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="system_user_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_Faxes">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="service_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_as_responsible_contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_Appointments">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_owning_user">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="lead_parent_contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="equipment_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_AsyncOperations">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="SourceContact_BulkOperationLogs">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="transactioncurrency_contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_customer_opportunity_roles">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_RecurringAppointmentMasters">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_BulkDeleteFailures">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Referencingcontact_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Referencedcontact_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_connections2">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_DuplicateBaseRecord">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contractlineitem_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="lk_contactbase_modifiedby">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_Emails">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="opportunity_customer_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="price_level_contacts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="contact_activity_parties">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Contact_Letters">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="__deferred">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="uri" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
