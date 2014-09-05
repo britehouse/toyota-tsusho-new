@@ -1,0 +1,202 @@
+﻿<ContactPublishRequestMessage xmlns="http://www.ttaf.co.za/crm/api/2014/08">
+  <Contact xmlns:d4p1="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ttaf.co.za/crm/api/2014/08/contact">
+    <Attributes xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">
+      <KeyValuePairOfstringanyType>
+        <d5p1:key>firstname</d5p1:key>
+        <d5p1:value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:string">Test</d5p1:value>
+      </KeyValuePairOfstringanyType>
+      <KeyValuePairOfstringanyType>
+        <d5p1:key>lastname</d5p1:key>
+        <d5p1:value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:string">Testing</d5p1:value>
+      </KeyValuePairOfstringanyType>
+    </Attributes>
+    <EntityState i:nil="true" xmlns="http://schemas.microsoft.com/xrm/2011/Contracts"></EntityState>
+    <FormattedValues xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns="http://schemas.microsoft.com/xrm/2011/Contracts"></FormattedValues>
+    <Id xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">00000000-0000-0000-0000-000000000000</Id>
+    <LogicalName xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">contact</LogicalName>
+    <RelatedEntities xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns="http://schemas.microsoft.com/xrm/2011/Contracts"></RelatedEntities>
+    <d4p1:AccountRoleCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:AccountRoleCode>
+    <d4p1:Address1_AddressId i:nil="true"></d4p1:Address1_AddressId>
+    <d4p1:Address1_AddressTypeCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:Address1_AddressTypeCode>
+    <d4p1:Address1_City i:nil="true"></d4p1:Address1_City>
+    <d4p1:Address1_Country i:nil="true"></d4p1:Address1_Country>
+    <d4p1:Address1_County i:nil="true"></d4p1:Address1_County>
+    <d4p1:Address1_Fax i:nil="true"></d4p1:Address1_Fax>
+    <d4p1:Address1_FreightTermsCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:Address1_FreightTermsCode>
+    <d4p1:Address1_Latitude i:nil="true"></d4p1:Address1_Latitude>
+    <d4p1:Address1_Line1 i:nil="true"></d4p1:Address1_Line1>
+    <d4p1:Address1_Line2 i:nil="true"></d4p1:Address1_Line2>
+    <d4p1:Address1_Line3 i:nil="true"></d4p1:Address1_Line3>
+    <d4p1:Address1_Longitude i:nil="true"></d4p1:Address1_Longitude>
+    <d4p1:Address1_Name i:nil="true"></d4p1:Address1_Name>
+    <d4p1:Address1_PostOfficeBox i:nil="true"></d4p1:Address1_PostOfficeBox>
+    <d4p1:Address1_PostalCode i:nil="true"></d4p1:Address1_PostalCode>
+    <d4p1:Address1_PrimaryContactName i:nil="true"></d4p1:Address1_PrimaryContactName>
+    <d4p1:Address1_ShippingMethodCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:Address1_ShippingMethodCode>
+    <d4p1:Address1_StateOrProvince i:nil="true"></d4p1:Address1_StateOrProvince>
+    <d4p1:Address1_Telephone1 i:nil="true"></d4p1:Address1_Telephone1>
+    <d4p1:Address1_Telephone2 i:nil="true"></d4p1:Address1_Telephone2>
+    <d4p1:Address1_Telephone3 i:nil="true"></d4p1:Address1_Telephone3>
+    <d4p1:Address1_UPSZone i:nil="true"></d4p1:Address1_UPSZone>
+    <d4p1:Address1_UTCOffset i:nil="true"></d4p1:Address1_UTCOffset>
+    <d4p1:Address2_AddressId i:nil="true"></d4p1:Address2_AddressId>
+    <d4p1:Address2_AddressTypeCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:Address2_AddressTypeCode>
+    <d4p1:Address2_City i:nil="true"></d4p1:Address2_City>
+    <d4p1:Address2_Country i:nil="true"></d4p1:Address2_Country>
+    <d4p1:Address2_County i:nil="true"></d4p1:Address2_County>
+    <d4p1:Address2_Fax i:nil="true"></d4p1:Address2_Fax>
+    <d4p1:Address2_FreightTermsCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:Address2_FreightTermsCode>
+    <d4p1:Address2_Latitude i:nil="true"></d4p1:Address2_Latitude>
+    <d4p1:Address2_Line1 i:nil="true"></d4p1:Address2_Line1>
+    <d4p1:Address2_Line2 i:nil="true"></d4p1:Address2_Line2>
+    <d4p1:Address2_Line3 i:nil="true"></d4p1:Address2_Line3>
+    <d4p1:Address2_Longitude i:nil="true"></d4p1:Address2_Longitude>
+    <d4p1:Address2_Name i:nil="true"></d4p1:Address2_Name>
+    <d4p1:Address2_PostOfficeBox i:nil="true"></d4p1:Address2_PostOfficeBox>
+    <d4p1:Address2_PostalCode i:nil="true"></d4p1:Address2_PostalCode>
+    <d4p1:Address2_PrimaryContactName i:nil="true"></d4p1:Address2_PrimaryContactName>
+    <d4p1:Address2_ShippingMethodCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:Address2_ShippingMethodCode>
+    <d4p1:Address2_StateOrProvince i:nil="true"></d4p1:Address2_StateOrProvince>
+    <d4p1:Address2_Telephone1 i:nil="true"></d4p1:Address2_Telephone1>
+    <d4p1:Address2_Telephone2 i:nil="true"></d4p1:Address2_Telephone2>
+    <d4p1:Address2_Telephone3 i:nil="true"></d4p1:Address2_Telephone3>
+    <d4p1:Address2_UPSZone i:nil="true"></d4p1:Address2_UPSZone>
+    <d4p1:Address2_UTCOffset i:nil="true"></d4p1:Address2_UTCOffset>
+    <d4p1:Anniversary i:nil="true"></d4p1:Anniversary>
+    <d4p1:AnnualIncome xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:AnnualIncome>
+    <d4p1:AssistantName i:nil="true"></d4p1:AssistantName>
+    <d4p1:AssistantPhone i:nil="true"></d4p1:AssistantPhone>
+    <d4p1:BirthDate i:nil="true"></d4p1:BirthDate>
+    <d4p1:ChildrensNames i:nil="true"></d4p1:ChildrensNames>
+    <d4p1:ContactId i:nil="true"></d4p1:ContactId>
+    <d4p1:Contact_ActivityPointers i:nil="true"></d4p1:Contact_ActivityPointers>
+    <d4p1:Contact_Annotation i:nil="true"></d4p1:Contact_Annotation>
+    <d4p1:Contact_Appointments i:nil="true"></d4p1:Contact_Appointments>
+    <d4p1:Contact_AsyncOperations i:nil="true"></d4p1:Contact_AsyncOperations>
+    <d4p1:Contact_BulkDeleteFailures i:nil="true"></d4p1:Contact_BulkDeleteFailures>
+    <d4p1:Contact_CustomerAddress i:nil="true"></d4p1:Contact_CustomerAddress>
+    <d4p1:Contact_DuplicateBaseRecord i:nil="true"></d4p1:Contact_DuplicateBaseRecord>
+    <d4p1:Contact_DuplicateMatchingRecord i:nil="true"></d4p1:Contact_DuplicateMatchingRecord>
+    <d4p1:Contact_Emails i:nil="true"></d4p1:Contact_Emails>
+    <d4p1:Contact_Faxes i:nil="true"></d4p1:Contact_Faxes>
+    <d4p1:Contact_Letters i:nil="true"></d4p1:Contact_Letters>
+    <d4p1:Contact_Phonecalls i:nil="true"></d4p1:Contact_Phonecalls>
+    <d4p1:Contact_ProcessSessions i:nil="true"></d4p1:Contact_ProcessSessions>
+    <d4p1:Contact_RecurringAppointmentMasters i:nil="true"></d4p1:Contact_RecurringAppointmentMasters>
+    <d4p1:Contact_ServiceAppointments i:nil="true"></d4p1:Contact_ServiceAppointments>
+    <d4p1:Contact_Tasks i:nil="true"></d4p1:Contact_Tasks>
+    <d4p1:CreatedContact_BulkOperationLogs i:nil="true"></d4p1:CreatedContact_BulkOperationLogs>
+    <d4p1:CreditLimit xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:CreditLimit>
+    <d4p1:CreditOnHold i:nil="true"></d4p1:CreditOnHold>
+    <d4p1:CustomerSizeCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:CustomerSizeCode>
+    <d4p1:CustomerTypeCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:CustomerTypeCode>
+    <d4p1:DefaultPriceLevelId xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:DefaultPriceLevelId>
+    <d4p1:Department i:nil="true"></d4p1:Department>
+    <d4p1:Description i:nil="true"></d4p1:Description>
+    <d4p1:DoNotBulkEMail i:nil="true"></d4p1:DoNotBulkEMail>
+    <d4p1:DoNotBulkPostalMail i:nil="true"></d4p1:DoNotBulkPostalMail>
+    <d4p1:DoNotEMail i:nil="true"></d4p1:DoNotEMail>
+    <d4p1:DoNotFax i:nil="true"></d4p1:DoNotFax>
+    <d4p1:DoNotPhone i:nil="true"></d4p1:DoNotPhone>
+    <d4p1:DoNotPostalMail i:nil="true"></d4p1:DoNotPostalMail>
+    <d4p1:DoNotSendMM i:nil="true"></d4p1:DoNotSendMM>
+    <d4p1:EMailAddress1 i:nil="true"></d4p1:EMailAddress1>
+    <d4p1:EMailAddress2 i:nil="true"></d4p1:EMailAddress2>
+    <d4p1:EMailAddress3 i:nil="true"></d4p1:EMailAddress3>
+    <d4p1:EducationCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:EducationCode>
+    <d4p1:EmployeeId i:nil="true"></d4p1:EmployeeId>
+    <d4p1:EntityImage i:nil="true"></d4p1:EntityImage>
+    <d4p1:ExternalUserIdentifier i:nil="true"></d4p1:ExternalUserIdentifier>
+    <d4p1:FamilyStatusCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:FamilyStatusCode>
+    <d4p1:Fax i:nil="true"></d4p1:Fax>
+    <d4p1:FirstName>Test</d4p1:FirstName>
+    <d4p1:FtpSiteUrl i:nil="true"></d4p1:FtpSiteUrl>
+    <d4p1:GenderCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:GenderCode>
+    <d4p1:GovernmentId i:nil="true"></d4p1:GovernmentId>
+    <d4p1:HasChildrenCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:HasChildrenCode>
+    <d4p1:ImportSequenceNumber i:nil="true"></d4p1:ImportSequenceNumber>
+    <d4p1:IsBackofficeCustomer i:nil="true"></d4p1:IsBackofficeCustomer>
+    <d4p1:JobTitle i:nil="true"></d4p1:JobTitle>
+    <d4p1:LastName>Testing</d4p1:LastName>
+    <d4p1:LastUsedInCampaign i:nil="true"></d4p1:LastUsedInCampaign>
+    <d4p1:LeadSourceCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:LeadSourceCode>
+    <d4p1:ManagerName i:nil="true"></d4p1:ManagerName>
+    <d4p1:ManagerPhone i:nil="true"></d4p1:ManagerPhone>
+    <d4p1:MiddleName i:nil="true"></d4p1:MiddleName>
+    <d4p1:MobilePhone i:nil="true"></d4p1:MobilePhone>
+    <d4p1:NickName i:nil="true"></d4p1:NickName>
+    <d4p1:NumberOfChildren i:nil="true"></d4p1:NumberOfChildren>
+    <d4p1:OriginatingLeadId xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:OriginatingLeadId>
+    <d4p1:OverriddenCreatedOn i:nil="true"></d4p1:OverriddenCreatedOn>
+    <d4p1:OwnerId xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:OwnerId>
+    <d4p1:Pager i:nil="true"></d4p1:Pager>
+    <d4p1:ParentCustomerId xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:ParentCustomerId>
+    <d4p1:ParticipatesInWorkflow i:nil="true"></d4p1:ParticipatesInWorkflow>
+    <d4p1:PaymentTermsCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:PaymentTermsCode>
+    <d4p1:PreferredAppointmentDayCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:PreferredAppointmentDayCode>
+    <d4p1:PreferredAppointmentTimeCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:PreferredAppointmentTimeCode>
+    <d4p1:PreferredContactMethodCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:PreferredContactMethodCode>
+    <d4p1:PreferredEquipmentId xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:PreferredEquipmentId>
+    <d4p1:PreferredServiceId xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:PreferredServiceId>
+    <d4p1:PreferredSystemUserId xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:PreferredSystemUserId>
+    <d4p1:ProcessId i:nil="true"></d4p1:ProcessId>
+    <d4p1:Referencedcontact_customer_contacts i:nil="true"></d4p1:Referencedcontact_customer_contacts>
+    <d4p1:Referencedcontact_master_contact i:nil="true"></d4p1:Referencedcontact_master_contact>
+    <d4p1:Referencingcontact_customer_contacts i:nil="true"></d4p1:Referencingcontact_customer_contacts>
+    <d4p1:Salutation i:nil="true"></d4p1:Salutation>
+    <d4p1:ShippingMethodCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:ShippingMethodCode>
+    <d4p1:SourceContact_BulkOperationLogs i:nil="true"></d4p1:SourceContact_BulkOperationLogs>
+    <d4p1:SpousesName i:nil="true"></d4p1:SpousesName>
+    <d4p1:StageId i:nil="true"></d4p1:StageId>
+    <d4p1:StatusCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:StatusCode>
+    <d4p1:SubscriptionId i:nil="true"></d4p1:SubscriptionId>
+    <d4p1:Suffix i:nil="true"></d4p1:Suffix>
+    <d4p1:Telephone1 i:nil="true"></d4p1:Telephone1>
+    <d4p1:Telephone2 i:nil="true"></d4p1:Telephone2>
+    <d4p1:Telephone3 i:nil="true"></d4p1:Telephone3>
+    <d4p1:TerritoryCode xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:TerritoryCode>
+    <d4p1:TimeZoneRuleVersionNumber i:nil="true"></d4p1:TimeZoneRuleVersionNumber>
+    <d4p1:TransactionCurrencyId xmlns:d5p1="http://schemas.microsoft.com/xrm/2011/Contracts" i:nil="true"></d4p1:TransactionCurrencyId>
+    <d4p1:UTCConversionTimeZoneCode i:nil="true"></d4p1:UTCConversionTimeZoneCode>
+    <d4p1:WebSiteUrl i:nil="true"></d4p1:WebSiteUrl>
+    <d4p1:YomiFirstName i:nil="true"></d4p1:YomiFirstName>
+    <d4p1:YomiLastName i:nil="true"></d4p1:YomiLastName>
+    <d4p1:YomiMiddleName i:nil="true"></d4p1:YomiMiddleName>
+    <d4p1:account_primary_contact i:nil="true"></d4p1:account_primary_contact>
+    <d4p1:contact_PostFollows i:nil="true"></d4p1:contact_PostFollows>
+    <d4p1:contact_activity_parties i:nil="true"></d4p1:contact_activity_parties>
+    <d4p1:contact_as_responsible_contact i:nil="true"></d4p1:contact_as_responsible_contact>
+    <d4p1:contact_connections1 i:nil="true"></d4p1:contact_connections1>
+    <d4p1:contact_connections2 i:nil="true"></d4p1:contact_connections2>
+    <d4p1:contact_customer_accounts i:nil="true"></d4p1:contact_customer_accounts>
+    <d4p1:contact_customer_opportunity_roles i:nil="true"></d4p1:contact_customer_opportunity_roles>
+    <d4p1:contact_customer_relationship_customer i:nil="true"></d4p1:contact_customer_relationship_customer>
+    <d4p1:contact_customer_relationship_partner i:nil="true"></d4p1:contact_customer_relationship_partner>
+    <d4p1:contact_originating_lead i:nil="true"></d4p1:contact_originating_lead>
+    <d4p1:contact_principalobjectattributeaccess i:nil="true"></d4p1:contact_principalobjectattributeaccess>
+    <d4p1:contactinvoices_association i:nil="true"></d4p1:contactinvoices_association>
+    <d4p1:contactleads_association i:nil="true"></d4p1:contactleads_association>
+    <d4p1:contactorders_association i:nil="true"></d4p1:contactorders_association>
+    <d4p1:contactquotes_association i:nil="true"></d4p1:contactquotes_association>
+    <d4p1:contract_billingcustomer_contacts i:nil="true"></d4p1:contract_billingcustomer_contacts>
+    <d4p1:contract_customer_contacts i:nil="true"></d4p1:contract_customer_contacts>
+    <d4p1:contractlineitem_customer_contacts i:nil="true"></d4p1:contractlineitem_customer_contacts>
+    <d4p1:equipment_contacts i:nil="true"></d4p1:equipment_contacts>
+    <d4p1:incident_customer_contacts i:nil="true"></d4p1:incident_customer_contacts>
+    <d4p1:invoice_customer_contacts i:nil="true"></d4p1:invoice_customer_contacts>
+    <d4p1:lead_customer_contacts i:nil="true"></d4p1:lead_customer_contacts>
+    <d4p1:lead_parent_contact i:nil="true"></d4p1:lead_parent_contact>
+    <d4p1:listcontact_association i:nil="true"></d4p1:listcontact_association>
+    <d4p1:opportunity_customer_contacts i:nil="true"></d4p1:opportunity_customer_contacts>
+    <d4p1:opportunity_parent_contact i:nil="true"></d4p1:opportunity_parent_contact>
+    <d4p1:order_customer_contacts i:nil="true"></d4p1:order_customer_contacts>
+    <d4p1:price_level_contacts i:nil="true"></d4p1:price_level_contacts>
+    <d4p1:processstage_contact i:nil="true"></d4p1:processstage_contact>
+    <d4p1:quote_customer_contacts i:nil="true"></d4p1:quote_customer_contacts>
+    <d4p1:service_contacts i:nil="true"></d4p1:service_contacts>
+    <d4p1:servicecontractcontacts_association i:nil="true"></d4p1:servicecontractcontacts_association>
+    <d4p1:system_user_contacts i:nil="true"></d4p1:system_user_contacts>
+    <d4p1:transactioncurrency_contact i:nil="true"></d4p1:transactioncurrency_contact>
+    <d4p1:userentityinstancedata_contact i:nil="true"></d4p1:userentityinstancedata_contact>
+  </Contact>
+</ContactPublishRequestMessage>
