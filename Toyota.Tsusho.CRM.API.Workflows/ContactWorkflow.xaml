@@ -127,13 +127,22 @@
       </Assign.Value>
     </Assign>
     <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
-      <p1:Send Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/Publish" EndpointConfigurationName="Toyota.Tsusho.CRM.Services.Generic.OnRamp" sap2010:WorkflowViewState.IdRef="Send_1" OperationName="Publish" ServiceContractName="p:IContactService">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="p1:CorrelationHandle" Name="correlation" />
+      </Sequence.Variables>
+      <p1:Send x:Name="__ReferenceID1" Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/Publish" EndpointConfigurationName="Toyota.Tsusho.CRM.Services.Generic.OnRamp" sap2010:WorkflowViewState.IdRef="Send_2" OperationName="Publish" ServiceContractName="p:IContactService" TokenImpersonationLevel="Anonymous">
+        <p1:Send.CorrelationInitializers>
+          <p1:RequestReplyCorrelationInitializer CorrelationHandle="[correlation]" />
+        </p1:Send.CorrelationInitializers>
         <p1:SendMessageContent DeclaredMessageType="ttcam:ContactPublishRequestMessage">
           <InArgument x:TypeArguments="ttcam:ContactPublishRequestMessage">[contactRequest]</InArgument>
         </p1:SendMessageContent>
       </p1:Send>
+      <p1:ReceiveReply Request="{x:Reference __ReferenceID1}" Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/PublishResponse" sap2010:WorkflowViewState.IdRef="ReceiveReply_1" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger">
+        <p1:ReceiveMessageContent />
+      </p1:ReceiveReply>
     </Sequence>
-    <sads:DebugSymbol.Symbol>d05DOlxQcm9qZWN0c1xUb3lvdGEuVHN1c2hvXFRveW90YS5Uc3VzaG8uQ1JNLkFQSS5Xb3JrZmxvd3NcQ29udGFjdFdvcmtmbG93LnhhbWwYSQOJAQ4CAQFNSU2PAQIBAk8FeAoCAQt5BYABDgIBB4EBBYcBEAIBA08TT0sCAQxRCWIUAgEWZQl2FAIBDX5KfqYBAgEKe0t7WwIBCIIBB4YBEQIBBFILWRQCARtaC2EUAgEXZgttFAIBEm4LdRQCAQ6EAUyEAVwCAQVXOld2AgEeVDtURAIBHF9LX48BAgEaXExcWgIBGGs6a3UCARVoO2hEAgETc0tzjwECARFwTHBaAgEP</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d05DOlxQcm9qZWN0c1xUb3lvdGEuVHN1c2hvXFRveW90YS5Uc3VzaG8uQ1JNLkFQSS5Xb3JrZmxvd3NcQ29udGFjdFdvcmtmbG93LnhhbWwZSQOSAQ4CAQFNSU2PAQIBAk8FeAoCAQ55BYABDgIBCoEBBZABEAIBA08TT0sCAQ9RCWIUAgEZZQl2FAIBEH5KfqYBAgENe0t7WwIBC4UBB4wBEQIBBVILWRQCAR5aC2EUAgEaZgttFAIBFW4LdRQCARGKAUyKAVwCAQiHAUSHAVMCAQZXOld2AgEhVDtURAIBH19LX48BAgEdXExcWgIBG2s6a3UCARhoO2hEAgEWc0tzjwECARRwTHBaAgES</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -157,22 +166,23 @@
       </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="553,432" />
       <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="553,60" />
-      <sap2010:ViewStateData Id="Send_1" sap:VirtualizedContainerService.HintSize="255,86" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="553,210">
+      <sap2010:ViewStateData Id="Send_2" sap:VirtualizedContainerService.HintSize="353,86" />
+      <sap2010:ViewStateData Id="ErrorActivity_1" sap:VirtualizedContainerService.HintSize="353,55" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="553,305">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="575,906">
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="575,1001">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Toyota.Tsusho.CRM.API.Workflows.ContactWorkflow_1" sap:VirtualizedContainerService.HintSize="615,986" />
+      <sap2010:ViewStateData Id="Toyota.Tsusho.CRM.API.Workflows.ContactWorkflow_1" sap:VirtualizedContainerService.HintSize="615,1081" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
