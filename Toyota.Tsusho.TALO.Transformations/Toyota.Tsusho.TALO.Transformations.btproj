@@ -160,6 +160,13 @@
       <SubType>Task</SubType>
     </Map>
   </ItemGroup>
+  <ItemGroup>
+    <Map Include="ZDBM_TALO_O_POCHECKToManualCheckNotifyRequestMessage.btm">
+      <TypeName>ZDBM_TALO_O_POCHECKToManualCheckNotifyRequestMessage</TypeName>
+      <Namespace>Toyota.Tsusho.TALO.Transformations</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
 </Project>
