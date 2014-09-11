@@ -100,8 +100,7 @@
       </SecondaryTransport>
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>204</Tracking>
-      <Filter>
-        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
         &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
         &lt;Group&gt;
         &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_O_VEHICLENUM" /&gt;
@@ -109,8 +108,7 @@
         &lt;Group&gt;
         &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_O_POCHECK" /&gt;
         &lt;/Group&gt;
-        &lt;/Filter&gt;
-      </Filter>
+        &lt;/Filter&gt;</Filter>
       <Transforms>
         <Transform FullName="Toyota.Tsusho.TALO.Transformations.ZDBM_TALO_O_VEHICLENUMToOrderCreateNotifyRequestMessage" AssemblyQualifiedName="Toyota.Tsusho.TALO.Transformations.ZDBM_TALO_O_VEHICLENUMToOrderCreateNotifyRequestMessage,Toyota.Tsusho.TALO.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
         <Transform FullName="Toyota.Tsusho.TALO.Transformations.ZDBM_TALO_O_POCHECKToManualCheckNotifyRequestMessage" AssemblyQualifiedName="Toyota.Tsusho.TALO.Transformations.ZDBM_TALO_O_POCHECKToManualCheckNotifyRequestMessage,Toyota.Tsusho.TALO.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />

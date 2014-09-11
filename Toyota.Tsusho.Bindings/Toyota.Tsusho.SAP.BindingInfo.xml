@@ -12,7 +12,7 @@
     </ModuleRef>
   </ModuleRefCollection>    
   <SendPortCollection>
-    <SendPort Name="Toyota.Tsusho.SAP..Services.Generic.OffRamp.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
+    <SendPort Name="Toyota.Tsusho.SAP.Services.Generic.OffRamp.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
       <Description xsi:nil="true" />
       <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
       <PrimaryTransport>
@@ -45,14 +45,12 @@
       </SecondaryTransport>
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>204</Tracking>
-      <Filter>
-        &lt;?xml version="1.0" encoding="utf-16"?&gt;
-        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-        &lt;Group&gt;
-        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_ORDCONFIRMResponse" /&gt;
-        &lt;/Group&gt;
-        &lt;/Filter&gt;
-      </Filter>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_CRM_CUST_TO" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
       <Transforms />
       <OrderedDelivery>false</OrderedDelivery>
       <Priority>5</Priority>
@@ -100,8 +98,7 @@
       </SecondaryTransport>
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>204</Tracking>
-      <Filter>
-        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
         &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
         &lt;Group&gt;
         &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://www.ttaf.co.za/talo/api/2014/05#VehicleAllocateRequestMessage" /&gt;
@@ -115,8 +112,7 @@
         &lt;Group&gt;
         &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://www.ttaf.co.za/talo/api/2014/05#OrderConfirmationRequestMessage" /&gt;
         &lt;/Group&gt;
-        &lt;/Filter&gt;
-      </Filter>
+        &lt;/Filter&gt;</Filter>
       <Transforms>
         <Transform FullName="Toyota.Tsusho.SAP.Transformations.OrderConfirmationRequestMessageToZDBM_TALO_I_ORDCONFIRM" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.OrderConfirmationRequestMessageToZDBM_TALO_I_ORDCONFIRM,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
         <Transform FullName="Toyota.Tsusho.SAP.Transformations.VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
@@ -170,10 +166,8 @@
       <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>255</Tracking>
-      <Filter>
-        &lt;?xml version="1.0" encoding="utf-16"?&gt;
-        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;
-      </Filter>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Filter>
       <Transforms>
         <Transform FullName="Toyota.Tsusho.SAP.Transformations.OrderConfirmationRequestMessageToZDBM_TALO_I_ORDCONFIRM" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.OrderConfirmationRequestMessageToZDBM_TALO_I_ORDCONFIRM,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
         <Transform FullName="Toyota.Tsusho.SAP.Transformations.VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
@@ -227,11 +221,9 @@
       </SecondaryTransport>
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>204</Tracking>
-      <Filter>
-        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
         &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-        &lt;/Filter&gt;
-      </Filter>
+        &lt;/Filter&gt;</Filter>
       <Transforms />
       <OrderedDelivery>false</OrderedDelivery>
       <Priority>5</Priority>
@@ -280,10 +272,8 @@
       <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>255</Tracking>
-      <Filter>
-        &lt;?xml version="1.0" encoding="utf-16"?&gt;
-        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;
-      </Filter>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Filter>
       <Transforms />
       <InboundTransforms />
       <OrderedDelivery>false</OrderedDelivery>
