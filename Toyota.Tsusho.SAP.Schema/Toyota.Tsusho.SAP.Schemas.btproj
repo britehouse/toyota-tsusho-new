@@ -113,16 +113,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Schema Include="Types21.xsd">
-      <TypeName>Types21</TypeName>
-      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="Types20.xsd">
-      <TypeName>Types20</TypeName>
-      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="Types19.xsd">
       <TypeName>Types19</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
@@ -260,16 +250,6 @@
     </Schema>
     <Schema Include="VEHMAST.xsd">
       <TypeName>VEHMAST</TypeName>
-      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="ZDBM_CRM_CUST.xsd">
-      <TypeName>ZDBM_CRM_CUST</TypeName>
-      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="POCHECK.xsd">
-      <TypeName>POCHECK</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>

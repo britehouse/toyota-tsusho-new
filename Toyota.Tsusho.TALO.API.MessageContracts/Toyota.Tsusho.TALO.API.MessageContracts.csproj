@@ -92,7 +92,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManualCheckNotifyRequestMessage.cs" />
     <Compile Include="ShippingInformationUpdateRequestMessage.cs" />
     <Compile Include="VehicleRegisterRequestMessage.cs" />
     <Compile Include="VehicleStockAgeNotifyRequestMessage.cs" />

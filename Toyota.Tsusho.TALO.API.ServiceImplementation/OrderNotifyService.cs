@@ -13,11 +13,6 @@ namespace Toyota.Tsusho.TALO.API.ServiceImplementation
         {
             //TODO: Implement logic here to update TALO order information.
         }
-
-        public void ManualCheckNotify(MessageContracts.ManualCheckNotifyRequestMessage request)
-        {
-            //TODO: Implement logic here to update TALO order information.
-        }
     }
 
     public partial class OrderNotifyService : OrderNotifyServiceBase
