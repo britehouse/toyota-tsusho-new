@@ -3,7 +3,7 @@
      see the web.config examples at http://go.microsoft.com/fwlink/?LinkId=214134. -->
 <BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
   <SendPortCollection>
-    <SendPort Name="Toyota.Tsusho.SAP..Services.TALO.OffRamp.WCF-SAP" xdt:Locator="Match(Name)">
+    <SendPort Name="Toyota.Tsusho.SAP.Services.TALO.OffRamp.WCF-SAP" xdt:Locator="Match(Name)">
       <PrimaryTransport>
         <Address xdt:Transform="Replace">sap://CLIENT=110;LANG=EN;@a/172.29.2.13/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
         <TransportTypeData xdt:Transform="Replace">
@@ -16,7 +16,7 @@
         </TransportTypeData>
       </PrimaryTransport>
     </SendPort>
-    <SendPort Name="Toyota.Tsusho.SAP..Services.CRM.OffRamp.WCF-SAP" xdt:Locator="Match(Name)">
+    <SendPort Name="Toyota.Tsusho.SAP.Services.CRM.OffRamp.WCF-SAP" xdt:Locator="Match(Name)">
       <PrimaryTransport>
         <Address xdt:Transform="Replace">sap://CLIENT=110;LANG=EN;@a/172.29.2.13/00?ListenerDest=ZCRM&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
         <TransportTypeData xdt:Transform="Replace">
@@ -29,7 +29,7 @@
         </TransportTypeData>
       </PrimaryTransport>
     </SendPort>
-    <SendPort Name="Toyota.Tsusho.SAP..Services.TALO.OffRamp.Response.WCF-SAP" xdt:Locator="Match(Name)">
+    <SendPort Name="Toyota.Tsusho.SAP.Services.TALO.OffRamp.Response.WCF-SAP" xdt:Locator="Match(Name)">
       <PrimaryTransport>
         <Address xdt:Transform="Replace">sap://CLIENT=110;LANG=EN;@a/172.29.2.13/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
         <TransportTypeData xdt:Transform="Replace">
@@ -42,7 +42,7 @@
         </TransportTypeData>
       </PrimaryTransport>
     </SendPort>
-    <SendPort Name="Toyota.Tsusho.SAP..Services.CRM.OffRamp.Response.WCF-SAP" xdt:Locator="Match(Name)">
+    <SendPort Name="Toyota.Tsusho.SAP.Services.CRM.OffRamp.Response.WCF-SAP" xdt:Locator="Match(Name)">
       <PrimaryTransport>
         <Address xdt:Transform="Replace">sap://CLIENT=110;LANG=EN;@a/172.29.2.13/00?ListenerDest=ZCRM&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
         <TransportTypeData xdt:Transform="Replace">

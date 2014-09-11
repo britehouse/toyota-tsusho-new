@@ -60,7 +60,7 @@
       <RouteFailedMessage>false</RouteFailedMessage>
       <ApplicationName>Toyota.Tsusho.SAP</ApplicationName>
     </SendPort>
-    <SendPort Name="Toyota.Tsusho.SAP..Services.TALO.OffRamp.WCF-SAP" IsStatic="true" IsTwoWay="false" BindingOption="0">
+    <SendPort Name="Toyota.Tsusho.SAP.Services.TALO.OffRamp.WCF-SAP" IsStatic="true" IsTwoWay="false" BindingOption="0">
       <Description xsi:nil="true" />
       <TransmitPipeline Name="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline" FullyQualifiedName="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline, Toyota.Tsusho.BizTalk.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
       <PrimaryTransport>
@@ -129,7 +129,7 @@
       <RouteFailedMessage>true</RouteFailedMessage>
       <ApplicationName>Toyota.Tsusho.SAP</ApplicationName>
     </SendPort>
-    <SendPort Name="Toyota.Tsusho.SAP..Services.TALO.OffRamp.Response.WCF-SAP" IsStatic="true" IsTwoWay="true" BindingOption="0">
+    <SendPort Name="Toyota.Tsusho.SAP.Services.TALO.OffRamp.Response.WCF-SAP" IsStatic="true" IsTwoWay="true" BindingOption="0">
       <Description xsi:nil="true" />
       <TransmitPipeline Name="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline" FullyQualifiedName="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline, Toyota.Tsusho.BizTalk.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
       <PrimaryTransport>
@@ -239,7 +239,7 @@
       <RouteFailedMessage>true</RouteFailedMessage>
       <ApplicationName>Toyota.Tsusho.SAP</ApplicationName>
     </SendPort>
-    <SendPort Name="Toyota.Tsusho.SAP..Services.CRM.OffRamp.Response.WCF-SAP" IsStatic="true" IsTwoWay="true" BindingOption="0">
+    <SendPort Name="Toyota.Tsusho.SAP.Services.CRM.OffRamp.Response.WCF-SAP" IsStatic="true" IsTwoWay="true" BindingOption="0">
       <Description xsi:nil="true" />
       <TransmitPipeline Name="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline" FullyQualifiedName="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline, Toyota.Tsusho.BizTalk.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
       <PrimaryTransport>
