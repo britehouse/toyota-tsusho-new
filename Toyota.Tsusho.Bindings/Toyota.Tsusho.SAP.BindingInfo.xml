@@ -10,9 +10,9 @@
       <Services />
       <TrackedSchemas />
     </ModuleRef>
-  </ModuleRefCollection>
+  </ModuleRefCollection>    
   <SendPortCollection>
-    <SendPort Name="Toyota.Tsusho.SAP..Services.TALO.OffRamp.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
+    <SendPort Name="Toyota.Tsusho.SAP..Services.Generic.OffRamp.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
       <Description xsi:nil="true" />
       <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
       <PrimaryTransport>
@@ -49,7 +49,7 @@
         &lt;?xml version="1.0" encoding="utf-16"?&gt;
         &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
         &lt;Group&gt;
-        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_CRM_CUST_TO" /&gt;
+        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_ORDCONFIRMResponse" /&gt;
         &lt;/Group&gt;
         &lt;/Filter&gt;
       </Filter>
@@ -60,18 +60,20 @@
       <RouteFailedMessage>false</RouteFailedMessage>
       <ApplicationName>Toyota.Tsusho.SAP</ApplicationName>
     </SendPort>
-    <SendPort Name="Toyota.Tsusho.SAP.Services.CRM.OffRamp.WCF-SAP" IsStatic="true" IsTwoWay="false" BindingOption="0">
+    <SendPort Name="Toyota.Tsusho.SAP..Services.TALO.OffRamp.WCF-SAP" IsStatic="true" IsTwoWay="false" BindingOption="0">
       <Description xsi:nil="true" />
       <TransmitPipeline Name="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline" FullyQualifiedName="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline, Toyota.Tsusho.BizTalk.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
       <PrimaryTransport>
-        <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZCRM&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
+        <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=172.29.2.13&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
         <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
-        <TransportTypeData>&lt;CustomProps&gt;&lt;BindingType vt="8"&gt;sapBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="SAPBinding" enableBizTalkCompatibilityMode="false" enableSafeTyping="true" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
-  &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_ORDCONFIRM" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_ORDCONFIRM" /&amp;gt;
-  &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_VEHICLEALLOC" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_VEHICLEALLOC" /&amp;gt;
-  &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_VEHICLESTATUS" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_VEHICLESTATUS" /&amp;gt;
-  &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_SHIPPING" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_SHIPPING" /&amp;gt;
-&amp;lt;/BtsActionMapping&amp;gt;&lt;/StaticAction&gt;&lt;ProxyUserName vt="8" /&gt;&lt;ProxyAddress vt="8" /&gt;&lt;UserName vt="8"&gt;biztalk&lt;/UserName&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;IsolationLevel vt="8"&gt;Serializable&lt;/IsolationLevel&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;Identity vt="8" /&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;EnableTransaction vt="11"&gt;-1&lt;/EnableTransaction&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <TransportTypeData>
+          &lt;CustomProps&gt;&lt;BindingType vt="8"&gt;sapBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="SAPBinding" enableBizTalkCompatibilityMode="false" enableSafeTyping="true" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+          &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_ORDCONFIRM" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_ORDCONFIRM" /&amp;gt;
+          &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_VEHICLEALLOC" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_VEHICLEALLOC" /&amp;gt;
+          &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_VEHICLESTATUS" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_VEHICLESTATUS" /&amp;gt;
+          &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_SHIPPING" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_SHIPPING" /&amp;gt;
+          &amp;lt;/BtsActionMapping&amp;gt;&lt;/StaticAction&gt;&lt;ProxyUserName vt="8" /&gt;&lt;ProxyAddress vt="8" /&gt;&lt;UserName vt="8"&gt;biztalk&lt;/UserName&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;IsolationLevel vt="8"&gt;Serializable&lt;/IsolationLevel&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;Identity vt="8" /&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;EnableTransaction vt="11"&gt;-1&lt;/EnableTransaction&gt;&lt;/CustomProps&gt;
+        </TransportTypeData>
         <RetryCount>0</RetryCount>
         <RetryInterval>5</RetryInterval>
         <ServiceWindowEnabled>false</ServiceWindowEnabled>
@@ -98,11 +100,87 @@
       </SecondaryTransport>
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>204</Tracking>
-      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-&lt;/Filter&gt;</Filter>
+      <Filter>
+        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://www.ttaf.co.za/talo/api/2014/05#VehicleAllocateRequestMessage" /&gt;
+        &lt;/Group&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://www.ttaf.co.za/talo/api/2014/05#VehicleRegisterRequestMessage" /&gt;
+        &lt;/Group&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://www.ttaf.co.za/talo/api/2014/05#ShippingInformationUpdateRequestMessage" /&gt;
+        &lt;/Group&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://www.ttaf.co.za/talo/api/2014/05#OrderConfirmationRequestMessage" /&gt;
+        &lt;/Group&gt;
+        &lt;/Filter&gt;
+      </Filter>
       <Transforms>
+        <Transform FullName="Toyota.Tsusho.SAP.Transformations.OrderConfirmationRequestMessageToZDBM_TALO_I_ORDCONFIRM" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.OrderConfirmationRequestMessageToZDBM_TALO_I_ORDCONFIRM,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
+        <Transform FullName="Toyota.Tsusho.SAP.Transformations.VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
+        <Transform FullName="Toyota.Tsusho.SAP.Transformations.VehicleRegisterRequestMessageToZDBM_TALO_I_VEHICLESTATUS" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.VehicleRegisterRequestMessageToZDBM_TALO_I_VEHICLESTATUS,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
+        <Transform FullName="Toyota.Tsusho.SAP.Transformations.ShippingInformationUpdateRequestMessageToZDBM_TALO_I_SHIPPING" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.ShippingInformationUpdateRequestMessageToZDBM_TALO_I_SHIPPING,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
       </Transforms>
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>true</RouteFailedMessage>
+      <ApplicationName>Toyota.Tsusho.SAP</ApplicationName>
+    </SendPort>
+    <SendPort Name="Toyota.Tsusho.SAP..Services.TALO.OffRamp.Response.WCF-SAP" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline" FullyQualifiedName="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline, Toyota.Tsusho.BizTalk.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZTALO&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=172.29.2.13&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
+        <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
+        <TransportTypeData>
+          &lt;CustomProps&gt;&lt;BindingType vt="8"&gt;sapBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="SAPBinding" enableBizTalkCompatibilityMode="false" enableSafeTyping="true" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+          &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_ORDCONFIRM" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_ORDCONFIRM" /&amp;gt;
+          &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_VEHICLEALLOC" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_VEHICLEALLOC" /&amp;gt;
+          &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_VEHICLESTATUS" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_VEHICLESTATUS" /&amp;gt;
+          &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_SHIPPING" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_SHIPPING" /&amp;gt;
+          &amp;lt;/BtsActionMapping&amp;gt;&lt;/StaticAction&gt;&lt;ProxyUserName vt="8" /&gt;&lt;ProxyAddress vt="8" /&gt;&lt;UserName vt="8"&gt;biztalk&lt;/UserName&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;IsolationLevel vt="8"&gt;Serializable&lt;/IsolationLevel&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;Identity vt="8" /&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;EnableTransaction vt="11"&gt;-1&lt;/EnableTransaction&gt;&lt;/CustomProps&gt;
+        </TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T22:00:00</FromTime>
+        <ToTime>2000-01-01T21:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T22:00:00</FromTime>
+        <ToTime>2000-01-01T21:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>255</Tracking>
+      <Filter>
+        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;
+      </Filter>
+      <Transforms>
+        <Transform FullName="Toyota.Tsusho.SAP.Transformations.OrderConfirmationRequestMessageToZDBM_TALO_I_ORDCONFIRM" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.OrderConfirmationRequestMessageToZDBM_TALO_I_ORDCONFIRM,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
+        <Transform FullName="Toyota.Tsusho.SAP.Transformations.VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.VehicleAllocateRequestMessageToZDBM_TALO_I_VEHICLEALLOC,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
+        <Transform FullName="Toyota.Tsusho.SAP.Transformations.VehicleRegisterRequestMessageToZDBM_TALO_I_VEHICLESTATUS" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.VehicleRegisterRequestMessageToZDBM_TALO_I_VEHICLESTATUS,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
+        <Transform FullName="Toyota.Tsusho.SAP.Transformations.ShippingInformationUpdateRequestMessageToZDBM_TALO_I_SHIPPING" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.ShippingInformationUpdateRequestMessageToZDBM_TALO_I_SHIPPING,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
+      </Transforms>
+      <InboundTransforms />
       <OrderedDelivery>false</OrderedDelivery>
       <Priority>5</Priority>
       <StopSendingOnFailure>false</StopSendingOnFailure>
@@ -154,8 +232,7 @@
         &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
         &lt;/Filter&gt;
       </Filter>
-      <Transforms>
-      </Transforms>
+      <Transforms />
       <OrderedDelivery>false</OrderedDelivery>
       <Priority>5</Priority>
       <StopSendingOnFailure>false</StopSendingOnFailure>
@@ -166,14 +243,16 @@
       <Description xsi:nil="true" />
       <TransmitPipeline Name="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline" FullyQualifiedName="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline, Toyota.Tsusho.BizTalk.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
       <PrimaryTransport>
-        <Address>sap://CLIENT=110;LANG=EN;@a/10.10.16.160/00?ListenerDest=ZCRM&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
+        <Address>sap://CLIENT=110;LANG=EN;@a/172.29.2.13/00?ListenerDest=ZCRM&amp;ListenerGwServ=sapgw00&amp;ListenerGwHost=10.10.16.160&amp;ListenerProgramId=BizTalk&amp;RfcSdkTrace=False&amp;AbapDebug=False</Address>
         <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
-        <TransportTypeData>&lt;CustomProps&gt;&lt;BindingType vt="8"&gt;sapBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="SAPBinding" enableBizTalkCompatibilityMode="false" enableSafeTyping="true" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+        <TransportTypeData>
+          &lt;CustomProps&gt;&lt;BindingType vt="8"&gt;sapBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="SAPBinding" enableBizTalkCompatibilityMode="false" enableSafeTyping="true" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
           &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_ORDCONFIRM" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_ORDCONFIRM" /&amp;gt;
           &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_VEHICLEALLOC" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_VEHICLEALLOC" /&amp;gt;
           &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_VEHICLESTATUS" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_VEHICLESTATUS" /&amp;gt;
           &amp;lt;Operation Name="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_SHIPPING" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/ZDBM_TALO_I_SHIPPING" /&amp;gt;
-          &amp;lt;/BtsActionMapping&amp;gt;&lt;/StaticAction&gt;&lt;ProxyUserName vt="8" /&gt;&lt;ProxyAddress vt="8" /&gt;&lt;UserName vt="8"&gt;biztalk&lt;/UserName&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;IsolationLevel vt="8"&gt;Serializable&lt;/IsolationLevel&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;Identity vt="8" /&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;EnableTransaction vt="11"&gt;-1&lt;/EnableTransaction&gt;&lt;/CustomProps&gt;</TransportTypeData>
+          &amp;lt;/BtsActionMapping&amp;gt;&lt;/StaticAction&gt;&lt;ProxyUserName vt="8" /&gt;&lt;ProxyAddress vt="8" /&gt;&lt;UserName vt="8"&gt;biztalk&lt;/UserName&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;IsolationLevel vt="8"&gt;Serializable&lt;/IsolationLevel&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;Identity vt="8" /&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;EnableTransaction vt="11"&gt;-1&lt;/EnableTransaction&gt;&lt;/CustomProps&gt;
+        </TransportTypeData>
         <RetryCount>0</RetryCount>
         <RetryInterval>5</RetryInterval>
         <ServiceWindowEnabled>false</ServiceWindowEnabled>
@@ -201,10 +280,11 @@
       <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>255</Tracking>
-      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Filter>
-      <Transforms>
-      </Transforms>
+      <Filter>
+        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;
+      </Filter>
+      <Transforms />
       <InboundTransforms />
       <OrderedDelivery>false</OrderedDelivery>
       <Priority>5</Priority>
