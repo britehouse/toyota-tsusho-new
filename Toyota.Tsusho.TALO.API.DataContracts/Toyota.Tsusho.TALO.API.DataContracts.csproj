@@ -109,6 +109,8 @@
     <Compile Include="ModificationEnumeration.cs" />
     <Compile Include="Order\ColorDataContract.cs" />
     <Compile Include="Order\ConfirmationDataContract.cs" />
+    <Compile Include="Order\ManualCheckDataContract.cs" />
+    <Compile Include="Order\ManualCheckCollectionDataContract.cs" />
     <Compile Include="Order\OrderDataContract.cs" />
     <Compile Include="Order\ConfirmationCollectionDataContract.cs" />
     <Compile Include="Order\OrderCollectionDataContract.cs" />

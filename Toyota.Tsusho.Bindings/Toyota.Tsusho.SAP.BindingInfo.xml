@@ -45,12 +45,14 @@
       </SecondaryTransport>
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>204</Tracking>
-      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;Group&gt;
-    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_TALO_I_ORDCONFIRMResponse" /&gt;
-  &lt;/Group&gt;
-&lt;/Filter&gt;</Filter>
+      <Filter>
+        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_CRM_CUST_TO" /&gt;
+        &lt;/Group&gt;
+        &lt;/Filter&gt;
+      </Filter>
       <Transforms />
       <OrderedDelivery>false</OrderedDelivery>
       <Priority>5</Priority>
