@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ContactService.svc" />
+    <Content Include="StockService.svc" />
     <Content Include="OrderService.svc" />
   </ItemGroup>
   <ItemGroup>

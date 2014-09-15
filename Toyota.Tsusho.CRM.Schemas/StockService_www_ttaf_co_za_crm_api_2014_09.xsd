@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/crm/api/2014/09" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/crm/api/2014/09" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\StockService_www_ttaf_co_za_crm_api_2014_09_stock.xsd" namespace="http://www.ttaf.co.za/crm/api/2014/09/stock" />
+  <xs:element name="StockNotifyRequestMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.ttaf.co.za/crm/api/2014/09/stock" minOccurs="0" ref="q1:Items" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

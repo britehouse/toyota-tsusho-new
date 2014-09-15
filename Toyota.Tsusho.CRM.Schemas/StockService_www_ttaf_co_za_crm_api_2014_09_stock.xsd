@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/crm/api/2014/09/stock" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/crm/api/2014/09/stock" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\StockService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API.xsd" namespace="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" />
+  <xs:import schemaLocation=".\StockService_www_ttaf_co_za_crm_api_2014_08.xsd" namespace="http://www.ttaf.co.za/crm/api/2014/08" />
+  <xs:complexType name="StockCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Item" nillable="true" type="tns:StockItemDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StockCollectionDataContract" nillable="true" type="tns:StockCollectionDataContract" />
+  <xs:complexType name="StockItemDataContract">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" name="Stock" nillable="true" type="q1:new_stock" />
+      <xs:element xmlns:q2="http://www.ttaf.co.za/crm/api/2014/08" name="Modification" type="q2:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StockItemDataContract" nillable="true" type="tns:StockItemDataContract" />
+  <xs:element name="Items" nillable="true" type="tns:StockCollectionDataContract" />
+</xs:schema>
