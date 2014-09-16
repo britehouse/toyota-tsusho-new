@@ -5,6 +5,7 @@
  xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk"
  xmlns:p="http://www.ttaf.co.za/crm/api/2014/08"
  xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
+ xmlns:p2="clr-namespace:System.ServiceModel;assembly=System.ServiceModel"
  xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
  xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
@@ -130,17 +131,17 @@
       <Sequence.Variables>
         <Variable x:TypeArguments="p1:CorrelationHandle" Name="correlation" />
       </Sequence.Variables>
-      <p1:Send x:Name="__ReferenceID1" Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/Publish" EndpointConfigurationName="Toyota.Tsusho.CRM.Services.Generic.OnRamp" sap2010:WorkflowViewState.IdRef="Send_2" OperationName="Publish" ServiceContractName="p:IContactService" TokenImpersonationLevel="Anonymous">
-        <p1:Send.CorrelationInitializers>
-          <p1:RequestReplyCorrelationInitializer CorrelationHandle="[correlation]" />
-        </p1:Send.CorrelationInitializers>
-        <p1:SendMessageContent DeclaredMessageType="ttcam:ContactPublishRequestMessage">
+      <p2:Send x:Name="__ReferenceID1" Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/Publish" EndpointConfigurationName="Toyota.Tsusho.CRM.Services.Generic.OnRamp" sap2010:WorkflowViewState.IdRef="Send_2" OperationName="Publish" ServiceContractName="p:IContactService" TokenImpersonationLevel="Anonymous">
+        <p2:Send.CorrelationInitializers>
+          <p2:RequestReplyCorrelationInitializer CorrelationHandle="[correlation]" />
+        </p2:Send.CorrelationInitializers>
+        <p2:SendMessageContent DeclaredMessageType="ttcam:ContactPublishRequestMessage">
           <InArgument x:TypeArguments="ttcam:ContactPublishRequestMessage">[contactRequest]</InArgument>
-        </p1:SendMessageContent>
-      </p1:Send>
-      <p1:ReceiveReply Request="{x:Reference __ReferenceID1}" Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/PublishResponse" sap2010:WorkflowViewState.IdRef="ReceiveReply_1" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger">
-        <p1:ReceiveMessageContent />
-      </p1:ReceiveReply>
+        </p2:SendMessageContent>
+      </p2:Send>
+      <p2:ReceiveReply Request="{x:Reference __ReferenceID1}" Action="http://www.ttaf.co.za/crm/api/2014/08/IContactService/PublishResponse" sap2010:WorkflowViewState.IdRef="ReceiveReply_1" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger">
+        <p2:ReceiveMessageContent />
+      </p2:ReceiveReply>
     </Sequence>
     <sads:DebugSymbol.Symbol>d05DOlxQcm9qZWN0c1xUb3lvdGEuVHN1c2hvXFRveW90YS5Uc3VzaG8uQ1JNLkFQSS5Xb3JrZmxvd3NcQ29udGFjdFdvcmtmbG93LnhhbWwZSQOSAQ4CAQFNSU2PAQIBAk8FeAoCAQ55BYABDgIBCoEBBZABEAIBA08TT0sCAQ9RCWIUAgEZZQl2FAIBEH5KfqYBAgENe0t7WwIBC4UBB4wBEQIBBVILWRQCAR5aC2EUAgEaZgttFAIBFW4LdRQCARGKAUyKAVwCAQiHAUSHAVMCAQZXOld2AgEhVDtURAIBH19LX48BAgEdXExcWgIBG2s6a3UCARhoO2hEAgEWc0tzjwECARRwTHBaAgES</sads:DebugSymbol.Symbol>
   </Sequence>
