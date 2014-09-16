@@ -5,6 +5,11 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
+using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Query;
+using Microsoft.Xrm.Sdk.Client;
+
+
 namespace Toyota.Tsusho.CRM.API.ServiceImplementation
 {
     [ServiceBehavior(Name = "StockService",
@@ -15,7 +20,9 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
     {
         public void Notify(MessageContracts.StockNotifyRequestMessage request)
         {
-            throw new NotImplementedException();
+            using (OrganizationServiceProxy proxy = CRMHelper.Connect())
+            {
+            }
         }
     }
 
