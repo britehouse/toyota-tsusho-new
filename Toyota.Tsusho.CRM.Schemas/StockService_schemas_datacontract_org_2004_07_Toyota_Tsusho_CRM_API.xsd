@@ -18,6 +18,8 @@
           <xs:element minOccurs="0" name="new_name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_new_modelsalescode_new_stock_modelcode" nillable="true" type="tns:new_modelsalescode" />
           <xs:element minOccurs="0" name="new_plant" nillable="true" type="q1:EntityReference" />
+          <xs:element minOccurs="0" name="new_plantsap" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="new_sapvehiclemodelcode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_status" nillable="true" type="q1:OptionSetValue" />
           <xs:element minOccurs="0" name="new_stockId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="new_stock_ActivityPointers" nillable="true" type="tns:ArrayOfActivityPointer" />

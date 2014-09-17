@@ -113,71 +113,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Schema Include="StockService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_schemas_datacontract_org_2004_07_System_Collections_Generic.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_datacontract_org_2004_07_System_Collections_Generic</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_schemas_microsoft_com_2003_10_Serialization.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_microsoft_com_2003_10_Serialization</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_schemas_microsoft_com_2003_10_Serialization_Arrays.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_microsoft_com_2003_10_Serialization_Arrays</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_schemas_microsoft_com_xrm_2011_Contracts.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_microsoft_com_xrm_2011_Contracts</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_schemas_microsoft_com_xrm_2011_Metadata.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_microsoft_com_xrm_2011_Metadata</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_schemas_microsoft_com_xrm_2011_Metadata_Query.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_microsoft_com_xrm_2011_Metadata_Query</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_schemas_microsoft_com_xrm_2012_Contracts.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_microsoft_com_xrm_2012_Contracts</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_schemas_microsoft_com_xrm_2013_Metadata.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_schemas_microsoft_com_xrm_2013_Metadata</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_www_ttaf_co_za_crm_api_2014_08.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_www_ttaf_co_za_crm_api_2014_08</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_www_ttaf_co_za_crm_api_2014_09.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_www_ttaf_co_za_crm_api_2014_09</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="StockService_www_ttaf_co_za_crm_api_2014_09_stock.xsd">
-      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
-      <TypeName>StockService_www_ttaf_co_za_crm_api_2014_09_stock</TypeName>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="ContactService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk.xsd">
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
       <TypeName>ContactService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk</TypeName>
@@ -236,6 +171,81 @@
     <Schema Include="ContactService_www_ttaf_co_za_crm_api_2014_08_contact.xsd">
       <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
       <TypeName>ContactService_www_ttaf_co_za_crm_api_2014_08_contact</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_datacontract_org_2004_07_Microsoft_Crm_Sdk_Messages.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_datacontract_org_2004_07_Microsoft_Crm_Sdk_Messages</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_datacontract_org_2004_07_Microsoft_Xrm_Sdk</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_datacontract_org_2004_07_System_Collections_Generic.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_datacontract_org_2004_07_System_Collections_Generic</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_microsoft_com_2003_10_Serialization_Arrays.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_microsoft_com_2003_10_Serialization_Arrays</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_microsoft_com_crm_2011_Contracts.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_microsoft_com_crm_2011_Contracts</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_microsoft_com_xrm_2011_Contracts.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_microsoft_com_xrm_2011_Contracts</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_microsoft_com_xrm_2011_Metadata.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_microsoft_com_xrm_2011_Metadata</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_microsoft_com_xrm_2011_Metadata_Query.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_microsoft_com_xrm_2011_Metadata_Query</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_microsoft_com_xrm_2012_Contracts.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_microsoft_com_xrm_2012_Contracts</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_schemas_microsoft_com_xrm_2013_Metadata.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_schemas_microsoft_com_xrm_2013_Metadata</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_www_ttaf_co_za_crm_api_2014_08.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_www_ttaf_co_za_crm_api_2014_08</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_www_ttaf_co_za_crm_api_2014_09.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_www_ttaf_co_za_crm_api_2014_09</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="StockService_www_ttaf_co_za_crm_api_2014_09_stock.xsd">
+      <Namespace>Toyota.Tsusho.CRM.Schemas</Namespace>
+      <TypeName>StockService_www_ttaf_co_za_crm_api_2014_09_stock</TypeName>
       <SubType>Task</SubType>
     </Schema>
     <None Include="Toyota.Tsusho.snk" />

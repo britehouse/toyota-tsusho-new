@@ -52,6 +52,12 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="KeyValuePairOfDeletedMetadataFiltersArrayOfguidPlUv_PKtF" nillable="true" type="tns:KeyValuePairOfDeletedMetadataFiltersArrayOfguidPlUv_PKtF" />
+  <xs:complexType name="ArrayOfKeyValuePairOfstringanyType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringanyType" type="tns:KeyValuePairOfstringanyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValuePairOfstringanyType" nillable="true" type="tns:ArrayOfKeyValuePairOfstringanyType" />
   <xs:complexType name="KeyValuePairOfstringstring">
     <xs:annotation>
       <xs:appinfo>
