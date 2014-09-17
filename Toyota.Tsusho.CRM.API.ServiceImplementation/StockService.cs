@@ -33,6 +33,13 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                                            where a.new_vinnumber == item.Stock.new_vinnumber
                                            select a).FirstOrDefault();
 
+                    new_modelsalescode model = (from m in context.new_modelsalescodeSet
+                                                    where m.);
+
+                    Territory territory = (from t in context.TerritorySet
+                                               where  t.new_territory_new_stock_plant == item.Stock.new_plant.Name
+                                               select t).FirstOrDefault();
+
                     if(record == null)
                     {
                         add = true;
@@ -43,7 +50,11 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     record.new_internalvehiclenumber = item.Stock.new_internalvehiclenumber;
                     record.new_vinnumber = item.Stock.new_vinnumber;
                     record.new_enginenumber = item.Stock.new_enginenumber;
-                    record.new_modelcode = item.Stock.new_modelcode;
+                    record.new_modelcode = new EntityReference()
+                    { Id = "",
+                      LogicalName = "",
+                      Name = ""
+                    };
                     record.new_plant = item.Stock.new_plant;
                     record.new_storagelocation = item.Stock.new_storagelocation;
                     record.new_stockvalue = item.Stock.new_stockvalue;
