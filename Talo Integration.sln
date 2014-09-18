@@ -43,6 +43,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{0B4B
 		2 ZDBM_TALO_I_ORDCONFIRM.xml = 2 ZDBM_TALO_I_ORDCONFIRM.xml
 		3 OrderConfirmationRequestMessage.xml = 3 OrderConfirmationRequestMessage.xml
 		3 ZDBM_TALO_O_VEHICLENUM.xml = 3 ZDBM_TALO_O_VEHICLENUM.xml
+		3.2 ZDBM_TALO_O_POCHECK.xml = 3.2 ZDBM_TALO_O_POCHECK.xml
 		4 ShippingInformationUpdateRequestMessage.xml = 4 ShippingInformationUpdateRequestMessage.xml
 		4 ZDBM_TALO_I_SHIPPING.xml = 4 ZDBM_TALO_I_SHIPPING.xml
 		5 VehicleRegisterRequestMessage.xml = 5 VehicleRegisterRequestMessage.xml
