@@ -130,6 +130,37 @@
       <DependentUpon>Toyota.Tsusho.SAP.BindingInfo.xml</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
+    <None Include="Toyota.Tsusho.CRM.BindingInfo.Debug.xml">
+      <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.CRM.BindingInfo.Release.xml">
+      <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.CRM.BindingInfo.T-KEN-QA.xml">
+      <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.CRM.BindingInfo.T-KEN-DEV.xml">
+      <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.CRM.BindingInfo.DEV.xml">
+      <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.CRM.BindingInfo.T-MAU-DEV.xml">
+      <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.CRM.BindingInfo.T-MAU-QA.xml">
+      <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <Content Include="Toyota.Tsusho.CRM.BindingInfo.xml">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
     <Content Include="Toyota.Tsusho.TALO.BindingInfo.xml">
       <TransformOnBuild>true</TransformOnBuild>
     </Content>

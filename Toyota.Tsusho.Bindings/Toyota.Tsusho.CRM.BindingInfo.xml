@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="NoBindings" BoundEndpoints="0" TotalEndpoints="0">
+  <Timestamp>2014-09-18T09:43:35.4917236+02:00</Timestamp>
+  <ModuleRefCollection>
+    <ModuleRef Name="[Application:Toyota.Tsusho.CRM]" Version="" Culture="" PublicKeyToken="" FullName="[Application:Toyota.Tsusho.CRM], Version=, Culture=, PublicKeyToken=">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="Toyota.Tsusho.CRM.Transformations" Version="1.0.0.0" Culture="neutral" PublicKeyToken="3473353ad7fbeaff" FullName="Toyota.Tsusho.CRM.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+  </ModuleRefCollection>
+  <SendPortCollection>
+    <SendPort Name="Toyota.Tsusho.CRM.Services.Stock.OffRamp.WCF-CUSTOM" IsStatic="true" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline" FullyQualifiedName="Toyota.Tsusho.BizTalk.Common.Pipelines.OperationSendPipeline, Toyota.Tsusho.BizTalk.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>http://localhost/Toyota.Tsusho.CRM.API.Services/StockService.svc</Address>
+        <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;BindingType vt="8"&gt;wsHttpBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="wsHttpBinding"&amp;gt;&amp;lt;security mode="None" /&amp;gt;&amp;lt;/binding&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;&amp;lt;BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+  &amp;lt;Operation Name="http://www.ttaf.co.za/crm/api/2014/09#StockNotifyRequestMessage" Action="http://www.ttaf.co.za/crm/api/2014/09/IStockService/Notify" /&amp;gt;
+&amp;lt;/BtsActionMapping&amp;gt;&lt;/StaticAction&gt;&lt;ProxyUserName vt="8" /&gt;&lt;ProxyAddress vt="8" /&gt;&lt;UserName vt="8" /&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;IsolationLevel vt="8"&gt;Serializable&lt;/IsolationLevel&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;EnableTransaction vt="11"&gt;0&lt;/EnableTransaction&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2014-09-17T22:00:00</FromTime>
+        <ToTime>2014-09-18T21:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="WCF-Custom" Capabilities="907" ConfigurationClsid="af081f69-38ca-4d5b-87df-f0344b12557a" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2014-09-17T22:00:00</FromTime>
+        <ToTime>2014-09-18T21:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>204</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://www.ttaf.co.za/crm/api/2014/09/IStockService/Notify" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms>
+        <Transform FullName="Toyota.Tsusho.CRM.Transformations.ZDBM_CRM_VEHSTOCK_TOToStockNotifyRequestMessage" AssemblyQualifiedName="Toyota.Tsusho.CRM.Transformations.ZDBM_CRM_VEHSTOCK_TOToStockNotifyRequestMessage,Toyota.Tsusho.CRM.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
+      </Transforms>
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>true</RouteFailedMessage>
+      <ApplicationName>Toyota.Tsusho.CRM</ApplicationName>
+    </SendPort>
+  </SendPortCollection>
+  <DistributionListCollection />
+  <ReceivePortCollection>
+    <ReceivePort Name="Toyota.Tsusho.CRM.Services.Generic.OnRamp" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <ReceiveLocations>
+        <ReceiveLocation Name="Toyota.Tsusho.CRM.Services.Generic.WCF-WSHTTP">
+          <Description xsi:nil="true" />
+          <Address>/Toyota.Tsusho.CRM.Services.Generic.WCF/OnRamp.svc</Address>
+          <PublicAddress />
+          <Primary>true</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2000-01-01T22:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2000-01-01T21:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2014-05-12T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2014-05-13T23:59:59</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="WCF-WSHttp" Capabilities="899" ConfigurationClsid="2b219014-ba04-4b70-a66b-a8c418b109fd" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;MessageEncoding vt="8"&gt;Text&lt;/MessageEncoding&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;EnableTransaction vt="11"&gt;0&lt;/EnableTransaction&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;AlgorithmSuite vt="8"&gt;Basic256&lt;/AlgorithmSuite&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;TextEncoding vt="8"&gt;utf-8&lt;/TextEncoding&gt;&lt;NegotiateServiceCredential vt="11"&gt;-1&lt;/NegotiateServiceCredential&gt;&lt;EstablishSecurityContext vt="11"&gt;-1&lt;/EstablishSecurityContext&gt;&lt;SecurityMode vt="8"&gt;None&lt;/SecurityMode&gt;&lt;IncludeExceptionDetailInFaults vt="11"&gt;-1&lt;/IncludeExceptionDetailInFaults&gt;&lt;TransportClientCredentialType vt="8"&gt;Windows&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;MessageClientCredentialType vt="8"&gt;Windows&lt;/MessageClientCredentialType&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;SuspendMessageOnFailure vt="11"&gt;-1&lt;/SuspendMessageOnFailure&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;MaxConcurrentCalls vt="3"&gt;200&lt;/MaxConcurrentCalls&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+          <ReceivePipelineData xsi:nil="true" />
+          <SendPipeline xsi:nil="true" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>true</Enable>
+          <ReceiveHandler Name="BizTalkServerIsolatedHost" HostTrusted="false">
+            <TransportType Name="WCF-WSHttp" Capabilities="899" ConfigurationClsid="2b219014-ba04-4b70-a66b-a8c418b109fd" />
+          </ReceiveHandler>
+        </ReceiveLocation>
+      </ReceiveLocations>
+      <SendPipelineData xsi:nil="true" />
+      <Authentication>0</Authentication>
+      <Tracking>51</Tracking>
+      <Transforms />
+      <RouteFailedMessage>true</RouteFailedMessage>
+      <ApplicationName>Toyota.Tsusho.CRM</ApplicationName>
+    </ReceivePort>
+    <ReceivePort Name="Toyota.Tsusho.CRM.Services.Generic.Response.OnRamp" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <ReceiveLocations>
+        <ReceiveLocation Name="Toyota.Tsusho.CRM.Services.Generic.Response.WCF-WSHTTP">
+          <Description xsi:nil="true" />
+          <Address>/Toyota.Tsusho.CRM.Services.Generic.WCF.Response/OnRamp.svc</Address>
+          <PublicAddress />
+          <Primary>true</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2000-01-01T22:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2000-01-01T21:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2014-05-12T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2014-05-13T23:59:59</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="WCF-WSHttp" Capabilities="899" ConfigurationClsid="2b219014-ba04-4b70-a66b-a8c418b109fd" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;MessageEncoding vt="8"&gt;Text&lt;/MessageEncoding&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;EnableTransaction vt="11"&gt;0&lt;/EnableTransaction&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;AlgorithmSuite vt="8"&gt;Basic256&lt;/AlgorithmSuite&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;TextEncoding vt="8"&gt;utf-8&lt;/TextEncoding&gt;&lt;NegotiateServiceCredential vt="11"&gt;-1&lt;/NegotiateServiceCredential&gt;&lt;EstablishSecurityContext vt="11"&gt;-1&lt;/EstablishSecurityContext&gt;&lt;SecurityMode vt="8"&gt;None&lt;/SecurityMode&gt;&lt;IncludeExceptionDetailInFaults vt="11"&gt;-1&lt;/IncludeExceptionDetailInFaults&gt;&lt;TransportClientCredentialType vt="8"&gt;Windows&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;MessageClientCredentialType vt="8"&gt;Windows&lt;/MessageClientCredentialType&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;SuspendMessageOnFailure vt="11"&gt;-1&lt;/SuspendMessageOnFailure&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;MaxConcurrentCalls vt="3"&gt;200&lt;/MaxConcurrentCalls&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+          <ReceivePipelineData xsi:nil="true" />
+          <SendPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>true</Enable>
+          <ReceiveHandler Name="BizTalkServerIsolatedHost" HostTrusted="false">
+            <TransportType Name="WCF-WSHttp" Capabilities="899" ConfigurationClsid="2b219014-ba04-4b70-a66b-a8c418b109fd" />
+          </ReceiveHandler>
+        </ReceiveLocation>
+      </ReceiveLocations>
+      <SendPipelineData xsi:nil="true" />
+      <Authentication>0</Authentication>
+      <Tracking>255</Tracking>
+      <Transforms />
+      <OutboundTransforms />
+      <RouteFailedMessage>true</RouteFailedMessage>
+      <ApplicationName>Toyota.Tsusho.CRM</ApplicationName>
+    </ReceivePort>
+  </ReceivePortCollection>
+  <PartyCollection xsi:nil="true" />
+</BindingInfo>
