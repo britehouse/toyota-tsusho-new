@@ -5,7 +5,7 @@
  xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk"
  xmlns:p="http://www.ttaf.co.za/crm/api/2014/08"
  xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
- xmlns:p2="clr-namespace:System.ServiceModel;assembly=System.ServiceModel"
+ xmlns:p2="clr-namespace:System.ServiceModel.Activities;assembly=System.ServiceModel.Activities"
  xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
  xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
