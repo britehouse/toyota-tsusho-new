@@ -104,9 +104,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderNotifyRequestMessage.cs" />
     <Compile Include="StockNotifyRequestMessage.cs" />
     <Compile Include="ContactPublishRequestMessage.cs" />
-    <Compile Include="OrderPublishRequestMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -13,7 +13,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
         ConcurrencyMode = ConcurrencyMode.Single)]
     public abstract class OrderServiceBase : Toyota.Tsusho.CRM.API.ServiceContracts.IOrderService
     {
-        public void Publish(Toyota.Tsusho.CRM.API.MessageContracts.OrderPublishRequestMessage request)
+        public void Notify(Toyota.Tsusho.CRM.API.MessageContracts.OrderNotifyRequestMessage request)
         {
             throw new NotImplementedException();
         }

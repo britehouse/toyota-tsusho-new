@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/crm/api/2014/08" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/crm/api/2014/08" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\OrderService_www_ttaf_co_za_crm_api_2014_09_order.xsd" namespace="http://www.ttaf.co.za/crm/api/2014/09/order" />
+  <xs:element name="OrderNotifyRequestMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.ttaf.co.za/crm/api/2014/09/order" minOccurs="0" ref="q1:Items" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="ModificationEnumeration">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Create" />
+      <xs:enumeration value="Update" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ModificationEnumeration" nillable="true" type="tns:ModificationEnumeration" />
+</xs:schema>

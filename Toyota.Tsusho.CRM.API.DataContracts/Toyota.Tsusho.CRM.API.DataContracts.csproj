@@ -111,7 +111,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderCollectionDataContract.cs" />
     <Compile Include="StockCollectionDataContract.cs" />
+    <Compile Include="OrderItemDataContract.cs" />
     <Compile Include="StockItemDataContract.cs" />
     <Compile Include="ModificationEnumeration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

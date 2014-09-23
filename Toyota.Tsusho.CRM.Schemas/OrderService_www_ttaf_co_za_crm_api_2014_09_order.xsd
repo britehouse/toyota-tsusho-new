@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://www.ttaf.co.za/crm/api/2014/09/order" elementFormDefault="qualified" targetNamespace="http://www.ttaf.co.za/crm/api/2014/09/order" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\OrderService_schemas_datacontract_org_2004_07_Toyota_Tsusho_CRM_API.xsd" namespace="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" />
+  <xs:import schemaLocation=".\OrderService_www_ttaf_co_za_crm_api_2014_08.xsd" namespace="http://www.ttaf.co.za/crm/api/2014/08" />
+  <xs:complexType name="OrderCollectionDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Item" nillable="true" type="tns:OrderItemDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderCollectionDataContract" nillable="true" type="tns:OrderCollectionDataContract" />
+  <xs:complexType name="OrderItemDataContract">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" name="Invoice" nillable="true" type="q1:Invoice" />
+      <xs:element xmlns:q2="http://www.ttaf.co.za/crm/api/2014/08" name="Modification" type="q2:ModificationEnumeration" />
+      <xs:element name="Modified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderItemDataContract" nillable="true" type="tns:OrderItemDataContract" />
+  <xs:element name="Items" nillable="true" type="tns:OrderCollectionDataContract" />
+</xs:schema>

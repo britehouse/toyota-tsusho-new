@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 namespace Toyota.Tsusho.CRM.API.MessageContracts
 {
     [MessageContract(IsWrapped = true)]
-    public partial class OrderPublishRequestMessage
+    public partial class OrderNotifyRequestMessage
     {
-        [MessageBodyMember(Namespace = "http://www.ttaf.co.za/crm/api/2014/08/order", Order = 0)]
-        public Toyota.Tsusho.CRM.API.SalesOrder Order
+        [MessageBodyMember(Namespace = "http://www.ttaf.co.za/crm/api/2014/09/order", Order = 0)]
+        public Toyota.Tsusho.CRM.API.DataContracts.OrderCollectionDataContract Items
         {
             get;
             set;
