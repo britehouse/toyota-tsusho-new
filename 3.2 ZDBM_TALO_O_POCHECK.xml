@@ -1,0 +1,64 @@
+﻿<ZDBM_TALO_O_POCHECK xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/">
+  <IT_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030916</CHARG>
+      <EBELN>4700000401</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030922</CHARG>
+      <EBELN>4700000400</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030928</CHARG>
+      <EBELN>4700000400</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030917</CHARG>
+      <EBELN>4700000401</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030924</CHARG>
+      <EBELN>4700000400</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030929</CHARG>
+      <EBELN>4700000401</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030923</CHARG>
+      <EBELN>4700000400</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030918</CHARG>
+      <EBELN>4700000401</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030930</CHARG>
+      <EBELN>4700000401</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+    <ZDBM_TALO_POCHK xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/">
+      <MANDT></MANDT>
+      <CHARG>0000030925</CHARG>
+      <EBELN>4700000400</EBELN>
+      <ZDATE>20140918</ZDATE>
+    </ZDBM_TALO_POCHK>
+  </IT_POCHK>
+</ZDBM_TALO_O_POCHECK>
