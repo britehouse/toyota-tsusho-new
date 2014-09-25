@@ -113,6 +113,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toyota.Tsusho.CRM.Schemas\Toyota.Tsusho.CRM.Schemas.btproj">
+      <Project>{ca688322-59c1-45af-a428-99f8101b6c7a}</Project>
+      <Name>Toyota.Tsusho.CRM.Schemas</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toyota.Tsusho.SAP.Schema\Toyota.Tsusho.SAP.Schemas.btproj">
       <Project>{832e5811-b6df-41c4-9e43-af275f2d013b}</Project>
       <Name>Toyota.Tsusho.SAP.Schemas</Name>
@@ -149,6 +153,13 @@
   <ItemGroup>
     <Map Include="ShippingInformationUpdateRequestMessageToZDBM_TALO_I_SHIPPING.btm">
       <TypeName>ShippingInformationUpdateRequestMessageToZDBM_TALO_I_SHIPPING</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Transformations</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="ContactPublishRequestMessageToZDBM_CRM_CUST_TO.btm">
+      <TypeName>ContactPublishRequestMessageToZDBM_CRM_CUST_TO</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Transformations</Namespace>
       <SubType>Task</SubType>
     </Map>

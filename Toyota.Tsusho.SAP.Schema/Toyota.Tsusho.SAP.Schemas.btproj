@@ -288,11 +288,6 @@
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="ZDBM_CRM_CUST.xsd">
-      <TypeName>ZDBM_CRM_CUST</TypeName>
-      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="ZCRM_CUST_CREATE.xsd">
       <TypeName>ZCRM_CUST_CREATE</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
