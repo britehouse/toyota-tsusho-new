@@ -99,14 +99,12 @@
       </SecondaryTransport>
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>204</Tracking>
-      <Filter>
-        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
         &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
         &lt;Group&gt;
         &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://Microsoft.LobServices.Sap/2007/03/Rfc/#ZDBM_CRM_ORDERDATA_TO" /&gt;
         &lt;/Group&gt;
-        &lt;/Filter&gt;
-      </Filter>
+        &lt;/Filter&gt;</Filter>
       <Transforms>
         <Transform FullName="Toyota.Tsusho.CRM.Transformations.ZDBM_CRM_ORDERDATA_TOToOrderNotifyRequestMessage" AssemblyQualifiedName="Toyota.Tsusho.CRM.Transformations.ZDBM_CRM_ORDERDATA_TOToOrderNotifyRequestMessage,Toyota.Tsusho.CRM.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
       </Transforms>

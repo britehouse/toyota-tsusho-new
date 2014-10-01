@@ -50,10 +50,12 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     record.new_status = item.Stock.new_status;
 
                     if(add)
-                        proxy.Create(record);
+                        context.AddObject(record);
                     else
-                        proxy.Update(record);
+                        context.UpdateObject(record);
                 }
+
+                context.SaveChanges();
             }
         }
     }
