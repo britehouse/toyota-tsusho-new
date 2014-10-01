@@ -210,16 +210,14 @@
       </SecondaryTransport>
       <ReceivePipelineData xsi:nil="true" />
       <Tracking>204</Tracking>
-      <Filter>
-        &lt;?xml version="1.0" encoding="utf-16"?&gt;
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
         &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
         &lt;Group&gt;
         &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://www.ttaf.co.za/crm/api/2014/08#ContactPublishRequestMessage" /&gt;
         &lt;/Group&gt;
-        &lt;/Filter&gt;
-      </Filter>
+        &lt;/Filter&gt;</Filter>
       <Transforms>
-        <Transform FullName="Toyota.Tsusho.SAP.Transformations.ContactPublishRequestMessageToZDBM_CRM_CUST_TO" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.ShippingInformationUpdateRequestMessageToZDBM_TALO_I_SHIPPING,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
+        <Transform FullName="Toyota.Tsusho.SAP.Transformations.ContactPublishRequestMessageToZDBM_CRM_CUST_TO" AssemblyQualifiedName="Toyota.Tsusho.SAP.Transformations.ContactPublishRequestMessageToZDBM_CRM_CUST_TO,Toyota.Tsusho.SAP.Transformations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" />
       </Transforms>
       <OrderedDelivery>false</OrderedDelivery>
       <Priority>5</Priority>

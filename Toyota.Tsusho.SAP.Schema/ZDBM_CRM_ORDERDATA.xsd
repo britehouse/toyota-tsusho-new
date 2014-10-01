@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ns3="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" elementFormDefault="qualified" targetNamespace="http://Microsoft.LobServices.Sap/2007/03/Rfc/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation=".\Types25.xsd" namespace="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />
+  <xs:import schemaLocation=".\Types26.xsd" namespace="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">Rfc</fileNameHint>
@@ -15,14 +15,9 @@
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" maxOccurs="1" name="ITAB" nillable="true" type="ns3:ArrayOfZDBM_ORDERHD_CRM">
+        <xs:element minOccurs="0" maxOccurs="1" name="ITAB" nillable="true" type="ns3:ArrayOfZDBM_ORDERIT_CRM">
           <xs:annotation>
-            <xs:documentation>CRM table for Order header</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element minOccurs="0" maxOccurs="1" name="ITAB2" nillable="true" type="ns3:ArrayOfZDBM_ORDERIT_CRM">
-          <xs:annotation>
-            <xs:documentation>CRM table for Order itemsr</xs:documentation>
+            <xs:documentation>CRM table for Order data</xs:documentation>
           </xs:annotation>
         </xs:element>
       </xs:sequence>
@@ -37,14 +32,9 @@
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" maxOccurs="1" name="ITAB" nillable="true" type="ns3:ArrayOfZDBM_ORDERHD_CRM">
+        <xs:element minOccurs="0" maxOccurs="1" name="ITAB" nillable="true" type="ns3:ArrayOfZDBM_ORDERIT_CRM">
           <xs:annotation>
-            <xs:documentation>CRM table for Order header</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element minOccurs="0" maxOccurs="1" name="ITAB2" nillable="true" type="ns3:ArrayOfZDBM_ORDERIT_CRM">
-          <xs:annotation>
-            <xs:documentation>CRM table for Order itemsr</xs:documentation>
+            <xs:documentation>CRM table for Order data</xs:documentation>
           </xs:annotation>
         </xs:element>
       </xs:sequence>

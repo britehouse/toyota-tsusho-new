@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{78
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{F852B1D6-BC66-41B9-AF1C-5DCA3508CA59}"
 	ProjectSection(SolutionItems) = preProject
+		5. ZDBM_CRM_ORDERDATA.xml = 5. ZDBM_CRM_ORDERDATA.xml
 		ContactPublishRequestMessage.xml = ContactPublishRequestMessage.xml
 	EndProjectSection
 EndProject

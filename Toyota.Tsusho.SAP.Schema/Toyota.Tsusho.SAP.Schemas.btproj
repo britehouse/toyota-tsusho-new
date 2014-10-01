@@ -113,6 +113,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="Types26.xsd">
+      <TypeName>Types26</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="Types25.xsd">
       <TypeName>Types25</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
