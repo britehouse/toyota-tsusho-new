@@ -170,6 +170,18 @@
     <Content Include="Toyota.Tsusho.CRM.BindingInfo.xml">
       <TransformOnBuild>true</TransformOnBuild>
     </Content>
+    <None Include="Toyota.Tsusho.TALO.BindingInfo.T-MAU-DEV.xml">
+      <DependentUpon>Toyota.Tsusho.TALO.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.TALO.BindingInfo.T-MAU-QA.xml">
+      <DependentUpon>Toyota.Tsusho.TALO.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.TALO.BindingInfo.T-KEN-PROD.xml">
+      <DependentUpon>Toyota.Tsusho.TALO.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
     <Content Include="Toyota.Tsusho.TALO.BindingInfo.xml">
       <TransformOnBuild>true</TransformOnBuild>
     </Content>
