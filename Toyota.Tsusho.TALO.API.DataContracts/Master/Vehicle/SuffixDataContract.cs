@@ -20,27 +20,35 @@ namespace Toyota.Tsusho.TALO.API.DataContracts.Master.Vehicle
         }
 
         [DataMember(Order = 1, IsRequired = true)]
+        public string Class
+        {
+            get;
+            set;
+        }
+
+
+        [DataMember(Order = 2, IsRequired = true)]
         public string Name
         {
             get;
             set;
         }
 
-        [DataMember(Order = 2, IsRequired=false)]
+        [DataMember(Order = 3, IsRequired=false)]
         public string Grade
         {
             get;
             set;
         }
 
-        [DataMember(Order = 3, IsRequired = true)]
+        [DataMember(Order = 4, IsRequired = true)]
         public ModificationEnumeration Modification
         {
             get;
             set;
         }
 
-        [DataMember(Order = 4, IsRequired = true)]
+        [DataMember(Order = 5, IsRequired = true)]
         public DateTime Modified
         {
             get;

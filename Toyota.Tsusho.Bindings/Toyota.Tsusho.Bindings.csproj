@@ -182,6 +182,10 @@
       <DependentUpon>Toyota.Tsusho.TALO.BindingInfo.xml</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
+    <None Include="Toyota.Tsusho.SAP.BindingInfo.T-KEN-PROD.xml">
+      <DependentUpon>Toyota.Tsusho.SAP.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
     <Content Include="Toyota.Tsusho.TALO.BindingInfo.xml">
       <TransformOnBuild>true</TransformOnBuild>
     </Content>
