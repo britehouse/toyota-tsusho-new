@@ -11,7 +11,7 @@
   </Solutions>
   <XamlWorkflows>
     <XamlWorkflowSolution Assembly="Toyota.Tsusho.CRM.API.Workflows.dll">
-      <XamlWorkflowType Path="../Toyota.Tsusho.CRM.API.Workflows/ContactWorkflow.xaml" Id="709f201a-3928-e411-93f3-001c4291da00" PrimaryEntity="contact" ProcessName="Contact Publish" />
+      <XamlWorkflowType Path="../Toyota.Tsusho.CRM.API.Workflows/PublishContactWorkflow.xaml" Id="" PrimaryEntity="contact" ProcessName="Publish Contact to BizTalk Server" />
     </XamlWorkflowSolution>
   </XamlWorkflows>
 </Register>
