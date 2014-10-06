@@ -216,7 +216,7 @@
       <OrderedDelivery>false</OrderedDelivery>
       <Priority>5</Priority>
       <StopSendingOnFailure>false</StopSendingOnFailure>
-      <RouteFailedMessage>false</RouteFailedMessage>
+      <RouteFailedMessage>true</RouteFailedMessage>
       <ApplicationName>Toyota.Tsusho.TALO</ApplicationName>
     </SendPort>
     <SendPort Name="Toyota.Tsusho.TALO.Services.VehicleNotify.OffRamp.WCF-CUSTOM" IsStatic="true" IsTwoWay="false" BindingOption="0">
