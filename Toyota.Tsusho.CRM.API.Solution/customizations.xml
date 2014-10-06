@@ -1,0 +1,87 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities></Entities>
+  <Roles></Roles>
+  <Workflows>
+    <Workflow WorkflowId="{67c8bef5-384d-e411-93f3-001c42bc2b19}" Name="Publish Contact to BizTalk Server">
+      <XamlFileName>/Workflows/PublishContacttoBizTalkServer-67c8bef5-384d-e411-93f3-001c42bc2b19.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>0</Category>
+      <Mode>0</Mode>
+      <Scope>1</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>1</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>1</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>4.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <PrimaryEntity>Contact</PrimaryEntity>
+    </Workflow>
+  </Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <SolutionPluginAssemblies>
+    <PluginAssembly FullName="Microsoft.Crm.Sdk.Proxy, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" CustomizationLevel="1">
+      <IsolationMode>1</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <FileName>/PluginAssemblies/MicrosoftCrmSdkProxy-6d9f201a-3928-e411-93f3-001c4291da00/MicrosoftCrmSdkProxy.dll</FileName>
+      <PluginTypes />
+    </PluginAssembly>
+    <PluginAssembly FullName="Microsoft.Xrm.Sdk, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" CustomizationLevel="1">
+      <IsolationMode>1</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <FileName>/PluginAssemblies/MicrosoftXrmSdk-D55D0145-1A7F-4843-8A98-FAB4B945CF56/MicrosoftXrmSdk.dll</FileName>
+      <PluginTypes />
+    </PluginAssembly>
+    <PluginAssembly FullName="Microsoft.Xrm.Sdk.Workflow, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" CustomizationLevel="1">
+      <IsolationMode>1</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <FileName>/PluginAssemblies/MicrosoftXrmSdkWorkflow-7B6A0FAC-DF0D-458D-8F26-72B0BBB0A344/MicrosoftXrmSdkWorkflow.dll</FileName>
+      <PluginTypes />
+    </PluginAssembly>
+    <PluginAssembly FullName="Toyota.Tsusho.CRM.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" CustomizationLevel="1">
+      <IsolationMode>1</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <FileName>/PluginAssemblies/ToyotaTsushoCRMAPI-56DAEE74-5C25-4CEB-8B6C-A3806E24A020/ToyotaTsushoCRMAPI.dll</FileName>
+      <PluginTypes />
+    </PluginAssembly>
+    <PluginAssembly FullName="Toyota.Tsusho.CRM.API.DataContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" CustomizationLevel="1">
+      <IsolationMode>1</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <FileName>/PluginAssemblies/ToyotaTsushoCRMAPIDataContracts-551FF740-8824-4F66-A91F-0C81852AFEA5/ToyotaTsushoCRMAPIDataContracts.dll</FileName>
+      <PluginTypes />
+    </PluginAssembly>
+    <PluginAssembly FullName="Toyota.Tsusho.CRM.API.MessageContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" CustomizationLevel="1">
+      <IsolationMode>1</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <FileName>/PluginAssemblies/ToyotaTsushoCRMAPIMessageContracts-D68CADF2-6C11-4F32-B2B2-9DDA556B16D6/ToyotaTsushoCRMAPIMessageContracts.dll</FileName>
+      <PluginTypes />
+    </PluginAssembly>
+    <PluginAssembly FullName="Toyota.Tsusho.CRM.API.Workflows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" CustomizationLevel="1">
+      <IsolationMode>1</IsolationMode>
+      <SourceType>0</SourceType>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <FileName>/PluginAssemblies/ToyotaTsushoCRMAPIWorkflows-8D9A0097-CDAD-4E47-AE24-6D24D0565EC7/ToyotaTsushoCRMAPIWorkflows.dll</FileName>
+      <PluginTypes />
+    </PluginAssembly>
+  </SolutionPluginAssemblies>
+
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>
