@@ -7,7 +7,6 @@
     <Solution Assembly="Toyota.Tsusho.CRM.API.dll" Id="56daee74-5c25-4ceb-8b6c-a3806e24a020" IsolationMode="None" SourceType="Database" />
     <Solution Assembly="Toyota.Tsusho.CRM.API.DataContracts.dll" Id="551ff740-8824-4f66-a91f-0c81852afea5" IsolationMode="None" SourceType="Database" />
     <Solution Assembly="Toyota.Tsusho.CRM.API.MessageContracts.dll" Id="d68cadf2-6c11-4f32-b2b2-9dda556b16d6" IsolationMode="None" SourceType="Database" />
-    <Solution Assembly="Toyota.Tsusho.CRM.API.Workflows.dll" Id="8d9a0097-cdad-4e47-ae24-6d24d0565ec7" IsolationMode="None" SourceType="Database" />
   </Solutions>
   <XamlWorkflows>
     <XamlWorkflowSolution Assembly="Toyota.Tsusho.CRM.API.Workflows.dll">

@@ -49,7 +49,6 @@
     <Content Include="PluginAssemblies\ToyotaTsushoCRMAPI-56DAEE74-5C25-4CEB-8B6C-A3806E24A020\ToyotaTsushoCRMAPI.dll" />
     <Content Include="PluginAssemblies\ToyotaTsushoCRMAPIDataContracts-551FF740-8824-4F66-A91F-0C81852AFEA5\ToyotaTsushoCRMAPIDataContracts.dll" />
     <Content Include="PluginAssemblies\ToyotaTsushoCRMAPIMessageContracts-D68CADF2-6C11-4F32-B2B2-9DDA556B16D6\ToyotaTsushoCRMAPIMessageContracts.dll" />
-    <Content Include="PluginAssemblies\ToyotaTsushoCRMAPIWorkflows-8D9A0097-CDAD-4E47-AE24-6D24D0565EC7\ToyotaTsushoCRMAPIWorkflows.dll" />
     <Content Include="solution.xml" />
     <Content Include="[Content_Types].xml" />
   </ItemGroup>

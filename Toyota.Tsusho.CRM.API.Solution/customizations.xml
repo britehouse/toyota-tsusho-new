@@ -72,15 +72,7 @@
       <FileName>/PluginAssemblies/ToyotaTsushoCRMAPIMessageContracts-D68CADF2-6C11-4F32-B2B2-9DDA556B16D6/ToyotaTsushoCRMAPIMessageContracts.dll</FileName>
       <PluginTypes />
     </PluginAssembly>
-    <PluginAssembly FullName="Toyota.Tsusho.CRM.API.Workflows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3473353ad7fbeaff" CustomizationLevel="1">
-      <IsolationMode>1</IsolationMode>
-      <SourceType>0</SourceType>
-      <IntroducedVersion>1.0.0.0</IntroducedVersion>
-      <FileName>/PluginAssemblies/ToyotaTsushoCRMAPIWorkflows-8D9A0097-CDAD-4E47-AE24-6D24D0565EC7/ToyotaTsushoCRMAPIWorkflows.dll</FileName>
-      <PluginTypes />
-    </PluginAssembly>
   </SolutionPluginAssemblies>
-
   <Languages>
     <Language>1033</Language>
   </Languages>
