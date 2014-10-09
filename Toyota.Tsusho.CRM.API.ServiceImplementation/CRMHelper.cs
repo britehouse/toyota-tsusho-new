@@ -19,7 +19,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
             ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["CRM"];
 
             if (settings == null)
-                throw new ConfigurationException("No CRM Connection String was found.");
+                throw new ConfigurationErrorsException("No CRM Connection String was found.");
 
             Uri uri = new Uri(settings.ConnectionString);
 
