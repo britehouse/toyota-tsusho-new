@@ -25,7 +25,7 @@ namespace Toyota.Tsusho.CRM.API.Testing
             inputs.Add("InputEntities", inputEntities);
             inputs.Add("CreatedEntities", createdEntities);
 
-            Activity workflowActivity = System.Activities.XamlIntegration.ActivityXamlServices.Load(@"C:\Projects\Toyota.Tsusho\Toyota.Tsusho.CRM.API.Workflows\ContactWorkflow.xaml");
+            Activity workflowActivity = System.Activities.XamlIntegration.ActivityXamlServices.Load(@"C:\Projects\Toyota.Tsusho\Toyota.Tsusho.CRM.API.Workflows\PublishContactWorkflow.xaml");
 
             System.Activities.WorkflowInvoker invoker = new System.Activities.WorkflowInvoker(workflowActivity);
 

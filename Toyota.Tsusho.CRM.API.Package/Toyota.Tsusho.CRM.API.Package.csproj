@@ -74,12 +74,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <Name>Microsoft.Crm.Sdk.Proxy</Name>
-      <AssemblyName>Microsoft.Crm.Sdk.Proxy.dll</AssemblyName>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="GAC.bat">
       <SubType>Content</SubType>
     </None>
