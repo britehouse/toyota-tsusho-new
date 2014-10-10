@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.API.Solut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterWorkflow", "RegisterWorkflow\RegisterWorkflow.csproj", "{3E350628-DCED-40FA-8C7D-5D7715E5FD70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.API.Plugins", "Toyota.Tsusho.CRM.API.Plugins\Toyota.Tsusho.CRM.API.Plugins.csproj", "{7BA9751C-838E-4744-8DFA-43270A877D2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{3E350628-DCED-40FA-8C7D-5D7715E5FD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E350628-DCED-40FA-8C7D-5D7715E5FD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E350628-DCED-40FA-8C7D-5D7715E5FD70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BA9751C-838E-4744-8DFA-43270A877D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA9751C-838E-4744-8DFA-43270A877D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA9751C-838E-4744-8DFA-43270A877D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA9751C-838E-4744-8DFA-43270A877D2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
