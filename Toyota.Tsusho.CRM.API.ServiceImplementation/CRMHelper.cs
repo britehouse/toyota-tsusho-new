@@ -38,7 +38,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
 
             OrganizationServiceProxy proxy = new OrganizationServiceProxy(uri, null, credentials, null);
 
-            proxy.EnableProxyTypes(typeof(Toyota.Tsusho.CRM.API.Contact).Assembly);
+            proxy.EnableProxyTypes();
 
             return proxy;
         }

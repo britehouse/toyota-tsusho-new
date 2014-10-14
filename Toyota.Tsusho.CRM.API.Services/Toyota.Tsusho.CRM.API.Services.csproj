@@ -13,13 +13,16 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Toyota.Tsusho.CRM.API.Services</RootNamespace>
     <AssemblyName>Toyota.Tsusho.CRM.API.Services</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,13 +42,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.6.1.1\lib\net40\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.IdentityModel.6.1.7600.16394\lib\net35\Microsoft.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.6.1.1\lib\net40\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.EnterpriseServices" />
@@ -70,9 +89,25 @@
     <Content Include="OrderService.svc" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toyota.Tsusho.CRM.API.DataContracts\Toyota.Tsusho.CRM.API.DataContracts.csproj">
+      <Project>{5919d6ff-591a-400c-a58d-11451922c6c2}</Project>
+      <Name>Toyota.Tsusho.CRM.API.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.Tsusho.CRM.API.MessageContracts\Toyota.Tsusho.CRM.API.MessageContracts.csproj">
+      <Project>{44860f11-849b-4067-b505-12fc48f4213d}</Project>
+      <Name>Toyota.Tsusho.CRM.API.MessageContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.Tsusho.CRM.API.ServiceContracts\Toyota.Tsusho.CRM.API.ServiceContracts.csproj">
+      <Project>{58d32ce3-0295-4abb-b256-03d7fef0254c}</Project>
+      <Name>Toyota.Tsusho.CRM.API.ServiceContracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toyota.Tsusho.CRM.API.ServiceImplementation\Toyota.Tsusho.CRM.API.ServiceImplementation.csproj">
       <Project>{5de448f3-151b-42b5-95cc-91855ea57343}</Project>
       <Name>Toyota.Tsusho.CRM.API.ServiceImplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Toyota.Tsusho.CRM.API\Toyota.Tsusho.CRM.API.csproj">
+      <Project>{788fc72c-4915-4969-a59f-4af40f20e293}</Project>
+      <Name>Toyota.Tsusho.CRM.API</Name>
     </ProjectReference>
     <ProjectReference Include="..\Toyota.Tsusho.ServiceModel\Toyota.Tsusho.ServiceModel.csproj">
       <Project>{890c98ab-9e05-4216-95c4-7c604561e511}</Project>
@@ -81,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\T-MAU-QA.pubxml" />
     <None Include="Properties\PublishProfiles\T-MAU-DEV.pubxml" />
     <None Include="Web.Debug.config">
@@ -175,6 +211,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -2532,13 +2532,27 @@ The security token response.</returns>
 		</member>
 		<member name="M:Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateConfiguration``1(System.Uri)">
 			<summary>Creates a service configuration.</summary>
-			<returns>Returns <see cref="T:Microsoft.Xrm.Sdk.Client.IServiceConfiguration`1"></see>.</returns>
+			<returns>Type:  <see cref="T:Microsoft.Xrm.Sdk.Client.IServiceConfiguration`1"></see>A service configuration object.</returns>
 			<param name="serviceUri">Specifies the service’s URI.</param>
+		</member>
+		<member name="M:Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateConfiguration``1(System.Uri,System.Boolean,System.Reflection.Assembly)">
+			<summary>Creates a service configuration</summary>
+			<returns>Type: <see cref="T:Microsoft.Xrm.Sdk.Client.IServiceConfiguration`1"></see>A service configuration object.</returns>
+			<param name="serviceUri">Specifies the web service’s URI.</param>
+			<param name="assembly">An assembly containing proxy types.</param>
+			<param name="enableProxyTypes">True to enable proxy types; otherwise, False.</param>
 		</member>
 		<member name="M:Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateManagement``1(System.Uri)">
 			<summary>Creates a service management.</summary>
-			<returns>Returns <see cref="T:Microsoft.Xrm.Sdk.Client.IServiceManagement`1"></see>.</returns>
+			<returns>Type:  <see cref="T:Microsoft.Xrm.Sdk.Client.IServiceManagement`1"></see>A service management object.</returns>
 			<param name="serviceUri">Specifies the service’s URI.</param>
+		</member>
+		<member name="M:Microsoft.Xrm.Sdk.Client.ServiceConfigurationFactory.CreateManagement``1(System.Uri,System.Boolean,System.Reflection.Assembly)">
+			<summary>Creates a service management.</summary>
+			<returns>Type:  <see cref="T:Microsoft.Xrm.Sdk.Client.IServiceManagement`1"></see>A service management object.</returns>
+			<param name="serviceUri">Specifies the service’s URI.</param>
+			<param name="assembly">An assembly containing proxy types.</param>
+			<param name="enableProxyTypes">True to enable proxy types; otherwise, False.</param>
 		</member>
 		<member name="T:Microsoft.Xrm.Sdk.Client.ServiceEndpointDictionary">
 			<summary>Contains a dictionary of Returns_ServiceEndpoint objects.</summary>
@@ -6420,7 +6434,7 @@ The condition operator.</returns>
 			<summary>internal</summary>
 		</member>
 		<member name="F:Microsoft.Xrm.Sdk.Query.ConditionOperator.Contains">
-			<summary>The string contains another string. Value = 0x31.</summary>
+			<summary>The string contains another string. Value = 0x31.You must use the Contains operator for only those attributes that are enabled for full-text indexing. Otherwise, you will receive a generic SQL error message while retrieving data. In a pn_microsoftcrm default installation, only the attributes of the KBArticle (article) entity are enabled for full-text indexing.</summary>
 		</member>
 		<member name="F:Microsoft.Xrm.Sdk.Query.ConditionOperator.DoesNotBeginWith">
 			<summary>The string does not begin with another string. Value = 0x37.</summary>

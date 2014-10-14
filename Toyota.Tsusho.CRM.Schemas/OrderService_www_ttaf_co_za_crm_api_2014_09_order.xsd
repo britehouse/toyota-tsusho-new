@@ -11,8 +11,9 @@
   <xs:complexType name="OrderItemDataContract">
     <xs:sequence>
       <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" name="Invoice" nillable="true" type="q1:Invoice" />
-      <xs:element xmlns:q2="http://www.ttaf.co.za/crm/api/2014/08" name="Modification" type="q2:ModificationEnumeration" />
-      <xs:element name="Modified" type="xs:dateTime" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" name="InvoiceDetails" nillable="true" type="q2:ArrayOfInvoiceDetail" />
+      <xs:element xmlns:q3="http://www.ttaf.co.za/crm/api/2014/08" minOccurs="0" name="Modification" type="q3:ModificationEnumeration" />
+      <xs:element minOccurs="0" name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="OrderItemDataContract" nillable="true" type="tns:OrderItemDataContract" />

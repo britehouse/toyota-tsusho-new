@@ -108,38 +108,7 @@
     <None Include="packages.config" />
     <None Include="Toyota.Tsusho.snk" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\coretools\CrmSvcUtil.exe" />
-    <Content Include="bin\coretools\CrmSvcUtil.xml" />
-    <Content Include="bin\coretools\Microsoft.Xrm.Sdk.dll" />
-    <Content Include="bin\coretools\SolutionPackager.exe" />
-    <Content Include="bin\Debug\Microsoft.Xrm.Sdk.dll" />
-    <Content Include="bin\Debug\Microsoft.Xrm.Sdk.xml" />
-    <Content Include="bin\Debug\Toyota.Tsusho.CRM.API.dll" />
-    <Content Include="bin\Debug\Toyota.Tsusho.CRM.API.pdb" />
-    <Content Include="bin\Release\Microsoft.Xrm.Sdk.dll" />
-    <Content Include="bin\Release\Microsoft.Xrm.Sdk.xml" />
-    <Content Include="bin\Release\Toyota.Tsusho.CRM.API.dll" />
-    <Content Include="bin\Release\Toyota.Tsusho.CRM.API.pdb" />
-    <Content Include="bin\T-KEN-QA\Microsoft.Xrm.Sdk.dll" />
-    <Content Include="bin\T-KEN-QA\Microsoft.Xrm.Sdk.xml" />
-    <Content Include="bin\T-KEN-QA\Toyota.Tsusho.CRM.API.dll" />
-    <Content Include="bin\T-MAU-DEV\Microsoft.Xrm.Sdk.dll" />
-    <Content Include="bin\T-MAU-DEV\Microsoft.Xrm.Sdk.xml" />
-    <Content Include="bin\T-MAU-DEV\Toyota.Tsusho.CRM.API.dll" />
-    <Content Include="bin\T-MAU-DEV\Toyota.Tsusho.CRM.API.pdb" />
-    <Content Include="bin\T-MAU-QA\Microsoft.Xrm.Sdk.dll" />
-    <Content Include="bin\T-MAU-QA\Microsoft.Xrm.Sdk.xml" />
-    <Content Include="bin\T-MAU-QA\Toyota.Tsusho.CRM.API.dll" />
-    <Content Include="bin\tools\CrmSvcUtil.exe" />
-    <Content Include="bin\tools\CrmSvcUtil.xml" />
-    <Content Include="bin\tools\Microsoft.Xrm.Sdk.dll" />
-    <Content Include="bin\tools\SolutionPackager.exe" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\DEV\" />
-    <Folder Include="bin\T-KEN-DEV\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

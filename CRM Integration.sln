@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{F852B1D6-BC66-41B9-AF1C-5DCA3508CA59}"
 	ProjectSection(SolutionItems) = preProject
 		04 ZDBM_CRM_VEHSTOCK.xml = 04 ZDBM_CRM_VEHSTOCK.xml
+		05 OrderNotifyRequestMessage.xml = 05 OrderNotifyRequestMessage.xml
 		05 ZDBM_CRM_ORDERDATA.xml = 05 ZDBM_CRM_ORDERDATA.xml
 		ContactPublishRequestMessage.xml = ContactPublishRequestMessage.xml
 	EndProjectSection
@@ -47,6 +48,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.API.DataContracts", "Toyota.Tsusho.CRM.API.DataContracts\Toyota.Tsusho.CRM.API.DataContracts.csproj", "{5919D6FF-591A-400C-A58D-11451922C6C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.Transformations", "Toyota.Tsusho.CRM.Transformations\Toyota.Tsusho.CRM.Transformations.btproj", "{A65C9B03-F68A-4867-BBA0-C982041D45E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toyota.Tsusho.CRM.API.Testing", "Toyota.Tsusho.CRM.API.Testing\Toyota.Tsusho.CRM.API.Testing.csproj", "{518651BB-6476-4826-B488-BD5E91D36295}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -306,6 +309,20 @@ Global
 		{A65C9B03-F68A-4867-BBA0-C982041D45E3}.T-MAU-QA|Any CPU.ActiveCfg = T-MAU-QA|Any CPU
 		{A65C9B03-F68A-4867-BBA0-C982041D45E3}.T-MAU-QA|Any CPU.Build.0 = T-MAU-QA|Any CPU
 		{A65C9B03-F68A-4867-BBA0-C982041D45E3}.T-MAU-QA|Any CPU.Deploy.0 = T-MAU-QA|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.DEV|Any CPU.ActiveCfg = Debug|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.DEV|Any CPU.Build.0 = Debug|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.T-KEN-DEV|Any CPU.ActiveCfg = Release|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.T-KEN-DEV|Any CPU.Build.0 = Release|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.T-KEN-QA|Any CPU.ActiveCfg = Release|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.T-KEN-QA|Any CPU.Build.0 = Release|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.T-MAU-DEV|Any CPU.ActiveCfg = Release|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.T-MAU-DEV|Any CPU.Build.0 = Release|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.T-MAU-QA|Any CPU.ActiveCfg = Release|Any CPU
+		{518651BB-6476-4826-B488-BD5E91D36295}.T-MAU-QA|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -327,5 +344,6 @@ Global
 		{C69118FE-302B-457F-BDF2-14AD591AAE29} = {99149CE0-01CD-4E36-B2BD-2A4570C4ED51}
 		{5919D6FF-591A-400C-A58D-11451922C6C2} = {789EFCFF-5971-40CA-931D-B0D5F81BCFFB}
 		{A65C9B03-F68A-4867-BBA0-C982041D45E3} = {99149CE0-01CD-4E36-B2BD-2A4570C4ED51}
+		{518651BB-6476-4826-B488-BD5E91D36295} = {F852B1D6-BC66-41B9-AF1C-5DCA3508CA59}
 	EndGlobalSection
 EndGlobal

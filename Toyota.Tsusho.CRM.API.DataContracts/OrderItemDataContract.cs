@@ -18,14 +18,22 @@ namespace Toyota.Tsusho.CRM.API.DataContracts
             set;
         }
 
-        [DataMember(Order = 1, IsRequired = false)]
+        [DataMember(Order = 1, IsRequired = true)]
+        public List<Toyota.Tsusho.CRM.API.InvoiceDetail> InvoiceDetails
+        {
+            get;
+            set;
+        }
+
+
+        [DataMember(Order = 2, IsRequired = false)]
         public ModificationEnumeration Modification
         {
             get;
             set;
         }
 
-        [DataMember(Order = 2, IsRequired = false)]
+        [DataMember(Order = 3, IsRequired = false)]
         public DateTime Modified
         {
             get;
