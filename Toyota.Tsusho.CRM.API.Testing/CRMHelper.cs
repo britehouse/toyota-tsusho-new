@@ -10,7 +10,7 @@ using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Sdk.Client;
 using System.ServiceModel.Description;
 
-namespace Toyota.Tsusho.CRM.API.ServiceImplementation
+namespace Toyota.Tsusho.CRM.API.Testing
 {
     internal static class CRMHelper
     {

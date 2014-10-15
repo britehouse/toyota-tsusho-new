@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ns3="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" elementFormDefault="qualified" targetNamespace="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">Types</fileNameHint>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:complexType name="ZDBM_ORDERIT_CRM">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="MANDT" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="VBELN" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="POSNR" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="6" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="KUNNR" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MATNR18" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="18" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MATNR40" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="LABVAL" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="35" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MATKL" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="9" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="DESCR1" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="DESCR2" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="40" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ITCAT" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="4" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ITCANC" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ZMENG" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="13" />
+            <xs:fractionDigits value="3" />
+            <xs:pattern value="([\-]{0,1})(([0-9]{0,10}\.[0-9]{0,3})|([0-9]{1,10}))" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ZIEME" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="SPART" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="2" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="NETWR" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="15" />
+            <xs:fractionDigits value="2" />
+            <xs:pattern value="([\-]{0,1})(([0-9]{0,13}\.[0-9]{0,2})|([0-9]{1,13}))" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="WAERK" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="5" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="VRKME" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="WERKS" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="4" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="LGORT" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="4" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ERNAM" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="12" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="AUDAT" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="8" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="VBELV" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="VKBUR" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="4" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ANGE_USER" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="12" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="PERNR" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="8" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="ZBILLING" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="8" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="LICPL" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="15" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="LICPL_COUNTRY" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MILEAGE" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="7" />
+            <xs:fractionDigits value="0" />
+            <xs:pattern value="([\-]{0,1})(([0-9]{1,7}))" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MILEAGE_UOM" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="HSTAT" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="4" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="H_NETWR" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="15" />
+            <xs:fractionDigits value="2" />
+            <xs:pattern value="([\-]{0,1})(([0-9]{0,13}\.[0-9]{0,2})|([0-9]{1,13}))" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="VTWEG" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="2" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="VGUID" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="22" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="MEINS" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZDBM_ORDERIT_CRM" nillable="true" type="ns3:ZDBM_ORDERIT_CRM" />
+  <xs:complexType name="ArrayOfZDBM_ORDERIT_CRM">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ZDBM_ORDERIT_CRM" type="ns3:ZDBM_ORDERIT_CRM" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfZDBM_ORDERIT_CRM" nillable="true" type="ns3:ArrayOfZDBM_ORDERIT_CRM" />
+</xs:schema>
