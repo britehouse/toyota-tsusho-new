@@ -147,6 +147,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     record.new_counterunit = item.Invoice.new_counterunit;
                     record.new_orderstatus = item.Invoice.new_orderstatus;
                     record.new_netvalue = item.Invoice.new_netvalue;
+                    record.new_vehicleguid = item.Invoice.new_vehicleguid;
 
                     if (invoiceType != null)
                         record.new_invoicetype = invoiceType.ToEntityReference();

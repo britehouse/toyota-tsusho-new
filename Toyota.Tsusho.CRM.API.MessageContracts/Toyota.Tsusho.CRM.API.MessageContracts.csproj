@@ -113,6 +113,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LookupRequestMessage - Copy.cs" />
+    <Compile Include="LookupResponseMessage.cs" />
     <Compile Include="OrderNotifyRequestMessage.cs" />
     <Compile Include="StockNotifyRequestMessage.cs" />
     <Compile Include="ContactPublishRequestMessage.cs" />

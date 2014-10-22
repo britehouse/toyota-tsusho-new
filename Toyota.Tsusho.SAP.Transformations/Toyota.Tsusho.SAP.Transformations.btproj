@@ -122,6 +122,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toyota.Tsusho.CRM.BizTalk.Components\Toyota.Tsusho.CRM.BizTalk.Components.csproj">
+      <Project>{36e47a68-1557-4237-b58c-01d2653a855b}</Project>
+      <Name>Toyota.Tsusho.CRM.BizTalk.Components</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toyota.Tsusho.CRM.Schemas\Toyota.Tsusho.CRM.Schemas.btproj">
       <Project>{ca688322-59c1-45af-a428-99f8101b6c7a}</Project>
       <Name>Toyota.Tsusho.CRM.Schemas</Name>

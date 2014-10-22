@@ -114,6 +114,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LookupService.cs" />
     <Compile Include="ContactService.cs" />
     <Compile Include="CRMHelper.cs" />
     <Compile Include="StockService.cs" />

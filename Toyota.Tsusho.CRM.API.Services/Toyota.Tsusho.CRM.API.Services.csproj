@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ContactService.svc" />
+    <Content Include="LookupService.svc" />
     <Content Include="StockService.svc" />
     <Content Include="OrderService.svc" />
   </ItemGroup>
@@ -115,7 +116,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\T-MAU-QA.pubxml" />
     <None Include="Properties\PublishProfiles\T-MAU-DEV.pubxml" />
