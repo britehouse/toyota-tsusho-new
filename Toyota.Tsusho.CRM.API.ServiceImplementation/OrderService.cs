@@ -45,8 +45,8 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                                        where c.new_client == item.Invoice.CustomerId.LogicalName
                                        select c).FirstOrDefault();
 
-                    //if (contact == null)
-                    //    throw new Exception(String.Format("No Contact could be retrieved for {0}", item.Invoice.CustomerId.LogicalName));
+                    if (contact == null)
+                        throw new Exception(String.Format("No Contact could be retrieved for {0}", item.Invoice.CustomerId.LogicalName));
 
                     //SalesOrder
 
@@ -59,19 +59,12 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                                             select o).FirstOrDefault();
                     }
 
-                    //if (order == null)
-                    //    throw new Exception(String.Format("No Sales Order could be retrieved for {0}", item.Invoice.SalesOrderId.LogicalName));
-
                     //SalesOffice
 
                     Territory salesOffice = null;
 
                     if (item.Invoice.new_salesoffice != null)
                     {
-                        //salesOffice = (from s in context.TerritorySet
-                        //               where s.new_sapcode == item.Invoice.new_salesoffice.LogicalName
-                        //               select s).FirstOrDefault();
-
                         entity = (from s in context.CreateQuery("territory")
                                      where s["new_sapcode"] == item.Invoice.new_salesoffice.LogicalName
                                      select s).FirstOrDefault();
@@ -80,21 +73,11 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                             salesOffice = entity.ToEntity<Territory>();
                     }
 
-                    //if (salesOffice == null)
-                    //    throw new Exception(String.Format("No Territory could be retrieved for {0}", item.Invoice.new_salesoffice.LogicalName));
-
                     //Plant
-
-                    //Territory plant = (from p in context.TerritorySet
-                    //                   where p.new_sapcode == item.Invoice.new_plant.LogicalName
-                    //                       select p).FirstOrDefault();
 
                    entity = (from p in context.CreateQuery("territory")
                                      where p["new_sapcode"] == item.Invoice.new_plant.LogicalName
                                      select p).FirstOrDefault();
-
-                    //if (entity == null)
-                    //    throw new Exception(String.Format("No Territory could be retrieved for {0}", item.Invoice.new_plant.LogicalName));
 
                    Territory plant = null;
                    
@@ -107,10 +90,6 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
 
                     if(item.Invoice.new_invoicetype != null)
                     {
-                        //invoiceType = (from it in context.new_invoicetypeSet
-                        //               where it.new_typeidinvoice == item.Invoice.new_invoicetype.LogicalName
-                        //                select it).FirstOrDefault();
-
                         entity = (from it in context.CreateQuery("new_invoicetype")
                                      where it["new_typeidinvoice"] == item.Invoice.new_invoicetype.LogicalName
                                      select it).FirstOrDefault();
@@ -196,10 +175,6 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
 
                         if (lineItem.new_plant != null)
                         {
-                            //detailPlant = (from p in context.TerritorySet
-                            //               where p.new_sapcode == lineItem.new_plant.LogicalName
-                            //                         select p).FirstOrDefault();
-
                             entity = (from p in context.CreateQuery("territory")
                                       where p["new_sapcode"] == lineItem.new_plant.LogicalName
                                       select p).FirstOrDefault();
@@ -207,9 +182,6 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                             if (entity != null)
                                 detailPlant = entity.ToEntity<Territory>();
                         }
-
-                        //if (plant == null)
-                        //    throw new Exception(String.Format("No Territory could be retrieved for {0}", lineItem.new_plant.LogicalName));
 
                         //Populate Invoice Detail
 
