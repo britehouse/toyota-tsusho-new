@@ -234,12 +234,14 @@
           <xs:element minOccurs="0" name="new_new_dutystatus_contact_DutystatusId" nillable="true" type="tns:new_dutystatus" />
           <xs:element minOccurs="0" name="new_new_industrycodes_contact_Industry" nillable="true" type="tns:new_industrycodes" />
           <xs:element minOccurs="0" name="new_new_model_contact_LSModelId" nillable="true" type="tns:new_model" />
+          <xs:element minOccurs="0" name="new_new_pricegroup_contact_pricegrouplookup" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_new_reconaccounts_contact_reconaccount" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_new_taxclassification_contact_taxclassification" nillable="true" type="tns:new_taxclassification" />
           <xs:element minOccurs="0" name="new_new_termsofpayment_contact_termsofpayment" nillable="true" type="tns:new_termsofpayment" />
           <xs:element minOccurs="0" name="new_new_termsofpayment_contact_termsofpaymentcompanycode" nillable="true" type="tns:new_termsofpayment" />
           <xs:element minOccurs="0" name="new_new_title_contact_title" nillable="true" type="tns:new_title" />
           <xs:element minOccurs="0" name="new_pricegroup" nillable="true" type="q1:OptionSetValue" />
+          <xs:element minOccurs="0" name="new_pricegrouplookup" nillable="true" type="q1:EntityReference" />
           <xs:element minOccurs="0" name="new_reconaccount" nillable="true" type="q1:EntityReference" />
           <xs:element minOccurs="0" name="new_searchterm" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_systemuser_contact_Serviceadvisor" nillable="true" type="tns:SystemUser" />
@@ -362,6 +364,7 @@
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_ActivityPointers" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_ActivityPointers" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_ActivityPointers" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_ActivityPointers" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_ActivityPointers" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_ActivityPointers" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_ActivityPointers" nillable="true" type="tns:new_roadtaxtype" />
@@ -686,6 +689,7 @@
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_Annotations" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_Annotations" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_Annotations" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_Annotations" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_Annotations" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_Annotations" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_Annotations" nillable="true" type="tns:new_roadtaxtype" />
@@ -889,6 +893,7 @@
           <xs:element minOccurs="0" name="new_model_AsyncOperations" nillable="true" type="tns:new_model" />
           <xs:element minOccurs="0" name="new_modelsalescode_AsyncOperations" nillable="true" type="tns:new_modelsalescode" />
           <xs:element minOccurs="0" name="new_partylist_AsyncOperations" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_AsyncOperations" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_AsyncOperations" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_AsyncOperations" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_AsyncOperations" nillable="true" type="tns:new_roadtaxtype" />
@@ -1022,6 +1027,7 @@
           <xs:element minOccurs="0" name="new_model_UserEntityInstanceDatas" nillable="true" type="tns:new_model" />
           <xs:element minOccurs="0" name="new_modelsalescode_UserEntityInstanceDatas" nillable="true" type="tns:new_modelsalescode" />
           <xs:element minOccurs="0" name="new_partylist_UserEntityInstanceDatas" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_UserEntityInstanceDatas" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_UserEntityInstanceDatas" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_UserEntityInstanceDatas" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_UserEntityInstanceDatas" nillable="true" type="tns:new_roadtaxtype" />
@@ -1395,6 +1401,7 @@
           <xs:element minOccurs="0" name="new_model_ProcessSession" nillable="true" type="tns:new_model" />
           <xs:element minOccurs="0" name="new_modelsalescode_ProcessSession" nillable="true" type="tns:new_modelsalescode" />
           <xs:element minOccurs="0" name="new_partylist_ProcessSession" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_ProcessSession" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_ProcessSession" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_ProcessSession" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_ProcessSession" nillable="true" type="tns:new_roadtaxtype" />
@@ -1504,6 +1511,7 @@
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_Appointments" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_Appointments" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_Appointments" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_Appointments" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_Appointments" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_Appointments" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_Appointments" nillable="true" type="tns:new_roadtaxtype" />
@@ -1907,6 +1915,7 @@
           <xs:element minOccurs="0" name="new_Dutystatus" nillable="true" type="q16:EntityReference" />
           <xs:element minOccurs="0" name="new_LeadNo" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_Modelid" nillable="true" type="q16:EntityReference" />
+          <xs:element minOccurs="0" name="new_Showroomtraffic" nillable="true" type="q16:EntityReference" />
           <xs:element minOccurs="0" name="new_autocreatequoteandtestdrive_visible" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="new_dutystatusoptionset" nillable="true" type="q16:OptionSetValue" />
           <xs:element minOccurs="0" name="new_lead_invoice" nillable="true" type="tns:ArrayOfInvoice" />
@@ -1916,6 +1925,7 @@
           <xs:element minOccurs="0" name="new_lead_salesorder" nillable="true" type="tns:ArrayOfSalesOrder" />
           <xs:element minOccurs="0" name="new_new_dutystatus_lead_Dutystatus" nillable="true" type="tns:new_dutystatus" />
           <xs:element minOccurs="0" name="new_new_model_lead_Modelid" nillable="true" type="tns:new_model" />
+          <xs:element minOccurs="0" name="new_new_walkin_lead_Showroomtraffic" nillable="true" type="tns:new_walkin" />
           <xs:element minOccurs="0" name="new_notes" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_recommendedby" nillable="true" type="q16:EntityReference" />
           <xs:element minOccurs="0" name="new_refferal" nillable="true" type="q16:OptionSetValue" />
@@ -2178,6 +2188,7 @@
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_Emails" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_Emails" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_Emails" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_Emails" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_Emails" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_Emails" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_Emails" nillable="true" type="tns:new_roadtaxtype" />
@@ -2354,6 +2365,7 @@
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_Faxes" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_Faxes" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_Faxes" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_Faxes" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_Faxes" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_Faxes" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_Faxes" nillable="true" type="tns:new_roadtaxtype" />
@@ -2534,6 +2546,7 @@
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_Letters" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_Letters" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_Letters" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_Letters" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_Letters" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_Letters" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_Letters" nillable="true" type="tns:new_roadtaxtype" />
@@ -2715,6 +2728,7 @@
           <xs:element minOccurs="0" name="new_mobilephone" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_new_lapsedreason_phonecall_lapsedreason" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_PhoneCalls" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_PhoneCalls" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_PhoneCalls" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_PhoneCalls" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_PhoneCalls" nillable="true" type="tns:new_roadtaxtype" />
@@ -3255,6 +3269,7 @@
           <xs:element minOccurs="0" name="equipment_resources" nillable="true" type="tns:ArrayOfResource" />
           <xs:element minOccurs="0" name="equipment_systemuser" nillable="true" type="tns:SystemUser" />
           <xs:element minOccurs="0" name="new_equipment_serviceappointment_resourceid" nillable="true" type="tns:ArrayOfServiceAppointment" />
+          <xs:element minOccurs="0" name="new_equipment_serviceappointment_technicianid" nillable="true" type="tns:ArrayOfServiceAppointment" />
           <xs:element minOccurs="0" name="new_resourcetype" nillable="true" type="q32:OptionSetValue" />
           <xs:element minOccurs="0" name="site_equipment" nillable="true" type="tns:Site" />
           <xs:element minOccurs="0" name="userentityinstancedata_equipment" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
@@ -3464,6 +3479,8 @@
           <xs:element minOccurs="0" name="new_lapsedreason_connections2" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_connections1" nillable="true" type="tns:new_partylist" />
           <xs:element minOccurs="0" name="new_partylist_connections2" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_connections1" nillable="true" type="tns:new_pricegroup" />
+          <xs:element minOccurs="0" name="new_pricegroup_connections2" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_connections1" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_productprice_connections2" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_connections1" nillable="true" type="tns:new_reconaccounts" />
@@ -4071,6 +4088,7 @@
           <xs:element minOccurs="0" name="organization_new_model" nillable="true" type="tns:ArrayOfnew_model" />
           <xs:element minOccurs="0" name="organization_new_modelsalescode" nillable="true" type="tns:ArrayOfnew_modelsalescode" />
           <xs:element minOccurs="0" name="organization_new_partylist" nillable="true" type="tns:ArrayOfnew_partylist" />
+          <xs:element minOccurs="0" name="organization_new_pricegroup" nillable="true" type="tns:ArrayOfnew_pricegroup" />
           <xs:element minOccurs="0" name="organization_new_reconaccounts" nillable="true" type="tns:ArrayOfnew_reconaccounts" />
           <xs:element minOccurs="0" name="organization_new_roadtaxtype" nillable="true" type="tns:ArrayOfnew_roadtaxtype" />
           <xs:element minOccurs="0" name="organization_new_serviceintervalmaster" nillable="true" type="tns:ArrayOfnew_serviceintervalmaster" />
@@ -4344,6 +4362,7 @@
           <xs:element minOccurs="0" name="new_model_PrincipalObjectAttributeAccesses" nillable="true" type="tns:new_model" />
           <xs:element minOccurs="0" name="new_modelsalescode_PrincipalObjectAttributeAccesses" nillable="true" type="tns:new_modelsalescode" />
           <xs:element minOccurs="0" name="new_partylist_PrincipalObjectAttributeAccesses" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_PrincipalObjectAttributeAccesses" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_PrincipalObjectAttributeAccesses" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_PrincipalObjectAttributeAccesses" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_PrincipalObjectAttributeAccesses" nillable="true" type="tns:new_roadtaxtype" />
@@ -4796,6 +4815,7 @@
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_RecurringAppointmentMasters" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_RecurringAppointmentMasters" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_RecurringAppointmentMasters" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_RecurringAppointmentMasters" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_RecurringAppointmentMasters" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_RecurringAppointmentMasters" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_RecurringAppointmentMasters" nillable="true" type="tns:new_roadtaxtype" />
@@ -5289,6 +5309,7 @@
           <xs:element minOccurs="0" name="entitlement_ServiceAppointments" nillable="true" type="tns:Entitlement" />
           <xs:element minOccurs="0" name="entitlementtemplate_ServiceAppointments" nillable="true" type="tns:EntitlementTemplate" />
           <xs:element minOccurs="0" name="msdyn_postalbum_ServiceAppointments" nillable="true" type="tns:msdyn_PostAlbum" />
+          <xs:element minOccurs="0" name="new_RegardingServiceRequest" nillable="true" type="q59:EntityReference" />
           <xs:element minOccurs="0" name="new_accessories_ServiceAppointments" nillable="true" type="tns:new_accessories" />
           <xs:element minOccurs="0" name="new_accountingclerk_ServiceAppointments" nillable="true" type="tns:new_accountingclerk" />
           <xs:element minOccurs="0" name="new_aftersales_ServiceAppointments" nillable="true" type="tns:new_aftersales" />
@@ -5298,13 +5319,16 @@
           <xs:element minOccurs="0" name="new_customergroup_ServiceAppointments" nillable="true" type="tns:new_customergroup" />
           <xs:element minOccurs="0" name="new_dunningprocedure_ServiceAppointments" nillable="true" type="tns:new_dunningprocedure" />
           <xs:element minOccurs="0" name="new_equipment_serviceappointment_resourceid" nillable="true" type="tns:Equipment" />
+          <xs:element minOccurs="0" name="new_equipment_serviceappointment_technicianid" nillable="true" type="tns:Equipment" />
           <xs:element minOccurs="0" name="new_industrycodes_ServiceAppointments" nillable="true" type="tns:new_industrycodes" />
           <xs:element minOccurs="0" name="new_invoicetype_ServiceAppointments" nillable="true" type="tns:new_invoicetype" />
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_ServiceAppointments" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_ServiceAppointments" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_model" nillable="true" type="q59:EntityReference" />
           <xs:element minOccurs="0" name="new_new_model_serviceappointment_model" nillable="true" type="tns:new_model" />
+          <xs:element minOccurs="0" name="new_new_servicerequest_serviceappointment_RegardingServiceRequest" nillable="true" type="tns:new_servicerequest" />
           <xs:element minOccurs="0" name="new_partylist_ServiceAppointments" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_ServiceAppointments" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_ServiceAppointments" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_ServiceAppointments" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_resourceid" nillable="true" type="q59:EntityReference" />
@@ -5318,6 +5342,7 @@
           <xs:element minOccurs="0" name="new_stock_ServiceAppointments" nillable="true" type="tns:new_stock" />
           <xs:element minOccurs="0" name="new_supplier_ServiceAppointments" nillable="true" type="tns:new_supplier" />
           <xs:element minOccurs="0" name="new_taxclassification_ServiceAppointments" nillable="true" type="tns:new_taxclassification" />
+          <xs:element minOccurs="0" name="new_technicianid" nillable="true" type="q59:EntityReference" />
           <xs:element minOccurs="0" name="new_termsofpayment_ServiceAppointments" nillable="true" type="tns:new_termsofpayment" />
           <xs:element minOccurs="0" name="new_title_ServiceAppointments" nillable="true" type="tns:new_title" />
           <xs:element minOccurs="0" name="new_vehiclemaster_ServiceAppointments" nillable="true" type="tns:new_vehiclemaster" />
@@ -5414,7 +5439,10 @@
           <xs:element minOccurs="0" name="WillCall" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="campaign_orders" nillable="true" type="tns:Campaign" />
           <xs:element minOccurs="0" name="contactorders_association" nillable="true" type="tns:ArrayOfContact" />
+          <xs:element minOccurs="0" name="new_Comment" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_DBMOrderNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="new_FinancialInstitution" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="new_Intakedate" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="new_NICardNoBRN" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_OrderIndex" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="new_OriginleadId" nillable="true" type="q60:EntityReference" />
@@ -5440,7 +5468,6 @@
           <xs:element minOccurs="0" name="new_datesdeeddone" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="new_ddeedsignon" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="new_depositamount" nillable="true" type="q60:Money" />
-          <xs:element minOccurs="0" name="new_dutytype" nillable="true" type="q60:OptionSetValue" />
           <xs:element minOccurs="0" name="new_dutytypelookup" nillable="true" type="q60:EntityReference" />
           <xs:element minOccurs="0" name="new_enginecapacity" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_enginenumber" nillable="true" type="xs:string" />
@@ -5467,6 +5494,7 @@
           <xs:element minOccurs="0" name="new_resplateno" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_resplatenodocs" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="new_salesmemoid" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="new_statusreasonupdate" nillable="true" type="q60:OptionSetValue" />
           <xs:element minOccurs="0" name="new_stockcrm" nillable="true" type="q60:EntityReference" />
           <xs:element minOccurs="0" name="new_stockno" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_systemuser_salesorder_VLC_PDI_Person" nillable="true" type="tns:SystemUser" />
@@ -5628,6 +5656,7 @@
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_SocialActivities" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_SocialActivities" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_SocialActivities" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_SocialActivities" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_SocialActivities" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_SocialActivities" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_SocialActivities" nillable="true" type="tns:new_roadtaxtype" />
@@ -5814,6 +5843,7 @@
           <xs:element minOccurs="0" name="new_lapsedcustomerlist_Tasks" nillable="true" type="tns:new_lapsedcustomerlist" />
           <xs:element minOccurs="0" name="new_lapsedreason_Tasks" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_partylist_Tasks" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_Tasks" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_Tasks" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_Tasks" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_Tasks" nillable="true" type="tns:new_roadtaxtype" />
@@ -5946,6 +5976,7 @@
           <xs:element minOccurs="0" name="new_lapsedreason_new_testdrives" nillable="true" type="tns:new_lapsedreason" />
           <xs:element minOccurs="0" name="new_lead_new_testdrive" nillable="true" type="tns:Lead" />
           <xs:element minOccurs="0" name="new_partylist_new_testdrives" nillable="true" type="tns:new_partylist" />
+          <xs:element minOccurs="0" name="new_pricegroup_new_testdrives" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_new_testdrives" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_reconaccounts_new_testdrives" nillable="true" type="tns:new_reconaccounts" />
           <xs:element minOccurs="0" name="new_roadtaxtype_new_testdrives" nillable="true" type="tns:new_roadtaxtype" />
@@ -6099,8 +6130,11 @@
           <xs:element minOccurs="0" name="new_lead_new_walkin_LeadId" nillable="true" type="tns:Lead" />
           <xs:element minOccurs="0" name="new_new_dutystatus_new_walkin_Dutystatusid" nillable="true" type="tns:new_dutystatus" />
           <xs:element minOccurs="0" name="new_new_model_new_walkin_Model" nillable="true" type="tns:new_model" />
+          <xs:element minOccurs="0" name="new_new_walkin_lead_Showroomtraffic" nillable="true" type="tns:ArrayOfLead" />
           <xs:element minOccurs="0" name="new_partylist_new_walkins" nillable="true" type="tns:new_partylist" />
           <xs:element minOccurs="0" name="new_personrequested" nillable="true" type="q69:EntityReference" />
+          <xs:element minOccurs="0" name="new_personrequesteduser" nillable="true" type="q69:EntityReference" />
+          <xs:element minOccurs="0" name="new_pricegroup_new_walkins" nillable="true" type="tns:new_pricegroup" />
           <xs:element minOccurs="0" name="new_productprice_new_walkins" nillable="true" type="tns:new_productprice" />
           <xs:element minOccurs="0" name="new_purposeofthevisit" nillable="true" type="q69:OptionSetValue" />
           <xs:element minOccurs="0" name="new_queue_new_walkin_Attendedby" nillable="true" type="tns:Queue" />
@@ -6113,6 +6147,7 @@
           <xs:element minOccurs="0" name="new_specialpartsordering_new_walkins" nillable="true" type="tns:new_specialpartsordering" />
           <xs:element minOccurs="0" name="new_stock_new_walkins" nillable="true" type="tns:new_stock" />
           <xs:element minOccurs="0" name="new_supplier_new_walkins" nillable="true" type="tns:new_supplier" />
+          <xs:element minOccurs="0" name="new_systemuser_new_walkin_personrequesteduser" nillable="true" type="tns:SystemUser" />
           <xs:element minOccurs="0" name="new_taxclassification_new_walkins" nillable="true" type="tns:new_taxclassification" />
           <xs:element minOccurs="0" name="new_termsofpayment_new_walkins" nillable="true" type="tns:new_termsofpayment" />
           <xs:element minOccurs="0" name="new_title_new_walkins" nillable="true" type="tns:new_title" />
@@ -6611,6 +6646,7 @@
           <xs:element minOccurs="0" name="new_location" nillable="true" type="q80:EntityReference" />
           <xs:element minOccurs="0" name="new_name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_new_servicerequest_new_lapsedcustomerlist_Servicerequest" nillable="true" type="tns:ArrayOfnew_lapsedcustomerlist" />
+          <xs:element minOccurs="0" name="new_new_servicerequest_serviceappointment_RegardingServiceRequest" nillable="true" type="tns:ArrayOfServiceAppointment" />
           <xs:element minOccurs="0" name="new_new_vehiclemaster_new_servicerequest_VehiclemasterId" nillable="true" type="tns:new_vehiclemaster" />
           <xs:element minOccurs="0" name="new_queue_new_servicerequest_Owner" nillable="true" type="tns:Queue" />
           <xs:element minOccurs="0" name="new_service_new_servicerequest_servicetype" nillable="true" type="tns:Service" />
@@ -6726,6 +6762,7 @@
           <xs:element minOccurs="0" name="TransactionCurrency_new_stock" nillable="true" type="tns:TransactionCurrency" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="new_ColorId" nillable="true" type="q82:EntityReference" />
+          <xs:element minOccurs="0" name="new_Comment" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_ETA" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="new_ID" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_Inbonddate" nillable="true" type="xs:dateTime" />
@@ -6827,6 +6864,7 @@
           <xs:element minOccurs="0" name="new_CurrencyId" nillable="true" type="q84:EntityReference" />
           <xs:element minOccurs="0" name="new_ModelId" nillable="true" type="q84:EntityReference" />
           <xs:element minOccurs="0" name="new_ModelServiceCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="new_Modelname" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_modelsalescodeId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="new_modelsalescode_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="new_modelsalescode_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
@@ -8007,6 +8045,10 @@
           <xs:element minOccurs="0" name="lk_new_partylist_createdonbehalfby" nillable="true" type="tns:ArrayOfnew_partylist" />
           <xs:element minOccurs="0" name="lk_new_partylist_modifiedby" nillable="true" type="tns:ArrayOfnew_partylist" />
           <xs:element minOccurs="0" name="lk_new_partylist_modifiedonbehalfby" nillable="true" type="tns:ArrayOfnew_partylist" />
+          <xs:element minOccurs="0" name="lk_new_pricegroup_createdby" nillable="true" type="tns:ArrayOfnew_pricegroup" />
+          <xs:element minOccurs="0" name="lk_new_pricegroup_createdonbehalfby" nillable="true" type="tns:ArrayOfnew_pricegroup" />
+          <xs:element minOccurs="0" name="lk_new_pricegroup_modifiedby" nillable="true" type="tns:ArrayOfnew_pricegroup" />
+          <xs:element minOccurs="0" name="lk_new_pricegroup_modifiedonbehalfby" nillable="true" type="tns:ArrayOfnew_pricegroup" />
           <xs:element minOccurs="0" name="lk_new_productprice_createdby" nillable="true" type="tns:ArrayOfnew_productprice" />
           <xs:element minOccurs="0" name="lk_new_productprice_createdonbehalfby" nillable="true" type="tns:ArrayOfnew_productprice" />
           <xs:element minOccurs="0" name="lk_new_productprice_modifiedby" nillable="true" type="tns:ArrayOfnew_productprice" />
@@ -8439,6 +8481,7 @@
           <xs:element minOccurs="0" name="new_systemuser_lead_recommendedby" nillable="true" type="tns:ArrayOfLead" />
           <xs:element minOccurs="0" name="new_systemuser_new_partylist_user" nillable="true" type="tns:ArrayOfnew_partylist" />
           <xs:element minOccurs="0" name="new_systemuser_new_servicerequest_Serviceadvisor" nillable="true" type="tns:ArrayOfnew_servicerequest" />
+          <xs:element minOccurs="0" name="new_systemuser_new_walkin_personrequesteduser" nillable="true" type="tns:ArrayOfnew_walkin" />
           <xs:element minOccurs="0" name="new_systemuser_quote_salesmanager" nillable="true" type="tns:ArrayOfQuote" />
           <xs:element minOccurs="0" name="new_systemuser_salesorder_VLC_PDI_Person" nillable="true" type="tns:ArrayOfSalesOrder" />
           <xs:element minOccurs="0" name="new_systemuser_salesorder_VLC_Registration_Person" nillable="true" type="tns:ArrayOfSalesOrder" />
@@ -11124,6 +11167,53 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="new_partylist" nillable="true" type="tns:new_partylist" />
+  <xs:complexType name="ArrayOfnew_pricegroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="new_pricegroup" nillable="true" type="tns:new_pricegroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfnew_pricegroup" nillable="true" type="tns:ArrayOfnew_pricegroup" />
+  <xs:complexType name="new_pricegroup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q175="http://schemas.microsoft.com/xrm/2011/Contracts" base="q175:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="new_description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="new_id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="new_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="new_new_pricegroup_contact_pricegrouplookup" nillable="true" type="tns:ArrayOfContact" />
+          <xs:element minOccurs="0" name="new_pricegroupId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="new_pricegroup_ActivityPointers" nillable="true" type="tns:ArrayOfActivityPointer" />
+          <xs:element minOccurs="0" name="new_pricegroup_Annotations" nillable="true" type="tns:ArrayOfAnnotation" />
+          <xs:element minOccurs="0" name="new_pricegroup_Appointments" nillable="true" type="tns:ArrayOfAppointment" />
+          <xs:element minOccurs="0" name="new_pricegroup_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
+          <xs:element minOccurs="0" name="new_pricegroup_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
+          <xs:element minOccurs="0" name="new_pricegroup_DuplicateBaseRecord" nillable="true" type="tns:ArrayOfDuplicateRecord" />
+          <xs:element minOccurs="0" name="new_pricegroup_DuplicateMatchingRecord" nillable="true" type="tns:ArrayOfDuplicateRecord" />
+          <xs:element minOccurs="0" name="new_pricegroup_Emails" nillable="true" type="tns:ArrayOfEmail" />
+          <xs:element minOccurs="0" name="new_pricegroup_Faxes" nillable="true" type="tns:ArrayOfFax" />
+          <xs:element minOccurs="0" name="new_pricegroup_Letters" nillable="true" type="tns:ArrayOfLetter" />
+          <xs:element minOccurs="0" name="new_pricegroup_PhoneCalls" nillable="true" type="tns:ArrayOfPhoneCall" />
+          <xs:element minOccurs="0" name="new_pricegroup_PrincipalObjectAttributeAccesses" nillable="true" type="tns:ArrayOfPrincipalObjectAttributeAccess" />
+          <xs:element minOccurs="0" name="new_pricegroup_ProcessSession" nillable="true" type="tns:ArrayOfProcessSession" />
+          <xs:element minOccurs="0" name="new_pricegroup_RecurringAppointmentMasters" nillable="true" type="tns:ArrayOfRecurringAppointmentMaster" />
+          <xs:element minOccurs="0" name="new_pricegroup_ServiceAppointments" nillable="true" type="tns:ArrayOfServiceAppointment" />
+          <xs:element minOccurs="0" name="new_pricegroup_SocialActivities" nillable="true" type="tns:ArrayOfSocialActivity" />
+          <xs:element minOccurs="0" name="new_pricegroup_Tasks" nillable="true" type="tns:ArrayOfTask" />
+          <xs:element minOccurs="0" name="new_pricegroup_UserEntityInstanceDatas" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
+          <xs:element minOccurs="0" name="new_pricegroup_connections1" nillable="true" type="tns:ArrayOfConnection" />
+          <xs:element minOccurs="0" name="new_pricegroup_connections2" nillable="true" type="tns:ArrayOfConnection" />
+          <xs:element minOccurs="0" name="new_pricegroup_new_testdrives" nillable="true" type="tns:ArrayOfnew_testdrive" />
+          <xs:element minOccurs="0" name="new_pricegroup_new_walkins" nillable="true" type="tns:ArrayOfnew_walkin" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q175:OptionSetValue" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="new_pricegroup" nillable="true" type="tns:new_pricegroup" />
   <xs:complexType name="ArrayOfnew_reconaccounts">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="new_reconaccounts" nillable="true" type="tns:new_reconaccounts" />
@@ -11132,7 +11222,7 @@
   <xs:element name="ArrayOfnew_reconaccounts" nillable="true" type="tns:ArrayOfnew_reconaccounts" />
   <xs:complexType name="new_reconaccounts">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q175="http://schemas.microsoft.com/xrm/2011/Contracts" base="q175:Entity">
+      <xs:extension xmlns:q176="http://schemas.microsoft.com/xrm/2011/Contracts" base="q176:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
@@ -11166,7 +11256,7 @@
           <xs:element minOccurs="0" name="new_reconaccounts_connections2" nillable="true" type="tns:ArrayOfConnection" />
           <xs:element minOccurs="0" name="new_reconaccounts_new_testdrives" nillable="true" type="tns:ArrayOfnew_testdrive" />
           <xs:element minOccurs="0" name="new_reconaccounts_new_walkins" nillable="true" type="tns:ArrayOfnew_walkin" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q175:OptionSetValue" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q176:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11180,16 +11270,16 @@
   <xs:element name="ArrayOfnew_roadtaxtype" nillable="true" type="tns:ArrayOfnew_roadtaxtype" />
   <xs:complexType name="new_roadtaxtype">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q176="http://schemas.microsoft.com/xrm/2011/Contracts" base="q176:Entity">
+      <xs:extension xmlns:q177="http://schemas.microsoft.com/xrm/2011/Contracts" base="q177:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q176:EntityReference" />
+          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q177:EntityReference" />
           <xs:element minOccurs="0" name="TransactionCurrency_new_roadtaxtype" nillable="true" type="tns:TransactionCurrency" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="new_amount" nillable="true" type="q176:Money" />
-          <xs:element minOccurs="0" name="new_class" nillable="true" type="q176:EntityReference" />
+          <xs:element minOccurs="0" name="new_amount" nillable="true" type="q177:Money" />
+          <xs:element minOccurs="0" name="new_class" nillable="true" type="q177:EntityReference" />
           <xs:element minOccurs="0" name="new_name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_new_class_new_roadtaxtype_class" nillable="true" type="tns:new_class" />
           <xs:element minOccurs="0" name="new_new_roadtaxtype_quote_roadtaxtype" nillable="true" type="tns:ArrayOfQuote" />
@@ -11217,8 +11307,8 @@
           <xs:element minOccurs="0" name="new_roadtaxtype_connections2" nillable="true" type="tns:ArrayOfConnection" />
           <xs:element minOccurs="0" name="new_roadtaxtype_new_testdrives" nillable="true" type="tns:ArrayOfnew_testdrive" />
           <xs:element minOccurs="0" name="new_roadtaxtype_new_walkins" nillable="true" type="tns:ArrayOfnew_walkin" />
-          <xs:element minOccurs="0" name="new_vehicletype" nillable="true" type="q176:EntityReference" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q176:OptionSetValue" />
+          <xs:element minOccurs="0" name="new_vehicletype" nillable="true" type="q177:EntityReference" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q177:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11226,7 +11316,7 @@
   <xs:element name="new_roadtaxtype" nillable="true" type="tns:new_roadtaxtype" />
   <xs:complexType name="new_vehicletype">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q177="http://schemas.microsoft.com/xrm/2011/Contracts" base="q177:Entity">
+      <xs:extension xmlns:q178="http://schemas.microsoft.com/xrm/2011/Contracts" base="q178:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
@@ -11242,7 +11332,7 @@
           <xs:element minOccurs="0" name="new_vehicletype_PrincipalObjectAttributeAccesses" nillable="true" type="tns:ArrayOfPrincipalObjectAttributeAccess" />
           <xs:element minOccurs="0" name="new_vehicletype_ProcessSession" nillable="true" type="tns:ArrayOfProcessSession" />
           <xs:element minOccurs="0" name="new_vehicletype_UserEntityInstanceDatas" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q177:OptionSetValue" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q178:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11268,7 +11358,7 @@
   <xs:element name="ArrayOfnew_specialpart" nillable="true" type="tns:ArrayOfnew_specialpart" />
   <xs:complexType name="new_specialpart">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q178="http://schemas.microsoft.com/xrm/2011/Contracts" base="q178:Entity">
+      <xs:extension xmlns:q179="http://schemas.microsoft.com/xrm/2011/Contracts" base="q179:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
@@ -11301,8 +11391,8 @@
           <xs:element minOccurs="0" name="new_specialpart_connections2" nillable="true" type="tns:ArrayOfConnection" />
           <xs:element minOccurs="0" name="new_specialpart_new_testdrives" nillable="true" type="tns:ArrayOfnew_testdrive" />
           <xs:element minOccurs="0" name="new_specialpart_new_walkins" nillable="true" type="tns:ArrayOfnew_walkin" />
-          <xs:element minOccurs="0" name="new_specialpartsorder" nillable="true" type="q178:EntityReference" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q178:OptionSetValue" />
+          <xs:element minOccurs="0" name="new_specialpartsorder" nillable="true" type="q179:EntityReference" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q179:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11310,18 +11400,18 @@
   <xs:element name="new_specialpart" nillable="true" type="tns:new_specialpart" />
   <xs:complexType name="new_specialpartsordering">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q179="http://schemas.microsoft.com/xrm/2011/Contracts" base="q179:Entity">
+      <xs:extension xmlns:q180="http://schemas.microsoft.com/xrm/2011/Contracts" base="q180:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="new_account" nillable="true" type="q179:EntityReference" />
+          <xs:element minOccurs="0" name="new_account" nillable="true" type="q180:EntityReference" />
           <xs:element minOccurs="0" name="new_account_new_specialpartsordering_Account" nillable="true" type="tns:Account" />
-          <xs:element minOccurs="0" name="new_contact" nillable="true" type="q179:EntityReference" />
+          <xs:element minOccurs="0" name="new_contact" nillable="true" type="q180:EntityReference" />
           <xs:element minOccurs="0" name="new_contact_new_specialpartsordering_contact" nillable="true" type="tns:Contact" />
           <xs:element minOccurs="0" name="new_contact_new_specialpartsordering_customer" nillable="true" type="tns:Contact" />
-          <xs:element minOccurs="0" name="new_customer" nillable="true" type="q179:EntityReference" />
+          <xs:element minOccurs="0" name="new_customer" nillable="true" type="q180:EntityReference" />
           <xs:element minOccurs="0" name="new_dateordered" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="new_eta" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="new_name" nillable="true" type="xs:string" />
@@ -11353,7 +11443,7 @@
           <xs:element minOccurs="0" name="new_specialpartsordering_new_walkins" nillable="true" type="tns:ArrayOfnew_walkin" />
           <xs:element minOccurs="0" name="new_spono" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_vin" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q179:OptionSetValue" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q180:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11373,19 +11463,19 @@
   <xs:element name="ArrayOfnew_supplier" nillable="true" type="tns:ArrayOfnew_supplier" />
   <xs:complexType name="new_supplier">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q180="http://schemas.microsoft.com/xrm/2011/Contracts" base="q180:Entity">
+      <xs:extension xmlns:q181="http://schemas.microsoft.com/xrm/2011/Contracts" base="q181:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="new_accessories" nillable="true" type="q180:EntityReference" />
+          <xs:element minOccurs="0" name="new_accessories" nillable="true" type="q181:EntityReference" />
           <xs:element minOccurs="0" name="new_contactperson" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_localsupplier" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="new_new_accessories_new_supplier_Accessories" nillable="true" type="tns:new_accessories" />
           <xs:element minOccurs="0" name="new_new_stock_new_supplier_stock" nillable="true" type="tns:new_stock" />
-          <xs:element minOccurs="0" name="new_stock" nillable="true" type="q180:EntityReference" />
+          <xs:element minOccurs="0" name="new_stock" nillable="true" type="q181:EntityReference" />
           <xs:element minOccurs="0" name="new_supplierId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="new_supplier_ActivityPointers" nillable="true" type="tns:ArrayOfActivityPointer" />
           <xs:element minOccurs="0" name="new_supplier_Annotations" nillable="true" type="tns:ArrayOfAnnotation" />
@@ -11410,7 +11500,7 @@
           <xs:element minOccurs="0" name="new_supplier_new_testdrives" nillable="true" type="tns:ArrayOfnew_testdrive" />
           <xs:element minOccurs="0" name="new_supplier_new_walkins" nillable="true" type="tns:ArrayOfnew_walkin" />
           <xs:element minOccurs="0" name="new_supplierttc" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q180:OptionSetValue" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q181:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11424,7 +11514,7 @@
   <xs:element name="ArrayOfnew_taxclassification" nillable="true" type="tns:ArrayOfnew_taxclassification" />
   <xs:complexType name="new_taxclassification">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q181="http://schemas.microsoft.com/xrm/2011/Contracts" base="q181:Entity">
+      <xs:extension xmlns:q182="http://schemas.microsoft.com/xrm/2011/Contracts" base="q182:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
@@ -11458,7 +11548,7 @@
           <xs:element minOccurs="0" name="new_taxclassification_connections2" nillable="true" type="tns:ArrayOfConnection" />
           <xs:element minOccurs="0" name="new_taxclassification_new_testdrives" nillable="true" type="tns:ArrayOfnew_testdrive" />
           <xs:element minOccurs="0" name="new_taxclassification_new_walkins" nillable="true" type="tns:ArrayOfnew_walkin" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q181:OptionSetValue" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q182:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11472,7 +11562,7 @@
   <xs:element name="ArrayOfnew_termsofpayment" nillable="true" type="tns:ArrayOfnew_termsofpayment" />
   <xs:complexType name="new_termsofpayment">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q182="http://schemas.microsoft.com/xrm/2011/Contracts" base="q182:Entity">
+      <xs:extension xmlns:q183="http://schemas.microsoft.com/xrm/2011/Contracts" base="q183:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
@@ -11509,7 +11599,7 @@
           <xs:element minOccurs="0" name="new_termsofpayment_connections2" nillable="true" type="tns:ArrayOfConnection" />
           <xs:element minOccurs="0" name="new_termsofpayment_new_testdrives" nillable="true" type="tns:ArrayOfnew_testdrive" />
           <xs:element minOccurs="0" name="new_termsofpayment_new_walkins" nillable="true" type="tns:ArrayOfnew_walkin" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q182:OptionSetValue" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q183:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11523,7 +11613,7 @@
   <xs:element name="ArrayOfnew_title" nillable="true" type="tns:ArrayOfnew_title" />
   <xs:complexType name="new_title">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q183="http://schemas.microsoft.com/xrm/2011/Contracts" base="q183:Entity">
+      <xs:extension xmlns:q184="http://schemas.microsoft.com/xrm/2011/Contracts" base="q184:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
@@ -11555,7 +11645,7 @@
           <xs:element minOccurs="0" name="new_title_connections2" nillable="true" type="tns:ArrayOfConnection" />
           <xs:element minOccurs="0" name="new_title_new_testdrives" nillable="true" type="tns:ArrayOfnew_testdrive" />
           <xs:element minOccurs="0" name="new_title_new_walkins" nillable="true" type="tns:ArrayOfnew_walkin" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q183:OptionSetValue" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q184:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11575,15 +11665,15 @@
   <xs:element name="ArrayOfnew_voc" nillable="true" type="tns:ArrayOfnew_voc" />
   <xs:complexType name="new_voc">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q184="http://schemas.microsoft.com/xrm/2011/Contracts" base="q184:Entity">
+      <xs:extension xmlns:q185="http://schemas.microsoft.com/xrm/2011/Contracts" base="q185:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="new_CampaignResponseId" nillable="true" type="q184:EntityReference" />
+          <xs:element minOccurs="0" name="new_CampaignResponseId" nillable="true" type="q185:EntityReference" />
           <xs:element minOccurs="0" name="new_Comment" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="new_VOCVlasification" nillable="true" type="q184:OptionSetValue" />
+          <xs:element minOccurs="0" name="new_VOCVlasification" nillable="true" type="q185:OptionSetValue" />
           <xs:element minOccurs="0" name="new_campaignresponse_new_voc" nillable="true" type="tns:CampaignResponse" />
           <xs:element minOccurs="0" name="new_vocId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="new_voc_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
@@ -11591,7 +11681,7 @@
           <xs:element minOccurs="0" name="new_voc_PrincipalObjectAttributeAccesses" nillable="true" type="tns:ArrayOfPrincipalObjectAttributeAccess" />
           <xs:element minOccurs="0" name="new_voc_ProcessSession" nillable="true" type="tns:ArrayOfProcessSession" />
           <xs:element minOccurs="0" name="new_voc_UserEntityInstanceDatas" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q184:OptionSetValue" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q185:OptionSetValue" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11605,15 +11695,15 @@
   <xs:element name="ArrayOfOpportunityClose" nillable="true" type="tns:ArrayOfOpportunityClose" />
   <xs:complexType name="OpportunityClose">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q185="http://schemas.microsoft.com/xrm/2011/Contracts" base="q185:Entity">
+      <xs:extension xmlns:q186="http://schemas.microsoft.com/xrm/2011/Contracts" base="q186:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ActivityId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ActualDurationMinutes" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="ActualEnd" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="ActualRevenue" nillable="true" type="q185:Money" />
+          <xs:element minOccurs="0" name="ActualRevenue" nillable="true" type="q186:Money" />
           <xs:element minOccurs="0" name="ActualStart" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="CompetitorId" nillable="true" type="q185:EntityReference" />
+          <xs:element minOccurs="0" name="CompetitorId" nillable="true" type="q186:EntityReference" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="IsBilled" nillable="true" type="xs:boolean" />
@@ -11621,18 +11711,18 @@
           <xs:element minOccurs="0" name="OpportunityClose_Annotation" nillable="true" type="tns:ArrayOfAnnotation" />
           <xs:element minOccurs="0" name="OpportunityClose_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="OpportunityClose_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
-          <xs:element minOccurs="0" name="OpportunityId" nillable="true" type="q185:EntityReference" />
+          <xs:element minOccurs="0" name="OpportunityId" nillable="true" type="q186:EntityReference" />
           <xs:element minOccurs="0" name="Opportunity_OpportunityClose" nillable="true" type="tns:Opportunity" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q185:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q186:EntityReference" />
           <xs:element minOccurs="0" name="ScheduledEnd" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="ScheduledStart" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="ServiceId" nillable="true" type="q185:EntityReference" />
-          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="q185:OptionSetValue" />
+          <xs:element minOccurs="0" name="ServiceId" nillable="true" type="q186:EntityReference" />
+          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="q186:OptionSetValue" />
           <xs:element minOccurs="0" name="Subcategory" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q185:EntityReference" />
+          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q186:EntityReference" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="activity_pointer_opportunity_close" nillable="true" type="tns:ActivityPointer" />
           <xs:element minOccurs="0" name="competitor_opportunity_activities" nillable="true" type="tns:Competitor" />
@@ -11653,7 +11743,7 @@
   <xs:element name="ArrayOfOpportunityProduct" nillable="true" type="tns:ArrayOfOpportunityProduct" />
   <xs:complexType name="OpportunityProduct">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q186="http://schemas.microsoft.com/xrm/2011/Contracts" base="q186:Entity">
+      <xs:extension xmlns:q187="http://schemas.microsoft.com/xrm/2011/Contracts" base="q187:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="EntityImage" nillable="true" type="xs:base64Binary" />
@@ -11661,23 +11751,23 @@
           <xs:element minOccurs="0" name="IsPriceOverridden" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="IsProductOverridden" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="LineItemNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="ManualDiscountAmount" nillable="true" type="q186:Money" />
-          <xs:element minOccurs="0" name="OpportunityId" nillable="true" type="q186:EntityReference" />
+          <xs:element minOccurs="0" name="ManualDiscountAmount" nillable="true" type="q187:Money" />
+          <xs:element minOccurs="0" name="OpportunityId" nillable="true" type="q187:EntityReference" />
           <xs:element minOccurs="0" name="OpportunityProductId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="OpportunityProduct_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="OpportunityProduct_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
           <xs:element minOccurs="0" name="OpportunityProduct_ProcessSessions" nillable="true" type="tns:ArrayOfProcessSession" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="PricePerUnit" nillable="true" type="q186:Money" />
-          <xs:element minOccurs="0" name="PricingErrorCode" nillable="true" type="q186:OptionSetValue" />
+          <xs:element minOccurs="0" name="PricePerUnit" nillable="true" type="q187:Money" />
+          <xs:element minOccurs="0" name="PricingErrorCode" nillable="true" type="q187:OptionSetValue" />
           <xs:element minOccurs="0" name="ProductDescription" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ProductId" nillable="true" type="q186:EntityReference" />
+          <xs:element minOccurs="0" name="ProductId" nillable="true" type="q187:EntityReference" />
           <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:decimal" />
           <xs:element minOccurs="0" name="SequenceNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="Tax" nillable="true" type="q186:Money" />
+          <xs:element minOccurs="0" name="Tax" nillable="true" type="q187:Money" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="UoMId" nillable="true" type="q186:EntityReference" />
+          <xs:element minOccurs="0" name="UoMId" nillable="true" type="q187:EntityReference" />
           <xs:element minOccurs="0" name="opportunity_products" nillable="true" type="tns:Product" />
           <xs:element minOccurs="0" name="opportunityproduct_principalobjectattributeaccess" nillable="true" type="tns:ArrayOfPrincipalObjectAttributeAccess" />
           <xs:element minOccurs="0" name="product_opportunities" nillable="true" type="tns:Opportunity" />
@@ -11696,16 +11786,16 @@
   <xs:element name="ArrayOfPost" nillable="true" type="tns:ArrayOfPost" />
   <xs:complexType name="Post">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q187="http://schemas.microsoft.com/xrm/2011/Contracts" base="q187:Entity">
+      <xs:extension xmlns:q188="http://schemas.microsoft.com/xrm/2011/Contracts" base="q188:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="PostId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="Post_Comments" nillable="true" type="tns:ArrayOfPostComment" />
           <xs:element minOccurs="0" name="Post_Likes" nillable="true" type="tns:ArrayOfPostLike" />
-          <xs:element minOccurs="0" name="RegardingObjectId" nillable="true" type="q187:EntityReference" />
-          <xs:element minOccurs="0" name="Source" nillable="true" type="q187:OptionSetValue" />
+          <xs:element minOccurs="0" name="RegardingObjectId" nillable="true" type="q188:EntityReference" />
+          <xs:element minOccurs="0" name="Source" nillable="true" type="q188:OptionSetValue" />
           <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="Type" nillable="true" type="q187:OptionSetValue" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="q188:OptionSetValue" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="post_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="post_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
@@ -11722,10 +11812,10 @@
   <xs:element name="ArrayOfPostComment" nillable="true" type="tns:ArrayOfPostComment" />
   <xs:complexType name="PostComment">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q188="http://schemas.microsoft.com/xrm/2011/Contracts" base="q188:Entity">
+      <xs:extension xmlns:q189="http://schemas.microsoft.com/xrm/2011/Contracts" base="q189:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="PostCommentId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="PostId" nillable="true" type="q188:EntityReference" />
+          <xs:element minOccurs="0" name="PostId" nillable="true" type="q189:EntityReference" />
           <xs:element minOccurs="0" name="Post_Comments" nillable="true" type="tns:Post" />
           <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
@@ -11743,9 +11833,9 @@
   <xs:element name="ArrayOfPostLike" nillable="true" type="tns:ArrayOfPostLike" />
   <xs:complexType name="PostLike">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q189="http://schemas.microsoft.com/xrm/2011/Contracts" base="q189:Entity">
+      <xs:extension xmlns:q190="http://schemas.microsoft.com/xrm/2011/Contracts" base="q190:Entity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="PostId" nillable="true" type="q189:EntityReference" />
+          <xs:element minOccurs="0" name="PostId" nillable="true" type="q190:EntityReference" />
           <xs:element minOccurs="0" name="PostLikeId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="Post_Likes" nillable="true" type="tns:Post" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
@@ -11769,15 +11859,15 @@
   <xs:element name="ArrayOfProcessTrigger" nillable="true" type="tns:ArrayOfProcessTrigger" />
   <xs:complexType name="ProcessTrigger">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q190="http://schemas.microsoft.com/xrm/2011/Contracts" base="q190:Entity">
+      <xs:extension xmlns:q191="http://schemas.microsoft.com/xrm/2011/Contracts" base="q191:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ControlName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ControlType" nillable="true" type="q190:OptionSetValue" />
+          <xs:element minOccurs="0" name="ControlType" nillable="true" type="q191:OptionSetValue" />
           <xs:element minOccurs="0" name="Event" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="FormId" nillable="true" type="q190:EntityReference" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q190:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="FormId" nillable="true" type="q191:EntityReference" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q191:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="PrimaryEntityTypeCode" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ProcessId" nillable="true" type="q190:EntityReference" />
+          <xs:element minOccurs="0" name="ProcessId" nillable="true" type="q191:EntityReference" />
           <xs:element minOccurs="0" name="ProcessTriggerId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="process_processtrigger" nillable="true" type="tns:Workflow" />
           <xs:element minOccurs="0" name="processtrigger_systemform" nillable="true" type="tns:SystemForm" />
@@ -11788,18 +11878,18 @@
   <xs:element name="ProcessTrigger" nillable="true" type="tns:ProcessTrigger" />
   <xs:complexType name="SystemForm">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q191="http://schemas.microsoft.com/xrm/2011/Contracts" base="q191:Entity">
+      <xs:extension xmlns:q192="http://schemas.microsoft.com/xrm/2011/Contracts" base="q192:Entity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="AncestorFormId" nillable="true" type="q191:EntityReference" />
-          <xs:element minOccurs="0" name="CanBeDeleted" nillable="true" type="q191:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="AncestorFormId" nillable="true" type="q192:EntityReference" />
+          <xs:element minOccurs="0" name="CanBeDeleted" nillable="true" type="q192:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="FormActivationState" nillable="true" type="q191:OptionSetValue" />
+          <xs:element minOccurs="0" name="FormActivationState" nillable="true" type="q192:OptionSetValue" />
           <xs:element minOccurs="0" name="FormId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="FormPresentation" nillable="true" type="q191:OptionSetValue" />
+          <xs:element minOccurs="0" name="FormPresentation" nillable="true" type="q192:OptionSetValue" />
           <xs:element minOccurs="0" name="FormXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IntroducedVersion" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IsAIRMerged" nillable="true" type="xs:boolean" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q191:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q192:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="IsDefault" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ObjectTypeCode" nillable="true" type="xs:string" />
@@ -11807,7 +11897,7 @@
           <xs:element minOccurs="0" name="Referencingform_ancestor_form" nillable="true" type="tns:SystemForm" />
           <xs:element minOccurs="0" name="SystemForm_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="SystemForm_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
-          <xs:element minOccurs="0" name="Type" nillable="true" type="q191:OptionSetValue" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="q192:OptionSetValue" />
           <xs:element minOccurs="0" name="Version" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="processtrigger_systemform" nillable="true" type="tns:ArrayOfProcessTrigger" />
           <xs:element minOccurs="0" name="socialinsightsconfiguration_systemform" nillable="true" type="tns:ArrayOfSocialInsightsConfiguration" />
@@ -11830,13 +11920,13 @@
   <xs:element name="ArrayOfSocialInsightsConfiguration" nillable="true" type="tns:ArrayOfSocialInsightsConfiguration" />
   <xs:complexType name="SocialInsightsConfiguration">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q192="http://schemas.microsoft.com/xrm/2011/Contracts" base="q192:Entity">
+      <xs:extension xmlns:q193="http://schemas.microsoft.com/xrm/2011/Contracts" base="q193:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ControlId" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="FormId" nillable="true" type="q192:EntityReference" />
-          <xs:element minOccurs="0" name="RegardingObjectId" nillable="true" type="q192:EntityReference" />
+          <xs:element minOccurs="0" name="FormId" nillable="true" type="q193:EntityReference" />
+          <xs:element minOccurs="0" name="RegardingObjectId" nillable="true" type="q193:EntityReference" />
           <xs:element minOccurs="0" name="SocialDataItemId" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="SocialDataItemType" nillable="true" type="q192:OptionSetValue" />
+          <xs:element minOccurs="0" name="SocialDataItemType" nillable="true" type="q193:OptionSetValue" />
           <xs:element minOccurs="0" name="SocialDataParameters" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="SocialInsightsConfigurationId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="socialinsightsconfiguration_systemform" nillable="true" type="tns:SystemForm" />
@@ -11848,14 +11938,14 @@
   <xs:element name="SocialInsightsConfiguration" nillable="true" type="tns:SocialInsightsConfiguration" />
   <xs:complexType name="UserForm">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q193="http://schemas.microsoft.com/xrm/2011/Contracts" base="q193:Entity">
+      <xs:extension xmlns:q194="http://schemas.microsoft.com/xrm/2011/Contracts" base="q194:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="FormXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ObjectTypeCode" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q193:EntityReference" />
-          <xs:element minOccurs="0" name="Type" nillable="true" type="q193:OptionSetValue" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q194:EntityReference" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="q194:OptionSetValue" />
           <xs:element minOccurs="0" name="UserFormId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="UserForm_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="UserForm_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
@@ -11874,10 +11964,10 @@
   <xs:element name="ArrayOfPublisher" nillable="true" type="tns:ArrayOfPublisher" />
   <xs:complexType name="Publisher">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q194="http://schemas.microsoft.com/xrm/2011/Contracts" base="q194:Entity">
+      <xs:extension xmlns:q195="http://schemas.microsoft.com/xrm/2011/Contracts" base="q195:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Address1_AddressId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="Address1_AddressTypeCode" nillable="true" type="q194:OptionSetValue" />
+          <xs:element minOccurs="0" name="Address1_AddressTypeCode" nillable="true" type="q195:OptionSetValue" />
           <xs:element minOccurs="0" name="Address1_City" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_Country" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_County" nillable="true" type="xs:string" />
@@ -11890,7 +11980,7 @@
           <xs:element minOccurs="0" name="Address1_Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_PostOfficeBox" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_PostalCode" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Address1_ShippingMethodCode" nillable="true" type="q194:OptionSetValue" />
+          <xs:element minOccurs="0" name="Address1_ShippingMethodCode" nillable="true" type="q195:OptionSetValue" />
           <xs:element minOccurs="0" name="Address1_StateOrProvince" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_Telephone1" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_Telephone2" nillable="true" type="xs:string" />
@@ -11898,7 +11988,7 @@
           <xs:element minOccurs="0" name="Address1_UPSZone" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_UTCOffset" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="Address2_AddressId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="Address2_AddressTypeCode" nillable="true" type="q194:OptionSetValue" />
+          <xs:element minOccurs="0" name="Address2_AddressTypeCode" nillable="true" type="q195:OptionSetValue" />
           <xs:element minOccurs="0" name="Address2_City" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_Country" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_County" nillable="true" type="xs:string" />
@@ -11911,7 +12001,7 @@
           <xs:element minOccurs="0" name="Address2_Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_PostOfficeBox" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_PostalCode" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Address2_ShippingMethodCode" nillable="true" type="q194:OptionSetValue" />
+          <xs:element minOccurs="0" name="Address2_ShippingMethodCode" nillable="true" type="q195:OptionSetValue" />
           <xs:element minOccurs="0" name="Address2_StateOrProvince" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_Telephone1" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_Telephone2" nillable="true" type="xs:string" />
@@ -11943,15 +12033,15 @@
   <xs:element name="ArrayOfPublisherAddress" nillable="true" type="tns:ArrayOfPublisherAddress" />
   <xs:complexType name="PublisherAddress">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q195="http://schemas.microsoft.com/xrm/2011/Contracts" base="q195:Entity">
+      <xs:extension xmlns:q196="http://schemas.microsoft.com/xrm/2011/Contracts" base="q196:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="AddressNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="AddressTypeCode" nillable="true" type="q195:OptionSetValue" />
+          <xs:element minOccurs="0" name="AddressTypeCode" nillable="true" type="q196:OptionSetValue" />
           <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="FreightTermsCode" nillable="true" type="q195:OptionSetValue" />
+          <xs:element minOccurs="0" name="FreightTermsCode" nillable="true" type="q196:OptionSetValue" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:double" />
           <xs:element minOccurs="0" name="Line1" nillable="true" type="xs:string" />
@@ -11959,13 +12049,13 @@
           <xs:element minOccurs="0" name="Line3" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:double" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ParentId" nillable="true" type="q195:EntityReference" />
+          <xs:element minOccurs="0" name="ParentId" nillable="true" type="q196:EntityReference" />
           <xs:element minOccurs="0" name="PostOfficeBox" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="PrimaryContactName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="PublisherAddressId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="Publisher_PublisherAddress" nillable="true" type="tns:Publisher" />
-          <xs:element minOccurs="0" name="ShippingMethodCode" nillable="true" type="q195:OptionSetValue" />
+          <xs:element minOccurs="0" name="ShippingMethodCode" nillable="true" type="q196:OptionSetValue" />
           <xs:element minOccurs="0" name="StateOrProvince" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Telephone1" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Telephone2" nillable="true" type="xs:string" />
@@ -11988,12 +12078,12 @@
   <xs:element name="ArrayOfSolution" nillable="true" type="tns:ArrayOfSolution" />
   <xs:complexType name="Solution">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q196="http://schemas.microsoft.com/xrm/2011/Contracts" base="q196:Entity">
+      <xs:extension xmlns:q197="http://schemas.microsoft.com/xrm/2011/Contracts" base="q197:Entity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="ConfigurationPageId" nillable="true" type="q196:EntityReference" />
+          <xs:element minOccurs="0" name="ConfigurationPageId" nillable="true" type="q197:EntityReference" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="FriendlyName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="PublisherId" nillable="true" type="q196:EntityReference" />
+          <xs:element minOccurs="0" name="PublisherId" nillable="true" type="q197:EntityReference" />
           <xs:element minOccurs="0" name="SolutionId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="UniqueName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
@@ -12008,20 +12098,20 @@
   <xs:element name="Solution" nillable="true" type="tns:Solution" />
   <xs:complexType name="WebResource">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q197="http://schemas.microsoft.com/xrm/2011/Contracts" base="q197:Entity">
+      <xs:extension xmlns:q198="http://schemas.microsoft.com/xrm/2011/Contracts" base="q198:Entity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="CanBeDeleted" nillable="true" type="q197:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="CanBeDeleted" nillable="true" type="q198:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="Content" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IntroducedVersion" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q197:BooleanManagedProperty" />
-          <xs:element minOccurs="0" name="IsHidden" nillable="true" type="q197:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q198:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsHidden" nillable="true" type="q198:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="SilverlightVersion" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="WebResourceId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="WebResourceType" nillable="true" type="q197:OptionSetValue" />
+          <xs:element minOccurs="0" name="WebResourceType" nillable="true" type="q198:OptionSetValue" />
           <xs:element minOccurs="0" name="solution_configuration_webresource" nillable="true" type="tns:ArrayOfSolution" />
           <xs:element minOccurs="0" name="userentityinstancedata_webresource" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
           <xs:element minOccurs="0" name="webresource_savedqueryvisualizations" nillable="true" type="tns:ArrayOfSavedQueryVisualization" />
@@ -12039,18 +12129,18 @@
   <xs:element name="ArrayOfSavedQueryVisualization" nillable="true" type="tns:ArrayOfSavedQueryVisualization" />
   <xs:complexType name="SavedQueryVisualization">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q198="http://schemas.microsoft.com/xrm/2011/Contracts" base="q198:Entity">
+      <xs:extension xmlns:q199="http://schemas.microsoft.com/xrm/2011/Contracts" base="q199:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="DataDescription" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IntroducedVersion" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q198:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q199:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="IsDefault" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="PresentationDescription" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="PrimaryEntityTypeCode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="SavedQueryVisualizationId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="WebResourceId" nillable="true" type="q198:EntityReference" />
+          <xs:element minOccurs="0" name="WebResourceId" nillable="true" type="q199:EntityReference" />
           <xs:element minOccurs="0" name="userentityinstancedata_savedqueryvisualization" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
           <xs:element minOccurs="0" name="webresource_savedqueryvisualizations" nillable="true" type="tns:WebResource" />
         </xs:sequence>
@@ -12066,17 +12156,17 @@
   <xs:element name="ArrayOfUserQueryVisualization" nillable="true" type="tns:ArrayOfUserQueryVisualization" />
   <xs:complexType name="UserQueryVisualization">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q199="http://schemas.microsoft.com/xrm/2011/Contracts" base="q199:Entity">
+      <xs:extension xmlns:q200="http://schemas.microsoft.com/xrm/2011/Contracts" base="q200:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="DataDescription" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IsDefault" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q199:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q200:EntityReference" />
           <xs:element minOccurs="0" name="PresentationDescription" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="PrimaryEntityTypeCode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="UserQueryVisualizationId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="WebResourceId" nillable="true" type="q199:EntityReference" />
+          <xs:element minOccurs="0" name="WebResourceId" nillable="true" type="q200:EntityReference" />
           <xs:element minOccurs="0" name="userentityinstancedata_userqueryvisualization" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
           <xs:element minOccurs="0" name="webresource_userqueryvisualizations" nillable="true" type="tns:WebResource" />
         </xs:sequence>
@@ -12092,7 +12182,7 @@
   <xs:element name="ArrayOfSolutionComponent" nillable="true" type="tns:ArrayOfSolutionComponent" />
   <xs:complexType name="SolutionComponent">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q200="http://schemas.microsoft.com/xrm/2011/Contracts" base="q200:Entity">
+      <xs:extension xmlns:q201="http://schemas.microsoft.com/xrm/2011/Contracts" base="q201:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="userentityinstancedata_solutioncomponent" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
         </xs:sequence>
@@ -12108,18 +12198,18 @@
   <xs:element name="ArrayOfQuarterlyFiscalCalendar" nillable="true" type="tns:ArrayOfQuarterlyFiscalCalendar" />
   <xs:complexType name="QuarterlyFiscalCalendar">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q201="http://schemas.microsoft.com/xrm/2011/Contracts" base="q201:Entity">
+      <xs:extension xmlns:q202="http://schemas.microsoft.com/xrm/2011/Contracts" base="q202:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="EffectiveOn" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="Quarter1" nillable="true" type="q201:Money" />
-          <xs:element minOccurs="0" name="Quarter2" nillable="true" type="q201:Money" />
-          <xs:element minOccurs="0" name="Quarter3" nillable="true" type="q201:Money" />
-          <xs:element minOccurs="0" name="Quarter4" nillable="true" type="q201:Money" />
+          <xs:element minOccurs="0" name="Quarter1" nillable="true" type="q202:Money" />
+          <xs:element minOccurs="0" name="Quarter2" nillable="true" type="q202:Money" />
+          <xs:element minOccurs="0" name="Quarter3" nillable="true" type="q202:Money" />
+          <xs:element minOccurs="0" name="Quarter4" nillable="true" type="q202:Money" />
           <xs:element minOccurs="0" name="QuarterlyFiscalCalendar_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="QuarterlyFiscalCalendar_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
-          <xs:element minOccurs="0" name="SalesPersonId" nillable="true" type="q201:EntityReference" />
+          <xs:element minOccurs="0" name="SalesPersonId" nillable="true" type="q202:EntityReference" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q201:EntityReference" />
+          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q202:EntityReference" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UserFiscalCalendarId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="lk_quarterlyfiscalcalendar_salespersonid" nillable="true" type="tns:SystemUser" />
@@ -12143,34 +12233,34 @@
   <xs:element name="ArrayOfQuoteDetail" nillable="true" type="tns:ArrayOfQuoteDetail" />
   <xs:complexType name="QuoteDetail">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q202="http://schemas.microsoft.com/xrm/2011/Contracts" base="q202:Entity">
+      <xs:extension xmlns:q203="http://schemas.microsoft.com/xrm/2011/Contracts" base="q203:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="IsPriceOverridden" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="IsProductOverridden" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="LineItemNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="ManualDiscountAmount" nillable="true" type="q202:Money" />
+          <xs:element minOccurs="0" name="ManualDiscountAmount" nillable="true" type="q203:Money" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="PricePerUnit" nillable="true" type="q202:Money" />
-          <xs:element minOccurs="0" name="PricingErrorCode" nillable="true" type="q202:OptionSetValue" />
+          <xs:element minOccurs="0" name="PricePerUnit" nillable="true" type="q203:Money" />
+          <xs:element minOccurs="0" name="PricingErrorCode" nillable="true" type="q203:OptionSetValue" />
           <xs:element minOccurs="0" name="ProductDescription" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ProductId" nillable="true" type="q202:EntityReference" />
+          <xs:element minOccurs="0" name="ProductId" nillable="true" type="q203:EntityReference" />
           <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:decimal" />
           <xs:element minOccurs="0" name="QuoteDetailId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="QuoteDetail_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="QuoteDetail_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
           <xs:element minOccurs="0" name="QuoteDetail_ProcessSessions" nillable="true" type="tns:ArrayOfProcessSession" />
-          <xs:element minOccurs="0" name="QuoteId" nillable="true" type="q202:EntityReference" />
+          <xs:element minOccurs="0" name="QuoteId" nillable="true" type="q203:EntityReference" />
           <xs:element minOccurs="0" name="RequestDeliveryBy" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="SalesRepId" nillable="true" type="q202:EntityReference" />
+          <xs:element minOccurs="0" name="SalesRepId" nillable="true" type="q203:EntityReference" />
           <xs:element minOccurs="0" name="SequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="ShipTo_AddressId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ShipTo_City" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_ContactName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Country" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Fax" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ShipTo_FreightTermsCode" nillable="true" type="q202:OptionSetValue" />
+          <xs:element minOccurs="0" name="ShipTo_FreightTermsCode" nillable="true" type="q203:OptionSetValue" />
           <xs:element minOccurs="0" name="ShipTo_Line1" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Line2" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Line3" nillable="true" type="xs:string" />
@@ -12178,10 +12268,10 @@
           <xs:element minOccurs="0" name="ShipTo_PostalCode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_StateOrProvince" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Telephone" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Tax" nillable="true" type="q202:Money" />
+          <xs:element minOccurs="0" name="Tax" nillable="true" type="q203:Money" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="UoMId" nillable="true" type="q202:EntityReference" />
+          <xs:element minOccurs="0" name="UoMId" nillable="true" type="q203:EntityReference" />
           <xs:element minOccurs="0" name="WillCall" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="new_accessoriesvat" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="new_additionalcarfee" nillable="true" type="xs:boolean" />
@@ -12206,7 +12296,7 @@
   <xs:element name="ArrayOfRecurrenceRule" nillable="true" type="tns:ArrayOfRecurrenceRule" />
   <xs:complexType name="RecurrenceRule">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q203="http://schemas.microsoft.com/xrm/2011/Contracts" base="q203:Entity">
+      <xs:extension xmlns:q204="http://schemas.microsoft.com/xrm/2011/Contracts" base="q204:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="DayOfMonth" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="DaysOfWeekMask" nillable="true" type="xs:int" />
@@ -12215,20 +12305,20 @@
           <xs:element minOccurs="0" name="EffectiveStartDate" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="EndTime" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="FirstDayOfWeek" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="Instance" nillable="true" type="q203:OptionSetValue" />
+          <xs:element minOccurs="0" name="Instance" nillable="true" type="q204:OptionSetValue" />
           <xs:element minOccurs="0" name="Interval" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="IsNthMonthly" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="IsNthYearly" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="IsRegenerate" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="IsWeekDayPattern" nillable="true" type="xs:boolean" />
-          <xs:element minOccurs="0" name="MonthOfYear" nillable="true" type="q203:OptionSetValue" />
-          <xs:element minOccurs="0" name="ObjectId" nillable="true" type="q203:EntityReference" />
+          <xs:element minOccurs="0" name="MonthOfYear" nillable="true" type="q204:OptionSetValue" />
+          <xs:element minOccurs="0" name="ObjectId" nillable="true" type="q204:EntityReference" />
           <xs:element minOccurs="0" name="Occurrences" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q203:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q204:EntityReference" />
           <xs:element minOccurs="0" name="PatternEndDate" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="PatternEndType" nillable="true" type="q203:OptionSetValue" />
+          <xs:element minOccurs="0" name="PatternEndType" nillable="true" type="q204:OptionSetValue" />
           <xs:element minOccurs="0" name="PatternStartDate" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="RecurrencePatternType" nillable="true" type="q203:OptionSetValue" />
+          <xs:element minOccurs="0" name="RecurrencePatternType" nillable="true" type="q204:OptionSetValue" />
           <xs:element minOccurs="0" name="RuleId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="StartTime" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="activity_pointer_recurrencerule" nillable="true" type="tns:ActivityPointer" />
@@ -12246,7 +12336,7 @@
   <xs:element name="ArrayOfReport" nillable="true" type="tns:ArrayOfReport" />
   <xs:complexType name="Report">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q204="http://schemas.microsoft.com/xrm/2011/Contracts" base="q204:Entity">
+      <xs:extension xmlns:q205="http://schemas.microsoft.com/xrm/2011/Contracts" base="q205:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="BodyBinary" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="BodyText" nillable="true" type="xs:string" />
@@ -12255,17 +12345,17 @@
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IntroducedVersion" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q204:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q205:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="IsPersonal" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="MimeType" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q204:EntityReference" />
-          <xs:element minOccurs="0" name="ParentReportId" nillable="true" type="q204:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q205:EntityReference" />
+          <xs:element minOccurs="0" name="ParentReportId" nillable="true" type="q205:EntityReference" />
           <xs:element minOccurs="0" name="Referencedreport_parent_report" nillable="true" type="tns:ArrayOfReport" />
           <xs:element minOccurs="0" name="Referencingreport_parent_report" nillable="true" type="tns:Report" />
           <xs:element minOccurs="0" name="ReportId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="ReportTypeCode" nillable="true" type="q204:OptionSetValue" />
+          <xs:element minOccurs="0" name="ReportTypeCode" nillable="true" type="q205:OptionSetValue" />
           <xs:element minOccurs="0" name="Report_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="Report_ProcessSessions" nillable="true" type="tns:ArrayOfProcessSession" />
           <xs:element minOccurs="0" name="SignatureDate" nillable="true" type="xs:dateTime" />
@@ -12294,15 +12384,15 @@
   <xs:element name="ArrayOfReportCategory" nillable="true" type="tns:ArrayOfReportCategory" />
   <xs:complexType name="ReportCategory">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q205="http://schemas.microsoft.com/xrm/2011/Contracts" base="q205:Entity">
+      <xs:extension xmlns:q206="http://schemas.microsoft.com/xrm/2011/Contracts" base="q206:Entity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="CategoryCode" nillable="true" type="q205:OptionSetValue" />
+          <xs:element minOccurs="0" name="CategoryCode" nillable="true" type="q206:OptionSetValue" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q205:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q206:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="ReportCategoryId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="ReportId" nillable="true" type="q205:EntityReference" />
+          <xs:element minOccurs="0" name="ReportId" nillable="true" type="q206:EntityReference" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q205:EntityReference" />
+          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q206:EntityReference" />
           <xs:element minOccurs="0" name="TransactionCurrency_ReportCategory" nillable="true" type="tns:TransactionCurrency" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="report_reportcategories" nillable="true" type="tns:Report" />
@@ -12321,14 +12411,14 @@
   <xs:element name="ArrayOfReportEntity" nillable="true" type="tns:ArrayOfReportEntity" />
   <xs:complexType name="ReportEntity">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q206="http://schemas.microsoft.com/xrm/2011/Contracts" base="q206:Entity">
+      <xs:extension xmlns:q207="http://schemas.microsoft.com/xrm/2011/Contracts" base="q207:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q206:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q207:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="IsFilterable" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="ObjectTypeCode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ReportEntityId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="ReportId" nillable="true" type="q206:EntityReference" />
+          <xs:element minOccurs="0" name="ReportId" nillable="true" type="q207:EntityReference" />
           <xs:element minOccurs="0" name="report_reportentities" nillable="true" type="tns:Report" />
           <xs:element minOccurs="0" name="userentityinstancedata_reportentity" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
         </xs:sequence>
@@ -12344,13 +12434,13 @@
   <xs:element name="ArrayOfReportLink" nillable="true" type="tns:ArrayOfReportLink" />
   <xs:complexType name="ReportLink">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q207="http://schemas.microsoft.com/xrm/2011/Contracts" base="q207:Entity">
+      <xs:extension xmlns:q208="http://schemas.microsoft.com/xrm/2011/Contracts" base="q208:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="LinkTypeCode" nillable="true" type="q207:OptionSetValue" />
-          <xs:element minOccurs="0" name="LinkedReportId" nillable="true" type="q207:EntityReference" />
+          <xs:element minOccurs="0" name="LinkTypeCode" nillable="true" type="q208:OptionSetValue" />
+          <xs:element minOccurs="0" name="LinkedReportId" nillable="true" type="q208:EntityReference" />
           <xs:element minOccurs="0" name="LinkedReportName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ReportId" nillable="true" type="q207:EntityReference" />
+          <xs:element minOccurs="0" name="ReportId" nillable="true" type="q208:EntityReference" />
           <xs:element minOccurs="0" name="ReportLinkId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="report_reportlink" nillable="true" type="tns:Report" />
           <xs:element minOccurs="0" name="report_reportlink_sub" nillable="true" type="tns:Report" />
@@ -12368,13 +12458,13 @@
   <xs:element name="ArrayOfReportVisibility" nillable="true" type="tns:ArrayOfReportVisibility" />
   <xs:complexType name="ReportVisibility">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q208="http://schemas.microsoft.com/xrm/2011/Contracts" base="q208:Entity">
+      <xs:extension xmlns:q209="http://schemas.microsoft.com/xrm/2011/Contracts" base="q209:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q208:BooleanManagedProperty" />
-          <xs:element minOccurs="0" name="ReportId" nillable="true" type="q208:EntityReference" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q209:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="ReportId" nillable="true" type="q209:EntityReference" />
           <xs:element minOccurs="0" name="ReportVisibilityId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="VisibilityCode" nillable="true" type="q208:OptionSetValue" />
+          <xs:element minOccurs="0" name="VisibilityCode" nillable="true" type="q209:OptionSetValue" />
           <xs:element minOccurs="0" name="report_reportvisibility" nillable="true" type="tns:Report" />
           <xs:element minOccurs="0" name="userentityinstancedata_reportvisibility" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
         </xs:sequence>
@@ -12390,11 +12480,11 @@
   <xs:element name="ArrayOfRole" nillable="true" type="tns:ArrayOfRole" />
   <xs:complexType name="Role">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q209="http://schemas.microsoft.com/xrm/2011/Contracts" base="q209:Entity">
+      <xs:extension xmlns:q210="http://schemas.microsoft.com/xrm/2011/Contracts" base="q210:Entity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="BusinessUnitId" nillable="true" type="q209:EntityReference" />
+          <xs:element minOccurs="0" name="BusinessUnitId" nillable="true" type="q210:EntityReference" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q209:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q210:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="Referencedrole_parent_role" nillable="true" type="tns:ArrayOfRole" />
@@ -12420,7 +12510,7 @@
   <xs:element name="ArrayOfPrivilege" nillable="true" type="tns:ArrayOfPrivilege" />
   <xs:complexType name="Privilege">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q210="http://schemas.microsoft.com/xrm/2011/Contracts" base="q210:Entity">
+      <xs:extension xmlns:q211="http://schemas.microsoft.com/xrm/2011/Contracts" base="q211:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="AccessRight" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="CanBeBasic" nillable="true" type="xs:boolean" />
@@ -12452,20 +12542,20 @@
   <xs:element name="ArrayOfSalesLiteratureItem" nillable="true" type="tns:ArrayOfSalesLiteratureItem" />
   <xs:complexType name="SalesLiteratureItem">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q211="http://schemas.microsoft.com/xrm/2011/Contracts" base="q211:Entity">
+      <xs:extension xmlns:q212="http://schemas.microsoft.com/xrm/2011/Contracts" base="q212:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Abstract" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="AttachedDocumentUrl" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="AuthorName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="DocumentBody" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="FileTypeCode" nillable="true" type="q211:OptionSetValue" />
+          <xs:element minOccurs="0" name="FileTypeCode" nillable="true" type="q212:OptionSetValue" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="IsCustomerViewable" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="KeyWords" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="MimeType" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="SalesLiteratureId" nillable="true" type="q211:EntityReference" />
+          <xs:element minOccurs="0" name="SalesLiteratureId" nillable="true" type="q212:EntityReference" />
           <xs:element minOccurs="0" name="SalesLiteratureItemId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="SalesLiteratureItem_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="SalesLiteratureItem_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
@@ -12486,7 +12576,7 @@
   <xs:element name="ArrayOfSalesOrderDetail" nillable="true" type="tns:ArrayOfSalesOrderDetail" />
   <xs:complexType name="SalesOrderDetail">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q212="http://schemas.microsoft.com/xrm/2011/Contracts" base="q212:Entity">
+      <xs:extension xmlns:q213="http://schemas.microsoft.com/xrm/2011/Contracts" base="q213:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
@@ -12494,12 +12584,12 @@
           <xs:element minOccurs="0" name="IsPriceOverridden" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="IsProductOverridden" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="LineItemNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="ManualDiscountAmount" nillable="true" type="q212:Money" />
+          <xs:element minOccurs="0" name="ManualDiscountAmount" nillable="true" type="q213:Money" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="PricePerUnit" nillable="true" type="q212:Money" />
-          <xs:element minOccurs="0" name="PricingErrorCode" nillable="true" type="q212:OptionSetValue" />
+          <xs:element minOccurs="0" name="PricePerUnit" nillable="true" type="q213:Money" />
+          <xs:element minOccurs="0" name="PricingErrorCode" nillable="true" type="q213:OptionSetValue" />
           <xs:element minOccurs="0" name="ProductDescription" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ProductId" nillable="true" type="q212:EntityReference" />
+          <xs:element minOccurs="0" name="ProductId" nillable="true" type="q213:EntityReference" />
           <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:decimal" />
           <xs:element minOccurs="0" name="QuantityBackordered" nillable="true" type="xs:decimal" />
           <xs:element minOccurs="0" name="QuantityCancelled" nillable="true" type="xs:decimal" />
@@ -12509,15 +12599,15 @@
           <xs:element minOccurs="0" name="SalesOrderDetail_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="SalesOrderDetail_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
           <xs:element minOccurs="0" name="SalesOrderDetail_ProcessSessions" nillable="true" type="tns:ArrayOfProcessSession" />
-          <xs:element minOccurs="0" name="SalesOrderId" nillable="true" type="q212:EntityReference" />
-          <xs:element minOccurs="0" name="SalesRepId" nillable="true" type="q212:EntityReference" />
+          <xs:element minOccurs="0" name="SalesOrderId" nillable="true" type="q213:EntityReference" />
+          <xs:element minOccurs="0" name="SalesRepId" nillable="true" type="q213:EntityReference" />
           <xs:element minOccurs="0" name="SequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="ShipTo_AddressId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ShipTo_City" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_ContactName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Country" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Fax" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ShipTo_FreightTermsCode" nillable="true" type="q212:OptionSetValue" />
+          <xs:element minOccurs="0" name="ShipTo_FreightTermsCode" nillable="true" type="q213:OptionSetValue" />
           <xs:element minOccurs="0" name="ShipTo_Line1" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Line2" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Line3" nillable="true" type="xs:string" />
@@ -12525,10 +12615,10 @@
           <xs:element minOccurs="0" name="ShipTo_PostalCode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_StateOrProvince" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShipTo_Telephone" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Tax" nillable="true" type="q212:Money" />
+          <xs:element minOccurs="0" name="Tax" nillable="true" type="q213:Money" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="UoMId" nillable="true" type="q212:EntityReference" />
+          <xs:element minOccurs="0" name="UoMId" nillable="true" type="q213:EntityReference" />
           <xs:element minOccurs="0" name="WillCall" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="order_details" nillable="true" type="tns:SalesOrder" />
           <xs:element minOccurs="0" name="product_order_details" nillable="true" type="tns:Product" />
@@ -12549,16 +12639,16 @@
   <xs:element name="ArrayOfSavedQuery" nillable="true" type="tns:ArrayOfSavedQuery" />
   <xs:complexType name="SavedQuery">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q213="http://schemas.microsoft.com/xrm/2011/Contracts" base="q213:Entity">
+      <xs:extension xmlns:q214="http://schemas.microsoft.com/xrm/2011/Contracts" base="q214:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="AdvancedGroupBy" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="CanBeDeleted" nillable="true" type="q213:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="CanBeDeleted" nillable="true" type="q214:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="ColumnSetXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ConditionalFormatting" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="FetchXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IntroducedVersion" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q213:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q214:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="IsDefault" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="IsQuickFindQuery" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="LayoutXml" nillable="true" type="xs:string" />
@@ -12569,7 +12659,7 @@
           <xs:element minOccurs="0" name="SavedQueryId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="SavedQuery_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="SavedQuery_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
-          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="q213:OptionSetValue" />
+          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="q214:OptionSetValue" />
           <xs:element minOccurs="0" name="userentityinstancedata_savedquery" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
         </xs:sequence>
       </xs:extension>
@@ -12584,17 +12674,17 @@
   <xs:element name="ArrayOfSemiAnnualFiscalCalendar" nillable="true" type="tns:ArrayOfSemiAnnualFiscalCalendar" />
   <xs:complexType name="SemiAnnualFiscalCalendar">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q214="http://schemas.microsoft.com/xrm/2011/Contracts" base="q214:Entity">
+      <xs:extension xmlns:q215="http://schemas.microsoft.com/xrm/2011/Contracts" base="q215:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="EffectiveOn" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="FirstHalf" nillable="true" type="q214:Money" />
+          <xs:element minOccurs="0" name="FirstHalf" nillable="true" type="q215:Money" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="SalesPersonId" nillable="true" type="q214:EntityReference" />
-          <xs:element minOccurs="0" name="SecondHalf" nillable="true" type="q214:Money" />
+          <xs:element minOccurs="0" name="SalesPersonId" nillable="true" type="q215:EntityReference" />
+          <xs:element minOccurs="0" name="SecondHalf" nillable="true" type="q215:Money" />
           <xs:element minOccurs="0" name="SemiAnnualFiscalCalendar_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="SemiAnnualFiscalCalendar_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q214:EntityReference" />
+          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q215:EntityReference" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UserFiscalCalendarId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="lk_semiannualfiscalcalendar_salespersonid" nillable="true" type="tns:SystemUser" />
@@ -12612,7 +12702,7 @@
   <xs:element name="ArrayOfSharePointSite" nillable="true" type="tns:ArrayOfSharePointSite" />
   <xs:complexType name="SharePointSite">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q215="http://schemas.microsoft.com/xrm/2011/Contracts" base="q215:Entity">
+      <xs:extension xmlns:q216="http://schemas.microsoft.com/xrm/2011/Contracts" base="q216:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="AbsoluteURL" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
@@ -12623,8 +12713,8 @@
           <xs:element minOccurs="0" name="LastValidated" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q215:EntityReference" />
-          <xs:element minOccurs="0" name="ParentSite" nillable="true" type="q215:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q216:EntityReference" />
+          <xs:element minOccurs="0" name="ParentSite" nillable="true" type="q216:EntityReference" />
           <xs:element minOccurs="0" name="Referencedsharepointsite_parentsite_sharepointsite" nillable="true" type="tns:ArrayOfSharePointSite" />
           <xs:element minOccurs="0" name="Referencingsharepointsite_parentsite_sharepointsite" nillable="true" type="tns:SharePointSite" />
           <xs:element minOccurs="0" name="RelativeUrl" nillable="true" type="xs:string" />
@@ -12633,11 +12723,11 @@
           <xs:element minOccurs="0" name="SharePointSite_DuplicateBaseRecord" nillable="true" type="tns:ArrayOfDuplicateRecord" />
           <xs:element minOccurs="0" name="SharePointSite_DuplicateMatchingRecord" nillable="true" type="tns:ArrayOfDuplicateRecord" />
           <xs:element minOccurs="0" name="SharePointSite_ProcessSessions" nillable="true" type="tns:ArrayOfProcessSession" />
-          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="q215:OptionSetValue" />
+          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="q216:OptionSetValue" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="ValidationStatus" nillable="true" type="q215:OptionSetValue" />
-          <xs:element minOccurs="0" name="ValidationStatusErrorCode" nillable="true" type="q215:OptionSetValue" />
+          <xs:element minOccurs="0" name="ValidationStatus" nillable="true" type="q216:OptionSetValue" />
+          <xs:element minOccurs="0" name="ValidationStatusErrorCode" nillable="true" type="q216:OptionSetValue" />
           <xs:element minOccurs="0" name="sharepointdocumentlocation_parent_sharepointsite" nillable="true" type="tns:ArrayOfSharePointDocumentLocation" />
           <xs:element minOccurs="0" name="sharepointsite_principalobjectattributeaccess" nillable="true" type="tns:ArrayOfPrincipalObjectAttributeAccess" />
           <xs:element minOccurs="0" name="userentityinstancedata_sharepointsite" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
@@ -12654,10 +12744,10 @@
   <xs:element name="ArrayOfSite" nillable="true" type="tns:ArrayOfSite" />
   <xs:complexType name="Site">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q216="http://schemas.microsoft.com/xrm/2011/Contracts" base="q216:Entity">
+      <xs:extension xmlns:q217="http://schemas.microsoft.com/xrm/2011/Contracts" base="q217:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Address1_AddressId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="Address1_AddressTypeCode" nillable="true" type="q216:OptionSetValue" />
+          <xs:element minOccurs="0" name="Address1_AddressTypeCode" nillable="true" type="q217:OptionSetValue" />
           <xs:element minOccurs="0" name="Address1_City" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_Country" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_County" nillable="true" type="xs:string" />
@@ -12670,7 +12760,7 @@
           <xs:element minOccurs="0" name="Address1_Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_PostOfficeBox" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_PostalCode" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Address1_ShippingMethodCode" nillable="true" type="q216:OptionSetValue" />
+          <xs:element minOccurs="0" name="Address1_ShippingMethodCode" nillable="true" type="q217:OptionSetValue" />
           <xs:element minOccurs="0" name="Address1_StateOrProvince" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_Telephone1" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_Telephone2" nillable="true" type="xs:string" />
@@ -12678,7 +12768,7 @@
           <xs:element minOccurs="0" name="Address1_UPSZone" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address1_UTCOffset" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="Address2_AddressId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="Address2_AddressTypeCode" nillable="true" type="q216:OptionSetValue" />
+          <xs:element minOccurs="0" name="Address2_AddressTypeCode" nillable="true" type="q217:OptionSetValue" />
           <xs:element minOccurs="0" name="Address2_City" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_Country" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_County" nillable="true" type="xs:string" />
@@ -12691,7 +12781,7 @@
           <xs:element minOccurs="0" name="Address2_Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_PostOfficeBox" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_PostalCode" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Address2_ShippingMethodCode" nillable="true" type="q216:OptionSetValue" />
+          <xs:element minOccurs="0" name="Address2_ShippingMethodCode" nillable="true" type="q217:OptionSetValue" />
           <xs:element minOccurs="0" name="Address2_StateOrProvince" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_Telephone1" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Address2_Telephone2" nillable="true" type="xs:string" />
@@ -12726,9 +12816,9 @@
   <xs:element name="ArrayOfResource" nillable="true" type="tns:ArrayOfResource" />
   <xs:complexType name="Resource">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q217="http://schemas.microsoft.com/xrm/2011/Contracts" base="q217:Entity">
+      <xs:extension xmlns:q218="http://schemas.microsoft.com/xrm/2011/Contracts" base="q218:Entity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="BusinessUnitId" nillable="true" type="q217:EntityReference" />
+          <xs:element minOccurs="0" name="BusinessUnitId" nillable="true" type="q218:EntityReference" />
           <xs:element minOccurs="0" name="CalendarId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="DisplayInServiceViews" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="EntityImage" nillable="true" type="xs:base64Binary" />
@@ -12738,7 +12828,7 @@
           <xs:element minOccurs="0" name="ResourceId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="Resource_AsyncOperations" nillable="true" type="tns:ArrayOfAsyncOperation" />
           <xs:element minOccurs="0" name="Resource_BulkDeleteFailures" nillable="true" type="tns:ArrayOfBulkDeleteFailure" />
-          <xs:element minOccurs="0" name="SiteId" nillable="true" type="q217:EntityReference" />
+          <xs:element minOccurs="0" name="SiteId" nillable="true" type="q218:EntityReference" />
           <xs:element minOccurs="0" name="business_unit_resources" nillable="true" type="tns:BusinessUnit" />
           <xs:element minOccurs="0" name="equipment_resources" nillable="true" type="tns:Equipment" />
           <xs:element minOccurs="0" name="resourcespec_resources" nillable="true" type="tns:ResourceSpec" />
@@ -12758,22 +12848,22 @@
   <xs:element name="ArrayOfSLA" nillable="true" type="tns:ArrayOfSLA" />
   <xs:complexType name="SLA">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q218="http://schemas.microsoft.com/xrm/2011/Contracts" base="q218:Entity">
+      <xs:extension xmlns:q219="http://schemas.microsoft.com/xrm/2011/Contracts" base="q219:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ApplicableFrom" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ApplicableFromPickList" nillable="true" type="q218:OptionSetValue" />
-          <xs:element minOccurs="0" name="BusinessHoursId" nillable="true" type="q218:EntityReference" />
+          <xs:element minOccurs="0" name="ApplicableFromPickList" nillable="true" type="q219:OptionSetValue" />
+          <xs:element minOccurs="0" name="BusinessHoursId" nillable="true" type="q219:EntityReference" />
           <xs:element minOccurs="0" name="ChangedAttributeList" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IsDefault" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q218:EntityReference" />
-          <xs:element minOccurs="0" name="OwningBusinessUnit" nillable="true" type="q218:EntityReference" />
-          <xs:element minOccurs="0" name="OwningTeam" nillable="true" type="q218:EntityReference" />
-          <xs:element minOccurs="0" name="OwningUser" nillable="true" type="q218:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q219:EntityReference" />
+          <xs:element minOccurs="0" name="OwningBusinessUnit" nillable="true" type="q219:EntityReference" />
+          <xs:element minOccurs="0" name="OwningTeam" nillable="true" type="q219:EntityReference" />
+          <xs:element minOccurs="0" name="OwningUser" nillable="true" type="q219:EntityReference" />
           <xs:element minOccurs="0" name="SLAId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="q218:OptionSetValue" />
-          <xs:element minOccurs="0" name="WorkflowId" nillable="true" type="q218:EntityReference" />
+          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="q219:OptionSetValue" />
+          <xs:element minOccurs="0" name="WorkflowId" nillable="true" type="q219:EntityReference" />
           <xs:element minOccurs="0" name="business_unit_slabase" nillable="true" type="tns:BusinessUnit" />
           <xs:element minOccurs="0" name="sla_Annotation" nillable="true" type="tns:ArrayOfAnnotation" />
           <xs:element minOccurs="0" name="sla_cases" nillable="true" type="tns:ArrayOfIncident" />
@@ -12801,21 +12891,21 @@
   <xs:element name="ArrayOfSLAItem" nillable="true" type="tns:ArrayOfSLAItem" />
   <xs:complexType name="SLAItem">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q219="http://schemas.microsoft.com/xrm/2011/Contracts" base="q219:Entity">
+      <xs:extension xmlns:q220="http://schemas.microsoft.com/xrm/2011/Contracts" base="q220:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ApplicableWhenXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="FailureAfter" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q219:EntityReference" />
-          <xs:element minOccurs="0" name="OwningUser" nillable="true" type="q219:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q220:EntityReference" />
+          <xs:element minOccurs="0" name="OwningUser" nillable="true" type="q220:EntityReference" />
           <xs:element minOccurs="0" name="RelatedField" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="SLAId" nillable="true" type="q219:EntityReference" />
+          <xs:element minOccurs="0" name="SLAId" nillable="true" type="q220:EntityReference" />
           <xs:element minOccurs="0" name="SLAItemId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="SequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="SuccessConditionsXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="WarnAfter" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="WorkflowId" nillable="true" type="q219:EntityReference" />
+          <xs:element minOccurs="0" name="WorkflowId" nillable="true" type="q220:EntityReference" />
           <xs:element minOccurs="0" name="sla_slaitem_slaId" nillable="true" type="tns:SLA" />
           <xs:element minOccurs="0" name="slaitembase_workflowid" nillable="true" type="tns:Workflow" />
         </xs:sequence>
@@ -12831,13 +12921,13 @@
   <xs:element name="ArrayOfSubject" nillable="true" type="tns:ArrayOfSubject" />
   <xs:complexType name="Subject">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q220="http://schemas.microsoft.com/xrm/2011/Contracts" base="q220:Entity">
+      <xs:extension xmlns:q221="http://schemas.microsoft.com/xrm/2011/Contracts" base="q221:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="FeatureMask" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
-          <xs:element minOccurs="0" name="ParentSubject" nillable="true" type="q220:EntityReference" />
+          <xs:element minOccurs="0" name="ParentSubject" nillable="true" type="q221:EntityReference" />
           <xs:element minOccurs="0" name="Referencedsubject_parent_subject" nillable="true" type="tns:ArrayOfSubject" />
           <xs:element minOccurs="0" name="Referencingsubject_parent_subject" nillable="true" type="tns:Subject" />
           <xs:element minOccurs="0" name="SubjectId" nillable="true" type="ser:guid" />
@@ -12863,7 +12953,7 @@
   <xs:element name="ArrayOfTeamTemplate" nillable="true" type="tns:ArrayOfTeamTemplate" />
   <xs:complexType name="TeamTemplate">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q221="http://schemas.microsoft.com/xrm/2011/Contracts" base="q221:Entity">
+      <xs:extension xmlns:q222="http://schemas.microsoft.com/xrm/2011/Contracts" base="q222:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="DefaultAccessRightsMask" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
@@ -12890,12 +12980,12 @@
   <xs:element name="ArrayOfTerritory" nillable="true" type="tns:ArrayOfTerritory" />
   <xs:complexType name="Territory">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q222="http://schemas.microsoft.com/xrm/2011/Contracts" base="q222:Entity">
+      <xs:extension xmlns:q223="http://schemas.microsoft.com/xrm/2011/Contracts" base="q223:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="EntityImage" nillable="true" type="xs:base64Binary" />
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="ManagerId" nillable="true" type="q222:EntityReference" />
+          <xs:element minOccurs="0" name="ManagerId" nillable="true" type="q223:EntityReference" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="TerritoryId" nillable="true" type="ser:guid" />
@@ -12904,7 +12994,7 @@
           <xs:element minOccurs="0" name="Territory_DuplicateBaseRecord" nillable="true" type="tns:ArrayOfDuplicateRecord" />
           <xs:element minOccurs="0" name="Territory_DuplicateMatchingRecord" nillable="true" type="tns:ArrayOfDuplicateRecord" />
           <xs:element minOccurs="0" name="Territory_ProcessSessions" nillable="true" type="tns:ArrayOfProcessSession" />
-          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q222:EntityReference" />
+          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q223:EntityReference" />
           <xs:element minOccurs="0" name="TransactionCurrency_Territory" nillable="true" type="tns:TransactionCurrency" />
           <xs:element minOccurs="0" name="new_Parts" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="new_bodypaint" nillable="true" type="xs:boolean" />
@@ -12935,7 +13025,7 @@
   <xs:element name="ArrayOfTimeZoneDefinition" nillable="true" type="tns:ArrayOfTimeZoneDefinition" />
   <xs:complexType name="TimeZoneDefinition">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q223="http://schemas.microsoft.com/xrm/2011/Contracts" base="q223:Entity">
+      <xs:extension xmlns:q224="http://schemas.microsoft.com/xrm/2011/Contracts" base="q224:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Bias" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="DaylightName" nillable="true" type="xs:string" />
@@ -12960,12 +13050,12 @@
   <xs:element name="ArrayOfTimeZoneLocalizedName" nillable="true" type="tns:ArrayOfTimeZoneLocalizedName" />
   <xs:complexType name="TimeZoneLocalizedName">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q224="http://schemas.microsoft.com/xrm/2011/Contracts" base="q224:Entity">
+      <xs:extension xmlns:q225="http://schemas.microsoft.com/xrm/2011/Contracts" base="q225:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="CultureId" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="DaylightName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="StandardName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="TimeZoneDefinitionId" nillable="true" type="q224:EntityReference" />
+          <xs:element minOccurs="0" name="TimeZoneDefinitionId" nillable="true" type="q225:EntityReference" />
           <xs:element minOccurs="0" name="TimeZoneLocalizedNameId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="UserInterfaceName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="lk_timezonelocalizedname_timezonedefinitionid" nillable="true" type="tns:TimeZoneDefinition" />
@@ -12983,7 +13073,7 @@
   <xs:element name="ArrayOfTimeZoneRule" nillable="true" type="tns:ArrayOfTimeZoneRule" />
   <xs:complexType name="TimeZoneRule">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q225="http://schemas.microsoft.com/xrm/2011/Contracts" base="q225:Entity">
+      <xs:extension xmlns:q226="http://schemas.microsoft.com/xrm/2011/Contracts" base="q226:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Bias" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="DaylightBias" nillable="true" type="xs:int" />
@@ -13003,7 +13093,7 @@
           <xs:element minOccurs="0" name="StandardMonth" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="StandardSecond" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="StandardYear" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="TimeZoneDefinitionId" nillable="true" type="q225:EntityReference" />
+          <xs:element minOccurs="0" name="TimeZoneDefinitionId" nillable="true" type="q226:EntityReference" />
           <xs:element minOccurs="0" name="TimeZoneRuleId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="lk_timezonerule_timezonedefinitionid" nillable="true" type="tns:TimeZoneDefinition" />
@@ -13021,17 +13111,17 @@
   <xs:element name="ArrayOfTraceLog" nillable="true" type="tns:ArrayOfTraceLog" />
   <xs:complexType name="TraceLog">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q226="http://schemas.microsoft.com/xrm/2011/Contracts" base="q226:Entity">
+      <xs:extension xmlns:q227="http://schemas.microsoft.com/xrm/2011/Contracts" base="q227:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="CanBeDeleted" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="CollationLevel" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="IsUnique" nillable="true" type="xs:boolean" />
-          <xs:element minOccurs="0" name="Level" nillable="true" type="q226:OptionSetValue" />
+          <xs:element minOccurs="0" name="Level" nillable="true" type="q227:OptionSetValue" />
           <xs:element minOccurs="0" name="MachineName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="ParentTraceLogId" nillable="true" type="q226:EntityReference" />
+          <xs:element minOccurs="0" name="ParentTraceLogId" nillable="true" type="q227:EntityReference" />
           <xs:element minOccurs="0" name="Referencedtracelog_parent_tracelog" nillable="true" type="tns:ArrayOfTraceLog" />
           <xs:element minOccurs="0" name="Referencingtracelog_parent_tracelog" nillable="true" type="tns:TraceLog" />
-          <xs:element minOccurs="0" name="RegardingObjectId" nillable="true" type="q226:EntityReference" />
+          <xs:element minOccurs="0" name="RegardingObjectId" nillable="true" type="q227:EntityReference" />
           <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="TraceActionXml" nillable="true" type="xs:string" />
@@ -13073,7 +13163,7 @@
   <xs:element name="ArrayOfUserQuery" nillable="true" type="tns:ArrayOfUserQuery" />
   <xs:complexType name="UserQuery">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q227="http://schemas.microsoft.com/xrm/2011/Contracts" base="q227:Entity">
+      <xs:extension xmlns:q228="http://schemas.microsoft.com/xrm/2011/Contracts" base="q228:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="AdvancedGroupBy" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ColumnSetXml" nillable="true" type="xs:string" />
@@ -13082,8 +13172,8 @@
           <xs:element minOccurs="0" name="FetchXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="LayoutXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q227:EntityReference" />
-          <xs:element minOccurs="0" name="ParentQueryId" nillable="true" type="q227:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q228:EntityReference" />
+          <xs:element minOccurs="0" name="ParentQueryId" nillable="true" type="q228:EntityReference" />
           <xs:element minOccurs="0" name="QueryType" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="ReturnedTypeCode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="UserQueryId" nillable="true" type="ser:guid" />
@@ -13103,7 +13193,7 @@
   <xs:element name="ArrayOfUserSettings" nillable="true" type="tns:ArrayOfUserSettings" />
   <xs:complexType name="UserSettings">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q228="http://schemas.microsoft.com/xrm/2011/Contracts" base="q228:Entity">
+      <xs:extension xmlns:q229="http://schemas.microsoft.com/xrm/2011/Contracts" base="q229:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="AMDesignator" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="AddressBookSyncInterval" nillable="true" type="xs:int" />
@@ -13114,7 +13204,7 @@
           <xs:element minOccurs="0" name="CurrencyDecimalPrecision" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="CurrencyFormatCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="CurrencySymbol" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="DataValidationModeForExportToExcel" nillable="true" type="q228:OptionSetValue" />
+          <xs:element minOccurs="0" name="DataValidationModeForExportToExcel" nillable="true" type="q229:OptionSetValue" />
           <xs:element minOccurs="0" name="DateFormatCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="DateFormatString" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="DateSeparator" nillable="true" type="xs:string" />
@@ -13122,7 +13212,7 @@
           <xs:element minOccurs="0" name="DefaultCalendarView" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="DefaultCountryCode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="DefaultDashboardId" nillable="true" type="ser:guid" />
-          <xs:element minOccurs="0" name="EntityFormMode" nillable="true" type="q228:OptionSetValue" />
+          <xs:element minOccurs="0" name="EntityFormMode" nillable="true" type="q229:OptionSetValue" />
           <xs:element minOccurs="0" name="FullNameConventionCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="GetStartedPaneContentEnabled" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="HelpLanguageId" nillable="true" type="xs:int" />
@@ -13130,7 +13220,7 @@
           <xs:element minOccurs="0" name="HomepageLayout" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="HomepageSubarea" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IgnoreUnsolicitedEmail" nillable="true" type="xs:boolean" />
-          <xs:element minOccurs="0" name="IncomingEmailFilteringMethod" nillable="true" type="q228:OptionSetValue" />
+          <xs:element minOccurs="0" name="IncomingEmailFilteringMethod" nillable="true" type="q229:OptionSetValue" />
           <xs:element minOccurs="0" name="IsDefaultCountryCodeCheckEnabled" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="IsDuplicateDetectionEnabledWhenGoingOnline" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="IsSendAsAllowed" nillable="true" type="xs:boolean" />
@@ -13148,7 +13238,7 @@
           <xs:element minOccurs="0" name="PagingLimit" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="PersonalizationSettings" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="PricingDecimalPrecision" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="ReportScriptErrors" nillable="true" type="q228:OptionSetValue" />
+          <xs:element minOccurs="0" name="ReportScriptErrors" nillable="true" type="q229:OptionSetValue" />
           <xs:element minOccurs="0" name="ShowWeekNumber" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="SyncContactCompany" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="SystemUserId" nillable="true" type="ser:guid" />
@@ -13174,7 +13264,7 @@
           <xs:element minOccurs="0" name="TimeZoneStandardSecond" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="TimeZoneStandardYear" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="TrackingTokenId" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q228:EntityReference" />
+          <xs:element minOccurs="0" name="TransactionCurrencyId" nillable="true" type="q229:EntityReference" />
           <xs:element minOccurs="0" name="UILanguageId" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UseCrmFormForAppointment" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="UseCrmFormForContact" nillable="true" type="xs:boolean" />
@@ -13182,7 +13272,7 @@
           <xs:element minOccurs="0" name="UseCrmFormForTask" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="UseImageStrips" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="UserProfile" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="VisualizationPaneLayout" nillable="true" type="q228:OptionSetValue" />
+          <xs:element minOccurs="0" name="VisualizationPaneLayout" nillable="true" type="q229:OptionSetValue" />
           <xs:element minOccurs="0" name="WorkdayStartTime" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="WorkdayStopTime" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="business_unit_user_settings" nillable="true" type="tns:BusinessUnit" />
@@ -13207,19 +13297,19 @@
   <xs:element name="ArrayOfWorkflowLog" nillable="true" type="tns:ArrayOfWorkflowLog" />
   <xs:complexType name="WorkflowLog">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q229="http://schemas.microsoft.com/xrm/2011/Contracts" base="q229:Entity">
+      <xs:extension xmlns:q230="http://schemas.microsoft.com/xrm/2011/Contracts" base="q230:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ActivityName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="AsyncOperationId" nillable="true" type="q229:EntityReference" />
-          <xs:element minOccurs="0" name="ChildWorkflowInstanceId" nillable="true" type="q229:EntityReference" />
+          <xs:element minOccurs="0" name="AsyncOperationId" nillable="true" type="q230:EntityReference" />
+          <xs:element minOccurs="0" name="ChildWorkflowInstanceId" nillable="true" type="q230:EntityReference" />
           <xs:element minOccurs="0" name="CompletedOn" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="InteractionActivityResult" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="RegardingObjectId" nillable="true" type="q229:EntityReference" />
+          <xs:element minOccurs="0" name="RegardingObjectId" nillable="true" type="q230:EntityReference" />
           <xs:element minOccurs="0" name="StageName" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="Status" nillable="true" type="q229:OptionSetValue" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="q230:OptionSetValue" />
           <xs:element minOccurs="0" name="StepName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="WorkflowLogId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="lk_workflowlog_asyncoperation_childworkflow" nillable="true" type="tns:AsyncOperation" />
@@ -13240,13 +13330,13 @@
   <xs:element name="ArrayOfxbitz_Counter" nillable="true" type="tns:ArrayOfxbitz_Counter" />
   <xs:complexType name="xbitz_Counter">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q230="http://schemas.microsoft.com/xrm/2011/Contracts" base="q230:Entity">
+      <xs:extension xmlns:q231="http://schemas.microsoft.com/xrm/2011/Contracts" base="q231:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ImportSequenceNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="OverriddenCreatedOn" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="TimeZoneRuleVersionNumber" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UTCConversionTimeZoneCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q230:OptionSetValue" />
+          <xs:element minOccurs="0" name="statuscode" nillable="true" type="q231:OptionSetValue" />
           <xs:element minOccurs="0" name="xbitz_AutoNumberAttributeName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="xbitz_CounterId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="xbitz_CurrentPosition" nillable="true" type="xs:string" />
@@ -13286,7 +13376,7 @@
   <xs:element name="ArrayOfExchangeSyncIdMapping" nillable="true" type="tns:ArrayOfExchangeSyncIdMapping" />
   <xs:complexType name="ExchangeSyncIdMapping">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q231="http://schemas.microsoft.com/xrm/2011/Contracts" base="q231:Entity">
+      <xs:extension xmlns:q232="http://schemas.microsoft.com/xrm/2011/Contracts" base="q232:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ExchangeEntryId" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ExchangeSyncIdmappingId" nillable="true" type="ser:guid" />
@@ -13297,7 +13387,7 @@
           <xs:element minOccurs="0" name="LastSyncErrorCode" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="ObjectId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ObjectTypeCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q231:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q232:EntityReference" />
           <xs:element minOccurs="0" name="Retries" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="ToCrmChangeType" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="UserDecision" nillable="true" type="xs:int" />
@@ -13314,14 +13404,14 @@
   <xs:element name="ArrayOfUserEntityUISettings" nillable="true" type="tns:ArrayOfUserEntityUISettings" />
   <xs:complexType name="UserEntityUISettings">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q232="http://schemas.microsoft.com/xrm/2011/Contracts" base="q232:Entity">
+      <xs:extension xmlns:q233="http://schemas.microsoft.com/xrm/2011/Contracts" base="q233:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="InsertIntoEmailMRUXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="LastViewedFormXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="LookupMRUXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="MRUXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ObjectTypeCode" nillable="true" type="xs:int" />
-          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q232:EntityReference" />
+          <xs:element minOccurs="0" name="OwnerId" nillable="true" type="q233:EntityReference" />
           <xs:element minOccurs="0" name="ReadingPaneXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="RecentlyViewedXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ShowInAddressBook" nillable="true" type="xs:boolean" />
@@ -13347,13 +13437,13 @@
   <xs:element name="ArrayOfOrganizationUI" nillable="true" type="tns:ArrayOfOrganizationUI" />
   <xs:complexType name="OrganizationUI">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q233="http://schemas.microsoft.com/xrm/2011/Contracts" base="q233:Entity">
+      <xs:extension xmlns:q234="http://schemas.microsoft.com/xrm/2011/Contracts" base="q234:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="FieldXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="FormId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="FormXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="GridIcon" nillable="true" type="xs:string" />
-          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q233:BooleanManagedProperty" />
+          <xs:element minOccurs="0" name="IsCustomizable" nillable="true" type="q234:BooleanManagedProperty" />
           <xs:element minOccurs="0" name="LargeEntityIcon" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="ObjectTypeCode" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="OutlookShortcutIcon" nillable="true" type="xs:string" />
@@ -13373,7 +13463,7 @@
   <xs:element name="ArrayOfLicense" nillable="true" type="tns:ArrayOfLicense" />
   <xs:complexType name="License">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q234="http://schemas.microsoft.com/xrm/2011/Contracts" base="q234:Entity">
+      <xs:extension xmlns:q235="http://schemas.microsoft.com/xrm/2011/Contracts" base="q235:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="InstalledOn" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="LicenseId" nillable="true" type="ser:guid" />
@@ -13395,7 +13485,7 @@
   <xs:element name="ArrayOfRibbonCustomization" nillable="true" type="tns:ArrayOfRibbonCustomization" />
   <xs:complexType name="RibbonCustomization">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q235="http://schemas.microsoft.com/xrm/2011/Contracts" base="q235:Entity">
+      <xs:extension xmlns:q236="http://schemas.microsoft.com/xrm/2011/Contracts" base="q236:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="Entity" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="RibbonCustomizationId" nillable="true" type="ser:guid" />
@@ -13413,7 +13503,7 @@
   <xs:element name="ArrayOfSiteMap" nillable="true" type="tns:ArrayOfSiteMap" />
   <xs:complexType name="SiteMap">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q236="http://schemas.microsoft.com/xrm/2011/Contracts" base="q236:Entity">
+      <xs:extension xmlns:q237="http://schemas.microsoft.com/xrm/2011/Contracts" base="q237:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="SiteMapXml" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="userentityinstancedata_sitemap" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
@@ -13424,10 +13514,10 @@
   <xs:element name="SiteMap" nillable="true" type="tns:SiteMap" />
   <xs:complexType name="CampaignActivityItem">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q237="http://schemas.microsoft.com/xrm/2011/Contracts" base="q237:Entity">
+      <xs:extension xmlns:q238="http://schemas.microsoft.com/xrm/2011/Contracts" base="q238:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ActivityPointer_CampaignActivityItems" nillable="true" type="tns:ActivityPointer" />
-          <xs:element minOccurs="0" name="CampaignActivityId" nillable="true" type="q237:EntityReference" />
+          <xs:element minOccurs="0" name="CampaignActivityId" nillable="true" type="q238:EntityReference" />
           <xs:element minOccurs="0" name="CampaignActivityItemId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ItemId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ItemObjectTypeCode" nillable="true" type="xs:string" />
@@ -13441,9 +13531,9 @@
   <xs:element name="CampaignActivityItem" nillable="true" type="tns:CampaignActivityItem" />
   <xs:complexType name="CampaignItem">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q238="http://schemas.microsoft.com/xrm/2011/Contracts" base="q238:Entity">
+      <xs:extension xmlns:q239="http://schemas.microsoft.com/xrm/2011/Contracts" base="q239:Entity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="CampaignId" nillable="true" type="q238:EntityReference" />
+          <xs:element minOccurs="0" name="CampaignId" nillable="true" type="q239:EntityReference" />
           <xs:element minOccurs="0" name="CampaignItemId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="EntityId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="EntityType" nillable="true" type="xs:string" />
@@ -13459,7 +13549,7 @@
   <xs:element name="CampaignItem" nillable="true" type="tns:CampaignItem" />
   <xs:complexType name="CompetitorProduct">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q239="http://schemas.microsoft.com/xrm/2011/Contracts" base="q239:Entity">
+      <xs:extension xmlns:q240="http://schemas.microsoft.com/xrm/2011/Contracts" base="q240:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="CompetitorProductId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="competitorproduct_association" nillable="true" type="tns:ArrayOfCompetitor" />
@@ -13471,7 +13561,7 @@
   <xs:element name="CompetitorProduct" nillable="true" type="tns:CompetitorProduct" />
   <xs:complexType name="CompetitorSalesLiterature">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q240="http://schemas.microsoft.com/xrm/2011/Contracts" base="q240:Entity">
+      <xs:extension xmlns:q241="http://schemas.microsoft.com/xrm/2011/Contracts" base="q241:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="CompetitorSalesLiteratureId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="competitorsalesliterature_association" nillable="true" type="tns:ArrayOfSalesLiterature" />
@@ -13483,7 +13573,7 @@
   <xs:element name="CompetitorSalesLiterature" nillable="true" type="tns:CompetitorSalesLiterature" />
   <xs:complexType name="ConnectionRoleAssociation">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q241="http://schemas.microsoft.com/xrm/2011/Contracts" base="q241:Entity">
+      <xs:extension xmlns:q242="http://schemas.microsoft.com/xrm/2011/Contracts" base="q242:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="AssociatedConnectionRoleId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ConnectionRoleAssociationId" nillable="true" type="ser:guid" />
@@ -13497,7 +13587,7 @@
   <xs:element name="ConnectionRoleAssociation" nillable="true" type="tns:ConnectionRoleAssociation" />
   <xs:complexType name="Dependency">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q242="http://schemas.microsoft.com/xrm/2011/Contracts" base="q242:Entity">
+      <xs:extension xmlns:q243="http://schemas.microsoft.com/xrm/2011/Contracts" base="q243:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="userentityinstancedata_dependency" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
         </xs:sequence>
@@ -13507,7 +13597,7 @@
   <xs:element name="Dependency" nillable="true" type="tns:Dependency" />
   <xs:complexType name="InvalidDependency">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q243="http://schemas.microsoft.com/xrm/2011/Contracts" base="q243:Entity">
+      <xs:extension xmlns:q244="http://schemas.microsoft.com/xrm/2011/Contracts" base="q244:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="MissingComponentId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="userentityinstancedata_invaliddependency" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
@@ -13518,7 +13608,7 @@
   <xs:element name="InvalidDependency" nillable="true" type="tns:InvalidDependency" />
   <xs:complexType name="LeadProduct">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q244="http://schemas.microsoft.com/xrm/2011/Contracts" base="q244:Entity">
+      <xs:extension xmlns:q245="http://schemas.microsoft.com/xrm/2011/Contracts" base="q245:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="LeadProductId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="leadproduct_association" nillable="true" type="tns:ArrayOfLead" />
@@ -13530,7 +13620,7 @@
   <xs:element name="LeadProduct" nillable="true" type="tns:LeadProduct" />
   <xs:complexType name="PrincipalEntityMap">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q245="http://schemas.microsoft.com/xrm/2011/Contracts" base="q245:Entity">
+      <xs:extension xmlns:q246="http://schemas.microsoft.com/xrm/2011/Contracts" base="q246:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="PrincipalEntityMapId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="userentityinstancedata_principalentitymap" nillable="true" type="tns:ArrayOfUserEntityInstanceData" />
@@ -13541,7 +13631,7 @@
   <xs:element name="PrincipalEntityMap" nillable="true" type="tns:PrincipalEntityMap" />
   <xs:complexType name="ProductAssociation">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q246="http://schemas.microsoft.com/xrm/2011/Contracts" base="q246:Entity">
+      <xs:extension xmlns:q247="http://schemas.microsoft.com/xrm/2011/Contracts" base="q247:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="AssociatedProduct" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ProductAssociationId" nillable="true" type="ser:guid" />
@@ -13555,7 +13645,7 @@
   <xs:element name="ProductAssociation" nillable="true" type="tns:ProductAssociation" />
   <xs:complexType name="ProductSalesLiterature">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q247="http://schemas.microsoft.com/xrm/2011/Contracts" base="q247:Entity">
+      <xs:extension xmlns:q248="http://schemas.microsoft.com/xrm/2011/Contracts" base="q248:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ProductSalesLiteratureId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="productsalesliterature_association" nillable="true" type="tns:ArrayOfProduct" />
@@ -13567,7 +13657,7 @@
   <xs:element name="ProductSalesLiterature" nillable="true" type="tns:ProductSalesLiterature" />
   <xs:complexType name="ProductSubstitute">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q248="http://schemas.microsoft.com/xrm/2011/Contracts" base="q248:Entity">
+      <xs:extension xmlns:q249="http://schemas.microsoft.com/xrm/2011/Contracts" base="q249:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ProductId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ProductSubstituteId" nillable="true" type="ser:guid" />
@@ -13581,7 +13671,7 @@
   <xs:element name="ProductSubstitute" nillable="true" type="tns:ProductSubstitute" />
   <xs:complexType name="SubscriptionManuallyTrackedObject">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q249="http://schemas.microsoft.com/xrm/2011/Contracts" base="q249:Entity">
+      <xs:extension xmlns:q250="http://schemas.microsoft.com/xrm/2011/Contracts" base="q250:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="ObjectId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="ObjectTypeCode" nillable="true" type="xs:string" />
@@ -13596,7 +13686,7 @@
   <xs:element name="SubscriptionManuallyTrackedObject" nillable="true" type="tns:SubscriptionManuallyTrackedObject" />
   <xs:complexType name="TeamMembership">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q250="http://schemas.microsoft.com/xrm/2011/Contracts" base="q250:Entity">
+      <xs:extension xmlns:q251="http://schemas.microsoft.com/xrm/2011/Contracts" base="q251:Entity">
         <xs:sequence>
           <xs:element minOccurs="0" name="TeamMembershipId" nillable="true" type="ser:guid" />
           <xs:element minOccurs="0" name="teammembership_association" nillable="true" type="tns:ArrayOfTeam" />

@@ -42,11 +42,11 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     //CustomerId Lookup
 
                     Contact contact = (from c in context.ContactSet
-                                       where c.new_client == item.Invoice.CustomerId.LogicalName
+                                       where c.new_client == item.Invoice.CustomerId.Name
                                        select c).FirstOrDefault();
 
                     if (contact == null)
-                        throw new Exception(String.Format("No Contact could be retrieved for {0}", item.Invoice.CustomerId.LogicalName));
+                        throw new Exception(String.Format("No Contact could be retrieved for {0}", item.Invoice.CustomerId.Name));
 
                     //SalesOrder
 
@@ -55,7 +55,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     if (item.Invoice.SalesOrderId != null)
                     {
                         order = (from o in context.SalesOrderSet
-                                            where o.new_DBMOrderNumber == item.Invoice.SalesOrderId.LogicalName
+                                            where o.new_DBMOrderNumber == item.Invoice.SalesOrderId.Name
                                             select o).FirstOrDefault();
                     }
 
@@ -66,7 +66,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     if (item.Invoice.new_salesoffice != null)
                     {
                         entity = (from s in context.CreateQuery("territory")
-                                     where s["new_sapcode"] == item.Invoice.new_salesoffice.LogicalName
+                                     where s["new_sapcode"] == item.Invoice.new_salesoffice.Name
                                      select s).FirstOrDefault();
 
                         if (entity != null)
@@ -76,7 +76,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     //Plant
 
                    entity = (from p in context.CreateQuery("territory")
-                                     where p["new_sapcode"] == item.Invoice.new_plant.LogicalName
+                                     where p["new_sapcode"] == item.Invoice.new_plant.Name
                                      select p).FirstOrDefault();
 
                    Territory plant = null;
@@ -91,7 +91,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     if(item.Invoice.new_invoicetype != null)
                     {
                         entity = (from it in context.CreateQuery("new_invoicetype")
-                                     where it["new_typeidinvoice"] == item.Invoice.new_invoicetype.LogicalName
+                                     where it["new_typeidinvoice"] == item.Invoice.new_invoicetype.Name
                                      select it).FirstOrDefault();
 
                         if(entity != null)
@@ -165,7 +165,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                         if(detail.new_material != null)
                         {
                             material = (from m in context.new_modelsalescodeSet
-                                            where m.new_name == lineItem.new_material.LogicalName
+                                            where m.new_name == lineItem.new_material.Name
                                         select m).FirstOrDefault();
                         }
 
@@ -176,7 +176,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                         if (lineItem.new_plant != null)
                         {
                             entity = (from p in context.CreateQuery("territory")
-                                      where p["new_sapcode"] == lineItem.new_plant.LogicalName
+                                      where p["new_sapcode"] == lineItem.new_plant.Name
                                       select p).FirstOrDefault();
 
                             if (entity != null)
@@ -193,7 +193,9 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                             detail.new_material = material.ToEntityReference();
 
                         detail.new_materialgroup = lineItem.new_materialgroup;
-                        detail.new_description = lineItem.new_description;
+                        detail.ProductDescription = lineItem.ProductDescription;
+                        detail.IsPriceOverridden = lineItem.IsPriceOverridden;
+                        detail.IsProductOverridden = lineItem.IsProductOverridden;
                         detail.new_description1 = lineItem.new_description1;
                         detail.new_itemcategory = lineItem.new_itemcategory;
                         detail.new_deleteitem = lineItem.new_deleteitem;
