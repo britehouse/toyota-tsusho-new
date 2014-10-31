@@ -42,7 +42,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     //CustomerId Lookup
 
                     Contact contact = (from c in context.ContactSet
-                                       where c.new_client == item.Invoice.CustomerId.Name
+                                       where c.new_customeraccountnumber == item.Invoice.CustomerId.Name
                                        select c).FirstOrDefault();
 
                     if (contact == null)

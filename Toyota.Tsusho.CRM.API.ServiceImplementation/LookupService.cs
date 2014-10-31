@@ -50,6 +50,19 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
 
             return value as string;
         }
+
+
+        public object FindByName(string entity, string nameField, string name)
+        {
+            using (OrganizationServiceProxy proxy = CRMHelper.Connect())
+            {
+                ServiceContext context = new ServiceContext(proxy);
+
+                return (from s in context.CreateQuery(entity)
+                         where s[nameField] == name
+                         select s).FirstOrDefault();
+            }
+        }
     }
 
     public partial class LookupService : LookupServiceBase
