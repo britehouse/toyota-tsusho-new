@@ -91,6 +91,15 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'T-MAU-PROD|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.XmlTransform">
       <HintPath>..\packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
@@ -167,6 +176,14 @@
       <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
+    <None Include="Toyota.Tsusho.CRM.BindingInfo.T-KEN-PROD.xml">
+      <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.CRM.BindingInfo.T-MAU-PROD.xml">
+      <DependentUpon>Toyota.Tsusho.CRM.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
     <Content Include="Toyota.Tsusho.CRM.BindingInfo.xml">
       <TransformOnBuild>true</TransformOnBuild>
     </Content>
@@ -184,6 +201,14 @@
     </None>
     <None Include="Toyota.Tsusho.SAP.BindingInfo.T-KEN-PROD.xml">
       <DependentUpon>Toyota.Tsusho.SAP.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.SAP.BindingInfo.T-MAU-PROD.xml">
+      <DependentUpon>Toyota.Tsusho.SAP.BindingInfo.xml</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Toyota.Tsusho.TALO.BindingInfo.T-MAU-PROD.xml">
+      <DependentUpon>Toyota.Tsusho.TALO.BindingInfo.xml</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
     <Content Include="Toyota.Tsusho.TALO.BindingInfo.xml">

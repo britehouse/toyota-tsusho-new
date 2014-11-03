@@ -140,6 +140,9 @@
     <None Include="Web.T-MAU-DEV.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <None Include="Web.T-MAU-PROD.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="Web.T-MAU-QA.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -189,6 +192,15 @@
     <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'T-MAU-PROD|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
