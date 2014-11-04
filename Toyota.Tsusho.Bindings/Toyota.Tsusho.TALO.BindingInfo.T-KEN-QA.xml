@@ -2,4 +2,31 @@
 <!-- For more information on using transformations 
      see the web.config examples at http://go.microsoft.com/fwlink/?LinkId=214134. -->
 <BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <SendPortCollection>
+    <SendPort Name="Toyota.Tsusho.TALO.Services.MasterNotify.OffRamp.WCF-CUSTOM" xdt:Locator="Match(Name)">
+      <PrimaryTransport>
+        <Address xdt:Transform="Replace">http://10.40.1.243/Toyota.Tsusho.TALO.API/MasterNotifyService.svc</Address>
+      </PrimaryTransport>
+    </SendPort>
+    <SendPort Name="Toyota.Tsusho.TALO.Services.OrderNotify.OffRamp.WCF-CUSTOM" xdt:Locator="Match(Name)">
+      <PrimaryTransport>
+        <Address xdt:Transform="Replace">http://10.40.1.243/Toyota.Tsusho.TALO.API/OrderNotifyService.svc</Address>
+      </PrimaryTransport>
+    </SendPort>
+    <SendPort Name="Toyota.Tsusho.TALO.Services.CustomerNotify.OffRamp.WCF-CUSTOM" xdt:Locator="Match(Name)">
+      <PrimaryTransport>
+        <Address xdt:Transform="Replace">http://10.40.1.243/Toyota.Tsusho.TALO.API/CustomerNotifyService.svc</Address>
+      </PrimaryTransport>
+    </SendPort>
+    <SendPort Name="Toyota.Tsusho.TALO.Services.InvoiceNotify.OffRamp.WCF-CUSTOM" xdt:Locator="Match(Name)">
+      <PrimaryTransport>
+        <Address xdt:Transform="Replace">http://10.40.1.243/Toyota.Tsusho.TALO.API/InvoiceNotifyService.svc</Address>
+      </PrimaryTransport>
+    </SendPort>
+    <SendPort Name="Toyota.Tsusho.TALO.Services.VehicleNotify.OffRamp.WCF-CUSTOM" xdt:Locator="Match(Name)">
+      <PrimaryTransport>
+        <Address xdt:Transform="Replace">http://10.40.1.243/Toyota.Tsusho.TALO.API/VehicleNotifyService.svc</Address>
+      </PrimaryTransport>
+    </SendPort>
+  </SendPortCollection>
 </BindingInfo>

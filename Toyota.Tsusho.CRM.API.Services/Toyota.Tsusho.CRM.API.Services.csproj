@@ -120,6 +120,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\T-MAU-PROD.pubxml" />
     <None Include="Properties\PublishProfiles\T-MAU-QA.pubxml" />
     <None Include="Properties\PublishProfiles\T-MAU-DEV.pubxml" />
     <None Include="Web.Debug.config">
