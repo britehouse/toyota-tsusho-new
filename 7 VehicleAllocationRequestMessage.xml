@@ -1,11 +1,13 @@
 ﻿<VehicleAllocateRequestMessage xmlns="http://www.ttaf.co.za/talo/api/2014/05">
-  <Allocation xmlns="http://www.ttaf.co.za/talo/api/2014/05/vehicle" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    <VehicleNumber>0000030625</VehicleNumber>
-    <Customer>201TADDA</Customer>
-    <Date>2014-05-15T09:53:18.0698257+02:00</Date>
-    <SalesOrganisation>1101</SalesOrganisation>
-    <DistributionChannel>07</DistributionChannel>
-    <Modification>Create</Modification>
-    <Modified>2014-05-15T00:00:00</Modified>
-  </Allocation>
+<Allocations xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ttaf.co.za/talo/api/2014/05/vehicle">
+<Allocation>
+<VehicleNumber>0000080118</VehicleNumber>
+<Customer>XYZ291103301</Customer>
+<Date>2014-11-14T00:00:00</Date>
+<SalesOrganisation>1101</SalesOrganisation>
+<DistributionChannel>03</DistributionChannel>
+<Modification>Create</Modification>
+<Modified>2014-11-14T12:08:19.227</Modified>
+</Allocation>
+</Allocations>
 </VehicleAllocateRequestMessage>
