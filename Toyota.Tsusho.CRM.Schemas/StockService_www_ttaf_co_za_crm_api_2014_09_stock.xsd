@@ -11,8 +11,8 @@
   <xs:complexType name="StockItemDataContract">
     <xs:sequence>
       <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Toyota.Tsusho.CRM.API" name="Stock" nillable="true" type="q1:new_stock" />
-      <xs:element xmlns:q2="http://www.ttaf.co.za/crm/api/2014/08" name="Modification" type="q2:ModificationEnumeration" />
-      <xs:element name="Modified" type="xs:dateTime" />
+      <xs:element xmlns:q2="http://www.ttaf.co.za/crm/api/2014/08" minOccurs="0" name="Modification" type="q2:ModificationEnumeration" />
+      <xs:element minOccurs="0" name="Modified" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="StockItemDataContract" nillable="true" type="tns:StockItemDataContract" />

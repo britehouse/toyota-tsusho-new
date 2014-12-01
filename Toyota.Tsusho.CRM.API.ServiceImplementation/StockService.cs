@@ -48,6 +48,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     record.new_storagelocation = item.Stock.new_storagelocation;
                     record.new_stockvalue = item.Stock.new_stockvalue;
                     record.new_status = item.Stock.new_status;
+                    record.new_vehicleguid = item.Stock.new_vehicleguid;
 
                     if(add)
                         context.AddObject(record);

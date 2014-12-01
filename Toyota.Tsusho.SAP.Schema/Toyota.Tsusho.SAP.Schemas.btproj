@@ -131,6 +131,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="Types30.xsd">
+      <TypeName>Types30</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="Types29.xsd">
       <TypeName>Types29</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
@@ -331,11 +336,6 @@
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="ZDBM_CRM_VEHSTOCK.xsd">
-      <TypeName>ZDBM_CRM_VEHSTOCK</TypeName>
-      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="ZCRM_CUST_CREATE2.xsd">
       <TypeName>ZCRM_CUST_CREATE2</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
@@ -343,6 +343,11 @@
     </Schema>
     <Schema Include="ZDBM_CRM_ORDERDATA.xsd">
       <TypeName>ZDBM_CRM_ORDERDATA</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="ZDBM_CRM_VEHSTOCK.xsd">
+      <TypeName>ZDBM_CRM_VEHSTOCK</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
