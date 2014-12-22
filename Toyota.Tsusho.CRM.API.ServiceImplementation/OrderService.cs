@@ -138,25 +138,15 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
 
                     //Invoice Detail
 
+                    //We will nowdelete all line item s and readd them
+                    //if we do not do this we will get duplicate records.
+
+                    foreach (InvoiceDetail detail in record.invoice_details)
+                        context.DeleteObject(detail);
+
                     foreach (InvoiceDetail lineItem in item.InvoiceDetails)
                     {
-                        bool detailAdd = false;
-
-                        InvoiceDetail detail = null;
-
-                        if (record.invoice_details != null)
-                        {
-                            detail = (from d in record.invoice_details
-                                                    where d.LineItemNumber == lineItem.LineItemNumber
-                                                    select d).FirstOrDefault();
-                        }
-
-                        if (detail == null)
-                        {
-                            detail = new InvoiceDetail();
-
-                            detailAdd = true;
-                        }
+                        InvoiceDetail detail = new InvoiceDetail();
 
                         //new_material
 
@@ -212,14 +202,7 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
 
                         detail.new_storagelocation = lineItem.new_storagelocation;
 
-                        if (detailAdd)
-                        {
-                            context.AddRelatedObject(record, new Relationship("invoice_details"), detail);
-                        }
-                        else
-                        {
-                            context.UpdateObject(detail);
-                        }
+                        context.AddRelatedObject(record, new Relationship("invoice_details"), detail);
                     }
                 }
 
