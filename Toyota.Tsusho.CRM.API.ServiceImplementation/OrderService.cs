@@ -141,8 +141,11 @@ namespace Toyota.Tsusho.CRM.API.ServiceImplementation
                     //We will nowdelete all line item s and readd them
                     //if we do not do this we will get duplicate records.
 
-                    foreach (InvoiceDetail detail in record.invoice_details)
-                        context.DeleteObject(detail);
+                    if (record.invoice_details != null)
+                    {
+                        foreach (InvoiceDetail detail in record.invoice_details)
+                            context.DeleteObject(detail);
+                    }
 
                     foreach (InvoiceDetail lineItem in item.InvoiceDetails)
                     {
