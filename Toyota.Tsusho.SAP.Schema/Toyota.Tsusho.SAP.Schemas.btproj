@@ -131,6 +131,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="Types31.xsd">
+      <TypeName>Types31</TypeName>
+      <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="Types30.xsd">
       <TypeName>Types30</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
@@ -341,13 +346,13 @@
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="ZDBM_CRM_ORDERDATA.xsd">
-      <TypeName>ZDBM_CRM_ORDERDATA</TypeName>
+    <Schema Include="ZDBM_CRM_VEHSTOCK.xsd">
+      <TypeName>ZDBM_CRM_VEHSTOCK</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="ZDBM_CRM_VEHSTOCK.xsd">
-      <TypeName>ZDBM_CRM_VEHSTOCK</TypeName>
+    <Schema Include="ZDBM_CRM_ORDERDATA.xsd">
+      <TypeName>ZDBM_CRM_ORDERDATA</TypeName>
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -357,6 +362,9 @@
       <Namespace>Toyota.Tsusho.SAP.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WcfReceivePort_SAPBinding_Custom.bindinginfo.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
