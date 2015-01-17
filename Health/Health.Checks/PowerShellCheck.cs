@@ -26,6 +26,18 @@ namespace Health.Checks
             set;
         }
 
+        public Status PreviousStatus
+        {
+            get;
+            set;
+        }
+
+        public Status Status
+        {
+            get;
+            set;
+        }
+
         public void Validate(List<string> errors)
         {
             if (string.IsNullOrWhiteSpace(this.Location))

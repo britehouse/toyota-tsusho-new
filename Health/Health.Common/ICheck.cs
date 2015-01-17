@@ -20,6 +20,18 @@ namespace Health.Common
             set;
         }
 
+        Status PreviousStatus
+        {
+            get;
+            set;
+        }
+
+        Status Status
+        {
+            get;
+            set;
+        }
+
         void Validate(List<string> errors);
 
         Task<CheckResult> ExecuteAsync();

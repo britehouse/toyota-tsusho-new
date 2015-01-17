@@ -34,8 +34,17 @@ namespace Health.ConsoleApplication
             var ob = Observable.Create<CheckResult>((IObserver<CheckResult> observer) =>
             {
                 return Scheduler.Default.Schedule(period, recursive => 
-                { 
-                    observer.OnNext(check.Execute());
+                {
+                    CheckResult result = check.Execute();
+
+                    check.PreviousStatus = check.Status;
+
+                    check.Status = result.Status;
+
+                    //We only push data if the status has changed
+
+                    if(check.Status != check.PreviousStatus)
+                        observer.OnNext(check.Execute());
 
                     recursive(period);
                 });

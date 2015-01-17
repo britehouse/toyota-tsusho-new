@@ -8,9 +8,9 @@ namespace Health.Common
 {
     public enum Status
     {
-        Passed = 0,
-        Warning = 1,
-        Failed = 3
+        Unknown,
+        Passed,
+        Failed
     }
 
     public class CheckResult
