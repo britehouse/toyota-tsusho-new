@@ -4,13 +4,18 @@
 #
 #########################################################
 
-$name = 'BTSSvc$BizTalkServerApplication'
 
-$service = get-Service $name
+[CmdletBinding()]
+Param(
+  [Parameter(Mandatory=$True)]
+  [service] $service
+)
 
-if($service.Status -ne "Running")
+$instance = get-Service $name
+
+if($instance.Status -ne "Running")
 {
-	throw -join($name, " is in a ", $service.Status, " state.")
+	throw -join($service, " is in a ", $instance.Status, " state.")
 }
 
 # End of Script

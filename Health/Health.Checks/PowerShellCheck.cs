@@ -20,6 +20,12 @@ namespace Health.Checks
             set;
         }
 
+        public Dictionary<string, object> Parameters
+        {
+            get;
+            set;
+        }
+
         public void Validate(List<string> errors)
         {
             if (string.IsNullOrWhiteSpace(this.Location))
@@ -43,6 +49,12 @@ namespace Health.Checks
 
                     try
                     {
+                        if (this.Parameters != null)
+                        {
+                            foreach (string key in this.Parameters.Keys)
+                                instance.AddParameter(key, this.Parameters[key]);
+                        }
+
                         Collection<PSObject> results = instance.Invoke();
                     }
                     catch (Exception ex)

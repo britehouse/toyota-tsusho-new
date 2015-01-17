@@ -4,9 +4,12 @@
 #
 #########################################################
  
-# Set memory threshold below in percent (default at 20%)
-[decimal] $threshold = 20
 
+[CmdletBinding()]
+Param(
+  [Parameter(Mandatory=$True)]
+  [decimal] $threshold
+)
 
 $free = (Get-WmiObject -Class Win32_OperatingSystem | Select-Object FreePhysicalMemory).FreePhysicalMemory
 

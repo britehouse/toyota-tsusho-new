@@ -18,7 +18,11 @@ namespace Health.ConsoleApplication
         {
             ICheck check = new PowerShellCheck()
             {
-                Location = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Ping Service.ps1"
+                Location = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check BizTalk Receive Location.ps1",
+                Parameters = new Dictionary<string,object>()
+                {
+                    {"ReceiveLocationName", "Toyota.Tsusho.CRM.Services.Generic.WCF-WSHTTP"}
+                }
             };
 
             List<string> validationErrors = new List<string>();

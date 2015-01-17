@@ -4,8 +4,11 @@
 #
 #########################################################
  
-# Set the Server to ping
-[string] $url = "http://localhost/Toyota.Tsusho.TALO.API/CustomerNotifyService.svc"
+[CmdletBinding()]
+Param(
+  [Parameter(Mandatory=$True)]
+  [service] $url
+)
 
 $result = Invoke-WebRequest $url
 

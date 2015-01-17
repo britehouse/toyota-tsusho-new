@@ -14,6 +14,12 @@ namespace Health.Common
             set;
         }
 
+        Dictionary<string, object> Parameters
+        {
+            get;
+            set;
+        }
+
         void Validate(List<string> errors);
 
         Task<CheckResult> ExecuteAsync();

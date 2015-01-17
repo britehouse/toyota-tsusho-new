@@ -3,9 +3,13 @@
 # Disk space monitoring script
 #
 #########################################################
- 
-# Set free disk space threshold below in percent (default at 10%)
-[decimal] $threshold = 10
+
+
+[CmdletBinding()]
+Param(
+  [Parameter(Mandatory=$True)]
+  [decimal] $threshold
+)
  
 #assemble together all of the free disk space data and only include it if the percentage free is below the threshold we set above.
 
