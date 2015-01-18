@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="CheckResult.cs" />
     <Compile Include="Confiduration\Checks.cs" />
+    <Compile Include="Diagnostics\TraceLogicalScope.cs" />
+    <Compile Include="Diagnostics\TraceTransferScope.cs" />
     <Compile Include="ICheck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
