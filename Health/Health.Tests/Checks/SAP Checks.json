@@ -1,0 +1,12 @@
+[
+    {
+        "Description": "Checks that the SAP Server is available",
+        "Disabled": false,
+        "Id": "SAP.Server",
+        "Interval": "PT5M",
+        "Parameters": [
+            { "Key": "Server", "Value": "172.29.2.13" }
+        ],
+        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Ping Server.ps1"
+    } 
+]

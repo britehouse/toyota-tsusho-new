@@ -1,0 +1,52 @@
+[
+    {
+        "Description": "Checks that the 'BTSSvc$BizTalkServerApplication' service is running.",
+        "Disabled": false,
+        "Id": "BizTalk.BTSSvc$BizTalkServerApplication",
+        "Interval": "PT10S",
+        "Parameters": [
+            { "Key": "Service", "Value": "BTSSvc$BizTalkServerApplication" }
+        ],
+        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Service.ps1"
+    },
+    {
+        "Description": "Checks that the 'MSSQLSERVER' service is running.",
+        "Disabled": false,
+        "Id": "BizTalk.MSSQLSERVER",
+        "Interval": "PT10S",
+        "Parameters": [
+            { "Key": "Service", "Value": "MSSQLSERVER" }
+        ],
+        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Service.ps1"
+    },
+    {
+        "Description": "Checks that the 'SQLSERVERAGENT' service is running.",
+        "Disabled": false,
+        "Id": "BizTalk.SQLSERVERAGENT",
+        "Interval": "PT10S",
+        "Parameters": [
+            { "Key": "Service", "Value": "SQLSERVERAGENT" }
+        ],
+        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Service.ps1"
+    },
+    {
+        "Description": "Checks that the BizTalk Server has enough disk space.",
+        "Disabled": false,
+        "Id": "BizTalk.DiskSpace",
+        "Interval": "PT5M",
+        "Parameters": [
+            { "Key": "threshold", "Value": 20 }
+        ],
+        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Disk Space.ps1"
+    },
+    {
+        "Description": "Checks that BizTalk Server has enough memory available",
+        "Disabled": false,
+        "Id": "BizTalk.Memory",
+        "Interval": "PT5M",
+        "Parameters": [
+            { "Key": "threshold", "Value": 20 }
+        ],
+        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Memory.ps1"
+    } 
+]

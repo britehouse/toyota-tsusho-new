@@ -50,6 +50,8 @@
     <Reference Include="System.Reactive.PlatformServices">
       <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.XML" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -64,6 +66,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ConfigurationTests.cs" />
     <Compile Include="PowerShellUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,12 +81,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Checks\BizTalk Checks.json" />
     <None Include="Checks\Check BizTalk Receive Location.ps1" />
     <None Include="Checks\Check Service.ps1" />
     <None Include="Checks\Check Disk Space.ps1" />
+    <None Include="Checks\CRM Checks.json" />
+    <None Include="Checks\CRM SAP Checks.json" />
     <None Include="Checks\Ping Service.ps1" />
     <None Include="Checks\Ping Server.ps1" />
     <None Include="Checks\Check Memory.ps1" />
+    <None Include="Checks\SAP Checks.json" />
+    <None Include="Checks\TALO Checks.json" />
+    <None Include="Checks\TALO SAP Checks.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>
