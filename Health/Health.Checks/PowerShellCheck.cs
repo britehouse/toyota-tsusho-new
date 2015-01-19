@@ -18,6 +18,12 @@ namespace Health.Checks
     {
         private TraceSource source = new TraceSource("Health.Checks");
 
+        public string Id
+        {
+            get;
+            set;
+        }
+
         public string Location
         {
             get;
@@ -46,6 +52,9 @@ namespace Health.Checks
         {
             using (new TraceLogicalScope(this.source, "Validate"))
             {
+                if (string.IsNullOrWhiteSpace(this.Id))
+                    errors.Add("The Id is required.");
+
                 if (string.IsNullOrWhiteSpace(this.Location))
                     errors.Add("The Script location was not specified.");
 
@@ -56,7 +65,7 @@ namespace Health.Checks
 
         public CheckResult Execute()
         {
-            using (new TraceLogicalScope(this.source, "Execute"))
+            using (new TraceLogicalScope(this.source, string.Format("Executing {0}", this.Id)))
             {
                 List<object> data = new List<object>();
 
@@ -85,7 +94,7 @@ namespace Health.Checks
                     }
                     catch (Exception ex)
                     {
-                        this.source.TraceData(TraceEventType.Error, 100, ex);
+                        this.source.TraceData(TraceEventType.Error, 0, ex);
 
                         result.Message = ex.Message;
 
@@ -97,7 +106,7 @@ namespace Health.Checks
                     {
                         string streams = LogStreams(instance.Streams);
 
-                        this.source.TraceData(TraceEventType.Verbose, 100, streams);
+                        this.source.TraceData(TraceEventType.Verbose, 0, streams);
 
                         if (!String.IsNullOrWhiteSpace(streams))
                             result.Notes = streams;

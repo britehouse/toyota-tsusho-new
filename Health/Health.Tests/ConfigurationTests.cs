@@ -19,7 +19,7 @@ namespace Health.Tests
                 {
                     Id = "Toyota.Tsusho.TALO.Services.Generic.WCF-WSHTTP",
                     Description = "Checks that the 'Toyota.Tsusho.TALO.Services.Generic.WCF-WSHTTP' receive location is enabled.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check BizTalk Receive Location.ps1",
+                    Script = @"Check BizTalk Receive Location.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"ReceiveLocationName", "Toyota.Tsusho.TALO.Services.Generic.WCF-WSHTTP"} 
@@ -30,7 +30,7 @@ namespace Health.Tests
                 {
                     Id = "Toyota.Tsusho.TALO.Services.Generic.Response.WCF-WSHTTP",
                     Description = "Checks that the 'Toyota.Tsusho.TALO.Services.Generic.Response.WCF-WSHTTP' receive location is enabled.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check BizTalk Receive Location.ps1",
+                    Script = @"Check BizTalk Receive Location.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"ReceiveLocationName", "Toyota.Tsusho.TALO.Services.Generic.Response.WCF-WSHTTP"} 
@@ -41,7 +41,7 @@ namespace Health.Tests
                 {
                     Id = "TALO.Services",
                     Description = "Checks that the TALO Services are available",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Ping Service.ps1",
+                    Script = @"Ping Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"url", "http://localhost/Toyota.Tsusho.TALO.API/OrderService.svc"} 
@@ -52,7 +52,7 @@ namespace Health.Tests
                 {
                     Id = "TALO.BizTalk.Services",
                     Description = "Checks that the TALO BizTalk Services are available",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Ping Service.ps1",
+                    Script = @"Ping Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"url", "http://localhost/Toyota.Tsusho.TALO.Services.Generic.WCF/OnRamp.svc"} 
@@ -63,7 +63,7 @@ namespace Health.Tests
                 {
                     Id = "TALO.BizTalk.Services.Response",
                     Description = "Checks that the TALO BizTalk Response Services are available",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Ping Service.ps1",
+                    Script = @"Ping Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"url", "http://localhost/Toyota.Tsusho.TALO.Services.Generic.WCF.Response/OnRamp.svc"} 
@@ -74,7 +74,7 @@ namespace Health.Tests
 
             DataContractJsonSerializer serializer = new DataContractJsonSerializer(checks.GetType());
 
-            using(Stream stream = new FileStream(@"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\TALO Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
+            using(Stream stream = new FileStream(@"TALO Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
             {
                 serializer.WriteObject(stream, checks);
             }
@@ -89,7 +89,7 @@ namespace Health.Tests
                 {
                     Id = "Toyota.Tsusho.SAP.Services.TALO.OnRamp.WCF-SAP",
                     Description = "Checks that the 'Toyota.Tsusho.SAP.Services.TALO.OnRamp.WCF-SAP' receive location is enabled.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check BizTalk Receive Location.ps1",
+                    Script = @"Check BizTalk Receive Location.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"ReceiveLocationName", "Toyota.Tsusho.SAP.Services.TALO.OnRamp.WCF-SAP"} 
@@ -100,7 +100,7 @@ namespace Health.Tests
 
             DataContractJsonSerializer serializer = new DataContractJsonSerializer(checks.GetType());
 
-            using (Stream stream = new FileStream(@"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\TALO SAP Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
+            using (Stream stream = new FileStream(@"TALO SAP Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
             {
                 serializer.WriteObject(stream, checks);
             }
@@ -115,7 +115,7 @@ namespace Health.Tests
                 {
                     Id = "Toyota.Tsusho.SAP.Services.CRM.OnRamp.WCF-SAP",
                     Description = "Checks that the 'Toyota.Tsusho.SAP.Services.CRM.OnRamp.WCF-SAP' receive location is enabled.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check BizTalk Receive Location.ps1",
+                    Script = @"Check BizTalk Receive Location.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"ReceiveLocationName", "Toyota.Tsusho.SAP.Services.CRM.OnRamp.WCF-SAP"} 
@@ -126,7 +126,7 @@ namespace Health.Tests
 
             DataContractJsonSerializer serializer = new DataContractJsonSerializer(checks.GetType());
 
-            using (Stream stream = new FileStream(@"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\CRM SAP Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
+            using (Stream stream = new FileStream(@"CRM SAP Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
             {
                 serializer.WriteObject(stream, checks);
             }
@@ -141,7 +141,7 @@ namespace Health.Tests
                 {
                     Id = "SAP.Server",
                     Description = "Checks that the SAP Server is available",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Ping Server.ps1",
+                    Script = @"Ping Server.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"Server", "172.29.2.13"} 
@@ -152,7 +152,7 @@ namespace Health.Tests
 
             DataContractJsonSerializer serializer = new DataContractJsonSerializer(checks.GetType());
 
-            using (Stream stream = new FileStream(@"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\SAP Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
+            using (Stream stream = new FileStream(@"SAP Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
             {
                 serializer.WriteObject(stream, checks);
             }
@@ -167,7 +167,7 @@ namespace Health.Tests
                 {
                     Id = "Toyota.Tsusho.CRM.Services.Generic.WCF-WSHTTP",
                     Description = "Checks that the 'Toyota.Tsusho.CRM.Services.Generic.WCF-WSHTTP' receive location is enabled.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check BizTalk Receive Location.ps1",
+                    Script = @"Check BizTalk Receive Location.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"ReceiveLocationName", "Toyota.Tsusho.CRM.Services.Generic.WCF-WSHTTP"} 
@@ -178,7 +178,7 @@ namespace Health.Tests
                 {
                     Id = "Toyota.Tsusho.CRM.Services.Generic.Response.WCF-WSHTTP",
                     Description = "Checks that the 'Toyota.Tsusho.CRM.Services.Generic.Response.WCF-WSHTTP' receive location is enabled.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check BizTalk Receive Location.ps1",
+                    Script = @"Check BizTalk Receive Location.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"ReceiveLocationName", "Toyota.Tsusho.CRM.Services.Generic.Response.WCF-WSHTTP"} 
@@ -189,7 +189,7 @@ namespace Health.Tests
                 {
                     Id = "CRM.Services",
                     Description = "Checks that the CRM Services are available",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Ping Service.ps1",
+                    Script = @"Ping Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"url", "http://localhost/Toyota.Tsusho.TALO.API/OrderService.svc"} 
@@ -200,7 +200,7 @@ namespace Health.Tests
                 {
                     Id = "CRM.BizTalk.Services",
                     Description = "Checks that the CRM BizTalk Services are available",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Ping Service.ps1",
+                    Script = @"Ping Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"url", "http://localhost/Toyota.Tsusho.CRM.Services.Generic.WCF/OnRamp.svc"} 
@@ -211,7 +211,7 @@ namespace Health.Tests
                 {
                     Id = "CRM.BizTalk.Services.Response",
                     Description = "Checks that the CRM BizTalk Response Services are available",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Ping Service.ps1",
+                    Script = @"Ping Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"url", "http://localhost/Toyota.Tsusho.CRM.Services.Generic.WCF.Response/OnRamp.svc"} 
@@ -222,7 +222,7 @@ namespace Health.Tests
                 {
                     Id = "CRM.Organization.Service",
                     Description = "Checks that the CRM Organization Service is available",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Ping Service.ps1",
+                    Script = @"Ping Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"url", "http://tmau-por-crm01/TMAU/XRMServices/2011/Organization.svc"} 
@@ -233,7 +233,7 @@ namespace Health.Tests
 
             DataContractJsonSerializer serializer = new DataContractJsonSerializer(checks.GetType());
 
-            using (Stream stream = new FileStream(@"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\CRM Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
+            using (Stream stream = new FileStream(@"CRM Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
             {
                 serializer.WriteObject(stream, checks);
             }
@@ -248,7 +248,7 @@ namespace Health.Tests
                 {
                     Id = "BizTalk.BTSSvc$BizTalkServerApplication",
                     Description = "Checks that the 'BTSSvc$BizTalkServerApplication' service is running.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check Service.ps1",
+                    Script = @"Check Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"Service", "BTSSvc$BizTalkServerApplication"} 
@@ -259,7 +259,7 @@ namespace Health.Tests
                 {
                     Id = "BizTalk.MSSQLSERVER",
                     Description = "Checks that the 'MSSQLSERVER' service is running.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check Service.ps1",
+                    Script = @"Check Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"Service", "MSSQLSERVER"} 
@@ -270,7 +270,7 @@ namespace Health.Tests
                 {
                     Id = "BizTalk.SQLSERVERAGENT",
                     Description = "Checks that the 'SQLSERVERAGENT' service is running.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check Service.ps1",
+                    Script = @"Check Service.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"Service", "SQLSERVERAGENT"} 
@@ -281,7 +281,7 @@ namespace Health.Tests
                 {
                     Id = "BizTalk.DiskSpace",
                     Description = "Checks that the BizTalk Server has enough disk space.",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check Disk Space.ps1",
+                    Script = @"Check Disk Space.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"threshold", 20} 
@@ -292,7 +292,7 @@ namespace Health.Tests
                 {
                     Id = "BizTalk.Memory",
                     Description = "Checks that BizTalk Server has enough memory available",
-                    Script = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check Memory.ps1",
+                    Script = @"Check Memory.ps1",
                     Parameters = new System.Collections.Generic.Dictionary<string,object>()
                     { 
                         {"threshold", 20} 
@@ -303,7 +303,7 @@ namespace Health.Tests
 
             DataContractJsonSerializer serializer = new DataContractJsonSerializer(checks.GetType());
 
-            using (Stream stream = new FileStream(@"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\BizTalk Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
+            using (Stream stream = new FileStream(@"BizTalk Checks.json", FileMode.OpenOrCreate, FileAccess.Write))
             {
                 serializer.WriteObject(stream, checks);
             }

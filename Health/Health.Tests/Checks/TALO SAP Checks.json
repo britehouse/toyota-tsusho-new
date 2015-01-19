@@ -7,6 +7,6 @@
         "Parameters": [
             { "Key": "ReceiveLocationName", "Value": "Toyota.Tsusho.SAP.Services.TALO.OnRamp.WCF-SAP" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check BizTalk Receive Location.ps1"
+        "Script": "Check BizTalk Receive Location.ps1"
     }
 ]

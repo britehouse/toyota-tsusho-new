@@ -7,7 +7,7 @@
         "Parameters": [
             { "Key": "Service", "Value": "BTSSvc$BizTalkServerApplication" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Service.ps1"
+        "Script": "Check Service.ps1"
     },
     {
         "Description": "Checks that the 'MSSQLSERVER' service is running.",
@@ -17,7 +17,7 @@
         "Parameters": [
             { "Key": "Service", "Value": "MSSQLSERVER" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Service.ps1"
+        "Script": "Check Service.ps1"
     },
     {
         "Description": "Checks that the 'SQLSERVERAGENT' service is running.",
@@ -27,7 +27,7 @@
         "Parameters": [
             { "Key": "Service", "Value": "SQLSERVERAGENT" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Service.ps1"
+        "Script": "Check Service.ps1"
     },
     {
         "Description": "Checks that the BizTalk Server has enough disk space.",
@@ -37,7 +37,7 @@
         "Parameters": [
             { "Key": "threshold", "Value": 20 }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Disk Space.ps1"
+        "Script": "Check Disk Space.ps1"
     },
     {
         "Description": "Checks that BizTalk Server has enough memory available",
@@ -47,6 +47,6 @@
         "Parameters": [
             { "Key": "threshold", "Value": 20 }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check Memory.ps1"
+        "Script": "Check Memory.ps1"
     } 
 ]

@@ -8,14 +8,14 @@
 [CmdletBinding()]
 Param(
   [Parameter(Mandatory=$True)]
-  [service] $service
+  [string] $Service
 )
 
-$instance = get-Service $name
+$instance = get-Service $Service
 
 if($instance.Status -ne "Running")
 {
-	throw -join($service, " is in a ", $instance.Status, " state.")
+	throw -join($Service, " is in a ", $instance.Status, " state.")
 }
 
 # End of Script

@@ -69,5 +69,11 @@ namespace Health.Tests
             
         }
 
+        [TestMethod]
+        public void TestPowerShellFactory()
+        {
+            PowerShellCheckFactory.Initialize(@"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks");
+        }
+
     }
 }

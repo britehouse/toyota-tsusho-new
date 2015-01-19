@@ -7,6 +7,6 @@
         "Parameters": [
             { "Key": "Server", "Value": "172.29.2.13" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Ping Server.ps1"
+        "Script": "Ping Server.ps1"
     } 
 ]

@@ -8,6 +8,12 @@ namespace Health.Common
 {
     public interface ICheck
     {
+        string Id
+        {
+            get;
+            set;
+        }
+
         string Location
         {
             get;

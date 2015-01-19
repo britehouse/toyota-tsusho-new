@@ -7,7 +7,7 @@
         "Parameters": [
             { "Key": "ReceiveLocationName", "Value": "Toyota.Tsusho.CRM.Services.Generic.WCF-WSHTTP" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check BizTalk Receive Location.ps1"
+        "Script": "Check BizTalk Receive Location.ps1"
     },
     {
         "Description": "Checks that the 'Toyota.Tsusho.CRM.Services.Generic.Response.WCF-WSHTTP' receive location is enabled.",
@@ -17,7 +17,7 @@
         "Parameters": [
             { "Key": "ReceiveLocationName", "Value": "Toyota.Tsusho.CRM.Services.Generic.Response.WCF-WSHTTP" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check BizTalk Receive Location.ps1"
+        "Script": "Check BizTalk Receive Location.ps1"
     },
     {
         "Description": "Checks that the CRM Services are available",
@@ -27,7 +27,7 @@
         "Parameters": [
             { "Key": "url", "Value": "http:\/\/localhost\/Toyota.Tsusho.TALO.API\/OrderService.svc" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Ping Service.ps1"
+        "Script": "Ping Service.ps1"
     },
     {
         "Description": "Checks that the CRM BizTalk Services are available",
@@ -37,7 +37,7 @@
         "Parameters": [
             { "Key": "url", "Value": "http:\/\/localhost\/Toyota.Tsusho.CRM.Services.Generic.WCF\/OnRamp.svc" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Ping Service.ps1"
+        "Script": "Ping Service.ps1"
     },
     {
         "Description": "Checks that the CRM BizTalk Response Services are available",
@@ -47,7 +47,7 @@
         "Parameters": [
             { "Key": "url", "Value": "http:\/\/localhost\/Toyota.Tsusho.CRM.Services.Generic.WCF.Response\/OnRamp.svc" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Ping Service.ps1"
+        "Script": "Ping Service.ps1"
     },
     {
         "Description": "Checks that the CRM Organization Service is available",
@@ -57,6 +57,6 @@
         "Parameters": [
             { "Key": "url", "Value": "http:\/\/tmau-por-crm01\/TMAU\/XRMServices\/2011\/Organization.svc" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Ping Service.ps1"
+        "Script": "Ping Service.ps1"
     } 
 ]

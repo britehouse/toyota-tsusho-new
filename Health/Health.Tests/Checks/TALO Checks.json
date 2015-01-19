@@ -7,7 +7,7 @@
         "Parameters": [
             { "Key": "ReceiveLocationName", "Value": "Toyota.Tsusho.TALO.Services.Generic.WCF-WSHTTP" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check BizTalk Receive Location.ps1"
+        "Script": "Check BizTalk Receive Location.ps1"
     },
     {
         "Description": "Checks that the 'Toyota.Tsusho.TALO.Services.Generic.Response.WCF-WSHTTP' receive location is enabled.",
@@ -17,7 +17,7 @@
         "Parameters": [
             { "Key": "ReceiveLocationName", "Value": "Toyota.Tsusho.TALO.Services.Generic.Response.WCF-WSHTTP" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Check BizTalk Receive Location.ps1"
+        "Script": "Check BizTalk Receive Location.ps1"
     },
     {
         "Description": "Checks that the TALO Services are available",
@@ -27,7 +27,7 @@
         "Parameters": [
             { "Key": "url", "Value": "http:\/\/localhost\/Toyota.Tsusho.TALO.API\/OrderService.svc" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Ping Service.ps1"
+        "Script": "Ping Service.ps1"
     },
     {
         "Description": "Checks that the TALO BizTalk Services are available",
@@ -37,7 +37,7 @@
         "Parameters": [
             { "Key": "url", "Value": "http:\/\/localhost\/Toyota.Tsusho.TALO.Services.Generic.WCF\/OnRamp.svc" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Ping Service.ps1"
+        "Script": "Ping Service.ps1"
     },
     {
         "Description": "Checks that the TALO BizTalk Response Services are available",
@@ -47,6 +47,6 @@
         "Parameters": [
             { "Key": "url", "Value": "http:\/\/localhost\/Toyota.Tsusho.TALO.Services.Generic.WCF.Response\/OnRamp.svc" }
         ],
-        "Script": "C:\\Projects\\Toyota.Tsusho\\Health\\Health.Tests\\Checks\\Ping Service.ps1"
+        "Script": "Ping Service.ps1"
     } 
 ]
