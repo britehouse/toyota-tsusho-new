@@ -9,11 +9,15 @@ using System.Collections.ObjectModel;
 using Health.Common;
 using System.IO;
 using System.Management.Automation.Runspaces;
+using System.Diagnostics;
+using Health.Common.Diagnostics;
 
 namespace Health.Checks
 {
     public sealed class PowerShellCheck : ICheck
     {
+        private TraceSource source = new TraceSource("Health.Checks");
+
         public string Location
         {
             get;
@@ -40,15 +44,22 @@ namespace Health.Checks
 
         public void Validate(List<string> errors)
         {
-            if (string.IsNullOrWhiteSpace(this.Location))
-                errors.Add("The Script location was not specified.");
+            using (new TraceLogicalScope(this.source, "Validate"))
+            {
+                if (string.IsNullOrWhiteSpace(this.Location))
+                    errors.Add("The Script location was not specified.");
 
-            if (!File.Exists(this.Location))
-                errors.Add(string.Format("The Script could not be found at '@'.", this.Location));
+                if (!File.Exists(this.Location))
+                    errors.Add(string.Format("The Script could not be found at '@'.", this.Location));
+            }
         }
 
         public CheckResult Execute()
         {
+            using (new TraceLogicalScope(this.source, "Execute"))
+            {
+                List<object> data = new List<object>();
+
                 CheckResult result = new CheckResult()
                 {
                     Status = Status.Passed
@@ -56,6 +67,9 @@ namespace Health.Checks
 
                 using (PowerShell instance = PowerShell.Create())
                 {
+                    data.Add("Location");
+                    data.Add(this.Location);
+
                     using (StreamReader reader = new StreamReader(new FileStream(this.Location, FileMode.Open, FileAccess.Read)))
                         instance.AddScript(reader.ReadToEnd());
 
@@ -71,6 +85,8 @@ namespace Health.Checks
                     }
                     catch (Exception ex)
                     {
+                        this.source.TraceData(TraceEventType.Error, 100, ex);
+
                         result.Message = ex.Message;
 
                         result.Notes = ex.ToString();
@@ -81,20 +97,37 @@ namespace Health.Checks
                     {
                         string streams = LogStreams(instance.Streams);
 
+                        this.source.TraceData(TraceEventType.Verbose, 100, streams);
+
                         if (!String.IsNullOrWhiteSpace(streams))
                             result.Notes = streams;
                     }
 
+                    data.Add("Status");
+                    data.Add(result.Status);
+
+                    data.Add("Message");
+                    data.Add(result.Message);
+
+                    data.Add("Notes");
+                    data.Add(result.Notes);
+
+                    this.source.TraceData(TraceEventType.Verbose, 0, data.ToArray());
+
                     return result;
                 }
+            }
         }
 
         public async Task<CheckResult> ExecuteAsync()
         {
-            return await Task.Run<CheckResult>(() =>
+            using (new TraceLogicalScope(this.source, "ExecuteAsync"))
             {
-                return this.Execute();
-            });
+                return await Task.Run<CheckResult>(() =>
+                {
+                    return this.Execute();
+                });
+            }
         }
 
         string LogStreams(PSDataStreams streams)

@@ -2,6 +2,7 @@
 using Health.Common;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reactive.Concurrency;
 using System.Reactive.Disposables;
@@ -16,6 +17,8 @@ namespace Health.ConsoleApplication
     {
         static void Main(string[] args)
         {
+            TraceSource source = new TraceSource("Health.Checks");
+
             ICheck check = new PowerShellCheck()
             {
                 Location = @"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks\Check BizTalk Receive Location.ps1",
@@ -28,6 +31,14 @@ namespace Health.ConsoleApplication
             List<string> validationErrors = new List<string>();
 
             check.Validate(validationErrors);
+
+            if (validationErrors.Count > 0)
+            {
+                foreach (string error in validationErrors)
+                    source.TraceData(TraceEventType.Warning, 0, error);
+
+                throw new Exception("The Check contains validation errors.");
+            }
 
             TimeSpan period = new TimeSpan(0, 0, 0, 10, 0);
 
