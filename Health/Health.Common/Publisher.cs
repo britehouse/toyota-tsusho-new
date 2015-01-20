@@ -65,6 +65,7 @@ namespace Health
                         message.Label = "Check";
 
                         message.Properties.Add("Type", "Check");
+                        message.Properties.Add("Method", "PUT");
 
                         client.Send(message);
                     }
