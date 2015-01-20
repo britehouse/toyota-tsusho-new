@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D2BCEE
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health.ConsoleApplication", "Health.ConsoleApplication\Health.ConsoleApplication.csproj", "{D7C486F6-BAA2-4BFF-AC7E-97127104E4C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health.Agent", "Health.ConsoleApplication\Health.Agent.csproj", "{D7C486F6-BAA2-4BFF-AC7E-97127104E4C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

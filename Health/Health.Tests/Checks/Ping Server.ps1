@@ -7,12 +7,12 @@
 [CmdletBinding()]
 Param(
   [Parameter(Mandatory=$True)]
-  [service] $server
+  [string] $Server
 )
 
-$result = (Test-Connection $server).StatusCode
+$result = (Test-Connection $Server).StatusCode
 
 if($result -ne 0)
 {
-	throw -join ("Ping to ", $server, " failed.")
+	throw -join ("Ping to ", $Server, " failed.")
 }

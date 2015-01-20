@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
-namespace Health.Common.Diagnostics
+namespace Health.Diagnostics
 {
     /// <summary>
     /// Represents a Trace Start/Stop where the Start and Stop are called automatically

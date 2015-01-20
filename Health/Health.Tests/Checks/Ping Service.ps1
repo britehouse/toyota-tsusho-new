@@ -7,12 +7,12 @@
 [CmdletBinding()]
 Param(
   [Parameter(Mandatory=$True)]
-  [service] $url
+  [string] $Url
 )
 
-$result = Invoke-WebRequest $url
+$result = Invoke-WebRequest $Url
 
 if($result.StatusCode -ne 200)
 {
-	throw -join ("Invoke to ", $url, " failed.")
+	throw -join ("Invoke to ", $Url, " failed.")
 }

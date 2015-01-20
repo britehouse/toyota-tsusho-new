@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using Health.Common.Confiduration;
+using Health.Confiduration;
 using System.Runtime.Serialization.Json;
 using System.IO;
 
@@ -13,9 +13,9 @@ namespace Health.Tests
         [TestMethod]
         public void BuildTALOChecks()
         {
-            Common.Confiduration.Checks checks = new Common.Confiduration.Checks()
+            Confiduration.Checks checks = new Confiduration.Checks()
             { 
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "Toyota.Tsusho.TALO.Services.Generic.WCF-WSHTTP",
                     Description = "Checks that the 'Toyota.Tsusho.TALO.Services.Generic.WCF-WSHTTP' receive location is enabled.",
@@ -26,7 +26,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 6, 0, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "Toyota.Tsusho.TALO.Services.Generic.Response.WCF-WSHTTP",
                     Description = "Checks that the 'Toyota.Tsusho.TALO.Services.Generic.Response.WCF-WSHTTP' receive location is enabled.",
@@ -37,7 +37,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 6, 0, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "TALO.Services",
                     Description = "Checks that the TALO Services are available",
@@ -48,7 +48,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 0, 30, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "TALO.BizTalk.Services",
                     Description = "Checks that the TALO BizTalk Services are available",
@@ -59,7 +59,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 0, 30, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "TALO.BizTalk.Services.Response",
                     Description = "Checks that the TALO BizTalk Response Services are available",
@@ -83,9 +83,9 @@ namespace Health.Tests
         [TestMethod]
         public void BuildTALOSAPChecks()
         {
-            Common.Confiduration.Checks checks = new Common.Confiduration.Checks()
+            Confiduration.Checks checks = new Confiduration.Checks()
             { 
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "Toyota.Tsusho.SAP.Services.TALO.OnRamp.WCF-SAP",
                     Description = "Checks that the 'Toyota.Tsusho.SAP.Services.TALO.OnRamp.WCF-SAP' receive location is enabled.",
@@ -109,9 +109,9 @@ namespace Health.Tests
         [TestMethod]
         public void BuildCRMSAPChecks()
         {
-            Common.Confiduration.Checks checks = new Common.Confiduration.Checks()
+            Confiduration.Checks checks = new Confiduration.Checks()
             { 
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "Toyota.Tsusho.SAP.Services.CRM.OnRamp.WCF-SAP",
                     Description = "Checks that the 'Toyota.Tsusho.SAP.Services.CRM.OnRamp.WCF-SAP' receive location is enabled.",
@@ -135,9 +135,9 @@ namespace Health.Tests
         [TestMethod]
         public void BuildSAPChecks()
         {
-            Common.Confiduration.Checks checks = new Common.Confiduration.Checks()
+            Confiduration.Checks checks = new Confiduration.Checks()
             { 
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "SAP.Server",
                     Description = "Checks that the SAP Server is available",
@@ -161,9 +161,9 @@ namespace Health.Tests
         [TestMethod]
         public void BuildCRMChecks()
         {
-            Common.Confiduration.Checks checks = new Common.Confiduration.Checks()
+            Confiduration.Checks checks = new Confiduration.Checks()
             { 
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "Toyota.Tsusho.CRM.Services.Generic.WCF-WSHTTP",
                     Description = "Checks that the 'Toyota.Tsusho.CRM.Services.Generic.WCF-WSHTTP' receive location is enabled.",
@@ -174,7 +174,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 6, 0, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "Toyota.Tsusho.CRM.Services.Generic.Response.WCF-WSHTTP",
                     Description = "Checks that the 'Toyota.Tsusho.CRM.Services.Generic.Response.WCF-WSHTTP' receive location is enabled.",
@@ -185,7 +185,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 6, 0, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "CRM.Services",
                     Description = "Checks that the CRM Services are available",
@@ -196,7 +196,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 0, 30, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "CRM.BizTalk.Services",
                     Description = "Checks that the CRM BizTalk Services are available",
@@ -207,7 +207,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 0, 30, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "CRM.BizTalk.Services.Response",
                     Description = "Checks that the CRM BizTalk Response Services are available",
@@ -218,7 +218,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 0, 30, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "CRM.Organization.Service",
                     Description = "Checks that the CRM Organization Service is available",
@@ -242,9 +242,9 @@ namespace Health.Tests
         [TestMethod]
         public void BuildBizTalkChecks()
         {
-            Common.Confiduration.Checks checks = new Common.Confiduration.Checks()
+            Confiduration.Checks checks = new Confiduration.Checks()
             { 
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "BizTalk.BTSSvc$BizTalkServerApplication",
                     Description = "Checks that the 'BTSSvc$BizTalkServerApplication' service is running.",
@@ -255,7 +255,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 0, 0, 10, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "BizTalk.MSSQLSERVER",
                     Description = "Checks that the 'MSSQLSERVER' service is running.",
@@ -266,7 +266,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 0, 0, 10, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "BizTalk.SQLSERVERAGENT",
                     Description = "Checks that the 'SQLSERVERAGENT' service is running.",
@@ -277,7 +277,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 0, 0, 10, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "BizTalk.DiskSpace",
                     Description = "Checks that the BizTalk Server has enough disk space.",
@@ -288,7 +288,7 @@ namespace Health.Tests
                     },
                     Interval = new TimeSpan(0, 0, 5, 0, 0)
                 },
-                new Common.Confiduration.Check()
+                new Confiduration.Check()
                 {
                     Id = "BizTalk.Memory",
                     Description = "Checks that BizTalk Server has enough memory available",

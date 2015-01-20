@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Health.Common;
+using Health;
 using Health.Checks;
 using System.Collections.Generic;
 using System.Threading.Tasks;

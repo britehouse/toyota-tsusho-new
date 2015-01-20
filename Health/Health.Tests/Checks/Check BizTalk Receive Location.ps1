@@ -7,7 +7,7 @@
 [CmdletBinding()]
 Param(
   [Parameter(Mandatory=$True)]
-  [string]$ReceiveLocationName
+  [string] $ReceiveLocationName
 )
 
 $name = "Toyota.Tsusho.CRM.Services.Generic.WCF-WSHTTP"

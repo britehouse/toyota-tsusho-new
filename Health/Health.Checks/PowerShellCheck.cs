@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using System.Management.Automation;
 using System.Collections.ObjectModel;
 
-using Health.Common;
+using Health;
 using System.IO;
 using System.Management.Automation.Runspaces;
 using System.Diagnostics;
-using Health.Common.Diagnostics;
+using Health.Diagnostics;
 
 namespace Health.Checks
 {
@@ -76,6 +76,9 @@ namespace Health.Checks
 
                 using (PowerShell instance = PowerShell.Create())
                 {
+                    data.Add("Id");
+                    data.Add(this.Id);
+
                     data.Add("Location");
                     data.Add(this.Location);
 

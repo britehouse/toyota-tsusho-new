@@ -1,6 +1,6 @@
 ﻿using Health.Checks;
-using Health.Common;
-using Health.Common.Diagnostics;
+using Health;
+using Health.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,6 +11,7 @@ using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
+using Health.Events;
 
 namespace Health.ConsoleApplication
 {
@@ -18,6 +19,11 @@ namespace Health.ConsoleApplication
     {
         static void Main(string[] args)
         {
+            string node = "BizTalk.Agent";
+            string dc = "Kenya";
+
+            Publisher publisher = new Publisher(dc);
+
             TraceSource source = new TraceSource("Health.Checks");
 
             foreach (PowerShellCheckItem item in PowerShellCheckFactory.Initialize(@"C:\Projects\Toyota.Tsusho\Health\Health.Tests\Checks").Values)
@@ -59,11 +65,18 @@ namespace Health.ConsoleApplication
 
                         ob.Subscribe((CheckResult result) =>
                         {
-                            Console.WriteLine("Status: {0}", result.Status);
-                            Console.WriteLine("Message: {0}", result.Message);
-                            Console.WriteLine("Notes: {0}", result.Notes);
-                            Console.WriteLine();
+                            CheckEvent ev = new CheckEvent()
+                            {
+                                Created = DateTime.Now,
+                                Id = item.Configuration.Id,
+                                Message = result.Message,
+                                Node = node,
+                                Notes = result.Notes,
+                                Source = Environment.MachineName,
+                                Status = result.Status
+                            };
 
+                            publisher.Publish(ev);
                         });
                     }
                 }
