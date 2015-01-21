@@ -1,10 +1,10 @@
 ﻿using Health.Diagnostics;
 using Health.Events;
+using Health.Configuration;
 using Microsoft.ServiceBus;
 using Microsoft.ServiceBus.Messaging;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -16,6 +16,7 @@ namespace Health
 {
     public class Publisher
     {
+        Configuration.Configuration configuration = Configuration.Configuration.GetConfiguration();
 
         private TraceSource source = new TraceSource("Health");
 
@@ -35,7 +36,7 @@ namespace Health
 
                     this.source.TraceData(TraceEventType.Verbose, 0, new object[] { "Path", path });
 
-                    string connectionString = ConfigurationManager.ConnectionStrings["Microsoft.ServiceBus.ConnectionString"].ConnectionString;
+                    string connectionString = configuration.ServiceBus.ConnectionString;
 
                     this.source.TraceData(TraceEventType.Verbose, 0, new object[] { "ConnectionString", connectionString });
 

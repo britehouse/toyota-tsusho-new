@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="CheckResult.cs" />
     <Compile Include="Confiduration\Checks.cs" />
+    <Compile Include="Confiduration\Configuration.cs" />
     <Compile Include="Diagnostics\TraceLogicalScope.cs" />
     <Compile Include="Diagnostics\TraceTransferScope.cs" />
     <Compile Include="Events\CheckEvent.cs" />

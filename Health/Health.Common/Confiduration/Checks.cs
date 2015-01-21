@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 
-namespace Health.Confiduration
+namespace Health.Configuration
 {
     public sealed class Checks : List<Check> { }
 

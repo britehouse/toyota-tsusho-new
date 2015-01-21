@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using Health.Events;
+using Health.Configuration;
 
 namespace Health.ConsoleApplication
 {
@@ -19,8 +20,10 @@ namespace Health.ConsoleApplication
     {
         static void Main(string[] args)
         {
-            string node = "BizTalk.Agent";
-            string dc = "Kenya";
+            Configuration.Configuration configuration = Configuration.Configuration.GetConfiguration();
+
+            string node = configuration.Node;
+            string dc = configuration.Dc;
 
             Publisher publisher = new Publisher(dc);
 

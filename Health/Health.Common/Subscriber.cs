@@ -1,23 +1,25 @@
-﻿using Health.Diagnostics;
+﻿using Health.Configuration;
+using Health.Diagnostics;
 using Health.Events;
 using Microsoft.ServiceBus;
 using Microsoft.ServiceBus.Messaging;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reactive.Linq;
+using System.Reactive.Subjects;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
-using System.Reactive.Linq;
-using System.Reactive.Subjects;
 
 namespace Health
 {
     public sealed class Subscriber
     {
+        private Configuration.Configuration configuration = Configuration.Configuration.GetConfiguration();
+
         private SubscriptionClient eventClient;
         private string eventPath;
         private string eventSubscription;
@@ -49,7 +51,7 @@ namespace Health
 
                     this.source.TraceData(TraceEventType.Verbose, 0, new object[] { "Path", eventPath });
 
-                    string connectionString = ConfigurationManager.ConnectionStrings["Microsoft.ServiceBus.ConnectionString"].ConnectionString;
+                    string connectionString = configuration.ServiceBus.ConnectionString;
 
                     this.source.TraceData(TraceEventType.Verbose, 0, new object[] { "ConnectionString", connectionString });
 
@@ -133,7 +135,7 @@ namespace Health
         {
             using (new TraceLogicalScope(source, "CreateTopic"))
             {
-                string connectionString = ConfigurationManager.ConnectionStrings["Microsoft.ServiceBus.ConnectionString"].ConnectionString;
+                string connectionString = configuration.ServiceBus.ConnectionString;
 
                 this.source.TraceData(TraceEventType.Verbose, 0, new object[] { "ConnectionString", connectionString });
 
@@ -155,7 +157,7 @@ namespace Health
         {
             using (new TraceLogicalScope(source, "CreateCheckEventSubscription"))
             {
-                string connectionString = ConfigurationManager.ConnectionStrings["Microsoft.ServiceBus.ConnectionString"].ConnectionString;
+                string connectionString = configuration.ServiceBus.ConnectionString;
 
                 this.source.TraceData(TraceEventType.Verbose, 0, new object[] { "ConnectionString", connectionString });
 
@@ -185,7 +187,7 @@ namespace Health
         {
             using (new TraceLogicalScope(source, "CreateCheckEventSubscription"))
             {
-                string connectionString = ConfigurationManager.ConnectionStrings["Microsoft.ServiceBus.ConnectionString"].ConnectionString;
+                string connectionString = configuration.ServiceBus.ConnectionString;
 
                 this.source.TraceData(TraceEventType.Verbose, 0, new object[] { "ConnectionString", connectionString });
 

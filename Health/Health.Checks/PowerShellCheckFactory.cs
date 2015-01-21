@@ -12,7 +12,7 @@ namespace Health.Checks
 {
     public class PowerShellCheckItem
     {
-        public Health.Confiduration.Check Configuration
+        public Health.Configuration.Check Configuration
         {
             get;
             set;
@@ -47,13 +47,13 @@ namespace Health.Checks
                         try
                         {
                         
-                            DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(Health.Confiduration.Checks));
+                            DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(Health.Configuration.Checks));
 
                             using (Stream stream = new FileStream(file, FileMode.Open, FileAccess.Read))
                             {
-                                Health.Confiduration.Checks items = serializer.ReadObject(stream) as Health.Confiduration.Checks;
+                                Health.Configuration.Checks items = serializer.ReadObject(stream) as Health.Configuration.Checks;
 
-                                foreach(Health.Confiduration.Check item in items)
+                                foreach(Health.Configuration.Check item in items)
                                 {
                                     using (new TraceLogicalScope(source, string.Format("Processing {0}", item.Id)))
                                     {

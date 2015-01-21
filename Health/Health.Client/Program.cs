@@ -11,7 +11,9 @@ namespace Health.Client
     {
         static void Main(string[] args)
         {
-            Subscriber subscriber = new Subscriber("Kenya", "BizTalk.Client");
+            Configuration.Configuration configuration = Configuration.Configuration.GetConfiguration();
+
+            Subscriber subscriber = new Subscriber(configuration.Dc, configuration.Node);
 
             subscriber.StartEvents((CheckEvent ev) => 
             {
