@@ -23,7 +23,7 @@
         "Description": "Checks that the CRM Services are available",
         "Disabled": false,
         "Id": "CRM.Services",
-        "Interval": "PT30M",
+        "Interval": "PT10M",
         "Parameters": [
             { "Key": "url", "Value": "http:\/\/localhost\/Toyota.Tsusho.TALO.API\/OrderService.svc" }
         ],

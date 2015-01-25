@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Health.ConsoleApplication")]
+[assembly: AssemblyTitle("Health.Agent")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Health.ConsoleApplication")]
+[assembly: AssemblyProduct("Health.Agent")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c7efd1ea-983b-4ffa-8e75-54edd1ad0f23")]
+[assembly: Guid("0d8b5bf3-ad84-4cc4-82e7-44e9e5ff60fd")]
 
 // Version information for an assembly consists of the following four values:
 //

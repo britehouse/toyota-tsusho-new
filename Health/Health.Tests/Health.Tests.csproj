@@ -75,24 +75,42 @@
       <Project>{8784225d-be88-476a-99a7-03d25023d55f}</Project>
       <Name>Health.Checks</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Health.Common\Health.Common.csproj">
+    <ProjectReference Include="..\Health.Core\Health.Core.csproj">
       <Project>{347f4a4e-a271-4aa6-b7b0-20809428e62e}</Project>
-      <Name>Health.Common</Name>
+      <Name>Health.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Checks\BizTalk Checks.json" />
-    <None Include="Checks\Check BizTalk Receive Location.ps1" />
-    <None Include="Checks\Check Service.ps1" />
-    <None Include="Checks\Check Disk Space.ps1" />
-    <None Include="Checks\CRM Checks.json" />
-    <None Include="Checks\CRM SAP Checks.json" />
-    <None Include="Checks\Ping Service.ps1" />
-    <None Include="Checks\Ping Server.ps1" />
-    <None Include="Checks\Check Memory.ps1" />
-    <None Include="Checks\SAP Checks.json" />
-    <None Include="Checks\TALO Checks.json" />
-    <None Include="Checks\TALO SAP Checks.json" />
+    <None Include="Checks\BizTalk Checks.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Checks\Check BizTalk Receive Location.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Checks\Check Service.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Checks\Check Disk Space.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Checks\Ping Service.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Checks\Ping Server.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Checks\Check Memory.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Checks\SAP Checks.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Checks\TALO Checks.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Checks\TALO SAP Checks.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>

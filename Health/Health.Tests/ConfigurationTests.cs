@@ -146,7 +146,7 @@ namespace Health.Tests
                     { 
                         {"Server", "172.29.2.13"} 
                     },
-                    Interval = new TimeSpan(0, 0, 5, 0, 0)
+                    Interval = new TimeSpan(0, 0, 1, 0, 0)
                 }
             };
 
@@ -194,7 +194,7 @@ namespace Health.Tests
                     { 
                         {"url", "http://localhost/Toyota.Tsusho.TALO.API/OrderService.svc"} 
                     },
-                    Interval = new TimeSpan(0, 0, 30, 0, 0)
+                    Interval = new TimeSpan(0, 0, 10, 0, 0)
                 },
                 new Configuration.Check()
                 {

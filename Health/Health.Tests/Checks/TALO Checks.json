@@ -23,7 +23,7 @@
         "Description": "Checks that the TALO Services are available",
         "Disabled": false,
         "Id": "TALO.Services",
-        "Interval": "PT30M",
+        "Interval": "PT1M",
         "Parameters": [
             { "Key": "url", "Value": "http:\/\/localhost\/Toyota.Tsusho.TALO.API\/OrderService.svc" }
         ],

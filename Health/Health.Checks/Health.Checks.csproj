@@ -69,14 +69,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Health.Common\Health.Common.csproj">
-      <Project>{347f4a4e-a271-4aa6-b7b0-20809428e62e}</Project>
-      <Name>Health.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Health.snk" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Health.Core\Health.Core.csproj">
+      <Project>{347f4a4e-a271-4aa6-b7b0-20809428e62e}</Project>
+      <Name>Health.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
