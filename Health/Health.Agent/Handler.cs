@@ -70,7 +70,7 @@ namespace Health.Agent
                                 //We only push data if the status has changed
 
                                 if (item.Check.Status != item.Check.PreviousStatus)
-                                    observer.OnNext(item.Check.Execute());
+                                    observer.OnNext(result);
 
                                 recursive(item.Configuration.Interval);
                             });
