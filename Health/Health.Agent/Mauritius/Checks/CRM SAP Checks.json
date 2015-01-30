@@ -1,0 +1,12 @@
+[
+    {
+        "Description": "Checks that the 'Toyota.Tsusho.SAP.Services.CRM.OnRamp.WCF-SAP' receive location is enabled.",
+        "Disabled": false,
+        "Id": "Toyota.Tsusho.SAP.Services.CRM.OnRamp.WCF-SAP",
+        "Interval": "PT10M",
+        "Parameters": [
+            { "Key": "ReceiveLocationName", "Value": "Toyota.Tsusho.SAP.Services.CRM.OnRamp.WCF-SAP" }
+        ],
+        "Script": "Check BizTalk Receive Location.ps1"
+    }
+]

@@ -93,6 +93,8 @@
     <None Include="Checks\Check Disk Space.ps1">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Checks\CRM Checks.json" />
+    <None Include="Checks\CRM SAP Checks.json" />
     <None Include="Checks\Ping Service.ps1">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
