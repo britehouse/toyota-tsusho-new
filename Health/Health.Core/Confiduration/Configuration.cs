@@ -49,5 +49,26 @@ namespace Health.Configuration
             get { return this["connectionString"] as string; }
             set { this["connectonString"] = value; }
         }
+
+        [ConfigurationProperty("tokenKey", IsRequired = true)]
+        public string TokenKey
+        {
+            get { return this["tokenKey"] as string; }
+            set { this["tokenKey"] = value; }
+        }
+
+        [ConfigurationProperty("tokenValue", IsRequired = true)]
+        public string TokenValue
+        {
+            get { return this["tokenValue"] as string; }
+            set { this["tokenValue"] = value; }
+        }
+
+        [ConfigurationProperty("operationTimeout", IsRequired = false, DefaultValue=60D)]
+        public double OperationTimeout
+        {
+            get { return (double) this["operationTimeout"]; }
+            set { this["operationTimeout"] = value; }
+        }
     }
 }
